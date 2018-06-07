@@ -5,16 +5,16 @@ import json
 
 class PyDatasetProcessor:
     def __init__(self):
+        self.mydir ="./data"
         pass
 
     def walk_tree(self):
-        mydir = "./data"
 
         datasets = {}
         orig_data = {}
         i = 0
 
-        for dirpath, dirnames, filenames in os.walk(mydir):
+        for dirpath, dirnames, filenames in os.walk(self.mydir):
             if not dirnames:
                 print (dirpath, "has 0 subdirectories and", len(filenames), "files")
                 savedPath = os.getcwd()

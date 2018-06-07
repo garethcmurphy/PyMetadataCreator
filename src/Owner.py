@@ -2,6 +2,9 @@
 class Owner:
     def __init__(self):
         self.x = 2
+        self.name = "string"
+        self.email = "string@string.com"
+        self.owner_list = {}
 
     def setup(self):
-        pass
+        self.name = "string"

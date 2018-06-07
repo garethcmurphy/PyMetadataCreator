@@ -3,7 +3,7 @@ import os
 import json
 
 
-class PyDatasetProcessor
+class PyDatasetProcessor:
     def __init__(self):
         pass
 

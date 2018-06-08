@@ -31,6 +31,7 @@ class PyDatasetProcessor:
                     "contactEmail": "francesco.piscitelli@esss.se",
                     "sourceFolder": "string",
                     "size": 102400,
+                    "pid": "10.17199/"+str(i).zfill(5),
                     "packedSize": 1024000,
                     "creationTime": "2018-06-07T08:46:19.611Z",
                     "type": "string",
@@ -47,7 +48,7 @@ class PyDatasetProcessor:
                     "isPublished": True,
                     "ownerGroup": "string",
                     "accessGroups": [
-                        "string"
+                        "brightness"
                     ],
                     "createdBy": "string",
                     "updatedBy": "string",

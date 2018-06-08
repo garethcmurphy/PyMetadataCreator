@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="699c0464-6fa0-4df9-a891-47a5aa1c8b3c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Owner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Owner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PyDatasetProcessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/PyDatasetProcessor.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,23 +13,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PyDatasetProcessor.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PyDatasetProcessor.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PyDatasetProcessor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" selection-start-column="16" selection-end-column="16" />
+            <state relative-caret-position="440">
+              <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
               <folding>
                 <element signature="e#23#34#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Owner.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Owner.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -51,6 +42,7 @@
       <list>
         <option value="$PROJECT_DIR$/dataset_proc.py" />
         <option value="$PROJECT_DIR$/src/Owner.py" />
+        <option value="$PROJECT_DIR$/src/PyDatasetProcessor.py" />
       </list>
     </option>
   </component>
@@ -276,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528414383347</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fix indentation issue 🐛">
+      <created>1528414694186</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1528414694186</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -342,20 +341,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PyDatasetProcessor.py">
+    <entry file="file://$PROJECT_DIR$/src/Owner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-          <folding>
-            <element signature="e#23#34#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="340">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Owner.py">
+    <entry file="file://$PROJECT_DIR$/src/PyDatasetProcessor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        <state relative-caret-position="440">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+          <folding>
+            <element signature="e#23#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

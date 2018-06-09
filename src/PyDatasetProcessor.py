@@ -45,7 +45,7 @@ class PyDatasetProcessor:
                     "classification": "analyzed",
                     "license": "ESS",
                     "version": "v1",
-                    "doi": "string",
+                    "doi": "replace with doi",
                     "isPublished": True,
                     "ownerGroup": "brightness",
                     "accessGroups": [

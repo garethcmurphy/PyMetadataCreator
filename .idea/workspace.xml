@@ -16,8 +16,8 @@
       <file leaf-file-name="PyDatasetProcessor.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PyDatasetProcessor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+            <state relative-caret-position="158">
+              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
               <folding>
                 <element signature="e#23#34#0" expanded="true" />
               </folding>
@@ -56,8 +56,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="36" />
-    <option name="y" value="146" />
+    <option name="x" value="59" />
+    <option name="y" value="23" />
     <option name="width" value="1242" />
     <option name="height" value="800" />
   </component>
@@ -279,7 +279,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="36" y="146" width="1242" height="800" extended-state="0" />
+    <frame x="59" y="23" width="1242" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -350,8 +350,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PyDatasetProcessor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+        <state relative-caret-position="158">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding>
             <element signature="e#23#34#0" expanded="true" />
           </folding>

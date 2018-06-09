@@ -6,6 +6,7 @@ import os
 class PyDatasetProcessor:
     def __init__(self):
         self.mydir = "./data"
+        self.mydir = "./tree"
         pass
 
     def walk_tree(self):

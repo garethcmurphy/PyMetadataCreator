@@ -1,6 +1,6 @@
 # PyDatasetProcessor
 
-One Paragraph of project description goes here
+SEarches a directory tree and adds data to json file for scicat.
 
 ## Getting Started
 
@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Give examples
+Python3
 ```
 
 ### Installing

@@ -21,6 +21,11 @@ class PyDatasetProcessor:
                 print(dirpath, "has 0 subdirectories and", len(filenames), "files")
                 print(filenames)
                 i = i + 1
+                basename = os.path.basename(dirpath)
+                year = "2018"
+                if basename[:3]=='201':
+                    year = basename[:4]
+                print('gm',year)
                 my_dataset = {
                     "principalInvestigator": "string",
                     "endTime": "2018-06-07T09:46:27.560Z",

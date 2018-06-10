@@ -7,6 +7,7 @@ class PyDatasetProcessor:
     def __init__(self):
         self.mydir = "./data"
         self.mydir = "./static"
+        self.mydir = "/users/detector/experiments/multiblade/data/brightness"
         pass
 
     def walk_tree(self):

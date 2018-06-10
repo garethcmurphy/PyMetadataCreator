@@ -72,7 +72,12 @@ class PyDatasetProcessor:
                     }
                     filelist.append(file_entry)
                 my_orig = {
-                    "datafileList": filelist,
+                    "size": 0,
+                    "dataFileList": filelist,
+                    "ownerGroup": "brightness",
+                    "accessGroups": [
+                        "brightness"
+                    ],
                     "createdBy": "ingestor",
                     "updatedBy": "ingestor",
                     "datasetId": "10.17199/"+my_dataset["pid"],

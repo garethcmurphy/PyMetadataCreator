@@ -6,7 +6,7 @@ import os
 class PyDatasetProcessor:
     def __init__(self):
         self.mydir = "./data"
-        self.mydir = "./tree"
+        # self.mydir = "./tree"
         pass
 
     def walk_tree(self):
@@ -33,7 +33,7 @@ class PyDatasetProcessor:
                     "sourceFolder": "multiblade",
                     "proposalId": "2018ESS1",
                     "size": 102400,
-                    "pid": "MB"+str(i).zfill(5),
+                    "pid": "MB" + str(i).zfill(5),
                     "packedSize": 1024000,
                     "creationTime": "2018-06-07T08:46:19.611Z",
                     "type": "raw",
@@ -57,18 +57,33 @@ class PyDatasetProcessor:
                     "createdAt": "2018-06-07T08:46:19.611Z",
                     "updatedAt": "2018-06-07T08:46:19.611Z"
                 }
+                filelist = []
+                for file in filenames:
+                    longname = dirpath + '/' + file
+                    statinfo = os.stat(longname)
+                    file_entry = {
+                        "path": longname,
+                        "size": statinfo.st_size,
+                        "time": "2018-04-23T09:23:47.000Z",
+                        "chk": "string",
+                        "uid": "string",
+                        "gid": "string",
+                        "perm": "string"
+                    }
+                    filelist.append(file_entry)
                 my_orig = {
-                    "datafileList": filenames,
+                    "datafileList": filelist,
                     "createdBy": "ingestor",
                     "updatedBy": "ingestor",
-                    "datasetId": "<PID>/a4ec147c-0d5d-4cfd-9fa5-893423a68729",
+                    "datasetId": "10.17199/"+my_dataset["pid"],
                     "rawDatasetId": "string",
                     "derivedDatasetId": "string",
                     "createdAt": "2018-04-23T09:23:47.918Z",
                     "updatedAt": "2018-04-23T09:59:04.506Z"
                 }
+                scicat_entries = {"dataset": my_dataset, "orig": my_orig}
                 orig_data["orig" + str(i)] = my_orig
-                datasets["orig" + str(i)] = my_dataset
+                datasets["orig" + str(i)] = scicat_entries
 
         json_orig_data = json.dumps(orig_data)
         print(json_orig_data)

@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="699c0464-6fa0-4df9-a891-47a5aa1c8b3c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets.json" beforeDir="false" afterPath="$PROJECT_DIR$/datasets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orig.json" beforeDir="false" afterPath="$PROJECT_DIR$/orig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PyDatasetProcessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/PyDatasetProcessor.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +16,8 @@
       <file leaf-file-name="PyDatasetProcessor.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PyDatasetProcessor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="75" column="25" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
+            <state relative-caret-position="160">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
               <folding>
                 <element signature="e#23#34#0" expanded="true" />
               </folding>
@@ -75,6 +72,11 @@
             <path>
               <item name="PyDatasetProcessor" type="b2602c69:ProjectViewProjectNode" />
               <item name="PyDatasetProcessor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PyDatasetProcessor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PyDatasetProcessor" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PyDatasetProcessor" type="b2602c69:ProjectViewProjectNode" />
@@ -353,8 +355,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PyDatasetProcessor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="75" column="25" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
+        <state relative-caret-position="160">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding>
             <element signature="e#23#34#0" expanded="true" />
           </folding>

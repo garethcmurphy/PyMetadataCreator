@@ -63,7 +63,7 @@ class PyDatasetProcessor:
                     longname = dirpath + '/' + file
                     
                     statinfo = os.stat(longname)
-                    relpath = longname.replace('/users/detector', 'static')
+                    relpath = longname.replace('/users/detector', '/static')
                     file_entry = {
                         "path": relpath,
                         "size": statinfo.st_size,

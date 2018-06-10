@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 import json
 import os
 
@@ -6,8 +6,8 @@ import os
 class PyDatasetProcessor:
     def __init__(self):
         self.mydir = "./data"
-        self.mydir = "./static"
-        self.mydir = "/users/detector/experiments/multiblade/data/brightness"
+        self.mydir = "static"
+#        self.mydir = "/users/detector/experiments/multiblade/data/brightness"
         pass
 
     def walk_tree(self):
@@ -61,9 +61,11 @@ class PyDatasetProcessor:
                 filelist = []
                 for file in filenames:
                     longname = dirpath + '/' + file
+                    
                     statinfo = os.stat(longname)
+                    relpath = longname.replace('/users/detector','')
                     file_entry = {
-                        "path": longname,
+                        "path": relpath,
                         "size": statinfo.st_size,
                         "time": "2018-04-23T09:23:47.000Z",
                         "chk": "string",

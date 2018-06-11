@@ -4,6 +4,7 @@ import json
 import os
 import re
 import sys
+import socket
 
 from dataset import Dataset
 from orig import Orig
@@ -15,6 +16,9 @@ class PyDatasetProcessor:
         self.mydir = "static"
         # self.mydir = "/users/detector/experiments/multiblade/data/brightness"
         self.year_month_regex = '20[0-9]{2}_[0-1][0-9]'
+        self.hostname = socket.gethostname()
+        if self.hostname = 'login.esss.dk':
+            self.mydir = "/users/detector/experiments/multiblade/data/brightness"
 
     def walk_tree(self):
 

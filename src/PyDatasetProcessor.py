@@ -71,8 +71,7 @@ class PyDatasetProcessor:
                 scicat_entries = {"dataset": my_dataset, "orig": my_orig}
                 datasets["orig" + str(i)] = scicat_entries
 
-        json_datasets = json.dumps(datasets)
-        print(json_datasets)
+        json.dumps(datasets)
 
         with open('datasets.json', 'w') as f:
             json.dump(datasets, f, ensure_ascii=False, indent=2)

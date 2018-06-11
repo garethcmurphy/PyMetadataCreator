@@ -1,6 +1,6 @@
 # PyDatasetProcessor
 
-SEarches a directory tree and adds data to json file for scicat.
+Searches for science files and generates metadata in the SciCat format.
 
 ## Getting Started
 
@@ -36,12 +36,14 @@ End with an example of getting some data out of the system or using it for a lit
 
 Explain how to run the automated tests for this system
 
+
+
 ### Break down into end to end tests
 
 Explain what these tests test and why
 
 ```
-Give an example
+pytest
 ```
 
 ### And coding style tests
@@ -74,11 +76,9 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 * **Gareth Murphy** - *Initial work* - [garethcmurphy](https://github.com/garethcmurphy)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the BSD License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
 

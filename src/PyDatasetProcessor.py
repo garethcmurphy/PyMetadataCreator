@@ -71,6 +71,10 @@ class PyDatasetProcessor:
                 my_data_set["endTime"] = experiment_date_time
                 my_data_set["createdAt"] = experiment_date_time
                 my_data_set["updatedAt"] = experiment_date_time
+                scientific_metadata = {
+                    "identifier": basename
+                }
+                my_data_set["scientificMetadata"] = scientific_metadata
                 orig = Orig()
                 my_orig = orig.orig
                 my_orig["datasetId"] = "10.17199/" + str(my_data_set["pid"])

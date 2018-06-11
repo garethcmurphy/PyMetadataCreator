@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
+import datetime
 import json
 import os
+import re
 import sys
-import datetime
 
 from dataset import Dataset
 from orig import Orig
 
-import re
 
 class PyDatasetProcessor:
     def __init__(self):
@@ -28,21 +28,19 @@ class PyDatasetProcessor:
                 i = i + 1
                 basename = os.path.basename(dirpath)
 
-                year_month= "1999_09"
-                year_month = re.search(self.year_month_regex,dirpath).group(0)
-                #print('gm',year_month)
-                year= year_month[0:4]
+                year_month = re.search(self.year_month_regex, dirpath).group(0)
+                # print('gm',year_month)
+                year = year_month[0:4]
                 month = year_month[5:7]
-                day=1
+                day = 1
                 if re.match('[0-3][0-9]', basename):
-                    day1=int(basename[0:2])
-                    if (day1 >= 1):
-                        day=int(basename[0:2])
+                    day1 = int(basename[0:2])
+                    if day1 >= 1:
+                        day = int(basename[0:2])
 
-                print(year,month, day)
-                data_date = datetime.datetime(int(year),int(month), int(day))
-                experiment_date_time=data_date.isoformat()
-
+                print(year, month, day)
+                data_date = datetime.datetime(int(year), int(month), int(day))
+                experiment_date_time = data_date.isoformat()
 
                 d = Dataset()
                 my_data_set = d.dataset

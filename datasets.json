@@ -59,7 +59,7 @@
   "orig00002": {
     "dataset": {
       "principalInvestigator": "Francesco Piscitelli",
-      "endTime": "2016-02-01T00:00:00",
+      "endTime": "2016-10-01T00:00:00",
       "creationLocation": "Multiblade",
       "dataFormat": "lst",
       "scientificMetadata": {
@@ -74,7 +74,7 @@
       "size": 55,
       "pid": "MB00002",
       "packedSize": 55,
-      "creationTime": "2016-02-01T00:00:00",
+      "creationTime": "2016-10-01T00:00:00",
       "type": "raw",
       "validationStatus": "valid",
       "keywords": [
@@ -93,8 +93,8 @@
       ],
       "createdBy": "ingestor",
       "updatedBy": "ingestor",
-      "createdAt": "2016-02-01T00:00:00",
-      "updatedAt": "2016-02-01T00:00:00"
+      "createdAt": "2016-10-01T00:00:00",
+      "updatedAt": "2016-10-01T00:00:00"
     },
     "orig": {
       "size": 55,

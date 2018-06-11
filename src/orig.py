@@ -9,7 +9,7 @@ class Orig:
             ],
             "createdBy": "ingestor",
             "updatedBy": "ingestor",
-            "datasetId": "10.17199/" ,
+            "datasetId": "10.17199/",
             "rawDatasetId": "string",
             "derivedDatasetId": "string",
             "createdAt": "2018-04-23T09:23:47.918Z",

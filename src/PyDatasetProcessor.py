@@ -32,19 +32,7 @@ class PyDatasetProcessor:
                 i = i + 1
                 basename = os.path.basename(dirpath)
 
-                year_month = re.search(self.year_month_regex, dirpath).group(0)
-                # print('gm',year_month)
-                year = year_month[0:4]
-                month = year_month[5:7]
-                day = 1
-                if re.match('[0-3][0-9]', basename):
-                    day1 = int(basename[0:2])
-                    if day1 >= 1:
-                        day = int(basename[0:2])
-
-                print(year, month, day)
-                data_date = datetime.datetime(int(year), int(month), int(day))
-                experiment_date_time = data_date.isoformat()
+                experiment_date_time = self.get_date_information(basename, dirpath)
 
                 d = Dataset()
                 my_data_set = d.dataset
@@ -94,6 +82,21 @@ class PyDatasetProcessor:
 
         with open('datasets.json', 'w') as f:
             json.dump(datasets, f, ensure_ascii=False, indent=2)
+
+    def get_date_information(self, basename, dirpath):
+        year_month = re.search(self.year_month_regex, dirpath).group(0)
+        # print('gm',year_month)
+        year = year_month[0:4]
+        month = year_month[5:7]
+        day = 1
+        if re.match('[0-3][0-9]', basename):
+            day1 = int(basename[0:2])
+            if day1 >= 1:
+                day = int(basename[0:2])
+        print(year, month, day)
+        data_date = datetime.datetime(int(year), int(month), int(day))
+        experiment_date_time = data_date.isoformat()
+        return experiment_date_time
 
 
 if __name__ == '__main__':

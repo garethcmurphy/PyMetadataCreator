@@ -1,6 +1,7 @@
 # PyDatasetProcessor
 
-Searches for science files and generates metadata in the SciCat format.
+Searches for science files and creates metadata - the who, what, where and why of scientific data in the SciCat format.
+See the scicatproject for more information. 
 
 ## Getting Started
 

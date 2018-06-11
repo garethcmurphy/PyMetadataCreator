@@ -2,7 +2,7 @@ from typing import Dict, Any, Union
 
 
 class Dataset:
-    #dataset: Dict[Union[str, Any], Union[Union[str, Dict[str, str]], Any]]
+    dataset: Dict[Union[str, Any], Union[Union[str, Dict[str, str]], Any]]
 
     def __init__(self):
         self.dataset =  {

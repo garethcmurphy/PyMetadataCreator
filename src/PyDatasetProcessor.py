@@ -2,16 +2,19 @@
 import json
 import os
 import sys
+import datetime
 
 from dataset import Dataset
 from orig import Orig
 
+import re
 
 class PyDatasetProcessor:
     def __init__(self):
         self.mydir = "./data"
         self.mydir = "static"
         # self.mydir = "/users/detector/experiments/multiblade/data/brightness"
+        self.year_month_regex = '20[0-9]{2}_[0-1][0-9]'
 
     def walk_tree(self):
 
@@ -24,10 +27,16 @@ class PyDatasetProcessor:
                 print(filenames)
                 i = i + 1
                 basename = os.path.basename(dirpath)
-                year = "2018"
-                if basename[:3] == '201':
-                    year = basename[:4]
-                print('gm', year)
+
+                year_month= "1999_09"
+                year_month = re.search(self.year_month_regex,dirpath).group(0)
+                #print('gm',year_month)
+                year= year_month[0:4]
+                month = year_month[6:7]
+
+                data_date = datetime.datetime(int(year),int(month), 1)
+                experiment_date_time=data_date.isoformat()
+
 
                 d = Dataset()
                 my_data_set = d.dataset
@@ -54,6 +63,10 @@ class PyDatasetProcessor:
                     file_list.append(file_entry)
                 my_data_set["size"] = total_file_size
                 my_data_set["packedSize"] = total_file_size
+                my_data_set["creationTime"] = experiment_date_time
+                my_data_set["endTime"] = experiment_date_time
+                my_data_set["createdAt"] = experiment_date_time
+                my_data_set["updatedAt"] = experiment_date_time
                 orig = Orig()
                 my_orig = orig.orig
                 my_orig["size"] = total_file_size

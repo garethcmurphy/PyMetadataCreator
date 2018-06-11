@@ -5,6 +5,7 @@ import json
 
 
 from dataset import Dataset
+from orig import Orig
 
 class PyDatasetProcessor:
     def __init__(self):
@@ -54,23 +55,14 @@ class PyDatasetProcessor:
                     filelist.append(file_entry)
                 my_dataset["size"] = totalfilesize
                 my_dataset["packedSize"] = totalfilesize
-                my_orig = {
-                    "size": totalfilesize,
-                    "dataFileList": filelist,
-                    "ownerGroup": "brightness",
-                    "accessGroups": [
-                        "brightness"
-                    ],
-                    "createdBy": "ingestor",
-                    "updatedBy": "ingestor",
-                    "datasetId": "10.17199/"+str(my_dataset["pid"]),
-                    "rawDatasetId": "string",
-                    "derivedDatasetId": "string",
-                    "createdAt": "2018-04-23T09:23:47.918Z",
-                    "updatedAt": "2018-04-23T09:59:04.506Z"
-                }
+                orig = Orig()
+                my_orig = orig.orig
+                my_orig["size"]= totalfilesize
+                my_orig["packedSize"]= totalfilesize
+                my_orig["datasetId"]=  "10.17199/"+str(my_dataset["pid"])
+
                 scicat_entries = {"dataset": my_dataset, "orig": my_orig}
-                datasets["orig" + str(i)] = scicat_entries
+                datasets["orig" + str(i).zfill(5)] = scicat_entries
 
         json.dump(datasets, sys.stdout, indent=2)
 

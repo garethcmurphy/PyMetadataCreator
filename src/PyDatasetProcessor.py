@@ -35,7 +35,8 @@ class PyDatasetProcessor:
                 month = year_month[5:7]
                 day=1
                 if re.match('[0-3][0-9]', basename):
-                    if (day >= 1):
+                    day1=int(basename[0:2])
+                    if (day1 >= 1):
                         day=int(basename[0:2])
 
                 print(year,month, day)

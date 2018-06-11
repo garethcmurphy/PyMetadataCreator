@@ -30,18 +30,18 @@ class PyDatasetProcessor:
                 print('gm', year)
 
                 d = Dataset()
-                my_dataset = d.dataset
-                my_dataset["pid"] = "MB" + str(i).zfill(5)
-                print(my_dataset["pid"])
-                filelist = []
-                totalfilesize = 0
+                my_data_set = d.dataset
+                my_data_set["pid"] = "MB" + str(i).zfill(5)
+                print(my_data_set["pid"])
+                file_list = []
+                total_file_size = 0
                 for file in filenames:
                     longname = dirpath + '/' + file
 
                     statinfo = os.stat(longname)
                     relpath = longname.replace('/users/detector', '/static')
                     file_size = statinfo.st_size
-                    totalfilesize += file_size
+                    total_file_size += file_size
                     file_entry = {
                         "path": relpath,
                         "size": file_size,
@@ -51,16 +51,16 @@ class PyDatasetProcessor:
                         "gid": "string",
                         "perm": "string"
                     }
-                    filelist.append(file_entry)
-                my_dataset["size"] = totalfilesize
-                my_dataset["packedSize"] = totalfilesize
+                    file_list.append(file_entry)
+                my_data_set["size"] = total_file_size
+                my_data_set["packedSize"] = total_file_size
                 orig = Orig()
                 my_orig = orig.orig
-                my_orig["size"] = totalfilesize
-                my_orig["packedSize"] = totalfilesize
-                my_orig["datasetId"] = "10.17199/" + str(my_dataset["pid"])
+                my_orig["size"] = total_file_size
+                my_orig["packedSize"] = total_file_size
+                my_orig["datasetId"] = "10.17199/" + str(my_data_set["pid"])
 
-                scicat_entries = {"dataset": my_dataset, "orig": my_orig}
+                scicat_entries = {"dataset": my_data_set, "orig": my_orig}
                 datasets["orig" + str(i).zfill(5)] = scicat_entries
 
         json.dump(datasets, sys.stdout, indent=2)

@@ -72,6 +72,7 @@ class PyDatasetProcessor:
                 my_orig["size"] = total_file_size
                 my_orig["packedSize"] = total_file_size
                 my_orig["datasetId"] = "10.17199/" + str(my_data_set["pid"])
+                my_orig["dataFileList"] = file_list
 
                 scicat_entries = {"dataset": my_data_set, "orig": my_orig}
                 datasets["orig" + str(i).zfill(5)] = scicat_entries

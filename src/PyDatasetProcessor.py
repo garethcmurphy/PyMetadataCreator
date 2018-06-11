@@ -37,6 +37,7 @@ class PyDatasetProcessor:
                 if re.match('[0-3][0-9]', basename):
                     day=int(basename[0:2])
 
+                print(year,month, day)
                 data_date = datetime.datetime(int(year),int(month), int(day))
                 experiment_date_time=data_date.isoformat()
 

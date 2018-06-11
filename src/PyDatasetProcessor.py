@@ -33,8 +33,11 @@ class PyDatasetProcessor:
                 #print('gm',year_month)
                 year= year_month[0:4]
                 month = year_month[5:7]
+                day=1
+                if re.match('[0-3][0-9]', basename):
+                    day=int(basename[0:2])
 
-                data_date = datetime.datetime(int(year),int(month), 1)
+                data_date = datetime.datetime(int(year),int(month), int(day))
                 experiment_date_time=data_date.isoformat()
 
 

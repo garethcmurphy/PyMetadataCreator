@@ -1,14 +1,15 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import json
 import os
 
+
+from dataset import Dataset
 
 class PyDatasetProcessor:
     def __init__(self):
         self.mydir = "./data"
         self.mydir = "static"
-        self.mydir = "/users/detector/experiments/multiblade/data/brightness"
-        pass
+        #self.mydir = "/users/detector/experiments/multiblade/data/brightness"
 
     def walk_tree(self):
 
@@ -27,52 +28,22 @@ class PyDatasetProcessor:
                     year = basename[:4]
                 print('gm', year)
 
-                my_dataset = {
-                    "principalInvestigator": "string",
-                    "endTime": "2018-06-07T09:46:27.560Z",
-                    "creationLocation": "Multiblade",
-                    "dataFormat": "lst",
-                    "scientificMetadata": {},
-                    "owner": "Francesco Piscitelli",
-                    "ownerEmail": "francesco.piscitelli@esss.se",
-                    "orcidOfOwner": "0000-0002-0325-4407",
-                    "contactEmail": "francesco.piscitelli@esss.se",
-                    "sourceFolder": "multiblade",
-                    "proposalId": "2018ESS1",
-                    "size": 102400,
-                    "pid": "MB" + str(i).zfill(5),
-                    "packedSize": 1024000,
-                    "creationTime": "2018-06-07T08:46:19.611Z",
-                    "type": "raw",
-                    "validationStatus": "valid",
-                    "keywords": [
-                        "Vanadium"
-                    ],
-                    "description": "string",
-                    "userTargetLocation": "Multiblade",
-                    "classification": "analyzed",
-                    "license": "ESS",
-                    "version": "v1",
-                    "doi": "replace with doi",
-                    "isPublished": True,
-                    "ownerGroup": "brightness",
-                    "accessGroups": [
-                        "brightness"
-                    ],
-                    "createdBy": "ingestor",
-                    "updatedBy": "ingestor",
-                    "createdAt": "2018-06-07T08:46:19.611Z",
-                    "updatedAt": "2018-06-07T08:46:19.611Z"
-                }
+                d= Dataset()
+                my_dataset = d.dataset
+                my_dataset["pid"] = "MB" + str(i).zfill(5),
+                print(my_dataset["pid"])
                 filelist = []
+                totalfilesize = 0
                 for file in filenames:
                     longname = dirpath + '/' + file
                     
                     statinfo = os.stat(longname)
                     relpath = longname.replace('/users/detector', '/static')
+                    file_size = statinfo.st_size
+                    totalfilesize += file_size
                     file_entry = {
                         "path": relpath,
-                        "size": statinfo.st_size,
+                        "size": file_size,
                         "time": "2018-04-23T09:23:47.000Z",
                         "chk": "string",
                         "uid": "string",
@@ -80,8 +51,10 @@ class PyDatasetProcessor:
                         "perm": "string"
                     }
                     filelist.append(file_entry)
+                my_dataset["size"] = totalfilesize
+                my_dataset["packedSize"] = totalfilesize
                 my_orig = {
-                    "size": 0,
+                    "size": totalfilesize,
                     "dataFileList": filelist,
                     "ownerGroup": "brightness",
                     "accessGroups": [
@@ -89,7 +62,7 @@ class PyDatasetProcessor:
                     ],
                     "createdBy": "ingestor",
                     "updatedBy": "ingestor",
-                    "datasetId": "10.17199/"+my_dataset["pid"],
+                    "datasetId": "10.17199/"+str(my_dataset["pid"]),
                     "rawDatasetId": "string",
                     "derivedDatasetId": "string",
                     "createdAt": "2018-04-23T09:23:47.918Z",

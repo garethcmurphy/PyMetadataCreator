@@ -1,5 +1,11 @@
 from ..src import dataset
 
-def test_dataset
-    my_dataset = d.Dataset()
+import pytest
+
+
+def test_dataset():
+
+    my_dataset = dataset.Dataset()
+    d=my_dataset.dataset
+
 

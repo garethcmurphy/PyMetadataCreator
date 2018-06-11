@@ -1,1 +1,143 @@
-{"orig1": {"dataset": {"principalInvestigator": "Francesco Piscitelli", "endTime": "2018-06-07T09:46:27.560Z", "creationLocation": "Multiblade", "dataFormat": "lst", "scientificMetadata": {"run": "1"}, "owner": "Francesco Piscitelli", "ownerEmail": "francesco.piscitelli@esss.se", "orcidOfOwner": "0000-0002-0325-4407", "contactEmail": "francesco.piscitelli@esss.se", "sourceFolder": "multiblade", "proposalId": "2018ESS1", "size": 84, "pid": ["MB00001"], "packedSize": 84, "creationTime": "2018-06-07T08:46:19.611Z", "type": "raw", "validationStatus": "valid", "keywords": ["Vanadium"], "description": "string", "userTargetLocation": "Multiblade", "classification": "analyzed", "license": "ESS", "version": "v1", "doi": "replace with doi", "isPublished": true, "ownerGroup": "brightness", "accessGroups": ["brightness"], "createdBy": "ingestor", "updatedBy": "ingestor", "createdAt": "2018-06-07T08:46:19.611Z", "updatedAt": "2018-06-07T08:46:19.611Z"}, "orig": {"size": 84, "dataFileList": [{"path": "static/2017/2017_04_STF_MB15_FastNeutronSensitivity/data_FastNeutron/2017_04_27_1515_Californium__090.lst1", "size": 36, "time": "2018-04-23T09:23:47.000Z", "chk": "string", "uid": "string", "gid": "string", "perm": "string"}, {"path": "static/2017/2017_04_STF_MB15_FastNeutronSensitivity/data_FastNeutron/2017_04_28_1515_Californium__090.lst1", "size": 48, "time": "2018-04-23T09:23:47.000Z", "chk": "string", "uid": "string", "gid": "string", "perm": "string"}], "ownerGroup": "brightness", "accessGroups": ["brightness"], "createdBy": "ingestor", "updatedBy": "ingestor", "datasetId": "10.17199/('MB00001',)", "rawDatasetId": "string", "derivedDatasetId": "string", "createdAt": "2018-04-23T09:23:47.918Z", "updatedAt": "2018-04-23T09:59:04.506Z"}}, "orig2": {"dataset": {"principalInvestigator": "Francesco Piscitelli", "endTime": "2018-06-07T09:46:27.560Z", "creationLocation": "Multiblade", "dataFormat": "lst", "scientificMetadata": {"run": "1"}, "owner": "Francesco Piscitelli", "ownerEmail": "francesco.piscitelli@esss.se", "orcidOfOwner": "0000-0002-0325-4407", "contactEmail": "francesco.piscitelli@esss.se", "sourceFolder": "multiblade", "proposalId": "2018ESS1", "size": 55, "pid": ["MB00002"], "packedSize": 55, "creationTime": "2018-06-07T08:46:19.611Z", "type": "raw", "validationStatus": "valid", "keywords": ["Vanadium"], "description": "string", "userTargetLocation": "Multiblade", "classification": "analyzed", "license": "ESS", "version": "v1", "doi": "replace with doi", "isPublished": true, "ownerGroup": "brightness", "accessGroups": ["brightness"], "createdBy": "ingestor", "updatedBy": "ingestor", "createdAt": "2018-06-07T08:46:19.611Z", "updatedAt": "2018-06-07T08:46:19.611Z"}, "orig": {"size": 55, "dataFileList": [{"path": "static/2016/2016_12_STF_MB15_GammaSensitivity/20161210_gammaSensData/2016_12_09_1919_Co60_800V_1h__041.lst1", "size": 55, "time": "2018-04-23T09:23:47.000Z", "chk": "string", "uid": "string", "gid": "string", "perm": "string"}], "ownerGroup": "brightness", "accessGroups": ["brightness"], "createdBy": "ingestor", "updatedBy": "ingestor", "datasetId": "10.17199/('MB00002',)", "rawDatasetId": "string", "derivedDatasetId": "string", "createdAt": "2018-04-23T09:23:47.918Z", "updatedAt": "2018-04-23T09:59:04.506Z"}}}
+{
+  "orig1": {
+    "dataset": {
+      "principalInvestigator": "Francesco Piscitelli",
+      "endTime": "2018-06-07T09:46:27.560Z",
+      "creationLocation": "Multiblade",
+      "dataFormat": "lst",
+      "scientificMetadata": {
+        "run": "1"
+      },
+      "owner": "Francesco Piscitelli",
+      "ownerEmail": "francesco.piscitelli@esss.se",
+      "orcidOfOwner": "0000-0002-0325-4407",
+      "contactEmail": "francesco.piscitelli@esss.se",
+      "sourceFolder": "multiblade",
+      "proposalId": "2018ESS1",
+      "size": 84,
+      "pid": "MB00001",
+      "packedSize": 84,
+      "creationTime": "2018-06-07T08:46:19.611Z",
+      "type": "raw",
+      "validationStatus": "valid",
+      "keywords": [
+        "Vanadium"
+      ],
+      "description": "string",
+      "userTargetLocation": "Multiblade",
+      "classification": "analyzed",
+      "license": "ESS",
+      "version": "v1",
+      "doi": "replace with doi",
+      "isPublished": true,
+      "ownerGroup": "brightness",
+      "accessGroups": [
+        "brightness"
+      ],
+      "createdBy": "ingestor",
+      "updatedBy": "ingestor",
+      "createdAt": "2018-06-07T08:46:19.611Z",
+      "updatedAt": "2018-06-07T08:46:19.611Z"
+    },
+    "orig": {
+      "size": 84,
+      "dataFileList": [
+        {
+          "path": "static/2017/2017_04_STF_MB15_FastNeutronSensitivity/data_FastNeutron/2017_04_27_1515_Californium__090.lst1",
+          "size": 36,
+          "time": "2018-04-23T09:23:47.000Z",
+          "chk": "string",
+          "uid": "string",
+          "gid": "string",
+          "perm": "string"
+        },
+        {
+          "path": "static/2017/2017_04_STF_MB15_FastNeutronSensitivity/data_FastNeutron/2017_04_28_1515_Californium__090.lst1",
+          "size": 48,
+          "time": "2018-04-23T09:23:47.000Z",
+          "chk": "string",
+          "uid": "string",
+          "gid": "string",
+          "perm": "string"
+        }
+      ],
+      "ownerGroup": "brightness",
+      "accessGroups": [
+        "brightness"
+      ],
+      "createdBy": "ingestor",
+      "updatedBy": "ingestor",
+      "datasetId": "10.17199/MB00001",
+      "rawDatasetId": "string",
+      "derivedDatasetId": "string",
+      "createdAt": "2018-04-23T09:23:47.918Z",
+      "updatedAt": "2018-04-23T09:59:04.506Z"
+    }
+  },
+  "orig2": {
+    "dataset": {
+      "principalInvestigator": "Francesco Piscitelli",
+      "endTime": "2018-06-07T09:46:27.560Z",
+      "creationLocation": "Multiblade",
+      "dataFormat": "lst",
+      "scientificMetadata": {
+        "run": "1"
+      },
+      "owner": "Francesco Piscitelli",
+      "ownerEmail": "francesco.piscitelli@esss.se",
+      "orcidOfOwner": "0000-0002-0325-4407",
+      "contactEmail": "francesco.piscitelli@esss.se",
+      "sourceFolder": "multiblade",
+      "proposalId": "2018ESS1",
+      "size": 55,
+      "pid": "MB00002",
+      "packedSize": 55,
+      "creationTime": "2018-06-07T08:46:19.611Z",
+      "type": "raw",
+      "validationStatus": "valid",
+      "keywords": [
+        "Vanadium"
+      ],
+      "description": "string",
+      "userTargetLocation": "Multiblade",
+      "classification": "analyzed",
+      "license": "ESS",
+      "version": "v1",
+      "doi": "replace with doi",
+      "isPublished": true,
+      "ownerGroup": "brightness",
+      "accessGroups": [
+        "brightness"
+      ],
+      "createdBy": "ingestor",
+      "updatedBy": "ingestor",
+      "createdAt": "2018-06-07T08:46:19.611Z",
+      "updatedAt": "2018-06-07T08:46:19.611Z"
+    },
+    "orig": {
+      "size": 55,
+      "dataFileList": [
+        {
+          "path": "static/2016/2016_12_STF_MB15_GammaSensitivity/20161210_gammaSensData/2016_12_09_1919_Co60_800V_1h__041.lst1",
+          "size": 55,
+          "time": "2018-04-23T09:23:47.000Z",
+          "chk": "string",
+          "uid": "string",
+          "gid": "string",
+          "perm": "string"
+        }
+      ],
+      "ownerGroup": "brightness",
+      "accessGroups": [
+        "brightness"
+      ],
+      "createdBy": "ingestor",
+      "updatedBy": "ingestor",
+      "datasetId": "10.17199/MB00002",
+      "rawDatasetId": "string",
+      "derivedDatasetId": "string",
+      "createdAt": "2018-04-23T09:23:47.918Z",
+      "updatedAt": "2018-04-23T09:59:04.506Z"
+    }
+  }
+}

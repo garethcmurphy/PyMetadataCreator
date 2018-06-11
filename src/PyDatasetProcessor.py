@@ -1,22 +1,21 @@
 #!/usr/bin/env python3
-import sys
-import os
 import json
-
+import os
+import sys
 
 from dataset import Dataset
 from orig import Orig
+
 
 class PyDatasetProcessor:
     def __init__(self):
         self.mydir = "./data"
         self.mydir = "static"
-        #self.mydir = "/users/detector/experiments/multiblade/data/brightness"
+        # self.mydir = "/users/detector/experiments/multiblade/data/brightness"
 
     def walk_tree(self):
 
         datasets = {}
-        orig_data = {}
         i = 0
 
         for dirpath, dirnames, filenames in os.walk(self.mydir):
@@ -30,7 +29,7 @@ class PyDatasetProcessor:
                     year = basename[:4]
                 print('gm', year)
 
-                d= Dataset()
+                d = Dataset()
                 my_dataset = d.dataset
                 my_dataset["pid"] = "MB" + str(i).zfill(5)
                 print(my_dataset["pid"])
@@ -38,7 +37,7 @@ class PyDatasetProcessor:
                 totalfilesize = 0
                 for file in filenames:
                     longname = dirpath + '/' + file
-                    
+
                     statinfo = os.stat(longname)
                     relpath = longname.replace('/users/detector', '/static')
                     file_size = statinfo.st_size
@@ -57,9 +56,9 @@ class PyDatasetProcessor:
                 my_dataset["packedSize"] = totalfilesize
                 orig = Orig()
                 my_orig = orig.orig
-                my_orig["size"]= totalfilesize
-                my_orig["packedSize"]= totalfilesize
-                my_orig["datasetId"]=  "10.17199/"+str(my_dataset["pid"])
+                my_orig["size"] = totalfilesize
+                my_orig["packedSize"] = totalfilesize
+                my_orig["datasetId"] = "10.17199/" + str(my_dataset["pid"])
 
                 scicat_entries = {"dataset": my_dataset, "orig": my_orig}
                 datasets["orig" + str(i).zfill(5)] = scicat_entries
@@ -68,7 +67,6 @@ class PyDatasetProcessor:
 
         with open('datasets.json', 'w') as f:
             json.dump(datasets, f, ensure_ascii=False, indent=2)
-
 
 
 if __name__ == '__main__':

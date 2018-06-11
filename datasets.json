@@ -71,14 +71,13 @@
       "rawDatasetId": "string",
       "derivedDatasetId": "string",
       "createdAt": "2018-04-23T09:23:47.918Z",
-      "updatedAt": "2018-04-23T09:59:04.506Z",
-      "packedSize": 84
+      "updatedAt": "2018-04-23T09:59:04.506Z"
     }
   },
   "orig00002": {
     "dataset": {
       "principalInvestigator": "Francesco Piscitelli",
-      "endTime": "2016-10-01T00:00:00",
+      "endTime": "2016-10-20T00:00:00",
       "creationLocation": "Multiblade",
       "dataFormat": "lst",
       "scientificMetadata": {
@@ -93,7 +92,7 @@
       "size": 55,
       "pid": "MB00002",
       "packedSize": 55,
-      "creationTime": "2016-10-01T00:00:00",
+      "creationTime": "2016-10-20T00:00:00",
       "type": "raw",
       "validationStatus": "valid",
       "keywords": [
@@ -112,8 +111,8 @@
       ],
       "createdBy": "ingestor",
       "updatedBy": "ingestor",
-      "createdAt": "2016-10-01T00:00:00",
-      "updatedAt": "2016-10-01T00:00:00"
+      "createdAt": "2016-10-20T00:00:00",
+      "updatedAt": "2016-10-20T00:00:00"
     },
     "orig": {
       "size": 55,
@@ -138,8 +137,7 @@
       "rawDatasetId": "string",
       "derivedDatasetId": "string",
       "createdAt": "2018-04-23T09:23:47.918Z",
-      "updatedAt": "2018-04-23T09:59:04.506Z",
-      "packedSize": 55
+      "updatedAt": "2018-04-23T09:59:04.506Z"
     }
   }
 }

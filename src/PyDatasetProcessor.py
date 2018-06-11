@@ -60,7 +60,7 @@ class PyDatasetProcessor:
                     file_entry = {
                         "path": relpath,
                         "size": file_size,
-                        "time": "2018-04-23T09:23:47.000Z",
+                        "time": experiment_date_time,
                         "chk": "string",
                         "uid": "string",
                         "gid": "string",
@@ -78,6 +78,8 @@ class PyDatasetProcessor:
                 my_orig["datasetId"] = "10.17199/" + str(my_data_set["pid"])
                 my_orig["dataFileList"] = file_list
                 my_orig["size"] = total_file_size
+                my_orig["createdAt"] = experiment_date_time
+                my_orig["updatedAt"] = experiment_date_time
 
                 scicat_entries = {"dataset": my_data_set, "orig": my_orig}
                 datasets["orig" + str(i).zfill(5)] = scicat_entries

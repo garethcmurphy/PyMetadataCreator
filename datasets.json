@@ -1,5 +1,5 @@
 {
-  "orig1": {
+  "orig00001": {
     "dataset": {
       "principalInvestigator": "Francesco Piscitelli",
       "endTime": "2018-06-07T09:46:27.560Z",
@@ -41,26 +41,7 @@
     },
     "orig": {
       "size": 84,
-      "dataFileList": [
-        {
-          "path": "static/2017/2017_04_STF_MB15_FastNeutronSensitivity/data_FastNeutron/2017_04_27_1515_Californium__090.lst1",
-          "size": 36,
-          "time": "2018-04-23T09:23:47.000Z",
-          "chk": "string",
-          "uid": "string",
-          "gid": "string",
-          "perm": "string"
-        },
-        {
-          "path": "static/2017/2017_04_STF_MB15_FastNeutronSensitivity/data_FastNeutron/2017_04_28_1515_Californium__090.lst1",
-          "size": 48,
-          "time": "2018-04-23T09:23:47.000Z",
-          "chk": "string",
-          "uid": "string",
-          "gid": "string",
-          "perm": "string"
-        }
-      ],
+      "dataFileList": "test",
       "ownerGroup": "brightness",
       "accessGroups": [
         "brightness"
@@ -71,10 +52,11 @@
       "rawDatasetId": "string",
       "derivedDatasetId": "string",
       "createdAt": "2018-04-23T09:23:47.918Z",
-      "updatedAt": "2018-04-23T09:59:04.506Z"
+      "updatedAt": "2018-04-23T09:59:04.506Z",
+      "packedSize": 84
     }
   },
-  "orig2": {
+  "orig00002": {
     "dataset": {
       "principalInvestigator": "Francesco Piscitelli",
       "endTime": "2018-06-07T09:46:27.560Z",
@@ -116,17 +98,7 @@
     },
     "orig": {
       "size": 55,
-      "dataFileList": [
-        {
-          "path": "static/2016/2016_12_STF_MB15_GammaSensitivity/20161210_gammaSensData/2016_12_09_1919_Co60_800V_1h__041.lst1",
-          "size": 55,
-          "time": "2018-04-23T09:23:47.000Z",
-          "chk": "string",
-          "uid": "string",
-          "gid": "string",
-          "perm": "string"
-        }
-      ],
+      "dataFileList": "test",
       "ownerGroup": "brightness",
       "accessGroups": [
         "brightness"
@@ -137,7 +109,8 @@
       "rawDatasetId": "string",
       "derivedDatasetId": "string",
       "createdAt": "2018-04-23T09:23:47.918Z",
-      "updatedAt": "2018-04-23T09:59:04.506Z"
+      "updatedAt": "2018-04-23T09:59:04.506Z",
+      "packedSize": 55
     }
   }
 }

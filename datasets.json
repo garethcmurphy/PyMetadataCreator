@@ -2,7 +2,7 @@
   "orig00001": {
     "dataset": {
       "principalInvestigator": "Francesco Piscitelli",
-      "endTime": "2018-06-07T09:46:27.560Z",
+      "endTime": "2017-04-01T00:00:00",
       "creationLocation": "Multiblade",
       "dataFormat": "lst",
       "scientificMetadata": {
@@ -17,7 +17,7 @@
       "size": 84,
       "pid": "MB00001",
       "packedSize": 84,
-      "creationTime": "2018-06-07T08:46:19.611Z",
+      "creationTime": "2017-04-01T00:00:00",
       "type": "raw",
       "validationStatus": "valid",
       "keywords": [
@@ -36,8 +36,8 @@
       ],
       "createdBy": "ingestor",
       "updatedBy": "ingestor",
-      "createdAt": "2018-06-07T08:46:19.611Z",
-      "updatedAt": "2018-06-07T08:46:19.611Z"
+      "createdAt": "2017-04-01T00:00:00",
+      "updatedAt": "2017-04-01T00:00:00"
     },
     "orig": {
       "size": 84,
@@ -59,7 +59,7 @@
   "orig00002": {
     "dataset": {
       "principalInvestigator": "Francesco Piscitelli",
-      "endTime": "2018-06-07T09:46:27.560Z",
+      "endTime": "2016-02-01T00:00:00",
       "creationLocation": "Multiblade",
       "dataFormat": "lst",
       "scientificMetadata": {
@@ -74,7 +74,7 @@
       "size": 55,
       "pid": "MB00002",
       "packedSize": 55,
-      "creationTime": "2018-06-07T08:46:19.611Z",
+      "creationTime": "2016-02-01T00:00:00",
       "type": "raw",
       "validationStatus": "valid",
       "keywords": [
@@ -93,8 +93,8 @@
       ],
       "createdBy": "ingestor",
       "updatedBy": "ingestor",
-      "createdAt": "2018-06-07T08:46:19.611Z",
-      "updatedAt": "2018-06-07T08:46:19.611Z"
+      "createdAt": "2016-02-01T00:00:00",
+      "updatedAt": "2016-02-01T00:00:00"
     },
     "orig": {
       "size": 55,

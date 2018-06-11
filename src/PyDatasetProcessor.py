@@ -32,7 +32,7 @@ class PyDatasetProcessor:
                 year_month = re.search(self.year_month_regex,dirpath).group(0)
                 #print('gm',year_month)
                 year= year_month[0:4]
-                month = year_month[6:7]
+                month = year_month[5:7]
 
                 data_date = datetime.datetime(int(year),int(month), 1)
                 experiment_date_time=data_date.isoformat()

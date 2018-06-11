@@ -1,5 +1,7 @@
 # PyDatasetProcessor
 
+![scicat-logo.png](./scicat-logo.png)
+
 Searches for science files and creates metadata - the who, what, where and why of scientific data in the SciCat format.
 See the scicatproject for more information. 
 

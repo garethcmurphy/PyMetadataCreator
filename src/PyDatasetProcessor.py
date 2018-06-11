@@ -30,7 +30,7 @@ class PyDatasetProcessor:
 
                 d= Dataset()
                 my_dataset = d.dataset
-                my_dataset["pid"] = "MB" + str(i).zfill(5),
+                my_dataset["pid"] = "MB" + str(i).zfill(5)
                 print(my_dataset["pid"])
                 filelist = []
                 totalfilesize = 0
@@ -69,19 +69,14 @@ class PyDatasetProcessor:
                     "updatedAt": "2018-04-23T09:59:04.506Z"
                 }
                 scicat_entries = {"dataset": my_dataset, "orig": my_orig}
-                orig_data["orig" + str(i)] = my_orig
                 datasets["orig" + str(i)] = scicat_entries
 
-        json_orig_data = json.dumps(orig_data)
-        print(json_orig_data)
         json_datasets = json.dumps(datasets)
         print(json_datasets)
 
         with open('datasets.json', 'w') as f:
-            json.dump(datasets, f, ensure_ascii=False)
+            json.dump(datasets, f, ensure_ascii=False, indent=2)
 
-        with open('orig.json', 'w') as f:
-            json.dump(orig_data, f, ensure_ascii=False)
 
 
 if __name__ == '__main__':

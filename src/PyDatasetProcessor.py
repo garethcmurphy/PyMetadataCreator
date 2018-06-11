@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-import json
+import sys
 import os
+import json
 
 
 from dataset import Dataset
@@ -71,7 +72,7 @@ class PyDatasetProcessor:
                 scicat_entries = {"dataset": my_dataset, "orig": my_orig}
                 datasets["orig" + str(i)] = scicat_entries
 
-        json.dumps(datasets)
+        json.dump(datasets, sys.stdout, indent=2)
 
         with open('datasets.json', 'w') as f:
             json.dump(datasets, f, ensure_ascii=False, indent=2)

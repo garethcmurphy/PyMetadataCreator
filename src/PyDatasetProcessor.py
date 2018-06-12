@@ -40,8 +40,11 @@ class PyDatasetProcessor:
                 print(my_data_set["pid"])
                 file_list = []
                 total_file_size = 0
+
+                filenum =0
                 for file in filenames:
                     longname = dirpath + '/' + file
+                    filenum += 1
 
                     statinfo = os.stat(longname)
                     relpath = longname.replace('/users/detector', '/static')
@@ -56,7 +59,8 @@ class PyDatasetProcessor:
                         "gid": "string",
                         "perm": "string"
                     }
-                    file_list.append(file_entry)
+                    if filenum < 1000:
+                        file_list.append(file_entry)
                 my_data_set["size"] = total_file_size
                 my_data_set["packedSize"] = total_file_size
                 my_data_set["creationTime"] = experiment_date_time

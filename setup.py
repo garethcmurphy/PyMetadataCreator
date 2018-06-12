@@ -2,7 +2,7 @@
 
 from distutils.core import setup
 
-setup(name='Distutils',
+setup(name='PyMetadataCreator',
       version='1.0',
       description='Python Metadata Creator',
       author='Gareth Murphy',

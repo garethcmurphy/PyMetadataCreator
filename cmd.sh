@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-./src/PyDatasetProcessor.py
+src/PyMetadataCreator.py
 cp datasets.json ~/CatanieDataLoad/src/

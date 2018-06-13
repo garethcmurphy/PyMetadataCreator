@@ -19,7 +19,10 @@ class Owner:
         self.owner_list[instrument] = owner
 
     def loop(self):
-        self.setup("Joe Smith", "joe.smith@esss.se", "0002", "MultiBlade")
+        self.setup("Francesco Piscitelli", "Francesco.Piscitelli@esss.se", "0000-0002-0325-4407", "multiblade")
+        self.setup("Anton Khaplanov", "anton.khaplanov@esss.se", "0000-0002-8421-1184", "multigrid")
+        self.setup("Dorothea Pfeiffer", "Dorothea.Pfeiffer@esss.se", "0000-0003-3893-2308", "nmx")
+        self.setup("Ramsey Al Jebali", "ramsey.aljebali@esss.se", "0000-0000-0000-0000", "sonde")
         json.dump(self.owner_list, sys.stdout, indent=2)
 
         with open('owner.json', 'w') as f:

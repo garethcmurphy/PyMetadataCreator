@@ -1,8 +1,10 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 import json
 import collections
 import itertools
 import os
+
+from collections import OrderedDict
 
 root = './'
 files = itertools.chain.from_iterable((
@@ -11,4 +13,13 @@ files = itertools.chain.from_iterable((
 counter = collections.Counter(
     (os.path.splitext(file_)[1] for file_ in files)
 )
-print (json.dumps(counter, indent=2))
+#counter_sorted= sorted(counter, key=counter.get)
+#for w in sorted(counter, key=counter.get, reverse=True):
+#  print w, counter[w]
+
+
+sc= OrderedDict(sorted(counter.items(), key=lambda t: t[1],  reverse=True))
+
+
+
+print (json.dumps(sc, indent=2))

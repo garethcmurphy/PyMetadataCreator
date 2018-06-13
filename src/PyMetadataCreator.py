@@ -14,7 +14,7 @@ from sortedcontainers import SortedDict
 class PyDatasetProcessor:
     def __init__(self):
         self.mydir = "./data"
-#        self.mydir = "./static"
+        #        self.mydir = "./static"
         self.year_month_regex = '20[0-9]{2}_[0-1][0-9]'
         self.hostname = socket.gethostname()
         if self.hostname == 'login.esss.dk':
@@ -31,7 +31,6 @@ class PyDatasetProcessor:
                 print(filenames)
                 i = i + 1
                 basename = os.path.basename(dirpath)
-
 
                 experiment = self.get_experiment_info(basename, dirpath)
 
@@ -83,7 +82,7 @@ class PyDatasetProcessor:
                 my_orig["updatedAt"] = experiment_date_time
 
                 scicat_entries = {"dataset": my_data_set, "orig": my_orig}
-                datasets["orig" + experiment_date_time +str(i).zfill(5)] = scicat_entries
+                datasets["orig" + experiment_date_time + str(i).zfill(5)] = scicat_entries
 
         json.dump(datasets, sys.stdout, indent=2)
 
@@ -91,12 +90,24 @@ class PyDatasetProcessor:
             json.dump(datasets, f, ensure_ascii=False, indent=2)
 
     def get_experiment_info(self, basename, dirpath):
-        experiment='sonde'
+        sonderegex = 'sonde'
+        multigridregex = 'multigrid'
+        multibladeregex = 'multiblade'
+        search_result = re.search(sonderegex, dirpath, re.IGNORECASE)
+        if search_result:
+            experiment = 'sonde'
+
+        search_result = re.search(multigridregex, dirpath, re.IGNORECASE)
+        if search_result:
+            experiment = 'multigrid'
+
+        search_result = re.search(multibladeregex, dirpath, re.IGNORECASE)
+        if search_result:
+            experiment = 'multiblade'
         return experiment
 
-
     def get_date_information(self, basename, dirpath):
-        year_month="2018_01"
+        year_month = "2018_01"
         search_result = re.search(self.year_month_regex, dirpath)
         if search_result:
             year_month = search_result.group(0)

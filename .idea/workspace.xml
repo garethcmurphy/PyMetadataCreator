@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="699c0464-6fa0-4df9-a891-47a5aa1c8b3c" name="Default" comment="Fix indentation issue">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets.json" beforeDir="false" afterPath="$PROJECT_DIR$/datasets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PyMetadataCreator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/PyMetadataCreator.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +21,8 @@
       <file leaf-file-name="PyMetadataCreator.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PyMetadataCreator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="80" column="30" selection-start-line="80" selection-start-column="30" selection-end-line="80" selection-end-column="30" />
+            <state>
+              <caret line="71" column="16" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
               <folding>
                 <element signature="e#23#38#0" expanded="true" />
               </folding>
@@ -478,8 +480,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PyMetadataCreator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="80" column="30" selection-start-line="80" selection-start-column="30" selection-end-line="80" selection-end-column="30" />
+        <state>
+          <caret line="71" column="16" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
           <folding>
             <element signature="e#23#38#0" expanded="true" />
           </folding>

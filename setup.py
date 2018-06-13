@@ -10,6 +10,6 @@ setup(name='PyMetadataCreator',
       maintainer='Gareth Murphy',
       maintainer_email='garethcmurphy@gmail.com',
       url='https://github.com/garethcmurphy/pymetadatacreator',
-      packages=['pymetadatacreator' ],
-      license=['BSD' ],
-     )
+      packages=['pymetadatacreator'],
+      license=['BSD'],
+      )

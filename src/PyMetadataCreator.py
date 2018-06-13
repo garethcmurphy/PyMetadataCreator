@@ -8,11 +8,13 @@ import socket
 
 from dataset import Dataset
 from orig import Orig
+from sortedcontainers import SortedDict
 
 
 class PyDatasetProcessor:
     def __init__(self):
         self.mydir = "./data"
+        self.mydir = "./static"
         self.year_month_regex = '20[0-9]{2}_[0-1][0-9]'
         self.hostname = socket.gethostname()
         if self.hostname == 'login.esss.dk':
@@ -20,7 +22,7 @@ class PyDatasetProcessor:
 
     def walk_tree(self):
 
-        datasets = {}
+        datasets = SortedDict()
         i = 0
 
         for dirpath, dirnames, filenames in os.walk(self.mydir):
@@ -78,7 +80,7 @@ class PyDatasetProcessor:
                 my_orig["updatedAt"] = experiment_date_time
 
                 scicat_entries = {"dataset": my_data_set, "orig": my_orig}
-                datasets["orig" + str(i).zfill(5)] = scicat_entries
+                datasets["orig" + experiment_date_time +str(i).zfill(5)] = scicat_entries
 
         json.dump(datasets, sys.stdout, indent=2)
 

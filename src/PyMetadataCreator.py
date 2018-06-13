@@ -14,7 +14,7 @@ from sortedcontainers import SortedDict
 class PyDatasetProcessor:
     def __init__(self):
         self.mydir = "./data"
-        self.mydir = "./static"
+#        self.mydir = "./static"
         self.year_month_regex = '20[0-9]{2}_[0-1][0-9]'
         self.hostname = socket.gethostname()
         if self.hostname == 'login.esss.dk':
@@ -31,6 +31,9 @@ class PyDatasetProcessor:
                 print(filenames)
                 i = i + 1
                 basename = os.path.basename(dirpath)
+
+
+                experiment = self.get_experiment_info(basename, dirpath)
 
                 experiment_date_time = self.get_date_information(basename, dirpath)
 
@@ -87,8 +90,16 @@ class PyDatasetProcessor:
         with open('datasets.json', 'w') as f:
             json.dump(datasets, f, ensure_ascii=False, indent=2)
 
+    def get_experiment_info(self, basename, dirpath):
+        experiment='sonde'
+        return experiment
+
+
     def get_date_information(self, basename, dirpath):
-        year_month = re.search(self.year_month_regex, dirpath).group(0)
+        year_month="2018_01"
+        search_result = re.search(self.year_month_regex, dirpath)
+        if search_result:
+            year_month = search_result.group(0)
         # print('gm',year_month)
         year = year_month[0:4]
         month = year_month[5:7]

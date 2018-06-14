@@ -93,6 +93,7 @@ class PyDatasetProcessor:
         sonderegex = 'sonde'
         multigridregex = 'multigrid'
         multibladeregex = 'multiblade'
+        nmxregex = 'nmx'
         search_result = re.search(sonderegex, dirpath, re.IGNORECASE)
         if search_result:
             experiment = 'sonde'
@@ -104,6 +105,11 @@ class PyDatasetProcessor:
         search_result = re.search(multibladeregex, dirpath, re.IGNORECASE)
         if search_result:
             experiment = 'multiblade'
+
+        search_result = re.search(nmxregex, dirpath, re.IGNORECASE)
+        if search_result:
+            experiment = 'nmx'
+
         return experiment
 
     def get_date_information(self, basename, dirpath):

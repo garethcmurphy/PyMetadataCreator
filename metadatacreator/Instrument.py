@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 class Instrument:
 
     def __init__(self):
@@ -56,3 +57,4 @@ class Nmx(Instrument):
 
 if __name__ == '__main__':
     sonde = Instrument.factory("sonde")
+    print (sonde.ownerEmail)

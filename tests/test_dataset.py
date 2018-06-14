@@ -1,4 +1,4 @@
-from ..src import dataset
+from ..metadatacreator import dataset
 
 
 def test_dataset():

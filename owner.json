@@ -1,0 +1,22 @@
+{
+  "multiblade": {
+    "name": "Francesco Piscitelli",
+    "email": "Francesco.Piscitelli@esss.se",
+    "orcid": "0000-0002-0325-4407"
+  },
+  "multigrid": {
+    "name": "Anton Khaplanov",
+    "email": "anton.khaplanov@esss.se",
+    "orcid": "0000-0002-8421-1184"
+  },
+  "nmx": {
+    "name": "Dorothea Pfeiffer",
+    "email": "Dorothea.Pfeiffer@esss.se",
+    "orcid": "0000-0003-3893-2308"
+  },
+  "sonde": {
+    "name": "Ramsey Al Jebali",
+    "email": "ramsey.aljebali@esss.se",
+    "orcid": "0000-0000-0000-0000"
+  }
+}

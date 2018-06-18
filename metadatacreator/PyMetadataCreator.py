@@ -61,7 +61,7 @@ class PyDatasetProcessor:
                         "gid": "string",
                         "perm": "string"
                     }
-                    if filenum < 1000:
+                    if filenum < 6000:
                         file_list.append(file_entry)
                 my_data_set["size"] = total_file_size
                 my_data_set["packedSize"] = total_file_size

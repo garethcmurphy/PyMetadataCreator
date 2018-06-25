@@ -11,7 +11,8 @@ class ExcelImporter:
         pass
     
     def read_excel(self) -> object:
-        pd.read_excel(self.filename)
+        df_out = pd.read_excel(self.filename)
+        print(df_out)
         self.x = "test1"
         
         

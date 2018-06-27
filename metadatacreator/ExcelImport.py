@@ -7,7 +7,7 @@ class ExcelImporter:
         self.filename = "/Users/garethmurphy/Documents/multigrid_metadata.xlsx"
         pass
 
-    def read_excel(self) -> object:
+    def read_excel(self):
         df_out = pd.read_excel(self.filename, index_col=None, header=0)
         # print(df_out)
         print(list(df_out))

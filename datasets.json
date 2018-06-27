@@ -1,21 +1,21 @@
 {
-  "orig2017-10-06T00:00:0000004": {
+  "orig2017-10-06T00:00:0000005": {
     "dataset": {
-      "principalInvestigator": "Francesco Piscitelli",
+      "principalInvestigator": "Jonas Nilsson",
       "endTime": "2017-10-06T00:00:00",
-      "creationLocation": "multiblade",
+      "creationLocation": "ESS",
       "dataFormat": "lst",
       "scientificMetadata": {
         "identifier": "06_4_R2_Efficiency_25Hz"
       },
-      "owner": "Francesco Piscitelli",
-      "ownerEmail": "Francesco.Piscitelli@esss.se",
-      "orcidOfOwner": "0000-0002-0325-4407",
-      "contactEmail": "Francesco.Piscitelli@esss.se",
-      "sourceFolder": "multiblade",
+      "owner": "Jonas Nilsson",
+      "ownerEmail": "jonas.nilsson@esss.se",
+      "orcidOfOwner": "0000-0003-3893-2308",
+      "contactEmail": "jonas.nilsson@esss.se",
+      "sourceFolder": "ESS",
       "proposalId": "2018ESS1",
       "size": 0,
-      "pid": "MB00004",
+      "pid": "ESS00005",
       "packedSize": 0,
       "creationTime": "2017-10-06T00:00:00",
       "type": "raw",
@@ -24,7 +24,7 @@
         "Vanadium"
       ],
       "description": "string",
-      "userTargetLocation": "multiblade",
+      "userTargetLocation": "ESS",
       "classification": "analyzed",
       "license": "ESS",
       "version": "v1",
@@ -67,7 +67,7 @@
       ],
       "createdBy": "ingestor",
       "updatedBy": "ingestor",
-      "datasetId": "10.17199/MB00004",
+      "datasetId": "10.17199/ESS00005",
       "rawDatasetId": "string",
       "derivedDatasetId": "string",
       "createdAt": "2017-10-06T00:00:00",
@@ -76,21 +76,21 @@
   },
   "orig2018-01-01T00:00:0000001": {
     "dataset": {
-      "principalInvestigator": "Dorothea Pfeiffer",
+      "principalInvestigator": "Jonas Nilsson",
       "endTime": "2018-01-01T00:00:00",
-      "creationLocation": "NMX",
+      "creationLocation": "IFE",
       "dataFormat": "lst",
       "scientificMetadata": {
         "identifier": "Pattern"
       },
-      "owner": "Dorothea Pfeiffer",
-      "ownerEmail": "Dorothea.Pfeiffer@esss.se",
+      "owner": "Jonas Nilsson",
+      "ownerEmail": "jonas.nilsson@esss.se",
       "orcidOfOwner": "0000-0003-3893-2308",
-      "contactEmail": "Dorothea.Pfeiffer@esss.se",
-      "sourceFolder": "NMX",
+      "contactEmail": "jonas.nilsson@esss.se",
+      "sourceFolder": "IFE",
       "proposalId": "2018ESS1",
       "size": 31,
-      "pid": "NMX00001",
+      "pid": "IFE00001",
       "packedSize": 31,
       "creationTime": "2018-01-01T00:00:00",
       "type": "raw",
@@ -99,7 +99,7 @@
         "Vanadium"
       ],
       "description": "string",
-      "userTargetLocation": "NMX",
+      "userTargetLocation": "IFE",
       "classification": "analyzed",
       "license": "ESS",
       "version": "v1",
@@ -133,7 +133,7 @@
       ],
       "createdBy": "ingestor",
       "updatedBy": "ingestor",
-      "datasetId": "10.17199/NMX00001",
+      "datasetId": "10.17199/IFE00001",
       "rawDatasetId": "string",
       "derivedDatasetId": "string",
       "createdAt": "2018-01-01T00:00:00",
@@ -213,7 +213,7 @@
       "creationLocation": "ESS",
       "dataFormat": "lst",
       "scientificMetadata": {
-        "identifier": "S1"
+        "identifier": ".git"
       },
       "owner": "Ramsey Al Jebali",
       "ownerEmail": "ramsey.aljebali@esss.se",
@@ -248,6 +248,62 @@
     },
     "orig": {
       "size": 0,
+      "dataFileList": [],
+      "ownerGroup": "brightness",
+      "accessGroups": [
+        "brightness"
+      ],
+      "createdBy": "ingestor",
+      "updatedBy": "ingestor",
+      "datasetId": "10.17199/SON00003",
+      "rawDatasetId": "string",
+      "derivedDatasetId": "string",
+      "createdAt": "2018-01-01T00:00:00",
+      "updatedAt": "2018-01-01T00:00:00"
+    }
+  },
+  "orig2018-01-01T00:00:0000004": {
+    "dataset": {
+      "principalInvestigator": "Jonas Nilsson",
+      "endTime": "2018-01-01T00:00:00",
+      "creationLocation": "IFE",
+      "dataFormat": "lst",
+      "scientificMetadata": {
+        "identifier": "S1"
+      },
+      "owner": "Jonas Nilsson",
+      "ownerEmail": "jonas.nilsson@esss.se",
+      "orcidOfOwner": "0000-0003-3893-2308",
+      "contactEmail": "jonas.nilsson@esss.se",
+      "sourceFolder": "IFE",
+      "proposalId": "2018ESS1",
+      "size": 0,
+      "pid": "IFE00004",
+      "packedSize": 0,
+      "creationTime": "2018-01-01T00:00:00",
+      "type": "raw",
+      "validationStatus": "valid",
+      "keywords": [
+        "Vanadium"
+      ],
+      "description": "string",
+      "userTargetLocation": "IFE",
+      "classification": "analyzed",
+      "license": "ESS",
+      "version": "v1",
+      "doi": "replace with doi",
+      "isPublished": true,
+      "ownerGroup": "brightness",
+      "accessGroups": [
+        "brightness"
+      ],
+      "createdBy": "ingestor",
+      "updatedBy": "ingestor",
+      "createdAt": "2018-01-01T00:00:00",
+      "updatedAt": "2018-01-01T00:00:00"
+    },
+    "orig": {
+      "size": 0,
       "dataFileList": [
         {
           "path": "./data/experiments/sonde/IFE_june_2018/data/S1/S1_X35.653Y47.650scan_all_ch_spec_20180606-143834_1.csv",
@@ -265,7 +321,7 @@
       ],
       "createdBy": "ingestor",
       "updatedBy": "ingestor",
-      "datasetId": "10.17199/SON00003",
+      "datasetId": "10.17199/IFE00004",
       "rawDatasetId": "string",
       "derivedDatasetId": "string",
       "createdAt": "2018-01-01T00:00:00",

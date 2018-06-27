@@ -2,6 +2,9 @@
 
 ![scicat-logo.png](./scicat-logo.png)
 
+[![DOI](https://zenodo.org/badge/136446750.svg)](https://zenodo.org/badge/latestdoi/136446750)
+
+
 Searches for science files and creates metadata - the who, what, where and why of scientific data in the SciCat format.
 See the scicatproject for more information. 
 

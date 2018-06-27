@@ -9,9 +9,9 @@
         "identifier": "06_4_R2_Efficiency_25Hz"
       },
       "owner": "Francesco Piscitelli",
-      "ownerEmail": "francesco.piscitelli@esss.se",
+      "ownerEmail": "Francesco.Piscitelli@esss.se",
       "orcidOfOwner": "0000-0002-0325-4407",
-      "contactEmail": "francesco.piscitelli@esss.se",
+      "contactEmail": "Francesco.Piscitelli@esss.se",
       "sourceFolder": "multiblade",
       "proposalId": "2018ESS1",
       "size": 0,
@@ -76,17 +76,17 @@
   },
   "orig2018-01-01T00:00:0000001": {
     "dataset": {
-      "principalInvestigator": "Francesco Piscitelli",
+      "principalInvestigator": "Dorothea Pfeiffer",
       "endTime": "2018-01-01T00:00:00",
       "creationLocation": "Multiblade",
       "dataFormat": "lst",
       "scientificMetadata": {
         "identifier": "nmx"
       },
-      "owner": "Francesco Piscitelli",
-      "ownerEmail": "francesco.piscitelli@esss.se",
-      "orcidOfOwner": "0000-0002-0325-4407",
-      "contactEmail": "francesco.piscitelli@esss.se",
+      "owner": "Dorothea Pfeiffer",
+      "ownerEmail": "Dorothea.Pfeiffer@esss.se",
+      "orcidOfOwner": "0000-0003-3893-2308",
+      "contactEmail": "Dorothea.Pfeiffer@esss.se",
       "sourceFolder": "multiblade",
       "proposalId": "2018ESS1",
       "size": 0,
@@ -132,17 +132,17 @@
   },
   "orig2018-01-01T00:00:0000002": {
     "dataset": {
-      "principalInvestigator": "Francesco Piscitelli",
+      "principalInvestigator": "Anton Khaplanov",
       "endTime": "2018-01-01T00:00:00",
       "creationLocation": "Multiblade",
       "dataFormat": "lst",
       "scientificMetadata": {
         "identifier": "multigrid"
       },
-      "owner": "Francesco Piscitelli",
-      "ownerEmail": "francesco.piscitelli@esss.se",
-      "orcidOfOwner": "0000-0002-0325-4407",
-      "contactEmail": "francesco.piscitelli@esss.se",
+      "owner": "Anton Khaplanov",
+      "ownerEmail": "anton.khaplanov@esss.se",
+      "orcidOfOwner": "0000-0002-8421-1184",
+      "contactEmail": "anton.khaplanov@esss.se",
       "sourceFolder": "multiblade",
       "proposalId": "2018ESS1",
       "size": 0,
@@ -188,17 +188,17 @@
   },
   "orig2018-01-01T00:00:0000003": {
     "dataset": {
-      "principalInvestigator": "Francesco Piscitelli",
+      "principalInvestigator": "Ramsey Al Jebali",
       "endTime": "2018-01-01T00:00:00",
       "creationLocation": "Multiblade",
       "dataFormat": "lst",
       "scientificMetadata": {
         "identifier": "S1"
       },
-      "owner": "Francesco Piscitelli",
-      "ownerEmail": "francesco.piscitelli@esss.se",
-      "orcidOfOwner": "0000-0002-0325-4407",
-      "contactEmail": "francesco.piscitelli@esss.se",
+      "owner": "Ramsey Al Jebali",
+      "ownerEmail": "ramsey.aljebali@esss.se",
+      "orcidOfOwner": "0000-0000-0000-0000",
+      "contactEmail": "ramsey.aljebali@esss.se",
       "sourceFolder": "multiblade",
       "proposalId": "2018ESS1",
       "size": 0,

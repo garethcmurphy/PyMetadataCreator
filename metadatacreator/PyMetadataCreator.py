@@ -7,6 +7,7 @@ import sys
 import socket
 
 from dataset import Dataset
+from instrument import Instrument
 from orig import Orig
 from sortedcontainers import SortedDict
 
@@ -37,7 +38,10 @@ class PyDatasetProcessor:
                 experiment_date_time = self.get_date_information(basename, dirpath)
 
                 d = Dataset()
+                new_inst = Instrument()
+                inst = new_inst.factory(experiment)
                 my_data_set = d.dataset
+                my_data_set.update(inst.inst)
                 my_data_set["pid"] = "MB" + str(i).zfill(5)
                 print(my_data_set["pid"])
                 file_list = []

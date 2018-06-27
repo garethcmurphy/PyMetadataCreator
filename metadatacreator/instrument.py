@@ -8,7 +8,7 @@ class Instrument:
         self.contactEmail = "undefined@esss.se"
         self.principal_investigator = "ESS"
 
-    def factory(self, instrument_type=None):
+    def factory( instrument_type=None):
         if instrument_type == "sonde":
             return Sonde()
         if instrument_type == "multiblade":
@@ -17,6 +17,7 @@ class Instrument:
             return Multigrid()
         if instrument_type == "nmx":
             return Nmx()
+    factory = staticmethod(factory)
 
 
 class Sonde(Instrument):

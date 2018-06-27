@@ -8,7 +8,7 @@ class Instrument:
         self.contactEmail = "undefined@esss.se"
         self.principal_investigator = "ESS"
 
-    def factory(instrument_type=None):
+    def factory(self, instrument_type=None):
         if instrument_type == "sonde":
             return Sonde()
         if instrument_type == "multiblade":
@@ -38,13 +38,15 @@ class Multiblade(Instrument):
         self.contactEmail = "Francesco.Piscitelli@esss.se"
         self.principal_investigator = "Francesco Piscitelli"
 
+
 class Multigrid(Instrument):
     def __init__(self):
         self.owner = "Anton Khaplanov"
-        self.ownerEmail =  "anton.khaplanov@esss.se"
+        self.ownerEmail = "anton.khaplanov@esss.se"
         self.orcidOfOwner = "0000-0002-8421-1184"
-        self.contactEmail =  "anton.khaplanov@esss.se"
+        self.contactEmail = "anton.khaplanov@esss.se"
         self.principal_investigator = "Anton Khaplanov"
+
 
 class Nmx(Instrument):
     def __init__(self):
@@ -57,4 +59,4 @@ class Nmx(Instrument):
 
 if __name__ == '__main__':
     sonde = Instrument.factory("sonde")
-    print (sonde.ownerEmail)
+    print(sonde.ownerEmail)

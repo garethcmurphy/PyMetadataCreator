@@ -95,7 +95,7 @@ class PyMetadataCreator:
             json.dump(datasets, f, ensure_ascii=False, indent=2)
 
     def get_experiment_info(dirpath):
-        experiment = 'default'
+        experiment = 'ess'
         sonderegex = 'sonde'
         multigridregex = 'multigrid'
         multibladeregex = 'multiblade'
@@ -104,6 +104,8 @@ class PyMetadataCreator:
         iferegex = 'IFE'
         hzbregex = 'HZB'
         essregex = 'ESS'
+        bf3regex = 'BF3'
+
         search_result = re.search(sonderegex, dirpath, re.IGNORECASE)
         if search_result:
             experiment = 'sonde'

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="699c0464-6fa0-4df9-a891-47a5aa1c8b3c" name="Default" comment="Fix indentation issue">
-      <change beforePath="$PROJECT_DIR$/metadatacreator/instrument.py" beforeDir="false" afterPath="$PROJECT_DIR$/metadatacreator/instrument.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metadatacreator/PyMetadataCreator.py" beforeDir="false" afterPath="$PROJECT_DIR$/metadatacreator/PyMetadataCreator.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,20 +17,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="instrument.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="instrument.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/metadatacreator/instrument.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="117" column="22" selection-start-line="117" selection-start-column="22" selection-end-line="117" selection-end-column="22" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="PyMetadataCreator.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PyMetadataCreator.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/metadatacreator/PyMetadataCreator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+            <state relative-caret-position="420">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
               <folding>
                 <element signature="e#23#38#0" expanded="true" />
               </folding>
@@ -147,9 +143,9 @@
         <option value="$PROJECT_DIR$/metadatacreator/test_mdc.py" />
         <option value="$PROJECT_DIR$/tests/test_mdc.py" />
         <option value="$PROJECT_DIR$/tests/test_orig.py" />
-        <option value="$PROJECT_DIR$/metadatacreator/PyMetadataCreator.py" />
         <option value="$PROJECT_DIR$/metadatacreator/ExcelImport.py" />
         <option value="$PROJECT_DIR$/metadatacreator/instrument.py" />
+        <option value="$PROJECT_DIR$/metadatacreator/PyMetadataCreator.py" />
       </list>
     </option>
   </component>
@@ -699,20 +695,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/metadatacreator/instrument.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/metadatacreator/PyMetadataCreator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+        <state relative-caret-position="420">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
           <folding>
             <element signature="e#23#38#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metadatacreator/instrument.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="117" column="22" selection-start-line="117" selection-start-column="22" selection-end-line="117" selection-end-column="22" />
         </state>
       </provider>
     </entry>

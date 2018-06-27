@@ -11,10 +11,11 @@ class ExcelImporter:
         pass
     
     def read_excel(self) -> object:
-        df_out = pd.read_excel(self.filename)
+        df_out = pd.read_excel(self.filename,  index_col=None, header=0)
+        #print(df_out)
+        print(list(df_out))
         print(df_out)
-        self.x = "test1"
-        
+
         
 if __name__ == '__main__':
     ei = ExcelImporter()

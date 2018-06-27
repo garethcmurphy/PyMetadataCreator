@@ -43,6 +43,8 @@ class PyMetadataCreator:
                 inst = new_inst.factory(experiment)
                 my_data_set = d.dataset
                 print(dirpath)
+                print(experiment)
+                print(inst.abbreviation)
                 my_data_set.update(inst.inst)
                 my_data_set["pid"] = inst.abbreviation + str(i).zfill(5)
                 print(my_data_set["pid"])

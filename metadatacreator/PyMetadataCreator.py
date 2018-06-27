@@ -12,7 +12,7 @@ from orig import Orig
 from sortedcontainers import SortedDict
 
 
-class PyDatasetProcessor:
+class PyMetadataCreator:
     def __init__(self):
         self.mydir = "./data"
         #        self.mydir = "./static"
@@ -139,5 +139,5 @@ class PyDatasetProcessor:
 
 
 if __name__ == '__main__':
-    g = PyDatasetProcessor()
+    g = PyMetadataCreator()
     g.walk_tree()

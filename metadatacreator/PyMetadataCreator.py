@@ -33,7 +33,7 @@ class PyMetadataCreator:
                 i = i + 1
                 basename = os.path.basename(dirpath)
 
-                experiment = self.get_experiment_info(basename, dirpath)
+                experiment = self.get_experiment_info(dirpath)
 
                 experiment_date_time = self.get_date_information(basename, dirpath)
 

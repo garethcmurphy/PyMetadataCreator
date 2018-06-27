@@ -3,7 +3,7 @@
     "dataset": {
       "principalInvestigator": "Francesco Piscitelli",
       "endTime": "2017-10-06T00:00:00",
-      "creationLocation": "Multiblade",
+      "creationLocation": "multiblade",
       "dataFormat": "lst",
       "scientificMetadata": {
         "identifier": "06_4_R2_Efficiency_25Hz"
@@ -24,7 +24,7 @@
         "Vanadium"
       ],
       "description": "string",
-      "userTargetLocation": "Multiblade",
+      "userTargetLocation": "multiblade",
       "classification": "analyzed",
       "license": "ESS",
       "version": "v1",
@@ -78,7 +78,7 @@
     "dataset": {
       "principalInvestigator": "Dorothea Pfeiffer",
       "endTime": "2018-01-01T00:00:00",
-      "creationLocation": "Multiblade",
+      "creationLocation": "NMX",
       "dataFormat": "lst",
       "scientificMetadata": {
         "identifier": "nmx"
@@ -87,10 +87,10 @@
       "ownerEmail": "Dorothea.Pfeiffer@esss.se",
       "orcidOfOwner": "0000-0003-3893-2308",
       "contactEmail": "Dorothea.Pfeiffer@esss.se",
-      "sourceFolder": "multiblade",
+      "sourceFolder": "NMX",
       "proposalId": "2018ESS1",
       "size": 0,
-      "pid": "MB00001",
+      "pid": "NMX00001",
       "packedSize": 0,
       "creationTime": "2018-01-01T00:00:00",
       "type": "raw",
@@ -99,7 +99,7 @@
         "Vanadium"
       ],
       "description": "string",
-      "userTargetLocation": "Multiblade",
+      "userTargetLocation": "NMX",
       "classification": "analyzed",
       "license": "ESS",
       "version": "v1",
@@ -123,7 +123,7 @@
       ],
       "createdBy": "ingestor",
       "updatedBy": "ingestor",
-      "datasetId": "10.17199/MB00001",
+      "datasetId": "10.17199/NMX00001",
       "rawDatasetId": "string",
       "derivedDatasetId": "string",
       "createdAt": "2018-01-01T00:00:00",
@@ -134,7 +134,7 @@
     "dataset": {
       "principalInvestigator": "Anton Khaplanov",
       "endTime": "2018-01-01T00:00:00",
-      "creationLocation": "Multiblade",
+      "creationLocation": "multigrid",
       "dataFormat": "lst",
       "scientificMetadata": {
         "identifier": "multigrid"
@@ -143,10 +143,10 @@
       "ownerEmail": "anton.khaplanov@esss.se",
       "orcidOfOwner": "0000-0002-8421-1184",
       "contactEmail": "anton.khaplanov@esss.se",
-      "sourceFolder": "multiblade",
+      "sourceFolder": "multigrid",
       "proposalId": "2018ESS1",
       "size": 0,
-      "pid": "MB00002",
+      "pid": "MG00002",
       "packedSize": 0,
       "creationTime": "2018-01-01T00:00:00",
       "type": "raw",
@@ -155,7 +155,7 @@
         "Vanadium"
       ],
       "description": "string",
-      "userTargetLocation": "Multiblade",
+      "userTargetLocation": "multigrid",
       "classification": "analyzed",
       "license": "ESS",
       "version": "v1",
@@ -179,7 +179,7 @@
       ],
       "createdBy": "ingestor",
       "updatedBy": "ingestor",
-      "datasetId": "10.17199/MB00002",
+      "datasetId": "10.17199/MG00002",
       "rawDatasetId": "string",
       "derivedDatasetId": "string",
       "createdAt": "2018-01-01T00:00:00",
@@ -190,7 +190,7 @@
     "dataset": {
       "principalInvestigator": "Ramsey Al Jebali",
       "endTime": "2018-01-01T00:00:00",
-      "creationLocation": "Multiblade",
+      "creationLocation": "ESS",
       "dataFormat": "lst",
       "scientificMetadata": {
         "identifier": "S1"
@@ -199,10 +199,10 @@
       "ownerEmail": "ramsey.aljebali@esss.se",
       "orcidOfOwner": "0000-0000-0000-0000",
       "contactEmail": "ramsey.aljebali@esss.se",
-      "sourceFolder": "multiblade",
+      "sourceFolder": "ESS",
       "proposalId": "2018ESS1",
       "size": 0,
-      "pid": "MB00003",
+      "pid": "SON00003",
       "packedSize": 0,
       "creationTime": "2018-01-01T00:00:00",
       "type": "raw",
@@ -211,7 +211,7 @@
         "Vanadium"
       ],
       "description": "string",
-      "userTargetLocation": "Multiblade",
+      "userTargetLocation": "ESS",
       "classification": "analyzed",
       "license": "ESS",
       "version": "v1",
@@ -245,7 +245,7 @@
       ],
       "createdBy": "ingestor",
       "updatedBy": "ingestor",
-      "datasetId": "10.17199/MB00003",
+      "datasetId": "10.17199/SON00003",
       "rawDatasetId": "string",
       "derivedDatasetId": "string",
       "createdAt": "2018-01-01T00:00:00",

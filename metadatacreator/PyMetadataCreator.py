@@ -90,6 +90,7 @@ class PyDatasetProcessor:
             json.dump(datasets, f, ensure_ascii=False, indent=2)
 
     def get_experiment_info(self, basename, dirpath):
+        experiment = 'default'
         sonderegex = 'sonde'
         multigridregex = 'multigrid'
         multibladeregex = 'multiblade'

@@ -81,7 +81,7 @@
       "creationLocation": "NMX",
       "dataFormat": "lst",
       "scientificMetadata": {
-        "identifier": "nmx"
+        "identifier": "Pattern"
       },
       "owner": "Dorothea Pfeiffer",
       "ownerEmail": "Dorothea.Pfeiffer@esss.se",
@@ -89,9 +89,9 @@
       "contactEmail": "Dorothea.Pfeiffer@esss.se",
       "sourceFolder": "NMX",
       "proposalId": "2018ESS1",
-      "size": 0,
+      "size": 31,
       "pid": "NMX00001",
-      "packedSize": 0,
+      "packedSize": 31,
       "creationTime": "2018-01-01T00:00:00",
       "type": "raw",
       "validationStatus": "valid",
@@ -115,8 +115,18 @@
       "updatedAt": "2018-01-01T00:00:00"
     },
     "orig": {
-      "size": 0,
-      "dataFileList": [],
+      "size": 31,
+      "dataFileList": [
+        {
+          "path": "./data/experiments/nmx/data/h5/raw/IFE_2016_Nov/Pattern/run_168_Franz_G_3330V_D_3948V_back_2p00A_unf_APZ_280_pat.h5",
+          "size": 31,
+          "time": "2018-01-01T00:00:00",
+          "chk": "string",
+          "uid": "string",
+          "gid": "string",
+          "perm": "string"
+        }
+      ],
       "ownerGroup": "brightness",
       "accessGroups": [
         "brightness"
@@ -137,7 +147,7 @@
       "creationLocation": "multigrid",
       "dataFormat": "lst",
       "scientificMetadata": {
-        "identifier": "multigrid"
+        "identifier": "beamOn_resetOn"
       },
       "owner": "Anton Khaplanov",
       "ownerEmail": "anton.khaplanov@esss.se",
@@ -145,9 +155,9 @@
       "contactEmail": "anton.khaplanov@esss.se",
       "sourceFolder": "multigrid",
       "proposalId": "2018ESS1",
-      "size": 0,
+      "size": 49,
       "pid": "MG00002",
-      "packedSize": 0,
+      "packedSize": 49,
       "creationTime": "2018-01-01T00:00:00",
       "type": "raw",
       "validationStatus": "valid",
@@ -171,8 +181,18 @@
       "updatedAt": "2018-01-01T00:00:00"
     },
     "orig": {
-      "size": 0,
-      "dataFileList": [],
+      "size": 49,
+      "dataFileList": [
+        {
+          "path": "./data/experiments/multigrid/data/raw/MG_CNCS/07_11/beamOn_resetOn/2016_07_11_beamOn1_999.bin",
+          "size": 49,
+          "time": "2018-01-01T00:00:00",
+          "chk": "string",
+          "uid": "string",
+          "gid": "string",
+          "perm": "string"
+        }
+      ],
       "ownerGroup": "brightness",
       "accessGroups": [
         "brightness"

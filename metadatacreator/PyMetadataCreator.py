@@ -99,6 +99,9 @@ class PyMetadataCreator:
         multigridregex = 'multigrid'
         multibladeregex = 'multiblade'
         nmxregex = 'nmx'
+        iferegex = 'IFE'
+        hzbregex = 'HZB'
+        essregex = 'ESS'
         search_result = re.search(sonderegex, dirpath, re.IGNORECASE)
         if search_result:
             experiment = 'sonde'
@@ -114,6 +117,18 @@ class PyMetadataCreator:
         search_result = re.search(nmxregex, dirpath, re.IGNORECASE)
         if search_result:
             experiment = 'nmx'
+
+        search_result = re.search(essregex, dirpath, re.IGNORECASE)
+        if search_result:
+            experiment = 'ess'
+
+        search_result = re.search(hzbregex, dirpath, re.IGNORECASE)
+        if search_result:
+            experiment = 'hzb'
+
+        search_result = re.search(iferegex, dirpath, re.IGNORECASE)
+        if search_result:
+            experiment = 'ife'
 
         return experiment
 

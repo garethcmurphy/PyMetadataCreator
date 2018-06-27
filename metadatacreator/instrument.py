@@ -12,6 +12,10 @@ class Instrument:
             return Nmx()
         if instrument_type == 'v20':
             return V20()
+        if instrument_type == 'hzb':
+            return Hzb()
+        if instrument_type == 'ife':
+            return Ife()
 
     factory = staticmethod(factory)
 
@@ -98,6 +102,32 @@ class V20(Instrument):
                      'userTargetLocation': 'V20',
                      'sourceFolder': 'V20',
                      'creationLocation': 'V20',
+                     }
+
+class Hzb(Instrument):
+    def __init__(self):
+        self.abbreviation = 'HZB'
+        self.inst = {'owner': 'Jonas Nilsson',
+                     'ownerEmail': 'jonas.nilsson@esss.se',
+                     'orcidOfOwner': '0000-0003-3893-2308',
+                     'contactEmail':  'jonas.nilsson@esss.se',
+                     'principalInvestigator': 'Jonas Nilsson',
+                     'userTargetLocation': 'HZB',
+                     'sourceFolder': 'HZB',
+                     'creationLocation': 'HZB',
+                     }
+
+class Ife(Instrument):
+    def __init__(self):
+        self.abbreviation = 'IFE'
+        self.inst = {'owner': 'Jonas Nilsson',
+                     'ownerEmail': 'jonas.nilsson@esss.se',
+                     'orcidOfOwner': '0000-0003-3893-2308',
+                     'contactEmail':  'jonas.nilsson@esss.se',
+                     'principalInvestigator': 'Jonas Nilsson',
+                     'userTargetLocation': 'IFE',
+                     'sourceFolder': 'IFE',
+                     'creationLocation': 'IFE',
                      }
 
 

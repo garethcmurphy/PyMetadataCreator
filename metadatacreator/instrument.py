@@ -6,7 +6,7 @@ class Instrument:
                      'ownerEmail': "undefined@esss.se",
                      'orcidOfOwner': "0000-0000-0000-0000",
                      'contactEmail': "undefined@esss.se",
-                     'principal_investigator': "ESS"
+                     'principalInvestigator': "ESS"
                      }
 
     def factory(instrument_type=None):
@@ -29,7 +29,7 @@ class Sonde(Instrument):
                      'ownerEmail': "ramsey.aljebali@esss.se",
                      'orcidOfOwner': "0000-0000-0000-0000",
                      'contactEmail': "ramsey.aljebali@esss.se",
-                     'principal_investigator': "Ramsey Al Jebali",
+                     'principalInvestigator': "Ramsey Al Jebali",
                      }
 
 
@@ -40,7 +40,7 @@ class Multiblade(Instrument):
                      'ownerEmail': "Francesco.Piscitelli@esss.se",
                      'orcidOfOwner': "0000-0002-0325-4407",
                      'contactEmail': "Francesco.Piscitelli@esss.se",
-                     'principal_investigator': "Francesco Piscitelli"
+                     'principalInvestigator': "Francesco Piscitelli"
                      }
 
 
@@ -50,7 +50,7 @@ class Multigrid(Instrument):
                      'ownerEmail': "anton.khaplanov@esss.se",
                      'orcidOfOwner': "0000-0002-8421-1184",
                      'contactEmail': "anton.khaplanov@esss.se",
-                     'principal_investigator': "Anton Khaplanov",
+                     'principalInvestigator': "Anton Khaplanov",
                      }
 
 
@@ -60,7 +60,7 @@ class Nmx(Instrument):
                      'ownerEmail': "Dorothea.Pfeiffer@esss.se",
                      'orcidOfOwner': "0000-0003-3893-2308",
                      'contactEmail': "Dorothea.Pfeiffer@esss.se",
-                     'principal_investigator': "Dorothea Pfeiffer",
+                     'principalInvestigator': "Dorothea Pfeiffer",
                      }
 
 

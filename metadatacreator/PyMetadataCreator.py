@@ -100,6 +100,7 @@ class PyMetadataCreator:
         multigridregex = 'multigrid'
         multibladeregex = 'multiblade'
         nmxregex = 'nmx'
+        v20regex = 'V20'
         iferegex = 'IFE'
         hzbregex = 'HZB'
         essregex = 'ESS'
@@ -118,6 +119,10 @@ class PyMetadataCreator:
         search_result = re.search(nmxregex, dirpath, re.IGNORECASE)
         if search_result:
             experiment = 'nmx'
+
+        search_result = re.search(v20regex, dirpath, re.IGNORECASE)
+        if search_result:
+            experiment = 'v20'
 
         search_result = re.search(essregex, dirpath, re.IGNORECASE)
         if search_result:

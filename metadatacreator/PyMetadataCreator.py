@@ -42,7 +42,7 @@ class PyDatasetProcessor:
                 inst = new_inst.factory(experiment)
                 my_data_set = d.dataset
                 my_data_set.update(inst.inst)
-                my_data_set["pid"] = "MB" + str(i).zfill(5)
+                my_data_set["pid"] = inst.abbreviation + str(i).zfill(5)
                 print(my_data_set["pid"])
                 file_list = []
                 total_file_size = 0
@@ -65,7 +65,7 @@ class PyDatasetProcessor:
                         "gid": "string",
                         "perm": "string"
                     }
-                    if filenum < 6000:
+                    if filenum < 100000:
                         file_list.append(file_entry)
                 my_data_set["size"] = total_file_size
                 my_data_set["packedSize"] = total_file_size
@@ -93,7 +93,7 @@ class PyDatasetProcessor:
         with open('datasets.json', 'w') as f:
             json.dump(datasets, f, ensure_ascii=False, indent=2)
 
-    def get_experiment_info(self, basename, dirpath):
+    def get_experiment_info(dirpath):
         experiment = 'default'
         sonderegex = 'sonde'
         multigridregex = 'multigrid'
@@ -116,6 +116,8 @@ class PyDatasetProcessor:
             experiment = 'nmx'
 
         return experiment
+
+    get_experiment_info = staticmethod(get_experiment_info)
 
     def get_date_information(self, basename, dirpath):
         year_month = "2018_01"

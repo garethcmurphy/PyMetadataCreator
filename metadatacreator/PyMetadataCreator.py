@@ -111,22 +111,6 @@ class PyMetadataCreator:
         essregex = 'ESS'
         bf3regex = 'BF3'
 
-        search_result = re.search(sonderegex, dirpath, re.IGNORECASE)
-        if search_result:
-            experiment = 'sonde'
-
-        search_result = re.search(multigridregex, dirpath, re.IGNORECASE)
-        if search_result:
-            experiment = 'multigrid'
-
-        search_result = re.search(multibladeregex, dirpath, re.IGNORECASE)
-        if search_result:
-            experiment = 'multiblade'
-
-        search_result = re.search(nmxregex, dirpath, re.IGNORECASE)
-        if search_result:
-            experiment = 'nmx'
-
         search_result = re.search(v20regex, dirpath, re.IGNORECASE)
         if search_result:
             experiment = 'v20'
@@ -142,6 +126,23 @@ class PyMetadataCreator:
         search_result = re.search(iferegex, dirpath, re.IGNORECASE)
         if search_result:
             experiment = 'ife'
+
+
+        search_result = re.search(sonderegex, dirpath, re.IGNORECASE)
+        if search_result:
+            experiment = 'sonde'
+
+        search_result = re.search(multigridregex, dirpath, re.IGNORECASE)
+        if search_result:
+            experiment = 'multigrid'
+
+        search_result = re.search(multibladeregex, dirpath, re.IGNORECASE)
+        if search_result:
+            experiment = 'multiblade'
+
+        search_result = re.search(nmxregex, dirpath, re.IGNORECASE)
+        if search_result:
+            experiment = 'nmx'
 
         return experiment
 

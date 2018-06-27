@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="699c0464-6fa0-4df9-a891-47a5aa1c8b3c" name="Default" comment="Fix indentation issue">
-      <change beforePath="$PROJECT_DIR$/metadatacreator/instrument.py" beforeDir="false" afterPath="$PROJECT_DIR$/metadatacreator/instrument.py" afterDir="false" />
-    </list>
+    <list default="true" id="699c0464-6fa0-4df9-a891-47a5aa1c8b3c" name="Default" comment="Fix indentation issue" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,20 +15,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="instrument.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="instrument.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/metadatacreator/instrument.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+            <state relative-caret-position="360">
+              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PyMetadataCreator.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PyMetadataCreator.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/metadatacreator/PyMetadataCreator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+            <state relative-caret-position="220">
+              <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
               <folding>
                 <element signature="e#23#38#0" expanded="true" />
               </folding>
@@ -148,8 +146,8 @@
         <option value="$PROJECT_DIR$/tests/test_mdc.py" />
         <option value="$PROJECT_DIR$/tests/test_orig.py" />
         <option value="$PROJECT_DIR$/metadatacreator/ExcelImport.py" />
-        <option value="$PROJECT_DIR$/metadatacreator/PyMetadataCreator.py" />
         <option value="$PROJECT_DIR$/metadatacreator/instrument.py" />
+        <option value="$PROJECT_DIR$/metadatacreator/PyMetadataCreator.py" />
       </list>
     </option>
   </component>
@@ -318,9 +316,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pydataset_test - 2018.06.27 at 11h 50m 54s.xml">
-      <configuration name="pydataset test" configurationId="tests" />
-    </history-entry>
     <history-entry file="pydataset_test - 2018.06.27 at 11h 51m 06s.xml">
       <configuration name="pydataset test" configurationId="tests" />
     </history-entry>
@@ -346,6 +341,9 @@
       <configuration name="pydataset test" configurationId="tests" />
     </history-entry>
     <history-entry file="pydataset_test - 2018.06.27 at 13h 07m 29s.xml">
+      <configuration name="pydataset test" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pydataset_test - 2018.06.27 at 14h 31m 45s.xml">
       <configuration name="pydataset test" configurationId="tests" />
     </history-entry>
   </component>
@@ -699,20 +697,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/metadatacreator/PyMetadataCreator.py">
+    <entry file="file://$PROJECT_DIR$/metadatacreator/instrument.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
-          <folding>
-            <element signature="e#23#38#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/metadatacreator/instrument.py">
+    <entry file="file://$PROJECT_DIR$/metadatacreator/PyMetadataCreator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        <state relative-caret-position="220">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+          <folding>
+            <element signature="e#23#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

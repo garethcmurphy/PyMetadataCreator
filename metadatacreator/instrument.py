@@ -16,6 +16,8 @@ class Instrument:
             return Hzb()
         if instrument_type == 'ife':
             return Ife()
+        if instrument_type == 'ess':
+            return Ess()
 
     factory = staticmethod(factory)
 
@@ -128,6 +130,19 @@ class Ife(Instrument):
                      'userTargetLocation': 'IFE',
                      'sourceFolder': 'IFE',
                      'creationLocation': 'IFE',
+                     }
+
+class Ess(Instrument):
+    def __init__(self):
+        self.abbreviation = 'ESS'
+        self.inst = {'owner': 'Jonas Nilsson',
+                     'ownerEmail': 'jonas.nilsson@esss.se',
+                     'orcidOfOwner': '0000-0003-3893-2308',
+                     'contactEmail':  'jonas.nilsson@esss.se',
+                     'principalInvestigator': 'Jonas Nilsson',
+                     'userTargetLocation': 'ESS',
+                     'sourceFolder': 'ESS',
+                     'creationLocation': 'ESS',
                      }
 
 

@@ -19,7 +19,8 @@ class PyMetadataCreator:
         self.year_month_regex = '20[0-9]{2}_[0-1][0-9]'
         self.hostname = socket.gethostname()
         if self.hostname == 'login.esss.dk':
-            self.mydir = "/users/detector/experiments/multiblade/data/brightness"
+            #self.mydir = "/users/detector/experiments/multiblade/data/brightness"
+            self.mydir = "/users/detector/experiments"
 
     def walk_tree(self):
 

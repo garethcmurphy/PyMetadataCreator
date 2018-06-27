@@ -10,6 +10,8 @@ class Instrument:
             return Multigrid()
         if instrument_type == 'nmx':
             return Nmx()
+        if instrument_type == 'v20':
+            return V20()
 
     factory = staticmethod(factory)
 
@@ -83,6 +85,19 @@ class Nmx(Instrument):
                      'userTargetLocation': 'NMX',
                      'sourceFolder': 'NMX',
                      'creationLocation': 'NMX',
+                     }
+
+class V20(Instrument):
+    def __init__(self):
+        self.abbreviation = 'V20'
+        self.inst = {'owner': 'Jonas Nilsson',
+                     'ownerEmail': 'jonas.nilsson@esss.se',
+                     'orcidOfOwner': '0000-0003-3893-2308',
+                     'contactEmail':  'jonas.nilsson@esss.se',
+                     'principalInvestigator': 'Jonas Nilsson',
+                     'userTargetLocation': 'V20',
+                     'sourceFolder': 'V20',
+                     'creationLocation': 'V20',
                      }
 
 

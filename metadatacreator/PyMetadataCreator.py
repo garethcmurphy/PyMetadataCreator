@@ -32,6 +32,8 @@ class PyMetadataCreator:
                 print(dirpath, "has 0 subdirectories and", len(filenames), "files")
                 print(filenames)
                 i = i + 1
+                if ".git/" in dirpath:
+                    break
                 basename = os.path.basename(dirpath)
 
                 experiment = self.get_experiment_info(dirpath)

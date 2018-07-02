@@ -21,7 +21,6 @@ class Dataset:
             "pid": "MB00001",
             "packedSize": 1024000,
             "creationTime": "2018-06-07T08:46:19.611Z",
-            "type": "raw",
             "validationStatus": "valid",
             "keywords": [
                 "Vanadium"

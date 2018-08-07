@@ -3,13 +3,14 @@ import datetime
 import json
 import os
 import re
-import sys
 import socket
+import sys
+
+from sortedcontainers import SortedDict
 
 from dataset import Dataset
 from instrument import Instrument
 from orig import Orig
-from sortedcontainers import SortedDict
 
 
 class PyMetadataCreator:
@@ -19,7 +20,7 @@ class PyMetadataCreator:
         self.year_month_regex = '20[0-9]{2}_[0-1][0-9]'
         self.hostname = socket.gethostname()
         if self.hostname == 'login.esss.dk':
-            #self.mydir = "/users/detector/experiments/multiblade/data/brightness"
+            # self.mydir = "/users/detector/experiments/multiblade/data/brightness"
             self.mydir = "/users/detector/experiments"
 
     def walk_tree(self):
@@ -109,7 +110,6 @@ class PyMetadataCreator:
         iferegex = 'IFE'
         hzbregex = 'HZB'
         essregex = 'ESS'
-        bf3regex = 'BF3'
 
         search_result = re.search(v20regex, dirpath, re.IGNORECASE)
         if search_result:
@@ -126,7 +126,6 @@ class PyMetadataCreator:
         search_result = re.search(iferegex, dirpath, re.IGNORECASE)
         if search_result:
             experiment = 'ife'
-
 
         search_result = re.search(sonderegex, dirpath, re.IGNORECASE)
         if search_result:

@@ -93,18 +93,20 @@ class Nmx(Instrument):
                      'creationLocation': 'NMX',
                      }
 
+
 class V20(Instrument):
     def __init__(self):
         self.abbreviation = 'V20'
         self.inst = {'owner': 'Jonas Nilsson',
                      'ownerEmail': 'jonas.nilsson@esss.se',
                      'orcidOfOwner': '0000-0003-3893-2308',
-                     'contactEmail':  'jonas.nilsson@esss.se',
+                     'contactEmail': 'jonas.nilsson@esss.se',
                      'principalInvestigator': 'Jonas Nilsson',
                      'userTargetLocation': 'V20',
                      'sourceFolder': 'V20',
                      'creationLocation': 'V20',
                      }
+
 
 class Hzb(Instrument):
     def __init__(self):
@@ -112,12 +114,13 @@ class Hzb(Instrument):
         self.inst = {'owner': 'Jonas Nilsson',
                      'ownerEmail': 'jonas.nilsson@esss.se',
                      'orcidOfOwner': '0000-0003-3893-2308',
-                     'contactEmail':  'jonas.nilsson@esss.se',
+                     'contactEmail': 'jonas.nilsson@esss.se',
                      'principalInvestigator': 'Jonas Nilsson',
                      'userTargetLocation': 'HZB',
                      'sourceFolder': 'HZB',
                      'creationLocation': 'HZB',
                      }
+
 
 class Ife(Instrument):
     def __init__(self):
@@ -125,12 +128,13 @@ class Ife(Instrument):
         self.inst = {'owner': 'Jonas Nilsson',
                      'ownerEmail': 'jonas.nilsson@esss.se',
                      'orcidOfOwner': '0000-0003-3893-2308',
-                     'contactEmail':  'jonas.nilsson@esss.se',
+                     'contactEmail': 'jonas.nilsson@esss.se',
                      'principalInvestigator': 'Jonas Nilsson',
                      'userTargetLocation': 'IFE',
                      'sourceFolder': 'IFE',
                      'creationLocation': 'IFE',
                      }
+
 
 class Ess(Instrument):
     def __init__(self):
@@ -138,7 +142,7 @@ class Ess(Instrument):
         self.inst = {'owner': 'Jonas Nilsson',
                      'ownerEmail': 'jonas.nilsson@esss.se',
                      'orcidOfOwner': '0000-0003-3893-2308',
-                     'contactEmail':  'jonas.nilsson@esss.se',
+                     'contactEmail': 'jonas.nilsson@esss.se',
                      'principalInvestigator': 'Jonas Nilsson',
                      'userTargetLocation': 'ESS',
                      'sourceFolder': 'ESS',

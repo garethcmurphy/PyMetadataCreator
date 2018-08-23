@@ -5,7 +5,8 @@ class Orig:
             "dataFileList": "test",
             "ownerGroup": "brightness",
             "accessGroups": [
-                "brightness"
+                "brightness",
+                "ess"
             ],
             "createdBy": "ingestor",
             "updatedBy": "ingestor",

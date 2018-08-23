@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="699c0464-6fa0-4df9-a891-47a5aa1c8b3c" name="Default" comment="Fix indentation issue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metadatacreator/GenerateMetadata.py" beforeDir="false" afterPath="$PROJECT_DIR$/metadatacreator/GenerateMetadata.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metadatacreator/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/metadatacreator/dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metadatacreator/instrument.py" beforeDir="false" afterPath="$PROJECT_DIR$/metadatacreator/instrument.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,26 +31,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="14" />
+          <entry key="py" value="15" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="14" />
+          <entry key="Python" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1139" />
+          <entry key="py" value="1171" />
           <entry key="txt" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="1139" />
+          <entry key="Python" value="1171" />
         </counts>
       </usages-collector>
     </session>
@@ -65,18 +62,24 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="557">
               <caret line="93" column="18" lean-forward="true" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
-              <folding>
-                <element signature="e#23#38#0" expanded="true" />
-              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/metadatacreator/dataset.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/metadatacreator/dataset.py">
+        <entry file="file://$PROJECT_DIR$/metadatacreator/orig.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="758">
-              <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+            <state relative-caret-position="100">
+              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -129,12 +132,12 @@
         <option value="$PROJECT_DIR$/metadatacreator/ExcelImport.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/metadatacreator/PyMetadataCreator.py" />
-        <option value="$PROJECT_DIR$/metadatacreator/orig.py" />
         <option value="$PROJECT_DIR$/metadatacreator/lifecycle.py" />
         <option value="$PROJECT_DIR$/tests/test_instrument.py" />
         <option value="$PROJECT_DIR$/metadatacreator/instrument.py" />
         <option value="$PROJECT_DIR$/metadatacreator/GenerateMetadata.py" />
         <option value="$PROJECT_DIR$/metadatacreator/dataset.py" />
+        <option value="$PROJECT_DIR$/metadatacreator/orig.py" />
       </list>
     </option>
   </component>
@@ -148,7 +151,7 @@
     <option name="x" value="-1777" />
     <option name="y" value="65" />
     <option name="width" value="1680" />
-    <option name="height" value="887" />
+    <option name="height" value="1015" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -320,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535013225227</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fix indentation issue">
+      <created>1535021488114</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1535021488114</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -356,7 +366,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1776" y="66" width="1680" height="887" extended-state="0" />
+    <frame x="-1777" y="65" width="1680" height="1015" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18192919" />
@@ -364,7 +374,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49967298" weight="0.3296433" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49761903" visible="true" weight="0.32955974" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49761903" visible="true" weight="0.283857" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -539,13 +549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/metadatacreator/orig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_instrument.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -574,16 +577,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="557">
           <caret line="93" column="18" lean-forward="true" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
-          <folding>
-            <element signature="e#23#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/metadatacreator/dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="758">
-          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+        <state relative-caret-position="343">
+          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metadatacreator/orig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
         </state>
       </provider>
     </entry>

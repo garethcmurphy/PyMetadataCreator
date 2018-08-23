@@ -61,7 +61,7 @@ class Multiblade(Instrument):
                      'contactEmail': 'Francesco.Piscitelli@esss.se',
                      'principalInvestigator': 'Francesco Piscitelli',
                      'userTargetLocation': 'multiblade',
-                     'sourceFolder': 'multiblade/data/brightness/2017_06_BNC_MB16T_ElectronicsTests',
+                     'sourceFolder': 'multiblade/data/brightness/2017_06_BNC_MB16T_ElectronicsTests/DATA',
                      'creationLocation': 'multiblade',
                      }
 

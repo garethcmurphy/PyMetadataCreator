@@ -20,6 +20,8 @@ class GenerateMetadata:
         #        self.mydir = "./static"
         self.year_month_regex = '20[0-9]{2}_[0-1][0-9]'
         self.hostname = socket.gethostname()
+        self.filenames = []
+        self.file_list = []
         if self.hostname == 'login.esss.dk':
             # self.mydir = "/users/detector/experiments/multiblade/data/brightness"
             self.mydir = "/users/detector/experiments"
@@ -44,37 +46,17 @@ class GenerateMetadata:
             my_data_set.update(inst.inst)
             my_data_set["pid"] = '10.17199/BRIGHTNESS/' + inst.abbreviation + str(1).zfill(4)
             print(my_data_set["pid"])
-            file_list = []
-            total_file_size = 0
+            self.file_list = []
 
-            filenum = 0
             sourceFolder = self.mydir + '/' + inst.inst["sourceFolder"]
             print('gm source  folder ', sourceFolder)
-            filenames = self.get_files(sourceFolder)
+            self.filenames = self.get_files(sourceFolder)
             basename = 'test_sci_met'
-            print(filenames)
+            basename = 'test_base_name'
+            print(self.filenames)
 
-            for file in filenames:
-                filenum += 1
-                longname = file
-                basename = 'test_base_name'
+            experiment_date_time, total_file_size = self.extract_file_list(experiment_date_time)
 
-                stat_info = os.stat(longname)
-                rel_path = longname.replace('./data', '/static')
-                rel_path = longname.replace('/users/detector', '/static')
-                file_size = stat_info.st_size
-                total_file_size += file_size
-                file_entry = {
-                    "path": rel_path,
-                    "size": file_size,
-                    "time": experiment_date_time,
-                    "chk": "string",
-                    "uid": "string",
-                    "gid": "string",
-                    "perm": "string"
-                }
-                if filenum < 50:
-                    file_list.append(file_entry)
             my_data_set["size"] = total_file_size
             my_data_set["packedSize"] = total_file_size
             my_data_set["creationTime"] = experiment_date_time
@@ -89,7 +71,7 @@ class GenerateMetadata:
             orig = Orig()
             my_orig = orig.orig
             my_orig["datasetId"] = str(my_data_set["pid"])
-            my_orig["dataFileList"] = file_list
+            my_orig["dataFileList"] = self.file_list
             my_orig["size"] = total_file_size
             my_orig["createdAt"] = experiment_date_time
             my_orig["updatedAt"] = experiment_date_time
@@ -101,6 +83,37 @@ class GenerateMetadata:
 
         with open('test_new_metadata.json', 'w') as f:
             json.dump(data_sets, f, ensure_ascii=False, indent=2)
+
+    def extract_file_list(self, experiment_date_time):
+        filenum = 0
+        total_file_size = 0
+        for file in self.filenames:
+            filenum += 1
+            longname = file
+
+            stat_info = os.stat(longname)
+            rel_path = longname.replace('./data', '/static')
+            rel_path = longname.replace('/users/detector', '/static')
+            file_size = stat_info.st_size
+            experiment_date_time = stat_info.st_ctime
+            print(experiment_date_time)
+            ts = int(experiment_date_time)
+
+            experiment_date_time = str(datetime.datetime.fromtimestamp(ts))
+            print(experiment_date_time)
+            total_file_size += file_size
+            file_entry = {
+                "path": rel_path,
+                "size": file_size,
+                "time": experiment_date_time,
+                "chk": "string",
+                "uid": "string",
+                "gid": "string",
+                "perm": "string"
+            }
+            if filenum < 50:
+                self.file_list.append(file_entry)
+        return experiment_date_time, total_file_size
 
     def get_date_information(self, basename, dirpath):
         year_month = "2018_01"

@@ -61,7 +61,7 @@ class GenerateMetadata:
 
                 stat_info = os.stat(longname)
                 rel_path = longname.replace('./data', '/static')
-                rel_path = longname.replace('/users/detector', './static')
+                rel_path = longname.replace('/users/detector', '/static')
                 file_size = stat_info.st_size
                 total_file_size += file_size
                 file_entry = {

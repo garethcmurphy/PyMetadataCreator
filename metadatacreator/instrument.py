@@ -45,9 +45,9 @@ class Sonde(Instrument):
                      'orcidOfOwner': '0000-0000-0000-0000',
                      'contactEmail': 'ramsey.aljebali@esss.se',
                      'principalInvestigator': 'Ramsey Al Jebali',
-                     'userTargetLocation': 'ESS',
-                     'sourceFolder': 'ESS',
-                     'creationLocation': 'ESS',
+                     'userTargetLocation': 'SONDE',
+                     'sourceFolder': 'sonde/IFE_june_2018/data/S1',
+                     'creationLocation': 'SONDE',
                      }
 
 
@@ -61,7 +61,7 @@ class Multiblade(Instrument):
                      'contactEmail': 'Francesco.Piscitelli@esss.se',
                      'principalInvestigator': 'Francesco Piscitelli',
                      'userTargetLocation': 'multiblade',
-                     'sourceFolder': 'multiblade',
+                     'sourceFolder': 'multiblade/data/brightness/2017_06_BNC_MB16T_ElectronicsTests',
                      'creationLocation': 'multiblade',
                      }
 
@@ -75,7 +75,7 @@ class Multigrid(Instrument):
                      'contactEmail': 'anton.khaplanov@esss.se',
                      'principalInvestigator': 'Anton Khaplanov',
                      'userTargetLocation': 'multigrid',
-                     'sourceFolder': 'multigrid',
+                     'sourceFolder': 'multigrid/data/raw/MG_CNCS/07_14',
                      'creationLocation': 'multigrid',
                      }
 
@@ -89,7 +89,7 @@ class Nmx(Instrument):
                      'contactEmail': 'Dorothea.Pfeiffer@esss.se',
                      'principalInvestigator': 'Dorothea Pfeiffer',
                      'userTargetLocation': 'NMX',
-                     'sourceFolder': 'NMX',
+                     'sourceFolder': 'nmx/data/h5/raw/IFE_2016_Nov',
                      'creationLocation': 'NMX',
                      }
 

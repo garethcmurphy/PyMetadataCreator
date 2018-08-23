@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import datetime
+import glob
 import json
 import os
 import re
@@ -15,7 +16,7 @@ from orig import Orig
 
 class GenerateMetadata:
     def __init__(self):
-        self.mydir = "./data"
+        self.mydir = "./data/experiments"
         #        self.mydir = "./static"
         self.year_month_regex = '20[0-9]{2}_[0-1][0-9]'
         self.hostname = socket.gethostname()
@@ -47,15 +48,19 @@ class GenerateMetadata:
             total_file_size = 0
 
             filenum = 0
-            filenames = [
-                'data/experiments/multiblade/data/brightness/2017_10_ISIS_MB16S_ReflectometryAtCRISP/06_4_R2_Efficiency_25Hz/2017_10_06_1601_DigNo34_R2_Efficiency25Hz_He3_000.lst1']
+            sourceFolder = self.mydir + '/' + inst.inst["sourceFolder"]
+            print('gm source  folder ', sourceFolder)
+            filenames = self.get_files(sourceFolder)
+            basename = 'test_sci_met'
+            print(filenames)
+
             for file in filenames:
                 filenum += 1
                 longname = file
                 basename = 'test_base_name'
 
                 stat_info = os.stat(longname)
-                rel_path = longname.replace('/users/detector', '/static')
+                rel_path = longname.replace('./data', '/static')
                 file_size = stat_info.st_size
                 total_file_size += file_size
                 file_entry = {
@@ -67,7 +72,7 @@ class GenerateMetadata:
                     "gid": "string",
                     "perm": "string"
                 }
-                if filenum < 100000:
+                if filenum < 50:
                     file_list.append(file_entry)
             my_data_set["size"] = total_file_size
             my_data_set["packedSize"] = total_file_size
@@ -75,7 +80,7 @@ class GenerateMetadata:
             my_data_set["endTime"] = experiment_date_time
             my_data_set["createdAt"] = experiment_date_time
             my_data_set["updatedAt"] = experiment_date_time
-            my_data_set["doi"] = "10.17199/" + str(my_data_set["pid"])
+            my_data_set["doi"] = str(my_data_set["pid"])
             scientific_metadata = {
                 "identifier": basename
             }
@@ -96,53 +101,6 @@ class GenerateMetadata:
         with open('test_new_metadata.json', 'w') as f:
             json.dump(data_sets, f, ensure_ascii=False, indent=2)
 
-    def get_experiment_info(dirpath):
-        experiment = 'ess'
-        sonderegex = 'sonde'
-        multigridregex = 'multigrid'
-        multibladeregex = 'multiblade'
-        nmxregex = 'nmx'
-        v20regex = 'V20'
-        iferegex = 'IFE'
-        hzbregex = 'HZB'
-        essregex = 'ESS'
-
-        search_result = re.search(v20regex, dirpath, re.IGNORECASE)
-        if search_result:
-            experiment = 'v20'
-
-        search_result = re.search(essregex, dirpath, re.IGNORECASE)
-        if search_result:
-            experiment = 'ess'
-
-        search_result = re.search(hzbregex, dirpath, re.IGNORECASE)
-        if search_result:
-            experiment = 'hzb'
-
-        search_result = re.search(iferegex, dirpath, re.IGNORECASE)
-        if search_result:
-            experiment = 'ife'
-
-        search_result = re.search(sonderegex, dirpath, re.IGNORECASE)
-        if search_result:
-            experiment = 'sonde'
-
-        search_result = re.search(multigridregex, dirpath, re.IGNORECASE)
-        if search_result:
-            experiment = 'multigrid'
-
-        search_result = re.search(multibladeregex, dirpath, re.IGNORECASE)
-        if search_result:
-            experiment = 'multiblade'
-
-        search_result = re.search(nmxregex, dirpath, re.IGNORECASE)
-        if search_result:
-            experiment = 'nmx'
-
-        return experiment
-
-    get_experiment_info = staticmethod(get_experiment_info)
-
     def get_date_information(self, basename, dirpath):
         year_month = "2018_01"
         search_result = re.search(self.year_month_regex, dirpath)
@@ -160,6 +118,12 @@ class GenerateMetadata:
         data_date = datetime.datetime(int(year), int(month), int(day))
         experiment_date_time = data_date.isoformat()
         return experiment_date_time
+
+    def get_files(self, my_dir):
+
+        files = glob.glob(my_dir + '/**.*', recursive=True)
+
+        return files
 
 
 if __name__ == '__main__':

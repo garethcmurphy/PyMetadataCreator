@@ -3,9 +3,11 @@ class Orig:
         self.orig = {
             "size": 20,
             "dataFileList": "test",
-            "ownerGroup": "brightness",
+            "ownerGroup": "ess",
             "accessGroups": [
                 "brightness",
+                "odin",
+                "loki",
                 "ess"
             ],
             "createdBy": "ingestor",

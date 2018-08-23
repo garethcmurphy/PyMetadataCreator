@@ -33,9 +33,12 @@ class Dataset:
             "type": "raw",
             "doi": "replace with doi",
             "isPublished": True,
-            "ownerGroup": "brightness",
+            "ownerGroup": "ess",
             "accessGroups": [
-                "brightness"
+                "brightness",
+                "odin",
+                "loki",
+                "ess"
             ],
             "createdBy": "ingestor",
             "updatedBy": "ingestor",

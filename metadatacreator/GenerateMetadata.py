@@ -13,7 +13,7 @@ from instrument import Instrument
 from orig import Orig
 
 
-class PyMetadataCreator:
+class GenerateMetadata:
     def __init__(self):
         self.mydir = "./data"
         #        self.mydir = "./static"
@@ -23,82 +23,70 @@ class PyMetadataCreator:
             # self.mydir = "/users/detector/experiments/multiblade/data/brightness"
             self.mydir = "/users/detector/experiments"
 
-    def walk_tree(self):
+    def generate(self):
 
-        datasets = SortedDict()
+        data_sets = SortedDict()
         i = 0
+        experiment = 'sonde'
+        experiment_date_time = datetime.datetime(2018,1,1)
 
-        for dirpath, dirnames, filenames in os.walk(self.mydir):
-            if not dirnames:
-                print(dirpath, "has 0 subdirectories and", len(filenames), "files")
-                print(filenames)
-                i = i + 1
-                if ".git/" in dirpath:
-                    break
-                basename = os.path.basename(dirpath)
+        for i in range(1, 4):
 
-                experiment = self.get_experiment_info(dirpath)
+            d = Dataset()
+            new_inst = Instrument()
+            inst = new_inst.factory(experiment)
+            my_data_set = d.dataset
+            print(inst.abbreviation)
+            my_data_set.update(inst.inst)
+            my_data_set["pid"] = inst.abbreviation + str(i).zfill(5)
+            print(my_data_set["pid"])
+            file_list = []
+            total_file_size = 0
 
-                experiment_date_time = self.get_date_information(basename, dirpath)
+            filenum = 0
+            for file in filenames:
+                filenum += 1
 
-                d = Dataset()
-                new_inst = Instrument()
-                inst = new_inst.factory(experiment)
-                my_data_set = d.dataset
-                print(dirpath)
-                print(experiment)
-                print(inst.abbreviation)
-                my_data_set.update(inst.inst)
-                my_data_set["pid"] = inst.abbreviation + str(i).zfill(5)
-                print(my_data_set["pid"])
-                file_list = []
-                total_file_size = 0
-
-                filenum = 0
-                for file in filenames:
-                    longname = dirpath + '/' + file
-                    filenum += 1
-
-                    statinfo = os.stat(longname)
-                    relpath = longname.replace('/users/detector', '/static')
-                    file_size = statinfo.st_size
-                    total_file_size += file_size
-                    file_entry = {
-                        "path": relpath,
-                        "size": file_size,
-                        "time": experiment_date_time,
-                        "chk": "string",
-                        "uid": "string",
-                        "gid": "string",
-                        "perm": "string"
-                    }
-                    if filenum < 100000:
-                        file_list.append(file_entry)
-                my_data_set["size"] = total_file_size
-                my_data_set["packedSize"] = total_file_size
-                my_data_set["creationTime"] = experiment_date_time
-                my_data_set["endTime"] = experiment_date_time
-                my_data_set["createdAt"] = experiment_date_time
-                my_data_set["updatedAt"] = experiment_date_time
-                scientific_metadata = {
-                    "identifier": basename
+                statinfo = os.stat(longname)
+                relpath = longname.replace('/users/detector', '/static')
+                file_size = statinfo.st_size
+                total_file_size += file_size
+                file_entry = {
+                    "path": relpath,
+                    "size": file_size,
+                    "time": experiment_date_time,
+                    "chk": "string",
+                    "uid": "string",
+                    "gid": "string",
+                    "perm": "string"
                 }
-                my_data_set["scientificMetadata"] = scientific_metadata
-                orig = Orig()
-                my_orig = orig.orig
-                my_orig["datasetId"] = "10.17199/" + str(my_data_set["pid"])
-                my_orig["dataFileList"] = file_list
-                my_orig["size"] = total_file_size
-                my_orig["createdAt"] = experiment_date_time
-                my_orig["updatedAt"] = experiment_date_time
+                if filenum < 100000:
+                    file_list.append(file_entry)
+            my_data_set["size"] = total_file_size
+            my_data_set["packedSize"] = total_file_size
+            my_data_set["creationTime"] = experiment_date_time
+            my_data_set["endTime"] = experiment_date_time
+            my_data_set["createdAt"] = experiment_date_time
+            my_data_set["updatedAt"] = experiment_date_time
+            scientific_metadata = {
+                "identifier": basename
+            }
+            my_data_set["scientificMetadata"] = scientific_metadata
+            orig = Orig()
+            my_orig = orig.orig
+            my_orig["datasetId"] = "10.17199/" + str(my_data_set["pid"])
+            my_orig["dataFileList"] = file_list
+            my_orig["size"] = total_file_size
+            my_orig["createdAt"] = experiment_date_time
+            my_orig["updatedAt"] = experiment_date_time
 
-                scicat_entries = {"dataset": my_data_set, "orig": my_orig}
-                datasets["orig" + experiment_date_time + str(i).zfill(5)] = scicat_entries
+            scicat_entries = {"dataset": my_data_set, "orig": my_orig}
+            data_sets["orig" + experiment_date_time + str(i).zfill(5)] = scicat_entries
 
-        json.dump(datasets, sys.stdout, indent=2)
+        json.dump(data_sets, sys.stdout, indent=2)
 
-        with open('datasets.json', 'w') as f:
-            json.dump(datasets, f, ensure_ascii=False, indent=2)
+        with open('test_new_metadata.json', 'w') as f:
+            json.dump(data_sets, f, ensure_ascii=False, indent=2)
 
     def get_experiment_info(dirpath):
         experiment = 'ess'
@@ -167,5 +155,5 @@ class PyMetadataCreator:
 
 
 if __name__ == '__main__':
-    g = PyMetadataCreator()
-    g.walk_tree()
+    g = GenerateMetadata()
+    g.generate()

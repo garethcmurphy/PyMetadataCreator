@@ -30,6 +30,7 @@ class Dataset:
             "classification": "analyzed",
             "license": "ESS",
             "version": "v1",
+            "type": "raw",
             "doi": "replace with doi",
             "isPublished": True,
             "ownerGroup": "brightness",

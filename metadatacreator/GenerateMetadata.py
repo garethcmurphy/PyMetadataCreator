@@ -27,10 +27,13 @@ class GenerateMetadata:
 
         data_sets = SortedDict()
         i = 0
-        experiment = 'sonde'
-        experiment_date_time = datetime.datetime(2018,1,1)
+        experiments = ['sonde', 'nmx', 'multigrid', 'multiblade']
+        experiment_date_time = str(datetime.datetime(2018, 1, 1))
 
-        for i in range(1, 4):
+        for i in range(0, 4):
+            print(i)
+            experiment = experiments[i]
+            print(experiment)
 
             d = Dataset()
             new_inst = Instrument()
@@ -38,21 +41,25 @@ class GenerateMetadata:
             my_data_set = d.dataset
             print(inst.abbreviation)
             my_data_set.update(inst.inst)
-            my_data_set["pid"] = inst.abbreviation + str(i).zfill(5)
+            my_data_set["pid"] = '10.17199/BRIGHTNESS/' + inst.abbreviation + str(1).zfill(4)
             print(my_data_set["pid"])
             file_list = []
             total_file_size = 0
 
             filenum = 0
+            filenames = [
+                'data/experiments/multiblade/data/brightness/2017_10_ISIS_MB16S_ReflectometryAtCRISP/06_4_R2_Efficiency_25Hz/2017_10_06_1601_DigNo34_R2_Efficiency25Hz_He3_000.lst1']
             for file in filenames:
                 filenum += 1
+                longname = file
+                basename = 'test_base_name'
 
-                statinfo = os.stat(longname)
-                relpath = longname.replace('/users/detector', '/static')
-                file_size = statinfo.st_size
+                stat_info = os.stat(longname)
+                rel_path = longname.replace('/users/detector', '/static')
+                file_size = stat_info.st_size
                 total_file_size += file_size
                 file_entry = {
-                    "path": relpath,
+                    "path": rel_path,
                     "size": file_size,
                     "time": experiment_date_time,
                     "chk": "string",
@@ -68,13 +75,14 @@ class GenerateMetadata:
             my_data_set["endTime"] = experiment_date_time
             my_data_set["createdAt"] = experiment_date_time
             my_data_set["updatedAt"] = experiment_date_time
+            my_data_set["doi"] = "10.17199/" + str(my_data_set["pid"])
             scientific_metadata = {
                 "identifier": basename
             }
             my_data_set["scientificMetadata"] = scientific_metadata
             orig = Orig()
             my_orig = orig.orig
-            my_orig["datasetId"] = "10.17199/" + str(my_data_set["pid"])
+            my_orig["datasetId"] = str(my_data_set["pid"])
             my_orig["dataFileList"] = file_list
             my_orig["size"] = total_file_size
             my_orig["createdAt"] = experiment_date_time

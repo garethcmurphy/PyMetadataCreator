@@ -39,7 +39,7 @@ class DefaultInst(Instrument):
 class Sonde(Instrument):
 
     def __init__(self):
-        self.abbreviation = 'SON'
+        self.abbreviation = 'SONDE'
         self.inst = {'owner': 'Ramsey Al Jebali',
                      'ownerEmail': 'ramsey.aljebali@esss.se',
                      'orcidOfOwner': '0000-0000-0000-0000',

@@ -5,7 +5,7 @@ def test_instrument():
     fac = instrument.Instrument()
     sonde = fac.factory("sonde")
     d = sonde.abbreviation
-    assert d == "SON"
+    assert d == "SONDE"
 
 
 def test_nmx():

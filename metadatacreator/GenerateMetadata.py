@@ -186,6 +186,8 @@ class GenerateMetadata:
     def get_files(self, my_dir):
 
         files = glob.glob(my_dir + '/**.*', recursive=True)
+        print(my_dir)
+        print(files)
 
         return files
 

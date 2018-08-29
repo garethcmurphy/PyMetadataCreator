@@ -20,19 +20,20 @@ class FilesInfo:
         self.file_number = 22
         self.experiment_date_time = "2017"
         self.total_file_size = 12345654
+        self.base_name = 'base_name'
 
 
 class GenerateMetadata:
     def __init__(self):
-        self.mydir = "./data/experiments"
+        self.my_directory = "./data/experiments"
         #        self.mydir = "./static"
         self.year_month_regex = '20[0-9]{2}_[0-1][0-9]'
         self.hostname = socket.gethostname()
-        self.filenames = []
+        self.file_names = []
         self.file_list = []
         if self.hostname == 'login.esss.dk':
             # self.mydir = "/users/detector/experiments/multiblade/data/brightness"
-            self.mydir = "/users/detector/experiments"
+            self.my_directory = "/users/detector/experiments"
 
     def generate(self):
 
@@ -47,14 +48,14 @@ class GenerateMetadata:
             new_inst = Instrument()
             inst = new_inst.factory(experiment)
 
-            dset_num = 0
+            data_set_num = 0
             for source_folder_fragment in inst.source_folder_array:
-                source_folder = self.mydir + '/' + source_folder_fragment
-                dset_num = dset_num + 1
-                print(self.mydir)
+                source_folder = self.my_directory + '/' + source_folder_fragment
+                data_set_num = data_set_num + 1
+                print(self.my_directory)
                 print(source_folder_fragment)
                 print(source_folder)
-                my_data_set, file_info = self.get_dataset(inst, dset_num, source_folder)
+                my_data_set, file_info = self.get_dataset(inst, data_set_num, source_folder)
 
                 my_orig = self.get_orig_blocks(my_data_set, file_info)
 
@@ -66,7 +67,8 @@ class GenerateMetadata:
                     "published": my_published
                 }
                 data_sets[
-                    "orig" + file_info.experiment_date_time + str(i).zfill(5) + str(dset_num).zfill(5)] = scicat_entries
+                    "orig" + file_info.experiment_date_time + str(i).zfill(5) + str(data_set_num).zfill(
+                        5)] = scicat_entries
         # json.dump(data_sets, sys.stdout, indent=2)
         with open('test_new_metadata.json', 'w') as f:
             json.dump(data_sets, f, ensure_ascii=False, indent=2)
@@ -80,9 +82,6 @@ class GenerateMetadata:
         print(my_data_set["pid"])
         self.file_list = []
         print('gm source  folder ', source_folder)
-        self.filenames = self.get_files(source_folder)
-        basename = 'test_base_name'
-        print(self.filenames)
         files_info = self.extract_file_list()
         my_data_set["size"] = files_info.total_file_size
         my_data_set["packedSize"] = files_info.total_file_size
@@ -92,7 +91,7 @@ class GenerateMetadata:
         my_data_set["updatedAt"] = files_info.experiment_date_time
         my_data_set["doi"] = str(my_data_set["pid"])
         scientific_metadata = {
-            "identifier": basename
+            "identifier": files_info.base_name
         }
         my_data_set["scientificMetadata"] = scientific_metadata
         return my_data_set, files_info
@@ -129,10 +128,11 @@ class GenerateMetadata:
         files_info = FilesInfo()
         file_number = 0
         total_file_size = 0
-        if not self.filenames:
+        self.file_names = self.get_files(source_folder)
+        print(self.file_names)
+        if not self.file_names:
             print("filename empty")
-            exit(0)
-        for file in self.filenames:
+        for file in self.file_names:
             file_number += 1
             longname = file
 
@@ -163,9 +163,9 @@ class GenerateMetadata:
             files_info.total_file_size = total_file_size
         return files_info
 
-    def get_date_information(self, basename, dirpath):
+    def get_date_information(self, basename, directory_path):
         year_month = "2018_01"
-        search_result = re.search(self.year_month_regex, dirpath)
+        search_result = re.search(self.year_month_regex, directory_path)
         if search_result:
             year_month = search_result.group(0)
         # print('gm',year_month)

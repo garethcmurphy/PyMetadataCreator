@@ -78,7 +78,8 @@ class Sonde(Instrument):
         self.doiRegisteredSuccessfullyTime = "2018"
 
         self.source_folder_array = [
-            'sonde/IFE_june_2018/data/S2'
+            'sonde/IFE_june_2018/data/S1',
+            'sonde/IFE_june_2018/data/S2',
             'sonde/IFE_june_2018/data/S5',
             'sonde/IFE_june_2018/data/S6',
             'sonde/IFE_june_2018/data/S8',

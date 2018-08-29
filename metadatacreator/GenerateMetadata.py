@@ -43,7 +43,8 @@ class GenerateMetadata:
             sourceFolder = self.mydir + '/' + inst.inst["sourceFolder"]
 
             dset_num = 0
-            for sourceFolder in inst.source_folder_array:
+            for sourceFolderfrag in inst.source_folder_array:
+                sourceFolder = self.mydir + '/' + sourceFolderfrag
                 dset_num = dset_num + 1
                 print(sourceFolder)
                 experiment_date_time, my_data_set, total_file_size = self.get_dataset(inst,

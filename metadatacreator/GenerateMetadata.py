@@ -47,6 +47,7 @@ class GenerateMetadata:
                 dset_num = dset_num + 1
                 print(sourceFolder)
                 experiment_date_time, my_data_set, total_file_size = self.get_dataset(inst,
+                                                                                      dset_num,
                                                                                       sourceFolder)
 
                 my_orig = self.get_orig_blocks(experiment_date_time, my_data_set, total_file_size)
@@ -58,21 +59,21 @@ class GenerateMetadata:
                     "orig": my_orig,
                     "published": my_published
                 }
-                data_sets["orig" + experiment_date_time + str(i).zfill(5) + str(i).zfill(5)] = scicat_entries
+                data_sets["orig" + experiment_date_time + str(i).zfill(5) + str(dset_num).zfill(5)] = scicat_entries
 
         json.dump(data_sets, sys.stdout, indent=2)
 
         with open('test_new_metadata.json', 'w') as f:
             json.dump(data_sets, f, ensure_ascii=False, indent=2)
 
-    def get_dataset(self, inst, sourceFolder):
+    def get_dataset(self, inst, dset_num, sourceFolder):
         experiment_date_time = str(datetime.datetime(2018, 1, 1))
 
         d = Dataset()
         my_data_set = d.dataset
         print(inst.abbreviation)
         my_data_set.update(inst.inst)
-        my_data_set["pid"] = '10.17199/BRIGHTNESS/' + inst.abbreviation + str(1).zfill(4)
+        my_data_set["pid"] = '10.17199/BRIGHTNESS/' + inst.abbreviation + str(dset_num).zfill(4)
         print(my_data_set["pid"])
         self.file_list = []
         print('gm source  folder ', sourceFolder)

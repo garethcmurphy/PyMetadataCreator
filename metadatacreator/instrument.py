@@ -70,7 +70,7 @@ class Sonde(Instrument):
         self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \
                         Framework Programme for Research and Innovation Horizon 2020, under grant \
                         agreement 676548. It consists of test data for the detector."""
-        self.resourceType = 'NeXus HDF5 files'
+        self.resourceType = 'Comma Separated Variable (csv) files'
         self.sizeOfArchive = 33.1
         self.numberOfFiles = 11
         self.pidArray = ['string']
@@ -135,7 +135,7 @@ class Multiblade(Instrument):
         self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \
                         Framework Programme for Research and Innovation Horizon 2020, under grant \
                         agreement 676548. It consists of test data for the detector."""
-        self.resourceType = 'NeXus HDF5 files'
+        self.resourceType = 'lst1 files'
         self.sizeOfArchive = 33.1
         self.numberOfFiles = 11
         self.pidArray = ['string']
@@ -216,7 +216,7 @@ class Multigrid(Instrument):
         self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \
                         Framework Programme for Research and Innovation Horizon 2020, under grant \
                         agreement 676548. It consists of test data for the detector."""
-        self.resourceType = 'NeXus HDF5 files'
+        self.resourceType = 'raw binary files'
         self.sizeOfArchive = 33.1
         self.numberOfFiles = 11
         self.pidArray = ['string']
@@ -224,8 +224,21 @@ class Multigrid(Instrument):
         self.doiRegisteredSuccessfullyTime = "2018"
 
         self.source_folder_array = [
+            'multigrid/data/raw/MG_CNCS/07_11/beamOn_resetOn',
+            'multigrid/data/raw/MG_CNCS/07_11/no_reset',
+            'multigrid/data/raw/MG_CNCS/07_12_background',
+            'multigrid/data/raw/MG_CNCS/07_13_12A',
+            'multigrid/data/raw/MG_CNCS/07_13_12A_Vanadium_powder',
+            'multigrid/data/raw/MG_CNCS/07_13_4p96A',
             'multigrid/data/raw/MG_CNCS/07_13_7p2A',
-            'multigrid/data/raw/MG_CNCS/07_14'
+            'multigrid/data/raw/MG_CNCS/07_13_7p2A/1_t0_timing',
+            'multigrid/data/raw/MG_CNCS/07_14',
+            'multigrid/data/raw/MG_CNCS/07_15',
+            'multigrid/data/raw/MG_CNCS/07_25',
+            'multigrid/data/raw/MG_CNCS/08_16',
+            'multigrid/data/raw/MG_CNCS/09_29',
+            'multigrid/data/raw/MG_CNCS/10_13',
+            'multigrid/data/raw/MG_CNCS/11_29',
         ]
 
         self.inst = {'owner': 'Anton Khaplanov',
@@ -311,8 +324,22 @@ class Nmx(Instrument):
 class V20(Instrument):
     def __init__(self):
         self.abbreviation = 'V20'
+        self.doi = '10.17199/BRIGHTNESS/NMX0001'
         self.affiliation = 'ESS'
+        self.creator = 'Jonas Nilsson'
         self.publisher = 'ESS'
+        self.publicationYear = 2017
+        self.title = 'Sample Data from V20'
+        self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FV200001'
+        self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \ 
+                        Framework Programme for Research and Innovation Horizon 2020, under grant \
+                        agreement 676548. It consists of test data for the detector."""
+        self.resourceType = 'NeXus HDF5 files'
+        self.sizeOfArchive = 33.1
+        self.numberOfFiles = 11
+        self.pidArray = ['string']
+        self.authors = ['string']
+        self.doiRegisteredSuccessfullyTime = "2018"
         self.inst = {'owner': 'Jonas Nilsson',
                      'ownerEmail': 'jonas.nilsson@esss.se',
                      'orcidOfOwner': '0000-0003-3893-2308',

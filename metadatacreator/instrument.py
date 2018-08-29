@@ -44,6 +44,9 @@ class DefaultInst(Instrument):
         self.doiRegisteredSuccessfullyTime = "2018"
 
         self.source_folder_array = ['subfolder']
+        self.scientificMetadata = {
+            'id': 3
+        }
 
         self.inst = {'owner': 'ESS',
                      'ownerEmail': 'undefined@esss.se',
@@ -76,6 +79,9 @@ class Sonde(Instrument):
         self.pidArray = ['string']
         self.authors = ['string']
         self.doiRegisteredSuccessfullyTime = "2018"
+        self.scientificMetadata = {
+            'id': 3
+        }
 
         self.source_folder_array = [
             'sonde/IFE_june_2018/data/S1',
@@ -142,6 +148,9 @@ class Multiblade(Instrument):
         self.pidArray = ['string']
         self.authors = ['string']
         self.doiRegisteredSuccessfullyTime = "2018"
+        self.scientificMetadata = {
+            'id': 3
+        }
 
         self.source_folder_array = [
             'multiblade/data/brightness/2016_12_STF_MB15_GammaSensitivity/20161210_gammaSensData',
@@ -223,6 +232,9 @@ class Multigrid(Instrument):
         self.pidArray = ['string']
         self.authors = ['string']
         self.doiRegisteredSuccessfullyTime = "2018"
+        self.scientificMetadata = {
+            'id': 3
+        }
 
         self.source_folder_array = [
             'multigrid/data/raw/MG_CNCS/07_11/beamOn_resetOn',
@@ -272,6 +284,9 @@ class Nmx(Instrument):
         self.pidArray = ['string']
         self.authors = ['string']
         self.doiRegisteredSuccessfullyTime = "2018"
+        self.scientificMetadata = {
+            'id': 3
+        }
 
         self.source_folder_array = [
             'nmx/data/h5/analyzed/dead200dead600/IFE_2015_Feb',
@@ -341,6 +356,10 @@ class V20(Instrument):
         self.pidArray = ['string']
         self.authors = ['string']
         self.doiRegisteredSuccessfullyTime = "2018"
+
+        self.scientificMetadata = {
+            "chopperFrequency": 14
+        }
 
         self.source_folder_array = [
             'v20/2018_01_24',

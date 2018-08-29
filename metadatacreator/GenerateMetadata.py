@@ -92,10 +92,7 @@ class GenerateMetadata:
         my_data_set["updatedAt"] = files_info.experiment_date_time
         my_data_set["doi"] = str(my_data_set["pid"])
         my_data_set["sourceFolder"] = files_info.source_folder
-        scientific_metadata = {
-            "identifier": files_info.base_name
-        }
-        my_data_set["scientificMetadata"] = scientific_metadata
+        my_data_set["scientificMetadata"] = inst.scientificMetadata
         return my_data_set, files_info
 
     def get_orig_blocks(self, my_data_set, file_info):

@@ -20,6 +20,7 @@ class FilesInfo:
         self.file_number = 22
         self.experiment_date_time = "2017"
         self.total_file_size = 12345654
+        self.source_folder = 'source_folder'
         self.base_name = 'base_name'
 
 
@@ -55,7 +56,10 @@ class GenerateMetadata:
                 print(self.my_directory)
                 print(source_folder_fragment)
                 print(source_folder)
-                my_data_set, file_info = self.get_dataset(inst, data_set_num, source_folder)
+                self.file_list = []
+                print('gm source  folder ', source_folder)
+                file_info = self.extract_file_list(source_folder)
+                my_data_set, file_info = self.get_dataset(inst, data_set_num, file_info)
 
                 my_orig = self.get_orig_blocks(my_data_set, file_info)
 
@@ -73,16 +77,13 @@ class GenerateMetadata:
         with open('test_new_metadata.json', 'w') as f:
             json.dump(data_sets, f, ensure_ascii=False, indent=2)
 
-    def get_dataset(self, inst, dset_num, source_folder):
+    def get_dataset(self, inst, dset_num, files_info):
         d = Dataset()
         my_data_set = d.dataset
         print(inst.abbreviation)
         my_data_set.update(inst.inst)
         my_data_set["pid"] = '10.17199/BRIGHTNESS/' + inst.abbreviation + str(dset_num).zfill(4)
         print(my_data_set["pid"])
-        self.file_list = []
-        print('gm source  folder ', source_folder)
-        files_info = self.extract_file_list()
         my_data_set["size"] = files_info.total_file_size
         my_data_set["packedSize"] = files_info.total_file_size
         my_data_set["creationTime"] = files_info.experiment_date_time
@@ -90,7 +91,7 @@ class GenerateMetadata:
         my_data_set["createdAt"] = files_info.experiment_date_time
         my_data_set["updatedAt"] = files_info.experiment_date_time
         my_data_set["doi"] = str(my_data_set["pid"])
-        my_data_set["sourceFolder"] = source_folder
+        my_data_set["sourceFolder"] = files_info.source_folder
         scientific_metadata = {
             "identifier": files_info.base_name
         }
@@ -125,7 +126,7 @@ class GenerateMetadata:
         my_published["numberOfFiles"] = file_info.file_number
         return my_published
 
-    def extract_file_list(self):
+    def extract_file_list(self, source_folder):
         files_info = FilesInfo()
         file_number = 0
         total_file_size = 0
@@ -162,6 +163,7 @@ class GenerateMetadata:
             files_info.experiment_date_time = experiment_date_time
             files_info.file_number = file_number
             files_info.total_file_size = total_file_size
+            files_info.source_folder = source_folder
         return files_info
 
     def get_date_information(self, basename, directory_path):

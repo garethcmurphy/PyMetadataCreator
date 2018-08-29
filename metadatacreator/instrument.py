@@ -80,6 +80,24 @@ class Sonde(Instrument):
         self.source_folder_array = [
             'sonde/IFE_june_2018/data/S1',
             'sonde/IFE_june_2018/data/S2'
+            'sonde/IFE_june_2018/data/S5',
+            'sonde/IFE_june_2018/data/S12',
+            'sonde/IFE_june_2018/data/S2',
+            'sonde/IFE_june_2018/data/S8',
+            'sonde/IFE_june_2018/data/S15',
+            'sonde/IFE_june_2018/data/S11',
+            'sonde/IFE_june_2018/data/S6',
+            'sonde/IFE_june_2018/data/S16',
+            'sonde/IFE_june_2018/data/S1',
+            'sonde/IFE_june_2018/data/S14',
+            'sonde/IFE_june_2018/data/S9',
+            'sonde/IFE_june_2018/data/S3',
+            'sonde/IFE_june_2018/data/S13',
+            'sonde/IFE_june_2018/data/S4',
+            'sonde/IFE_june_2018/data/temp/t50',
+            'sonde/IFE_june_2018/data/S17',
+            'sonde/IFE_june_2018/data/S7',
+            'sonde/IFE_june_2018/data/S10'
         ]
 
         self.inst = {'owner': '',

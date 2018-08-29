@@ -5,7 +5,6 @@ import json
 import os
 import re
 import socket
-import sys
 
 from sortedcontainers import SortedDict
 
@@ -62,7 +61,7 @@ class GenerateMetadata:
                 }
                 data_sets["orig" + experiment_date_time + str(i).zfill(5) + str(dset_num).zfill(5)] = scicat_entries
 
-        json.dump(data_sets, sys.stdout, indent=2)
+        # json.dump(data_sets, sys.stdout, indent=2)
 
         with open('test_new_metadata.json', 'w') as f:
             json.dump(data_sets, f, ensure_ascii=False, indent=2)

@@ -9,9 +9,8 @@ import sys
 
 from sortedcontainers import SortedDict
 
-from dataset import Dataset
+from dataset import PublishedData
 from instrument import Instrument
-from orig import Orig
 
 
 class GeneratePublishedData:
@@ -38,10 +37,10 @@ class GeneratePublishedData:
             experiment = experiments[i]
             print(experiment)
 
-            d = Dataset()
+            d = PublishedData()
             new_inst = Instrument()
             inst = new_inst.factory(experiment)
-            my_data_set = d.dataset
+            my_data_set = d.published_data
             print(inst.abbreviation)
             my_data_set.update(inst.inst)
             my_data_set["pid"] = '10.17199/BRIGHTNESS/' + inst.abbreviation + str(1).zfill(4)
@@ -51,32 +50,15 @@ class GeneratePublishedData:
             sourceFolder = self.mydir + '/' + inst.inst["sourceFolder"]
             print('gm source  folder ', sourceFolder)
             self.filenames = self.get_files(sourceFolder)
-            basename = 'test_sci_met'
-            basename = 'test_base_name'
             print(self.filenames)
 
             experiment_date_time, total_file_size = self.extract_file_list(experiment_date_time)
 
-            my_data_set["size"] = total_file_size
-            my_data_set["packedSize"] = total_file_size
-            my_data_set["creationTime"] = experiment_date_time
-            my_data_set["endTime"] = experiment_date_time
-            my_data_set["createdAt"] = experiment_date_time
-            my_data_set["updatedAt"] = experiment_date_time
             my_data_set["doi"] = str(my_data_set["pid"])
-            scientific_metadata = {
-                "identifier": basename
-            }
-            my_data_set["scientificMetadata"] = scientific_metadata
-            orig = Orig()
-            my_orig = orig.orig
-            my_orig["datasetId"] = str(my_data_set["pid"])
-            my_orig["dataFileList"] = self.file_list
-            my_orig["size"] = total_file_size
-            my_orig["createdAt"] = experiment_date_time
-            my_orig["updatedAt"] = experiment_date_time
+            my_data_set["affiliation"] = inst.affiliation
+            my_data_set["publisher"] = inst.publisher
 
-            scicat_entries = {"dataset": my_data_set, "orig": my_orig}
+            scicat_entries = {"published_data": my_data_set}
             data_sets["orig" + experiment_date_time + str(i).zfill(5)] = scicat_entries
 
         json.dump(data_sets, sys.stdout, indent=2)
@@ -141,5 +123,5 @@ class GeneratePublishedData:
 
 
 if __name__ == '__main__':
-    g = GenerateMetadata()
+    g = GeneratePublishedData()
     g.generate()

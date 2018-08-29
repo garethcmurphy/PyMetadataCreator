@@ -40,6 +40,8 @@ class Sonde(Instrument):
 
     def __init__(self):
         self.abbreviation = 'SONDE'
+        self.affiliation = 'ESS'
+        self.publisher = 'ESS'
         self.inst = {'owner': 'Ramsey Al Jebali',
                      'ownerEmail': 'ramsey.aljebali@esss.se',
                      'orcidOfOwner': '0000-0000-0000-0000',
@@ -55,6 +57,8 @@ class Multiblade(Instrument):
 
     def __init__(self):
         self.abbreviation = 'MB'
+        self.affiliation = 'ESS'
+        self.publisher = 'ESS'
         self.inst = {'owner': 'Francesco Piscitelli',
                      'ownerEmail': 'Francesco.Piscitelli@esss.se',
                      'orcidOfOwner': '0000-0002-0325-4407',
@@ -69,6 +73,8 @@ class Multiblade(Instrument):
 class Multigrid(Instrument):
     def __init__(self):
         self.abbreviation = 'MG'
+        self.affiliation = 'ESS'
+        self.publisher = 'ESS'
         self.inst = {'owner': 'Anton Khaplanov',
                      'ownerEmail': 'anton.khaplanov@esss.se',
                      'orcidOfOwner': '0000-0002-8421-1184',
@@ -83,6 +89,8 @@ class Multigrid(Instrument):
 class Nmx(Instrument):
     def __init__(self):
         self.abbreviation = 'NMX'
+        self.affiliation = 'ESS'
+        self.publisher = 'ESS'
         self.inst = {'owner': 'Dorothea Pfeiffer',
                      'ownerEmail': 'Dorothea.Pfeiffer@esss.se',
                      'orcidOfOwner': '0000-0003-3893-2308',
@@ -97,6 +105,8 @@ class Nmx(Instrument):
 class V20(Instrument):
     def __init__(self):
         self.abbreviation = 'V20'
+        self.affiliation = 'ESS'
+        self.publisher = 'ESS'
         self.inst = {'owner': 'Jonas Nilsson',
                      'ownerEmail': 'jonas.nilsson@esss.se',
                      'orcidOfOwner': '0000-0003-3893-2308',
@@ -111,6 +121,8 @@ class V20(Instrument):
 class Hzb(Instrument):
     def __init__(self):
         self.abbreviation = 'HZB'
+        self.affiliation = 'ESS'
+        self.publisher = 'ESS'
         self.inst = {'owner': 'Jonas Nilsson',
                      'ownerEmail': 'jonas.nilsson@esss.se',
                      'orcidOfOwner': '0000-0003-3893-2308',
@@ -139,6 +151,8 @@ class Ife(Instrument):
 class Ess(Instrument):
     def __init__(self):
         self.abbreviation = 'ESS'
+        self.affiliation = 'ESS'
+        self.publisher = 'ESS'
         self.inst = {'owner': 'Jonas Nilsson',
                      'ownerEmail': 'jonas.nilsson@esss.se',
                      'orcidOfOwner': '0000-0003-3893-2308',

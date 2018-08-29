@@ -112,7 +112,7 @@ class Sonde(Instrument):
             'sonde/IFE_oct_2017/from_lenovo_laptop/IDEASTestbench_BETA_V0_24-x86-ALL/logs'
         ]
 
-        self.inst = {'owner': '',
+        self.inst = {'owner': 'Ramsey Al Jebali',
                      'ownerEmail': 'ramsey.aljebali@esss.se',
                      'orcidOfOwner': '0000-0000-0000-0000',
                      'contactEmail': 'ramsey.aljebali@esss.se',

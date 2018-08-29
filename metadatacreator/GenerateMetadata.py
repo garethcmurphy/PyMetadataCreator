@@ -131,6 +131,9 @@ class GenerateMetadata:
         files_info = FilesInfo()
         file_number = 0
         total_file_size = 0
+        if not self.filenames:
+            print("filename empty")
+            exit(0)
         for file in self.filenames:
             file_number += 1
             longname = file

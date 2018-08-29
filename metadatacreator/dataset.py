@@ -1,8 +1,6 @@
-from typing import Dict, Any, Union
-
-
 class PublishedData:
-    def __index__(self):
+
+    def __init__(self):
         self.published_data = {
             "doi": "string",
             "affiliation": "string",
@@ -13,8 +11,8 @@ class PublishedData:
             "url": "string",
             "abstract": "string",
             "resourceType": "string",
-            "sizeOfArchive": "string",
-            "numberOfFiles": "string",
+            "sizeOfArchive": 25.1,
+            "numberOfFiles": 33,
             "pidArray": ["string"],
             "authors": ["string"],
             "doiRegisteredSuccessfullyTime": "2018-06-07T09:46:27.560Z"
@@ -22,7 +20,6 @@ class PublishedData:
 
 
 class Dataset:
-    dataset: Dict[Union[str, Any], Union[Union[str, Dict[str, str]], Any]]
 
     def __init__(self):
         self.dataset = {

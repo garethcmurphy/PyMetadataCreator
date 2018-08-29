@@ -25,6 +25,21 @@ class Instrument:
 class DefaultInst(Instrument):
 
     def __init__(self):
+        self.abbreviation = 'SONDE'
+        self.doi = '10.17199/BRIGHTNESS/SONDE0001'
+        self.affiliation = 'ESS'
+        self.creator = 'ESS'
+        self.publisher = 'ESS'
+        self.publicationYear = 2017
+        self.title = 'Sample Data from SONDE'
+        self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FSONDE0001'
+        self.abstract = 'This data was produced for BrightnESS'
+        self.resourceType = 'NeXus HDF5 files'
+        self.sizeOfArchive = 33.1
+        self.numberOfFiles = 11
+        self.pidArray = ['string']
+        self.authors = ['string']
+        self.doiRegisteredSuccessfullyTime = "2018"
         self.inst = {'owner': 'ESS',
                      'ownerEmail': 'undefined@esss.se',
                      'orcidOfOwner': '0000-0000-0000-0000',
@@ -40,8 +55,21 @@ class Sonde(Instrument):
 
     def __init__(self):
         self.abbreviation = 'SONDE'
+        self.doi = '10.17199/BRIGHTNESS/SONDE0001'
         self.affiliation = 'ESS'
+        self.creator = 'Ramsey Al Jebali'
         self.publisher = 'ESS'
+        self.publicationYear = 2017
+        self.title = 'Sample Data from SONDE'
+        self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FSONDE0001'
+        self.abstract = 'This data was produced for BrightnESS'
+        self.resourceType = 'NeXus HDF5 files'
+        self.sizeOfArchive = 33.1
+        self.numberOfFiles = 11
+        self.pidArray = ['string']
+        self.authors = ['string']
+        self.doiRegisteredSuccessfullyTime = "2018"
+
         self.inst = {'owner': 'Ramsey Al Jebali',
                      'ownerEmail': 'ramsey.aljebali@esss.se',
                      'orcidOfOwner': '0000-0000-0000-0000',
@@ -57,8 +85,21 @@ class Multiblade(Instrument):
 
     def __init__(self):
         self.abbreviation = 'MB'
+        self.doi = '10.17199/BRIGHTNESS/MB0001'
         self.affiliation = 'ESS'
+        self.creator = 'Francesco Piscitelli'
         self.publisher = 'ESS'
+        self.publicationYear = 2017
+        self.title = 'Sample Data from Multiblade'
+        self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FMB0001'
+        self.abstract = 'This data was produced for BrightnESS'
+        self.resourceType = 'NeXus HDF5 files'
+        self.sizeOfArchive = 33.1
+        self.numberOfFiles = 11
+        self.pidArray = ['string']
+        self.authors = ['string']
+        self.doiRegisteredSuccessfullyTime = "2018"
+
         self.inst = {'owner': 'Francesco Piscitelli',
                      'ownerEmail': 'Francesco.Piscitelli@esss.se',
                      'orcidOfOwner': '0000-0002-0325-4407',
@@ -73,8 +114,21 @@ class Multiblade(Instrument):
 class Multigrid(Instrument):
     def __init__(self):
         self.abbreviation = 'MG'
+        self.doi = '10.17199/BRIGHTNESS/MG0001'
         self.affiliation = 'ESS'
+        self.creator = 'Anton Khaplanov'
         self.publisher = 'ESS'
+        self.publicationYear = 2017
+        self.title = 'Sample Data from Multigrid'
+        self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FMG0001'
+        self.abstract = 'This data was produced for BrightnESS'
+        self.resourceType = 'NeXus HDF5 files'
+        self.sizeOfArchive = 33.1
+        self.numberOfFiles = 11
+        self.pidArray = ['string']
+        self.authors = ['string']
+        self.doiRegisteredSuccessfullyTime = "2018"
+
         self.inst = {'owner': 'Anton Khaplanov',
                      'ownerEmail': 'anton.khaplanov@esss.se',
                      'orcidOfOwner': '0000-0002-8421-1184',
@@ -89,8 +143,20 @@ class Multigrid(Instrument):
 class Nmx(Instrument):
     def __init__(self):
         self.abbreviation = 'NMX'
+        self.doi = '10.17199/BRIGHTNESS/NMX0001'
         self.affiliation = 'ESS'
+        self.creator = 'Dorothea Pfeiffer'
         self.publisher = 'ESS'
+        self.publicationYear = 2017
+        self.title = 'Sample Data from NMX'
+        self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FNMX0001'
+        self.abstract = 'This data was produced for BrightnESS'
+        self.resourceType = 'NeXus HDF5 files'
+        self.sizeOfArchive = 33.1
+        self.numberOfFiles = 11
+        self.pidArray = ['string']
+        self.authors = ['string']
+        self.doiRegisteredSuccessfullyTime = "2018"
         self.inst = {'owner': 'Dorothea Pfeiffer',
                      'ownerEmail': 'Dorothea.Pfeiffer@esss.se',
                      'orcidOfOwner': '0000-0003-3893-2308',

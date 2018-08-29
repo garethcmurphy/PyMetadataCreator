@@ -42,9 +42,8 @@ class GeneratePublishedData:
             inst = new_inst.factory(experiment)
             my_data_set = d.published_data
             print(inst.abbreviation)
-            my_data_set.update(inst.inst)
-            my_data_set["pid"] = '10.17199/BRIGHTNESS/' + inst.abbreviation + str(1).zfill(4)
-            print(my_data_set["pid"])
+            my_data_set["doi"] = '10.17199/BRIGHTNESS/' + inst.abbreviation + str(1).zfill(4)
+            print(my_data_set["doi"])
             self.file_list = []
 
             sourceFolder = self.mydir + '/' + inst.inst["sourceFolder"]
@@ -54,16 +53,23 @@ class GeneratePublishedData:
 
             experiment_date_time, total_file_size = self.extract_file_list(experiment_date_time)
 
-            my_data_set["doi"] = str(my_data_set["pid"])
+            my_data_set["doi"] = str(my_data_set["doi"])
             my_data_set["affiliation"] = inst.affiliation
             my_data_set["publisher"] = inst.publisher
+            my_data_set["creator"] = inst.creator
+            my_data_set["title"] = inst.title
+            my_data_set["publicationYear"] = inst.publicationYear
+            my_data_set["publisher"] = inst.publisher
+            my_data_set["resourceType"] = inst.resourceType
+            my_data_set["abstract"] = inst.abstract
+            my_data_set["url"] = inst.url
 
             scicat_entries = {"published_data": my_data_set}
             data_sets["orig" + experiment_date_time + str(i).zfill(5)] = scicat_entries
 
         json.dump(data_sets, sys.stdout, indent=2)
 
-        with open('test_new_metadata.json', 'w') as f:
+        with open('published_data.json', 'w') as f:
             json.dump(data_sets, f, ensure_ascii=False, indent=2)
 
     def extract_file_list(self, experiment_date_time):

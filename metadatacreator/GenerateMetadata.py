@@ -93,6 +93,7 @@ class GenerateMetadata:
         my_data_set["doi"] = str(my_data_set["pid"])
         my_data_set["sourceFolder"] = files_info.source_folder
         my_data_set["scientificMetadata"] = inst.scientificMetadata
+
         return my_data_set, files_info
 
     def get_orig_blocks(self, my_data_set, file_info):

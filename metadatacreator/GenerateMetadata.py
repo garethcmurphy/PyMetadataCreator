@@ -90,6 +90,7 @@ class GenerateMetadata:
         my_data_set["createdAt"] = files_info.experiment_date_time
         my_data_set["updatedAt"] = files_info.experiment_date_time
         my_data_set["doi"] = str(my_data_set["pid"])
+        my_data_set["sourceFolder"] = source_folder
         scientific_metadata = {
             "identifier": files_info.base_name
         }

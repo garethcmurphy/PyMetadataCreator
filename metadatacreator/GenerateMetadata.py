@@ -14,6 +14,14 @@ from instrument import Instrument
 from orig import Orig
 
 
+class FilesInfo:
+    def __init__(self):
+        self.files = []
+        self.file_number = 22
+        self.experiment_date_time = "2017"
+        self.total_file_size = 12345654
+
+
 class GenerateMetadata:
     def __init__(self):
         self.mydir = "./data/experiments"
@@ -46,20 +54,19 @@ class GenerateMetadata:
                 sourceFolder = self.mydir + '/' + sourceFolderfrag
                 dset_num = dset_num + 1
                 print(sourceFolder)
-                experiment_date_time, my_data_set, total_file_size = self.get_dataset(inst,
-                                                                                      dset_num,
-                                                                                      sourceFolder)
+                my_data_set, file_info = self.get_dataset(inst, dset_num, sourceFolder)
 
-                my_orig = self.get_orig_blocks(experiment_date_time, my_data_set, total_file_size)
+                my_orig = self.get_orig_blocks(my_data_set, file_info)
 
-                my_published = self.get_published_data(inst, my_data_set, total_file_size)
+                my_published = self.get_published_data(inst, my_data_set, file_info)
 
                 scicat_entries = {
                     "dataset": my_data_set,
                     "orig": my_orig,
                     "published": my_published
                 }
-                data_sets["orig" + experiment_date_time + str(i).zfill(5) + str(dset_num).zfill(5)] = scicat_entries
+                data_sets[
+                    "orig" + file_info.experiment_date_time + str(i).zfill(5) + str(dset_num).zfill(5)] = scicat_entries
 
         # json.dump(data_sets, sys.stdout, indent=2)
 
@@ -80,9 +87,9 @@ class GenerateMetadata:
         self.filenames = self.get_files(sourceFolder)
         basename = 'test_base_name'
         print(self.filenames)
-        experiment_date_time, total_file_size = self.extract_file_list(experiment_date_time)
-        my_data_set["size"] = total_file_size
-        my_data_set["packedSize"] = total_file_size
+        files_info = self.extract_file_list(experiment_date_time)
+        my_data_set["size"] = files_info.total_file_size
+        my_data_set["packedSize"] = files_info.total_file_size
         my_data_set["creationTime"] = experiment_date_time
         my_data_set["endTime"] = experiment_date_time
         my_data_set["createdAt"] = experiment_date_time
@@ -92,19 +99,19 @@ class GenerateMetadata:
             "identifier": basename
         }
         my_data_set["scientificMetadata"] = scientific_metadata
-        return experiment_date_time, my_data_set, total_file_size
+        return my_data_set, files_info
 
-    def get_orig_blocks(self, experiment_date_time, my_data_set, total_file_size):
+    def get_orig_blocks(self, my_data_set, file_info):
         orig = Orig()
         my_orig = orig.orig
         my_orig["datasetId"] = str(my_data_set["pid"])
         my_orig["dataFileList"] = self.file_list
-        my_orig["size"] = total_file_size
-        my_orig["createdAt"] = experiment_date_time
-        my_orig["updatedAt"] = experiment_date_time
+        my_orig["size"] = file_info.total_file_size
+        my_orig["createdAt"] = file_info.experiment_date_time
+        my_orig["updatedAt"] = file_info.experiment_date_time
         return my_orig
 
-    def get_published_data(self, inst, my_data_set, total_file_size):
+    def get_published_data(self, inst, my_data_set, file_info):
         published = PublishedData()
         my_published = published.published_data
         my_published["doi"] = str(my_data_set["doi"])
@@ -117,11 +124,12 @@ class GenerateMetadata:
         my_published["resourceType"] = inst.resourceType
         my_published["abstract"] = inst.abstract
         my_published["url"] = inst.url
-        my_published["sizeOfArchive"] = total_file_size
-        my_published["numberOfFiles"] = 2323
+        my_published["sizeOfArchive"] = file_info.total_file_size
+        my_published["numberOfFiles"] = file_info.file_number
         return my_published
 
     def extract_file_list(self, experiment_date_time):
+        files_info = FilesInfo()
         filenum = 0
         total_file_size = 0
         for file in self.filenames:
@@ -150,7 +158,10 @@ class GenerateMetadata:
             }
             if filenum < 50:
                 self.file_list.append(file_entry)
-        return experiment_date_time, total_file_size
+            files_info.experiment_date_time = experiment_date_time
+            files_info.file_number = filenum
+            files_info.total_file_size = total_file_size
+        return files_info
 
     def get_date_information(self, basename, dirpath):
         year_month = "2018_01"

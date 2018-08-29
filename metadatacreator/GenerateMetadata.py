@@ -47,12 +47,13 @@ class GenerateMetadata:
 
             new_inst = Instrument()
             inst = new_inst.factory(experiment)
-            sourceFolder = self.mydir + '/' + inst.inst["sourceFolder"]
 
             dset_num = 0
             for sourceFolderfrag in inst.source_folder_array:
                 sourceFolder = self.mydir + '/' + sourceFolderfrag
                 dset_num = dset_num + 1
+                print(self.mydir)
+                print(sourceFolderfrag)
                 print(sourceFolder)
                 my_data_set, file_info = self.get_dataset(inst, dset_num, sourceFolder)
 

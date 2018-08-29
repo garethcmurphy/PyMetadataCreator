@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="699c0464-6fa0-4df9-a891-47a5aa1c8b3c" name="Default" comment="Fix indentation issue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metadatacreator/GenerateMetadata.py" beforeDir="false" afterPath="$PROJECT_DIR$/metadatacreator/GenerateMetadata.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,54 +21,45 @@
     <session id="1241285101">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="16" />
+          <entry key="py" value="17" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="16" />
+          <entry key="Python" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1416" />
+          <entry key="py" value="1429" />
           <entry key="txt" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="1416" />
+          <entry key="Python" value="1429" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/metadatacreator/GenerateMetadata.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="99" column="12" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -110,10 +100,10 @@
         <option value="$PROJECT_DIR$/metadatacreator/PyMetadataCreator.py" />
         <option value="$PROJECT_DIR$/metadatacreator/lifecycle.py" />
         <option value="$PROJECT_DIR$/tests/test_instrument.py" />
-        <option value="$PROJECT_DIR$/metadatacreator/instrument.py" />
         <option value="$PROJECT_DIR$/metadatacreator/dataset.py" />
         <option value="$PROJECT_DIR$/metadatacreator/orig.py" />
         <option value="$PROJECT_DIR$/metadatacreator/GenerateMetadata.py" />
+        <option value="$PROJECT_DIR$/metadatacreator/instrument.py" />
       </list>
     </option>
   </component>
@@ -124,8 +114,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1852" />
-    <option name="y" value="174" />
+    <option name="x" value="-1838" />
+    <option name="y" value="154" />
     <option name="width" value="1716" />
     <option name="height" value="815" />
   </component>
@@ -320,7 +310,21 @@
       <option name="project" value="LOCAL" />
       <updated>1535021722139</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Fix indentation issue">
+      <created>1535030142883</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1535030142883</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Fix indentation issue">
+      <created>1535030245014</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1535030245014</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -356,10 +360,9 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1852" y="174" width="1716" height="815" extended-state="0" />
-    <editor active="true" />
+    <frame x="-3604" y="495" width="1716" height="815" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18339308" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18518518" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -560,13 +563,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/metadatacreator/instrument.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1280">
-          <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/metadatacreator/dataset.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="733">
@@ -576,8 +572,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/metadatacreator/GenerateMetadata.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="99" column="12" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="12" />
+        <state relative-caret-position="114">
+          <caret line="91" column="26" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metadatacreator/instrument.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="845">
+          <caret line="64" column="53" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
         </state>
       </provider>
     </entry>

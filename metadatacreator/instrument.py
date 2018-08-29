@@ -88,7 +88,6 @@ class Sonde(Instrument):
             'sonde/IFE_june_2018/data/S11',
             'sonde/IFE_june_2018/data/S6',
             'sonde/IFE_june_2018/data/S16',
-            'sonde/IFE_june_2018/data/S1',
             'sonde/IFE_june_2018/data/S14',
             'sonde/IFE_june_2018/data/S9',
             'sonde/IFE_june_2018/data/S3',

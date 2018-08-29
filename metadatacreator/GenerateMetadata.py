@@ -74,7 +74,6 @@ class GenerateMetadata:
             json.dump(data_sets, f, ensure_ascii=False, indent=2)
 
     def get_dataset(self, inst, dset_num, sourceFolder):
-        experiment_date_time = str(datetime.datetime(2018, 1, 1))
 
         d = Dataset()
         my_data_set = d.dataset
@@ -87,13 +86,13 @@ class GenerateMetadata:
         self.filenames = self.get_files(sourceFolder)
         basename = 'test_base_name'
         print(self.filenames)
-        files_info = self.extract_file_list(experiment_date_time)
+        files_info = self.extract_file_list()
         my_data_set["size"] = files_info.total_file_size
         my_data_set["packedSize"] = files_info.total_file_size
-        my_data_set["creationTime"] = experiment_date_time
-        my_data_set["endTime"] = experiment_date_time
-        my_data_set["createdAt"] = experiment_date_time
-        my_data_set["updatedAt"] = experiment_date_time
+        my_data_set["creationTime"] = files_info.experiment_date_time
+        my_data_set["endTime"] = files_info.experiment_date_time
+        my_data_set["createdAt"] = files_info.experiment_date_time
+        my_data_set["updatedAt"] = files_info.experiment_date_time
         my_data_set["doi"] = str(my_data_set["pid"])
         scientific_metadata = {
             "identifier": basename
@@ -128,12 +127,12 @@ class GenerateMetadata:
         my_published["numberOfFiles"] = file_info.file_number
         return my_published
 
-    def extract_file_list(self, experiment_date_time):
+    def extract_file_list(self):
         files_info = FilesInfo()
-        filenum = 0
+        file_number = 0
         total_file_size = 0
         for file in self.filenames:
-            filenum += 1
+            file_number += 1
             longname = file
 
             stat_info = os.stat(longname)
@@ -156,10 +155,10 @@ class GenerateMetadata:
                 "gid": "string",
                 "perm": "string"
             }
-            if filenum < 50:
+            if file_number < 50:
                 self.file_list.append(file_entry)
             files_info.experiment_date_time = experiment_date_time
-            files_info.file_number = filenum
+            files_info.file_number = file_number
             files_info.total_file_size = total_file_size
         return files_info
 

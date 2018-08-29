@@ -10,3 +10,8 @@ tests/__pycache__/
 
 
 venv
+
+.idea/workspace.xml
+published_data.json
+test_new_metadata.json
+tmp.xlsx

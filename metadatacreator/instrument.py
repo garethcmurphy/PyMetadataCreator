@@ -115,7 +115,7 @@ class Sonde(Instrument):
                      'contactEmail': 'ramsey.aljebali@esss.se',
                      'principalInvestigator': 'Ramsey Al Jebali',
                      'userTargetLocation': 'SONDE',
-                     'sourceFolder': 'sonde/IFE_june_2018/data/S1',
+                     'sourceFolder': 'sonde/IFE_june_2018/data/S13',
                      'creationLocation': 'SONDE',
                      }
 

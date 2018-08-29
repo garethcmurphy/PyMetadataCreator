@@ -37,7 +37,6 @@ class GenerateMetadata:
     def generate(self):
 
         data_sets = SortedDict()
-        i = 0
         experiments = ['sonde', 'nmx', 'multigrid', 'multiblade']
 
         for i in range(0, 4):
@@ -49,13 +48,13 @@ class GenerateMetadata:
             inst = new_inst.factory(experiment)
 
             dset_num = 0
-            for sourceFolderfrag in inst.source_folder_array:
-                sourceFolder = self.mydir + '/' + sourceFolderfrag
+            for source_folder_fragment in inst.source_folder_array:
+                source_folder = self.mydir + '/' + source_folder_fragment
                 dset_num = dset_num + 1
                 print(self.mydir)
-                print(sourceFolderfrag)
-                print(sourceFolder)
-                my_data_set, file_info = self.get_dataset(inst, dset_num, sourceFolder)
+                print(source_folder_fragment)
+                print(source_folder)
+                my_data_set, file_info = self.get_dataset(inst, dset_num, source_folder)
 
                 my_orig = self.get_orig_blocks(my_data_set, file_info)
 
@@ -68,14 +67,11 @@ class GenerateMetadata:
                 }
                 data_sets[
                     "orig" + file_info.experiment_date_time + str(i).zfill(5) + str(dset_num).zfill(5)] = scicat_entries
-
         # json.dump(data_sets, sys.stdout, indent=2)
-
         with open('test_new_metadata.json', 'w') as f:
             json.dump(data_sets, f, ensure_ascii=False, indent=2)
 
-    def get_dataset(self, inst, dset_num, sourceFolder):
-
+    def get_dataset(self, inst, dset_num, source_folder):
         d = Dataset()
         my_data_set = d.dataset
         print(inst.abbreviation)
@@ -83,8 +79,8 @@ class GenerateMetadata:
         my_data_set["pid"] = '10.17199/BRIGHTNESS/' + inst.abbreviation + str(dset_num).zfill(4)
         print(my_data_set["pid"])
         self.file_list = []
-        print('gm source  folder ', sourceFolder)
-        self.filenames = self.get_files(sourceFolder)
+        print('gm source  folder ', source_folder)
+        self.filenames = self.get_files(source_folder)
         basename = 'test_base_name'
         print(self.filenames)
         files_info = self.extract_file_list()
@@ -111,7 +107,8 @@ class GenerateMetadata:
         my_orig["updatedAt"] = file_info.experiment_date_time
         return my_orig
 
-    def get_published_data(self, inst, my_data_set, file_info):
+    @staticmethod
+    def get_published_data(inst, my_data_set, file_info):
         published = PublishedData()
         my_published = published.published_data
         my_published["doi"] = str(my_data_set["doi"])
@@ -140,7 +137,7 @@ class GenerateMetadata:
             longname = file
 
             stat_info = os.stat(longname)
-            rel_path = longname.replace('./data', '/static')
+            # rel_path = longname.replace('./data', '/static')
             rel_path = longname.replace('/users/detector', '/static')
             file_size = stat_info.st_size
             experiment_date_time = stat_info.st_ctime
@@ -184,7 +181,8 @@ class GenerateMetadata:
         experiment_date_time = data_date.isoformat()
         return experiment_date_time
 
-    def get_files(self, my_dir):
+    @staticmethod
+    def get_files(my_dir):
 
         files = glob.glob(my_dir + '/**.*', recursive=True)
         print(my_dir)

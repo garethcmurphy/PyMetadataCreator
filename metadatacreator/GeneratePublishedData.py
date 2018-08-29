@@ -28,7 +28,6 @@ class GeneratePublishedData:
     def generate(self):
 
         data_sets = SortedDict()
-        i = 0
         experiments = ['sonde', 'nmx', 'multigrid', 'multiblade']
         experiment_date_time = str(datetime.datetime(2018, 1, 1))
 
@@ -46,9 +45,9 @@ class GeneratePublishedData:
             print(my_data_set["doi"])
             self.file_list = []
 
-            sourceFolder = self.mydir + '/' + inst.inst["sourceFolder"]
-            print('gm source  folder ', sourceFolder)
-            self.filenames = self.get_files(sourceFolder)
+            source_folder = self.mydir + '/' + inst.inst["sourceFolder"]
+            print('gm source  folder ', source_folder)
+            self.filenames = self.get_files(source_folder)
             print(self.filenames)
 
             experiment_date_time, total_file_size = self.extract_file_list(experiment_date_time)
@@ -80,7 +79,7 @@ class GeneratePublishedData:
             longname = file
 
             stat_info = os.stat(longname)
-            rel_path = longname.replace('./data', '/static')
+            # rel_path = longname.replace('./data', '/static')
             rel_path = longname.replace('/users/detector', '/static')
             file_size = stat_info.st_size
             experiment_date_time = stat_info.st_ctime
@@ -121,7 +120,8 @@ class GeneratePublishedData:
         experiment_date_time = data_date.isoformat()
         return experiment_date_time
 
-    def get_files(self, my_dir):
+    @staticmethod
+    def get_files(my_dir):
 
         files = glob.glob(my_dir + '/**.*', recursive=True)
 

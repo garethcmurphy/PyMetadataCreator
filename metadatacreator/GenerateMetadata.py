@@ -39,9 +39,9 @@ class GenerateMetadata:
     def generate(self):
 
         data_sets = SortedDict()
-        experiments = ['sonde', 'nmx', 'multigrid', 'multiblade']
+        experiments = ['sonde', 'nmx', 'multigrid', 'multiblade', 'v20']
 
-        for i in range(0, 4):
+        for i in range(0, 5):
             print(i)
             experiment = experiments[i]
             print(experiment)
@@ -143,11 +143,11 @@ class GenerateMetadata:
             rel_path = longname.replace('/users/detector', '/static')
             file_size = stat_info.st_size
             experiment_date_time = stat_info.st_ctime
-            print(experiment_date_time)
+            # print(experiment_date_time)
             ts = int(experiment_date_time)
 
             experiment_date_time = str(datetime.datetime.fromtimestamp(ts))
-            print(experiment_date_time)
+            # print(experiment_date_time)
             total_file_size += file_size
             file_entry = {
                 "path": rel_path,

@@ -30,7 +30,7 @@ class DefaultInst(Instrument):
         self.affiliation = 'ESS'
         self.creator = 'ESS'
         self.publisher = 'ESS'
-        self.publicationYear = 2017
+        self.publicationYear = 2018
         self.title = 'Sample Data from SONDE'
         self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FSONDE0001'
         self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \
@@ -64,7 +64,7 @@ class Sonde(Instrument):
         self.affiliation = 'ESS'
         self.creator = 'Ramsey Al Jebali'
         self.publisher = 'ESS'
-        self.publicationYear = 2017
+        self.publicationYear = 2018
         self.title = 'Sample Data from SONDE'
         self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FSONDE0001'
         self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \
@@ -118,6 +118,7 @@ class Sonde(Instrument):
                      'userTargetLocation': 'SONDE',
                      'sourceFolder': 'sonde/IFE_june_2018/data/S13',
                      'creationLocation': 'SONDE',
+                     'keywords': ['SONDE', 'IFE'],
                      }
 
 
@@ -129,7 +130,7 @@ class Multiblade(Instrument):
         self.affiliation = 'ESS'
         self.creator = 'Francesco Piscitelli'
         self.publisher = 'ESS'
-        self.publicationYear = 2017
+        self.publicationYear = 2018
         self.title = 'Sample Data from Multiblade'
         self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FMB0001'
         self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \
@@ -210,7 +211,7 @@ class Multigrid(Instrument):
         self.affiliation = 'ESS'
         self.creator = 'Anton Khaplanov'
         self.publisher = 'ESS'
-        self.publicationYear = 2017
+        self.publicationYear = 2018
         self.title = 'Sample Data from Multigrid'
         self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FMG0001'
         self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \
@@ -259,7 +260,7 @@ class Nmx(Instrument):
         self.affiliation = 'ESS'
         self.creator = 'Dorothea Pfeiffer'
         self.publisher = 'ESS'
-        self.publicationYear = 2017
+        self.publicationYear = 2018
         self.title = 'Sample Data from NMX'
         self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FNMX0001'
         self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \ 
@@ -328,7 +329,7 @@ class V20(Instrument):
         self.affiliation = 'ESS'
         self.creator = 'Jonas Nilsson'
         self.publisher = 'ESS'
-        self.publicationYear = 2017
+        self.publicationYear = 2018
         self.title = 'Sample Data from V20'
         self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FV200001'
         self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \ 
@@ -340,6 +341,10 @@ class V20(Instrument):
         self.pidArray = ['string']
         self.authors = ['string']
         self.doiRegisteredSuccessfullyTime = "2018"
+
+        self.source_folder_array = [
+            'v20/2018_01_24',
+        ]
         self.inst = {'owner': 'Jonas Nilsson',
                      'ownerEmail': 'jonas.nilsson@esss.se',
                      'orcidOfOwner': '0000-0003-3893-2308',

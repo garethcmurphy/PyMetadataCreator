@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="699c0464-6fa0-4df9-a891-47a5aa1c8b3c" name="Default" comment="Fix to include file info">
       <change beforePath="$PROJECT_DIR$/metadatacreator/GenerateMetadata.py" beforeDir="false" afterPath="$PROJECT_DIR$/metadatacreator/GenerateMetadata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metadatacreator/GeneratePublishedData.py" beforeDir="false" afterPath="$PROJECT_DIR$/metadatacreator/GeneratePublishedData.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +36,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="py" value="28" />
+          <entry key="py" value="29" />
           <entry key="sh" value="2" />
           <entry key="txt" value="1" />
         </counts>
@@ -44,13 +45,14 @@
         <counts>
           <entry key="Bash" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="28" />
+          <entry key="Python" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="dummy" value="15" />
           <entry key="gitignore" value="5" />
-          <entry key="py" value="4662" />
+          <entry key="py" value="4739" />
           <entry key="sh" value="36" />
           <entry key="txt" value="64" />
         </counts>
@@ -58,24 +60,37 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="36" />
-          <entry key="PLAIN_TEXT" value="69" />
-          <entry key="Python" value="4662" />
+          <entry key="PLAIN_TEXT" value="84" />
+          <entry key="Python" value="4739" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/metadatacreator/GenerateMetadata.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="188" column="16" selection-start-line="188" selection-start-column="16" selection-end-line="188" selection-end-column="16" />
+            <state relative-caret-position="188">
+              <caret line="139" column="11" selection-start-line="139" selection-start-column="11" selection-end-line="139" selection-end-column="11" />
               <folding>
-                <marker date="1535540144002" expanded="true" signature="299:308" ph="..." />
-                <marker date="1535540144002" expanded="true" signature="436:439" ph="..." />
-                <marker date="1535540144002" expanded="true" signature="462:467" ph="..." />
-                <marker date="1535540144002" expanded="true" signature="2312:2316" ph="..." />
+                <element signature="e#23#38#0" expanded="true" />
+                <marker date="1535543121368" expanded="true" signature="299:308" ph="..." />
+                <marker date="1535543121368" expanded="true" signature="436:439" ph="..." />
+                <marker date="1535543121368" expanded="true" signature="462:467" ph="..." />
+                <marker date="1535543121368" expanded="true" signature="2319:2323" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/metadatacreator/GeneratePublishedData.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="83" column="41" lean-forward="true" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
+              <folding>
+                <element signature="e#23#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/metadatacreator/instrument.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="117" column="65" selection-start-line="117" selection-start-column="65" selection-end-line="117" selection-end-column="65" />
+            <state relative-caret-position="352">
+              <caret line="103" column="120" selection-start-line="103" selection-start-column="120" selection-end-line="103" selection-end-column="120" />
             </state>
           </provider>
         </entry>
@@ -134,10 +149,10 @@
         <option value="$PROJECT_DIR$/metadatacreator/orig.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/metadatacreator/dataset.py" />
-        <option value="$PROJECT_DIR$/metadatacreator/GeneratePublishedData.py" />
         <option value="$PROJECT_DIR$/generate_metadata.sh" />
         <option value="$PROJECT_DIR$/metadatacreator/instrument.py" />
         <option value="$PROJECT_DIR$/metadatacreator/GenerateMetadata.py" />
+        <option value="$PROJECT_DIR$/metadatacreator/GeneratePublishedData.py" />
       </list>
     </option>
   </component>
@@ -499,7 +514,21 @@
       <option name="project" value="LOCAL" />
       <updated>1535540149617</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Fix to include file info">
+      <created>1535540272283</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1535540272283</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Fix to include file info">
+      <created>1535540387917</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1535540387917</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -536,9 +565,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1891" y="35" width="1692" height="945" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18787879" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18787879" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -554,7 +582,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50238097" side_tool="true" weight="0.32955974" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32955974" />
-      <window_info anchor="bottom" id="Inspection Results" order="13" sideWeight="0.49805015" visible="true" weight="0.2778429" />
+      <window_info active="true" anchor="bottom" id="Inspection Results" order="13" sideWeight="0.49805015" visible="true" weight="0.2778429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -758,16 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/metadatacreator/GeneratePublishedData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="e#23#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/generate_metadata.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -777,20 +795,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/metadatacreator/instrument.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="117" column="65" selection-start-line="117" selection-start-column="65" selection-end-line="117" selection-end-column="65" />
+        <state relative-caret-position="352">
+          <caret line="103" column="120" selection-start-line="103" selection-start-column="120" selection-end-line="103" selection-end-column="120" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/metadatacreator/GenerateMetadata.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="188" column="16" selection-start-line="188" selection-start-column="16" selection-end-line="188" selection-end-column="16" />
+        <state relative-caret-position="188">
+          <caret line="139" column="11" selection-start-line="139" selection-start-column="11" selection-end-line="139" selection-end-column="11" />
           <folding>
-            <marker date="1535540144002" expanded="true" signature="299:308" ph="..." />
-            <marker date="1535540144002" expanded="true" signature="436:439" ph="..." />
-            <marker date="1535540144002" expanded="true" signature="462:467" ph="..." />
-            <marker date="1535540144002" expanded="true" signature="2312:2316" ph="..." />
+            <element signature="e#23#38#0" expanded="true" />
+            <marker date="1535543121368" expanded="true" signature="299:308" ph="..." />
+            <marker date="1535543121368" expanded="true" signature="436:439" ph="..." />
+            <marker date="1535543121368" expanded="true" signature="462:467" ph="..." />
+            <marker date="1535543121368" expanded="true" signature="2319:2323" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metadatacreator/GeneratePublishedData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="83" column="41" lean-forward="true" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
+          <folding>
+            <element signature="e#23#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

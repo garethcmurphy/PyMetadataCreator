@@ -10,6 +10,7 @@ import sys
 from sortedcontainers import SortedDict
 
 from dataset import Dataset
+from dataset import PublishedData
 from instrument import Instrument
 from orig import Orig
 
@@ -31,58 +32,93 @@ class GenerateMetadata:
         data_sets = SortedDict()
         i = 0
         experiments = ['sonde', 'nmx', 'multigrid', 'multiblade']
-        experiment_date_time = str(datetime.datetime(2018, 1, 1))
 
         for i in range(0, 4):
             print(i)
             experiment = experiments[i]
             print(experiment)
 
-            d = Dataset()
             new_inst = Instrument()
             inst = new_inst.factory(experiment)
-            my_data_set = d.dataset
-            print(inst.abbreviation)
-            my_data_set.update(inst.inst)
-            my_data_set["pid"] = '10.17199/BRIGHTNESS/' + inst.abbreviation + str(1).zfill(4)
-            print(my_data_set["pid"])
-            self.file_list = []
-
             sourceFolder = self.mydir + '/' + inst.inst["sourceFolder"]
-            print('gm source  folder ', sourceFolder)
-            self.filenames = self.get_files(sourceFolder)
-            basename = 'test_sci_met'
-            basename = 'test_base_name'
-            print(self.filenames)
 
-            experiment_date_time, total_file_size = self.extract_file_list(experiment_date_time)
+            dset_num = 0
+            for sourceFolder in inst.source_folder_array:
+                dset_num = dset_num + 1
+                print(sourceFolder)
+                experiment_date_time, my_data_set, total_file_size = self.get_dataset(inst,
+                                                                                      sourceFolder)
 
-            my_data_set["size"] = total_file_size
-            my_data_set["packedSize"] = total_file_size
-            my_data_set["creationTime"] = experiment_date_time
-            my_data_set["endTime"] = experiment_date_time
-            my_data_set["createdAt"] = experiment_date_time
-            my_data_set["updatedAt"] = experiment_date_time
-            my_data_set["doi"] = str(my_data_set["pid"])
-            scientific_metadata = {
-                "identifier": basename
-            }
-            my_data_set["scientificMetadata"] = scientific_metadata
-            orig = Orig()
-            my_orig = orig.orig
-            my_orig["datasetId"] = str(my_data_set["pid"])
-            my_orig["dataFileList"] = self.file_list
-            my_orig["size"] = total_file_size
-            my_orig["createdAt"] = experiment_date_time
-            my_orig["updatedAt"] = experiment_date_time
+                my_orig = self.get_orig_blocks(experiment_date_time, my_data_set, total_file_size)
 
-            scicat_entries = {"dataset": my_data_set, "orig": my_orig}
-            data_sets["orig" + experiment_date_time + str(i).zfill(5)] = scicat_entries
+                my_published = self.get_published_data(inst, my_data_set, total_file_size)
+
+                scicat_entries = {
+                    "dataset": my_data_set,
+                    "orig": my_orig,
+                    "published": my_published
+                }
+                data_sets["orig" + experiment_date_time + str(i).zfill(5) + str(i).zfill(5)] = scicat_entries
 
         json.dump(data_sets, sys.stdout, indent=2)
 
         with open('test_new_metadata.json', 'w') as f:
             json.dump(data_sets, f, ensure_ascii=False, indent=2)
+
+    def get_dataset(self, inst, sourceFolder):
+        experiment_date_time = str(datetime.datetime(2018, 1, 1))
+
+        d = Dataset()
+        my_data_set = d.dataset
+        print(inst.abbreviation)
+        my_data_set.update(inst.inst)
+        my_data_set["pid"] = '10.17199/BRIGHTNESS/' + inst.abbreviation + str(1).zfill(4)
+        print(my_data_set["pid"])
+        self.file_list = []
+        print('gm source  folder ', sourceFolder)
+        self.filenames = self.get_files(sourceFolder)
+        basename = 'test_base_name'
+        print(self.filenames)
+        experiment_date_time, total_file_size = self.extract_file_list(experiment_date_time)
+        my_data_set["size"] = total_file_size
+        my_data_set["packedSize"] = total_file_size
+        my_data_set["creationTime"] = experiment_date_time
+        my_data_set["endTime"] = experiment_date_time
+        my_data_set["createdAt"] = experiment_date_time
+        my_data_set["updatedAt"] = experiment_date_time
+        my_data_set["doi"] = str(my_data_set["pid"])
+        scientific_metadata = {
+            "identifier": basename
+        }
+        my_data_set["scientificMetadata"] = scientific_metadata
+        return experiment_date_time, my_data_set, total_file_size
+
+    def get_orig_blocks(self, experiment_date_time, my_data_set, total_file_size):
+        orig = Orig()
+        my_orig = orig.orig
+        my_orig["datasetId"] = str(my_data_set["pid"])
+        my_orig["dataFileList"] = self.file_list
+        my_orig["size"] = total_file_size
+        my_orig["createdAt"] = experiment_date_time
+        my_orig["updatedAt"] = experiment_date_time
+        return my_orig
+
+    def get_published_data(self, inst, my_data_set, total_file_size):
+        published = PublishedData()
+        my_published = published.published_data
+        my_published["doi"] = str(my_data_set["doi"])
+        my_published["affiliation"] = inst.affiliation
+        my_published["publisher"] = inst.publisher
+        my_published["creator"] = inst.creator
+        my_published["title"] = inst.title
+        my_published["publicationYear"] = inst.publicationYear
+        my_published["publisher"] = inst.publisher
+        my_published["resourceType"] = inst.resourceType
+        my_published["abstract"] = inst.abstract
+        my_published["url"] = inst.url
+        my_published["sizeOfArchive"] = total_file_size
+        my_published["numberOfFiles"] = 2323
+        return my_published
 
     def extract_file_list(self, experiment_date_time):
         filenum = 0

@@ -77,12 +77,13 @@ class GenerateMetadata:
         with open('test_new_metadata.json', 'w') as f:
             json.dump(data_sets, f, ensure_ascii=False, indent=2)
 
-    def get_dataset(self, inst, dset_num, files_info):
+    @staticmethod
+    def get_dataset(inst, data_set_number, files_info):
         d = Dataset()
         my_data_set = d.dataset
         print(inst.abbreviation)
         my_data_set.update(inst.inst)
-        my_data_set["pid"] = '10.17199/BRIGHTNESS/' + inst.abbreviation + str(dset_num).zfill(4)
+        my_data_set["pid"] = '10.17199/BRIGHTNESS/' + inst.abbreviation + str(data_set_number).zfill(4)
         print(my_data_set["pid"])
         my_data_set["size"] = files_info.total_file_size
         my_data_set["packedSize"] = files_info.total_file_size
@@ -156,7 +157,7 @@ class GenerateMetadata:
                 "gid": "string",
                 "perm": "string"
             }
-            if file_number < 50:
+            if file_number < 5000:
                 self.file_list.append(file_entry)
             files_info.experiment_date_time = experiment_date_time
             files_info.file_number = file_number

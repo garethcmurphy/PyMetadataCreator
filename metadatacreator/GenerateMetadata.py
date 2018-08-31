@@ -61,7 +61,7 @@ class GenerateMetadata:
             for source_folder_fragment in inst.source_folder_array:
                 source_folder = self.my_directory + '/' + source_folder_fragment
                 data_set_num = data_set_num + 1
-                print(self.my_directory)
+                # print(self.my_directory)
                 print(source_folder_fragment)
                 print(source_folder)
                 self.file_list = []
@@ -199,7 +199,7 @@ class GenerateMetadata:
     def get_files(my_dir):
 
         files = glob.glob(my_dir + '/**.*', recursive=True)
-        print(my_dir)
+        # print(my_dir)
         # print(files)
 
         return files

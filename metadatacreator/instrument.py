@@ -48,6 +48,8 @@ class DefaultInst(Instrument):
             'id': 3
         }
 
+        self.proposal = '2018ESS1'
+
         self.inst = {'owner': 'ESS',
                      'ownerEmail': 'undefined@esss.se',
                      'orcidOfOwner': '0000-0000-0000-0000',
@@ -82,6 +84,7 @@ class Sonde(Instrument):
         self.scientificMetadata = {
             'id': 3
         }
+        self.proposal = '2018ESS2'
 
         self.source_folder_array = [
             'sonde/IFE_june_2018/data/S1',
@@ -151,6 +154,7 @@ class Multiblade(Instrument):
         self.scientificMetadata = {
             'id': 3
         }
+        self.proposal = '2018ESS1'
 
         self.source_folder_array = [
             'multiblade/data/brightness/2016_12_STF_MB15_GammaSensitivity/20161210_gammaSensData',
@@ -235,6 +239,7 @@ class Multigrid(Instrument):
         self.scientificMetadata = {
             'id': 3
         }
+        self.proposal = '2018ESS3'
 
         self.source_folder_array = [
             'multigrid/data/raw/MG_CNCS/07_11/beamOn_resetOn',
@@ -287,6 +292,7 @@ class Nmx(Instrument):
         self.scientificMetadata = {
             'id': 3
         }
+        self.proposal = '2018ESS4'
 
         self.source_folder_array = [
             'nmx/data/h5/analyzed/dead200dead600/IFE_2015_Feb',

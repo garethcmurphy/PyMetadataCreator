@@ -133,7 +133,7 @@ class GenerateMetadata:
         file_number = 0
         total_file_size = 0
         self.file_names = self.get_files(source_folder)
-        print(self.file_names)
+        print(self.file_names[0])
         if not self.file_names:
             print("filename empty")
         for file in self.file_names:
@@ -166,7 +166,7 @@ class GenerateMetadata:
             files_info.file_number = file_number
             files_info.total_file_size = total_file_size
             files_info.source_folder = source_folder
-            print(files_info.file_number)
+        print(files_info.file_number)
         return files_info
 
     def get_date_information(self, basename, directory_path):

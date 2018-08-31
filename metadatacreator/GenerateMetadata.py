@@ -100,6 +100,7 @@ class GenerateMetadata:
         my_data_set["doi"] = str(my_data_set["pid"])
         my_data_set["sourceFolder"] = files_info.source_folder
         my_data_set["scientificMetadata"] = inst.scientificMetadata
+        my_data_set["proposalId"] = inst.proposal
 
         return my_data_set
 

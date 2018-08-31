@@ -77,6 +77,7 @@ class GenerateMetadata:
                     "orig" + file_info.experiment_date_time + str(i).zfill(5) + str(data_set_num).zfill(
                         5)] = scicat_entries
         # json.dump(data_sets, sys.stdout, indent=2)
+        print("Files processed =", self.global_file_number)
         with open('test_new_metadata.json', 'w') as f:
             json.dump(data_sets, f, ensure_ascii=False, indent=2)
 

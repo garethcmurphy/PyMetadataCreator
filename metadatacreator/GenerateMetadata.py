@@ -62,7 +62,7 @@ class GenerateMetadata:
                 print('gm source  folder ', source_folder)
                 file_info = self.extract_file_list(source_folder)
                 self.global_file_number += file_info.file_number
-                my_data_set, file_info = self.get_dataset(inst, data_set_num, file_info)
+                my_data_set = self.get_dataset(inst, data_set_num, file_info)
 
                 my_orig = self.get_orig_blocks(my_data_set, file_info)
 
@@ -99,7 +99,7 @@ class GenerateMetadata:
         my_data_set["sourceFolder"] = files_info.source_folder
         my_data_set["scientificMetadata"] = inst.scientificMetadata
 
-        return my_data_set, files_info
+        return my_data_set
 
     def get_orig_blocks(self, my_data_set, file_info):
         orig = Orig()

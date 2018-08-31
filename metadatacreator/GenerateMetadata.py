@@ -140,6 +140,7 @@ class GenerateMetadata:
         total_file_size = 0
         self.file_names = self.get_files(source_folder)
         print(self.file_names[0])
+        print('Fetching stat.ctime on all files, n=', len(self.file_names))
         if not self.file_names:
             print("filename empty")
         for file in self.file_names:

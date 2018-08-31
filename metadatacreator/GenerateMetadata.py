@@ -59,7 +59,6 @@ class GenerateMetadata:
                 print(source_folder_fragment)
                 print(source_folder)
                 self.file_list = []
-                print('gm source  folder ', source_folder)
                 file_info = self.extract_file_list(source_folder)
                 self.global_file_number += file_info.file_number
                 my_data_set = self.get_dataset(inst, data_set_num, file_info)

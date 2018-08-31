@@ -41,7 +41,13 @@ class GenerateMetadata:
     def generate(self):
 
         data_sets = SortedDict()
-        experiments = ['sonde', 'nmx', 'multigrid', 'multiblade', 'v20']
+        experiments = [
+            'v20',
+            'sonde',
+            'nmx',
+            'multiblade',
+            'multigrid',
+        ]
 
         for i in range(0, 5):
             print(i)

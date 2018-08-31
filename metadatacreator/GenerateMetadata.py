@@ -121,7 +121,8 @@ class GenerateMetadata:
         my_published["publisher"] = inst.publisher
         my_published["resourceType"] = inst.resourceType
         my_published["abstract"] = inst.abstract
-        my_published["thumbnail"] = Base64Im.im
+        im = Base64Im()
+        my_published["thumbnail"] = im.im
         my_published["url"] = inst.url
         my_published["sizeOfArchive"] = file_info.total_file_size
         my_published["numberOfFiles"] = file_info.file_number

@@ -27,6 +27,7 @@ class FilesInfo:
 
 class GenerateMetadata:
     def __init__(self):
+        self.global_file_number = 0
         self.my_directory = "./data/experiments"
         #        self.mydir = "./static"
         self.year_month_regex = '20[0-9]{2}_[0-1][0-9]'
@@ -60,6 +61,7 @@ class GenerateMetadata:
                 self.file_list = []
                 print('gm source  folder ', source_folder)
                 file_info = self.extract_file_list(source_folder)
+                self.global_file_number += file_info.file_number
                 my_data_set, file_info = self.get_dataset(inst, data_set_num, file_info)
 
                 my_orig = self.get_orig_blocks(my_data_set, file_info)
@@ -192,7 +194,7 @@ class GenerateMetadata:
 
         files = glob.glob(my_dir + '/**.*', recursive=True)
         print(my_dir)
-        print(files)
+        # print(files)
 
         return files
 

@@ -8,6 +8,7 @@ import socket
 
 from sortedcontainers import SortedDict
 
+from Base64Im import Base64Im
 from dataset import Dataset
 from dataset import PublishedData
 from instrument import Instrument
@@ -120,6 +121,7 @@ class GenerateMetadata:
         my_published["publisher"] = inst.publisher
         my_published["resourceType"] = inst.resourceType
         my_published["abstract"] = inst.abstract
+        my_published["thumbnail"] = Base64Im.im
         my_published["url"] = inst.url
         my_published["sizeOfArchive"] = file_info.total_file_size
         my_published["numberOfFiles"] = file_info.file_number
@@ -163,6 +165,7 @@ class GenerateMetadata:
             files_info.file_number = file_number
             files_info.total_file_size = total_file_size
             files_info.source_folder = source_folder
+            print(files_info.file_number)
         return files_info
 
     def get_date_information(self, basename, directory_path):

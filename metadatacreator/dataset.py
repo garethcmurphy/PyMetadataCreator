@@ -11,6 +11,7 @@ class PublishedData:
             "url": "string",
             "abstract": "string",
             "resourceType": "string",
+            "thumbnail": "string",
             "sizeOfArchive": 25.1,
             "numberOfFiles": 33,
             "pidArray": ["string"],

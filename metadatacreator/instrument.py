@@ -379,6 +379,7 @@ class V20(Instrument):
                      'sourceFolder': 'V20',
                      'creationLocation': 'V20',
                      }
+        self.proposal = '2018ESS1'
 
 
 class Hzb(Instrument):

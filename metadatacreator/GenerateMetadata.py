@@ -11,8 +11,8 @@ from sortedcontainers import SortedDict
 from Base64Im import Base64Im
 from dataset import Dataset
 from dataset import PublishedData
-from lifecycle import LifeCycle
 from instrument import Instrument
+from lifecycle import LifeCycle
 from orig import Orig
 
 
@@ -158,7 +158,7 @@ class GenerateMetadata:
         lifecycle.accessGroups = ["string"]
         lifecycle.createdBy = "string"
         lifecycle.updatedBy = "string"
-        lifecycle.datasetId = "string"
+        lifecycle.datasetId = str(my_data_set["doi"])
         lifecycle.rawDatasetId = "string"
         lifecycle.derivedDatasetId = "string"
         lifecycle.createdAt = "2018-09-06T09:53:58.370Z"

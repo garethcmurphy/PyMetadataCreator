@@ -163,7 +163,7 @@ class GenerateMetadata:
         lifecycle.derivedDatasetId = "string"
         lifecycle.createdAt = "2018-09-06T09:53:58.370Z"
         lifecycle.updatedAt = "2018-09-06T09:53:58.370Z"
-        lifecycle_dict = lifecycle_dict
+        lifecycle_dict = lifecycle.__dict__
         print(lifecycle_dict)
         return lifecycle_dict
 

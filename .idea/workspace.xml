@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="699c0464-6fa0-4df9-a891-47a5aa1c8b3c" name="Default" comment="add v20">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/metadatacreator/PyMetadataCreator.py" beforeDir="false" afterPath="$PROJECT_DIR$/metadatacreator/PyMetadataCreator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_instrument.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_instrument.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_mdc.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_orig.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_orig.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +11,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/PyDatasetProcessor$pydataset_test.coverage" NAME="pydataset test Coverage Results" MODIFIED="1528732640539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/PyMetadataCreator$pydataset_test.coverage" NAME="pydataset test Coverage Results" MODIFIED="1535013207942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/PyDatasetProcessor$pydataset_test.coverage" NAME="pydataset test Coverage Results" MODIFIED="1528732640539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="316" />
@@ -71,43 +65,49 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1423610083">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="40" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="40" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_dataset.py">
+        <entry file="file://$PROJECT_DIR$/metadatacreator/GenerateMetadata.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_instrument.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="32" selection-start-column="32" selection-end-column="32" />
+            <state relative-caret-position="136">
+              <caret line="142" column="45" selection-start-line="142" selection-start-column="45" selection-end-line="142" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/metadatacreator/PyMetadataCreator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_orig.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/metadatacreator/lifecycle.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -157,13 +157,13 @@
         <option value="$PROJECT_DIR$/metadatacreator/dataset.py" />
         <option value="$PROJECT_DIR$/metadatacreator/Base64Im.py" />
         <option value="$PROJECT_DIR$/metadatacreator/instrument.py" />
-        <option value="$PROJECT_DIR$/metadatacreator/lifecycle.py" />
-        <option value="$PROJECT_DIR$/metadatacreator/GenerateMetadata.py" />
         <option value="$PROJECT_DIR$/tests/test_orig.py" />
         <option value="$PROJECT_DIR$/tests/test_dataset.py" />
         <option value="$PROJECT_DIR$/tests/test_mdc.py" />
         <option value="$PROJECT_DIR$/tests/test_instrument.py" />
         <option value="$PROJECT_DIR$/metadatacreator/PyMetadataCreator.py" />
+        <option value="$PROJECT_DIR$/metadatacreator/lifecycle.py" />
+        <option value="$PROJECT_DIR$/metadatacreator/GenerateMetadata.py" />
       </list>
     </option>
   </component>
@@ -174,17 +174,16 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1841" />
-    <option name="y" value="115" />
-    <option name="width" value="1680" />
-    <option name="height" value="945" />
+    <option name="x" value="18" />
+    <option name="y" value="23" />
+    <option name="width" value="1377" />
+    <option name="height" value="810" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -216,6 +215,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,13 +284,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528387605935</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Fix indentation issue">
-      <created>1535030245014</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1535030245014</updated>
     </task>
     <task id="LOCAL-00016" summary="Fix indentation issue">
       <created>1535527320130</created>
@@ -628,7 +621,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535725964730</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="add v20">
+      <created>1536247655709</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1536247655709</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -664,10 +664,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1841" y="115" width="1680" height="945" extended-state="0" />
+    <frame x="18" y="23" width="1377" height="810" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1984127" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24644195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -850,21 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/metadatacreator/GenerateMetadata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2860">
-          <caret line="143" column="32" selection-start-line="143" selection-start-column="32" selection-end-line="143" selection-end-column="32" />
-          <folding>
-            <element signature="e#23#38#0" expanded="true" />
-            <marker date="1536227974831" expanded="true" signature="361:370" ph="..." />
-            <marker date="1536227974831" expanded="true" signature="580:583" ph="..." />
-            <marker date="1536227974831" expanded="true" signature="606:611" ph="..." />
-            <marker date="1536227974831" expanded="true" signature="2866:2870" ph="..." />
-            <marker date="1536227974831" expanded="true" signature="6440:6445" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/metadatacreator/GeneratePublishedData.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1960">
@@ -893,14 +878,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/metadatacreator/lifecycle.py">
+    <entry file="file://$PROJECT_DIR$/tests/test_mdc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
-          <folding>
-            <marker date="1536227946741" expanded="true" signature="40:49" ph="..." />
-            <marker date="1536227946741" expanded="true" signature="40:1007" ph="..." />
-          </folding>
+        <state>
+          <caret column="39" selection-start-column="39" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -911,13 +892,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_orig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_instrument.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -925,10 +899,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_mdc.py">
+    <entry file="file://$PROJECT_DIR$/tests/test_orig.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="39" selection-start-column="39" selection-end-column="39" />
+        <state relative-caret-position="80">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -936,8 +910,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="e#23#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metadatacreator/GenerateMetadata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="142" column="45" selection-start-line="142" selection-start-column="45" selection-end-line="142" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metadatacreator/lifecycle.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

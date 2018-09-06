@@ -141,11 +141,11 @@ class GenerateMetadata:
     def get_lifecycle(inst, my_data_set, file_info):
         lifecycle = LifeCycle()
         lifecycle.id = str(my_data_set["doi"])
-        lifecycle.isOnDisk = True
-        lifecycle.isOnTape = True
+        lifecycle.isOnDisk = False
+        lifecycle.isOnTape = False
         lifecycle.archivable = True
         lifecycle.retrievable = True
-        lifecycle.archiveStatusMessage = "string"
+        lifecycle.archiveStatusMessage = "datasetCreated"
         lifecycle.retrieveStatusMessage = "string"
         lifecycle.lastUpdateMessage = "string"
         lifecycle.archiveReturnMessage = "string"

@@ -140,6 +140,7 @@ class GenerateMetadata:
     @staticmethod
     def get_lifecycle(inst, my_data_set, file_info):
         lifecycle = LifeCycle()
+        lifecycle.id = str(my_data_set["doi"])
         lifecycle.isOnDisk = True
         lifecycle.isOnTape = True
         lifecycle.archivable = True

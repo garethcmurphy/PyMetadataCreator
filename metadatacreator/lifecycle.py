@@ -1,5 +1,6 @@
 class LifeCycle:
     def __init__(self):
+        self.id = "string"
         self.isOnDisk = True
         self.isOnTape = True
         self.archivable = True

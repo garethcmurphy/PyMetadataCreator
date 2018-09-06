@@ -15,3 +15,5 @@ venv
 published_data.json
 test_new_metadata.json
 tmp.xlsx
+
+.idea/

@@ -86,6 +86,21 @@ class Sonde(Instrument):
         }
         self.proposal = '2018ESS2'
 
+        self.isOnDisk = True
+        self.isOnTape = True
+        self.archivable = True
+        self.retrievable = True
+        self.archiveStatusMessage = "string"
+        self.retrieveStatusMessage = "string"
+        self.lastUpdateMessage = "string"
+        self.archiveReturnMessage = "string"
+        self.dateOfLastMessage = "2018-08-23T07:22:52.768Z"
+        self.dateOfDiskPurging = "2018-08-23T07:22:52.768Z"
+        self.archiveRetentionTime = "2018-08-23T07:22:52.768Z"
+        self.isExported = True
+        self.exportedTo = "string"
+        self.dateOfPublishing = "2018-08-23T07:22:52.768Z"
+
         self.source_folder_array = [
             'sonde/IFE_june_2018/data/S1',
             'sonde/IFE_june_2018/data/S2',

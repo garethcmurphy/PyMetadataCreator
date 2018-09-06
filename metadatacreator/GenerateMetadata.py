@@ -11,6 +11,7 @@ from sortedcontainers import SortedDict
 from Base64Im import Base64Im
 from dataset import Dataset
 from dataset import PublishedData
+from lifecycle import LifeCycle
 from instrument import Instrument
 from orig import Orig
 
@@ -69,11 +70,13 @@ class GenerateMetadata:
                 my_orig = self.get_orig_blocks(my_data_set, file_info)
 
                 my_published = self.get_published_data(inst, my_data_set, file_info)
+                my_lifecycle = self.get_lifecycle(inst, my_data_set, file_info)
 
                 scicat_entries = {
                     "dataset": my_data_set,
                     "orig": my_orig,
-                    "published": my_published
+                    "published": my_published,
+                    "lifecycle": my_lifecycle
                 }
                 data_sets[
                     "orig" + file_info.experiment_date_time + str(i).zfill(5) + str(data_set_num).zfill(
@@ -133,6 +136,36 @@ class GenerateMetadata:
         my_published["sizeOfArchive"] = file_info.total_file_size
         my_published["numberOfFiles"] = file_info.file_number
         return my_published
+
+    @staticmethod
+    def get_lifecycle(inst, my_data_set, file_info):
+        lifecycle = LifeCycle()
+        lifecycle.isOnDisk = True
+        lifecycle.isOnTape = True
+        lifecycle.archivable = True
+        lifecycle.retrievable = True
+        lifecycle.archiveStatusMessage = "string"
+        lifecycle.retrieveStatusMessage = "string"
+        lifecycle.lastUpdateMessage = "string"
+        lifecycle.archiveReturnMessage = "string"
+        lifecycle.dateOfLastMessage = "2018-08-23T07:22:52.768Z"
+        lifecycle.dateOfDiskPurging = "2018-08-23T07:22:52.768Z"
+        lifecycle.archiveRetentionTime = "2018-08-23T07:22:52.768Z"
+        lifecycle.isExported = True
+        lifecycle.exportedTo = "string"
+        lifecycle.dateOfPublishing = "2018-08-23T07:22:52.768Z"
+        lifecycle.ownerGroup = "string",
+        lifecycle.accessGroups = ["string"]
+        lifecycle.createdBy = "string"
+        lifecycle.updatedBy = "string"
+        lifecycle.datasetId = "string"
+        lifecycle.rawDatasetId = "string"
+        lifecycle.derivedDatasetId = "string"
+        lifecycle.createdAt = "2018-09-06T09:53:58.370Z"
+        lifecycle.updatedAt = "2018-09-06T09:53:58.370Z"
+        lifecycle_dict = lifecycle_dict
+        print(lifecycle_dict)
+        return lifecycle_dict
 
     def extract_file_list(self, source_folder):
         files_info = FilesInfo()

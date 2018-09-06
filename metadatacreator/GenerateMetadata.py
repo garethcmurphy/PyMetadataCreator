@@ -150,11 +150,11 @@ class GenerateMetadata:
         lifecycle.lastUpdateMessage = "string"
         lifecycle.archiveReturnMessage = "string"
         lifecycle.dateOfLastMessage = "2018-08-23T07:22:52.768Z"
-        lifecycle.dateOfDiskPurging = "2018-08-23T07:22:52.768Z"
-        lifecycle.archiveRetentionTime = "2018-08-23T07:22:52.768Z"
+        lifecycle.dateOfDiskPurging = "2028-08-23T07:22:52.768Z"
+        lifecycle.archiveRetentionTime = "2028-08-23T07:22:52.768Z"
         lifecycle.isExported = True
         lifecycle.exportedTo = "string"
-        lifecycle.dateOfPublishing = "2018-08-23T07:22:52.768Z"
+        lifecycle.dateOfPublishing = "2021-08-23T07:22:52.768Z"
         lifecycle.ownerGroup = "string",
         lifecycle.accessGroups = ["string"]
         lifecycle.createdBy = "string"

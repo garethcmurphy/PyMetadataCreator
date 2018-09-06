@@ -8,9 +8,9 @@ import sys
 
 from sortedcontainers import SortedDict
 
-from dataset import Dataset
-from instrument import Instrument
-from orig import Orig
+import instrument.Instrument
+import orig.Orig
+import dataset.Dataset
 
 
 class PyMetadataCreator:
@@ -41,8 +41,8 @@ class PyMetadataCreator:
 
                 experiment_date_time = self.get_date_information(basename, dirpath)
 
-                d = Dataset()
-                new_inst = Instrument()
+                d = dataset.Dataset()
+                new_inst = instrument.Instrument()
                 inst = new_inst.factory(experiment)
                 my_data_set = d.dataset
                 print(dirpath)
@@ -84,7 +84,7 @@ class PyMetadataCreator:
                     "identifier": basename
                 }
                 my_data_set["scientificMetadata"] = scientific_metadata
-                orig = Orig()
+                orig = orig.Orig()
                 my_orig = orig.orig
                 my_orig["datasetId"] = "10.17199/" + str(my_data_set["pid"])
                 my_orig["dataFileList"] = file_list

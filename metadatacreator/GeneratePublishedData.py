@@ -9,8 +9,8 @@ import sys
 
 from sortedcontainers import SortedDict
 
-from dataset import PublishedData
-from instrument import Instrument
+import dataset
+import instrument
 
 
 class GeneratePublishedData:
@@ -36,8 +36,8 @@ class GeneratePublishedData:
             experiment = experiments[i]
             print(experiment)
 
-            d = PublishedData()
-            new_inst = Instrument()
+            d = dataset.PublishedData()
+            new_inst = instrument.Instrument()
             inst = new_inst.factory(experiment)
             my_data_set = d.published_data
             print(inst.abbreviation)

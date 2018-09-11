@@ -33,6 +33,7 @@ class DefaultInst(Instrument):
         self.publicationYear = 2018
         self.title = 'Sample Data from SONDE'
         self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FSONDE'
+        self.dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/SONDE'
         self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \
                         Framework Programme for Research and Innovation Horizon 2020, under grant \
                         agreement 676548. It consists of test data for the detector."""
@@ -72,6 +73,7 @@ class Sonde(Instrument):
         self.publicationYear = 2018
         self.title = 'Sample Data from SONDE'
         self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FSONDE'
+        self.dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/SONDE'
         self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \
                         Framework Programme for Research and Innovation Horizon 2020, under grant \
                         agreement 676548. It consists of test data for the detector."""
@@ -157,6 +159,7 @@ class Multiblade(Instrument):
         self.publicationYear = 2018
         self.title = 'Sample Data from Multiblade'
         self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FMB'
+        self.dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/Zaba'
         self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \
                         Framework Programme for Research and Innovation Horizon 2020, under grant \
                         agreement 676548. It consists of test data for the detector."""
@@ -242,6 +245,7 @@ class Multigrid(Instrument):
         self.publicationYear = 2018
         self.title = 'Sample Data from Multigrid'
         self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FMG'
+        self.dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/Multigrid-Data-Format-I'
         self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \
                         Framework Programme for Research and Innovation Horizon 2020, under grant \
                         agreement 676548. It consists of test data for the detector."""
@@ -295,6 +299,7 @@ class Nmx(Instrument):
         self.publicationYear = 2018
         self.title = 'Sample Data from NMX'
         self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FNMX'
+        self.dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/NMX'
         self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \ 
                         Framework Programme for Research and Innovation Horizon 2020, under grant \
                         agreement 676548. It consists of test data for the detector."""
@@ -368,6 +373,7 @@ class V20(Instrument):
         self.publicationYear = 2018
         self.title = 'Sample Data from V20'
         self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FV20'
+        self.dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/V20'
         self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \ 
                         Framework Programme for Research and Innovation Horizon 2020, under grant \
                         agreement 676548. It consists of test data for the detector."""

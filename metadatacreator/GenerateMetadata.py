@@ -135,6 +135,7 @@ class GenerateMetadata:
         my_published["url"] = inst.url + key
         my_published["sizeOfArchive"] = file_info.total_file_size
         my_published["numberOfFiles"] = file_info.file_number
+        my_published["dataDescription"] = inst.dataDescription
         return my_published
 
     @staticmethod

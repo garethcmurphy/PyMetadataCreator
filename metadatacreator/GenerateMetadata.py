@@ -140,20 +140,21 @@ class GenerateMetadata:
     @staticmethod
     def get_lifecycle(inst, my_data_set, file_info):
         lifecycle = LifeCycle()
-        lifecycle.isOnDisk = True
-        lifecycle.isOnTape = True
+        lifecycle.id = str(my_data_set["doi"])
+        lifecycle.isOnDisk = False
+        lifecycle.isOnTape = False
         lifecycle.archivable = True
         lifecycle.retrievable = True
-        lifecycle.archiveStatusMessage = "string"
+        lifecycle.archiveStatusMessage = "datasetCreated"
         lifecycle.retrieveStatusMessage = "string"
         lifecycle.lastUpdateMessage = "string"
         lifecycle.archiveReturnMessage = "string"
         lifecycle.dateOfLastMessage = "2018-08-23T07:22:52.768Z"
-        lifecycle.dateOfDiskPurging = "2018-08-23T07:22:52.768Z"
-        lifecycle.archiveRetentionTime = "2018-08-23T07:22:52.768Z"
+        lifecycle.dateOfDiskPurging = "2028-08-23T07:22:52.768Z"
+        lifecycle.archiveRetentionTime = "2028-08-23T07:22:52.768Z"
         lifecycle.isExported = True
         lifecycle.exportedTo = "string"
-        lifecycle.dateOfPublishing = "2018-08-23T07:22:52.768Z"
+        lifecycle.dateOfPublishing = "2021-08-23T07:22:52.768Z"
         lifecycle.ownerGroup = "string",
         lifecycle.accessGroups = ["string"]
         lifecycle.createdBy = "string"

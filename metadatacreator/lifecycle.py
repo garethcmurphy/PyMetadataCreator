@@ -1,10 +1,11 @@
 class LifeCycle:
     def __init__(self):
-        self.isOnDisk = True
-        self.isOnTape = True
+        self.id = "string"
+        self.isOnDisk = False
+        self.isOnTape = False
         self.archivable = True
         self.retrievable = True
-        self.archiveStatusMessage = "string"
+        self.archiveStatusMessage = "datasetCreated"
         self.retrieveStatusMessage = "string"
         self.lastUpdateMessage = "string"
         self.archiveReturnMessage = "string"

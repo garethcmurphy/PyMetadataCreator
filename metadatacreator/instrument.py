@@ -43,7 +43,7 @@ class DefaultInst(Instrument):
         self.authors = ['string']
         self.doiRegisteredSuccessfullyTime = "2018"
 
-        self.source_folder_array = ['subfolder']
+        self.source_folder_array = {'0010': 'subfolder'}
         self.scientificMetadata = {
             'id': 3
         }
@@ -172,7 +172,7 @@ class Multiblade(Instrument):
         self.proposal = '2018ESS1'
 
         self.source_folder_array = {
-            '000': 'multiblade/data/brightness/2016_12_STF_MB15_GammaSensitivity/20161210_gammaSensData',
+            '0000': 'multiblade/data/brightness/2016_12_STF_MB15_GammaSensitivity/20161210_gammaSensData',
             '0001': 'multiblade/data/brightness/2017_04_STF_MB15_FastNeutronSensitivity/data_FastNeutron',
             '0002': 'multiblade/data/brightness/2017_06_BNC_MB16T_ElectronicsTests/DATA',
             '0003': 'multiblade/data/brightness/2017_06_BNC_MB16T_ElectronicsTests/DATA_011_images',
@@ -260,7 +260,7 @@ class Multigrid(Instrument):
             '0000': 'multigrid/data/raw/MG_CNCS/07_11/beamOn_resetOn',
             '0001': 'multigrid/data/raw/MG_CNCS/07_11/no_reset',
             '0002': 'multigrid/data/raw/MG_CNCS/07_12_background',
-            '00003': 'multigrid/data/raw/MG_CNCS/07_13_12A',
+            '0003': 'multigrid/data/raw/MG_CNCS/07_13_12A',
             '0004': 'multigrid/data/raw/MG_CNCS/07_13_12A_Vanadium_powder',
             '0005': 'multigrid/data/raw/MG_CNCS/07_13_4p96A',
             '0006': 'multigrid/data/raw/MG_CNCS/07_13_7p2A',

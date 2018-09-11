@@ -59,7 +59,7 @@ class GenerateMetadata:
             inst = new_inst.factory(experiment)
 
             data_set_num = 0
-            for key, source_folder_fragment in inst.source_folder_array:
+            for key, source_folder_fragment in inst.source_folder_array.items():
                 source_folder = self.my_directory + '/' + source_folder_fragment
                 data_set_num = data_set_num + 1
                 self.file_list = []

@@ -59,7 +59,7 @@ class GenerateMetadata:
             inst = new_inst.factory(experiment)
 
             data_set_num = 0
-            for source_folder_fragment in inst.source_folder_array:
+            for key, source_folder_fragment in inst.source_folder_array:
                 source_folder = self.my_directory + '/' + source_folder_fragment
                 data_set_num = data_set_num + 1
                 self.file_list = []
@@ -69,7 +69,7 @@ class GenerateMetadata:
 
                 my_orig = self.get_orig_blocks(my_data_set, file_info)
 
-                my_published = self.get_published_data(inst, my_data_set, file_info)
+                my_published = self.get_published_data(inst, my_data_set, file_info, key)
                 my_lifecycle = self.get_lifecycle(inst, my_data_set, file_info)
 
                 scicat_entries = {
@@ -118,7 +118,7 @@ class GenerateMetadata:
         return my_orig
 
     @staticmethod
-    def get_published_data(inst, my_data_set, file_info):
+    def get_published_data(inst, my_data_set, file_info, key):
         published = PublishedData()
         my_published = published.published_data
         my_published["doi"] = str(my_data_set["doi"])
@@ -132,7 +132,7 @@ class GenerateMetadata:
         my_published["abstract"] = inst.abstract
         im = Base64Im()
         my_published["thumbnail"] = im.im
-        my_published["url"] = inst.url
+        my_published["url"] = inst.url + key
         my_published["sizeOfArchive"] = file_info.total_file_size
         my_published["numberOfFiles"] = file_info.file_number
         return my_published

@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 class Instrument:
+    doi_prefix = "10.17199/BRIGHTNESS/"
+    handle_prefix = "20.500.12269"
+    url_fragment = 'https://scicat.esss.se/datasets/' + self.handle_prefix + "%2FBRIGHTNESS%2F"
+
     def __init__(self):
-        self.doi_prefix = "10.17199/BRIGHTNESS/"
-        self.handle_prefix = "20.500.12269"
-        self.url_fragment = 'https://scicat.esss.se/datasets/' + self.handle_prefix + "%2FBRIGHTNESS%2F"
+        pass
 
     def factory(instrument_type=None):
         if instrument_type == 'sonde':

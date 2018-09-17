@@ -203,7 +203,7 @@ class GenerateMetadata:
                 "gid": "string",
                 "perm": "string"
             }
-            if file_number < 35000:
+            if file_number < 3500:
                 self.file_list.append(file_entry)
             files_info.experiment_date_time = experiment_date_time
             files_info.file_number = file_number

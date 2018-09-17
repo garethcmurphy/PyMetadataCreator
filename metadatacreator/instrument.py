@@ -316,7 +316,9 @@ class Nmx(Instrument):
         self.authors = ['string']
         self.doiRegisteredSuccessfullyTime = "2018"
         self.scientificMetadata = {
-            'id': 3
+            'instrument': 'Sisi',
+            'purpose': 'calibration',
+            'F+GEM V': '33330',
         }
         self.proposal = '2018ESS4'
 

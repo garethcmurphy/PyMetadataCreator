@@ -160,7 +160,7 @@ class GenerateMetadata:
         lifecycle.accessGroups = ["string"]
         lifecycle.createdBy = "string"
         lifecycle.updatedBy = "string"
-        lifecycle.datasetId = str(my_data_set["doi"])
+        lifecycle.datasetId = str(my_data_set["pid"])
         lifecycle.rawDatasetId = "string"
         lifecycle.derivedDatasetId = "string"
         lifecycle.createdAt = "2018-09-06T09:53:58.370Z"

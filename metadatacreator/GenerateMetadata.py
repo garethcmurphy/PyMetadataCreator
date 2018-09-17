@@ -100,7 +100,7 @@ class GenerateMetadata:
         my_data_set["endTime"] = files_info.experiment_date_time
         my_data_set["createdAt"] = files_info.experiment_date_time
         my_data_set["updatedAt"] = files_info.experiment_date_time
-        my_data_set["doi"] = str(my_data_set["pid"]) + inst.abbreviation + str(data_set_number).zfill(4)
+        my_data_set["doi"] = inst.doi + str(data_set_number).zfill(4)
         my_data_set["sourceFolder"] = files_info.source_folder
         my_data_set["scientificMetadata"] = inst.scientificMetadata
         my_data_set["proposalId"] = inst.proposal

@@ -35,6 +35,7 @@ class GenerateMetadata:
         self.hostname = socket.gethostname()
         self.file_names = []
         self.file_list = []
+        self.handle_prefix = '20.500.12269'
         if self.hostname == 'login.esss.dk':
             # self.mydir = "/users/detector/experiments/multiblade/data/brightness"
             self.my_directory = "/users/detector/experiments"
@@ -92,7 +93,7 @@ class GenerateMetadata:
         my_data_set = d.dataset
         print(inst.abbreviation)
         my_data_set.update(inst.inst)
-        my_data_set["pid"] = '10.17199/BRIGHTNESS/' + inst.abbreviation + str(data_set_number).zfill(4)
+        my_data_set["pid"] = self.handle_prefix + '/BRIGHTNESS/' + inst.abbreviation + str(data_set_number).zfill(4)
         print(my_data_set["pid"])
         my_data_set["size"] = files_info.total_file_size
         my_data_set["packedSize"] = files_info.total_file_size

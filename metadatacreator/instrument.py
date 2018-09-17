@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 class Instrument:
+    def __init__(self):
+        self.doi_prefix = "10.17199/BRIGHTNESS/"
+        self.handle_prefix = "20.500.12269"
+        self.url_fragment = 'https://scicat.esss.se/datasets/' + self.handle_prefix + "%2FBRIGHTNESS%2F"
 
     def factory(instrument_type=None):
         if instrument_type == 'sonde':
@@ -26,13 +30,13 @@ class DefaultInst(Instrument):
 
     def __init__(self):
         self.abbreviation = 'SONDE'
-        self.doi = '10.17199/BRIGHTNESS/SONDE0001'
+        self.doi = self.doi_prefix + self.abbreviation
         self.affiliation = 'ESS'
         self.creator = 'ESS'
         self.publisher = 'ESS'
         self.publicationYear = 2018
         self.title = 'Sample Data from SONDE'
-        self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FSONDE'
+        self.url = self.url_fragment + self.abbreviation
         self.dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/SONDE'
         self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \
                         Framework Programme for Research and Innovation Horizon 2020, under grant \
@@ -66,13 +70,13 @@ class Sonde(Instrument):
 
     def __init__(self):
         self.abbreviation = 'SONDE'
-        self.doi = '10.17199/BRIGHTNESS/SONDE0001'
+        self.doi = self.doi_prefix + self.abbreviation
         self.affiliation = 'ESS'
         self.creator = 'Ramsey Al Jebali'
         self.publisher = 'ESS'
         self.publicationYear = 2018
         self.title = 'Sample Data from SONDE'
-        self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FSONDE'
+        self.url = self.url_fragment + self.abbreviation
         self.dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/SONDE'
         self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \
                         Framework Programme for Research and Innovation Horizon 2020, under grant \
@@ -152,13 +156,13 @@ class Multiblade(Instrument):
 
     def __init__(self):
         self.abbreviation = 'MB'
-        self.doi = '10.17199/BRIGHTNESS/MB0001'
+        self.doi = self.doi_prefix + self.abbreviation
         self.affiliation = 'ESS'
         self.creator = 'Francesco Piscitelli'
         self.publisher = 'ESS'
         self.publicationYear = 2018
         self.title = 'Sample Data from Multiblade'
-        self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FMB'
+        self.url = self.url_fragment + self.abbreviation
         self.dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/Zaba'
         self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \
                         Framework Programme for Research and Innovation Horizon 2020, under grant \
@@ -238,13 +242,13 @@ class Multiblade(Instrument):
 class Multigrid(Instrument):
     def __init__(self):
         self.abbreviation = 'MG'
-        self.doi = '10.17199/BRIGHTNESS/MG0001'
+        self.doi = self.doi_prefix + self.abbreviation
         self.affiliation = 'ESS'
         self.creator = 'Anton Khaplanov'
         self.publisher = 'ESS'
         self.publicationYear = 2018
         self.title = 'Sample Data from Multigrid'
-        self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FMG'
+        self.url = self.url_fragment + self.abbreviation
         self.dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/Multigrid-Data-Format-I'
         self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \
                         Framework Programme for Research and Innovation Horizon 2020, under grant \
@@ -261,21 +265,21 @@ class Multigrid(Instrument):
         self.proposal = '2018ESS3'
 
         self.source_folder_array = {
-            '0000': 'multigrid/data/raw/MG_CNCS/07_11/beamOn_resetOn',
-            '0001': 'multigrid/data/raw/MG_CNCS/07_11/no_reset',
-            '0002': 'multigrid/data/raw/MG_CNCS/07_12_background',
-            '0003': 'multigrid/data/raw/MG_CNCS/07_13_12A',
-            '0004': 'multigrid/data/raw/MG_CNCS/07_13_12A_Vanadium_powder',
-            '0005': 'multigrid/data/raw/MG_CNCS/07_13_4p96A',
-            '0006': 'multigrid/data/raw/MG_CNCS/07_13_7p2A',
-            '0007': 'multigrid/data/raw/MG_CNCS/07_13_7p2A/1_t0_timing',
-            '0008': 'multigrid/data/raw/MG_CNCS/07_14',
-            '0009': 'multigrid/data/raw/MG_CNCS/07_15',
-            '0010': 'multigrid/data/raw/MG_CNCS/07_25',
-            '0011': 'multigrid/data/raw/MG_CNCS/08_16',
-            '0012': 'multigrid/data/raw/MG_CNCS/09_29',
-            '0013': 'multigrid/data/raw/MG_CNCS/10_13',
-            '0014': 'multigrid/data/raw/MG_CNCS/11_29',
+            '0001': 'multigrid/data/raw/MG_CNCS/07_11/beamOn_resetOn',
+            '0002': 'multigrid/data/raw/MG_CNCS/07_11/no_reset',
+            '0003': 'multigrid/data/raw/MG_CNCS/07_12_background',
+            '0004': 'multigrid/data/raw/MG_CNCS/07_13_12A',
+            '0005': 'multigrid/data/raw/MG_CNCS/07_13_12A_Vanadium_powder',
+            '0006': 'multigrid/data/raw/MG_CNCS/07_13_4p96A',
+            '0007': 'multigrid/data/raw/MG_CNCS/07_13_7p2A',
+            '0008': 'multigrid/data/raw/MG_CNCS/07_13_7p2A/1_t0_timing',
+            '0009': 'multigrid/data/raw/MG_CNCS/07_14',
+            '0010': 'multigrid/data/raw/MG_CNCS/07_15',
+            '0011': 'multigrid/data/raw/MG_CNCS/07_25',
+            '0012': 'multigrid/data/raw/MG_CNCS/08_16',
+            '0013': 'multigrid/data/raw/MG_CNCS/09_29',
+            '0014': 'multigrid/data/raw/MG_CNCS/10_13',
+            '0015': 'multigrid/data/raw/MG_CNCS/11_29',
         }
 
         self.inst = {'owner': 'Anton Khaplanov',
@@ -292,13 +296,13 @@ class Multigrid(Instrument):
 class Nmx(Instrument):
     def __init__(self):
         self.abbreviation = 'NMX'
-        self.doi = '10.17199/BRIGHTNESS/NMX0001'
+        self.doi = self.doi_prefix + self.abbreviation
         self.affiliation = 'ESS'
         self.creator = 'Dorothea Pfeiffer'
         self.publisher = 'ESS'
         self.publicationYear = 2018
         self.title = 'Sample Data from NMX'
-        self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FNMX'
+        self.url = self.url_fragment + self.abbreviation
         self.dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/NMX'
         self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \ 
                         Framework Programme for Research and Innovation Horizon 2020, under grant \
@@ -366,13 +370,13 @@ class Nmx(Instrument):
 class V20(Instrument):
     def __init__(self):
         self.abbreviation = 'V20'
-        self.doi = '10.17199/BRIGHTNESS/NMX0001'
+        self.doi = self.doi_prefix + self.abbreviation
         self.affiliation = 'ESS'
         self.creator = 'Jonas Nilsson'
         self.publisher = 'ESS'
         self.publicationYear = 2018
         self.title = 'Sample Data from V20'
-        self.url = 'https://scicat.esss.se/datasets/10.17199%2FBRIGHTNESS%2FV20'
+        self.url = self.url_fragment + self.abbreviation
         self.dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/V20'
         self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \ 
                         Framework Programme for Research and Innovation Horizon 2020, under grant \

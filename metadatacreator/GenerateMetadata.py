@@ -140,6 +140,7 @@ class GenerateMetadata:
 
     @staticmethod
     def get_lifecycle(inst, my_data_set, file_info):
+        current_date = datetime.datetime.now().isoformat()
         lifecycle = LifeCycle()
         lifecycle.id = str(my_data_set["pid"])
         lifecycle.isOnDisk = False

@@ -87,8 +87,7 @@ class GenerateMetadata:
         with open('test_new_metadata.json', 'w') as f:
             json.dump(data_sets, f, ensure_ascii=False, indent=2)
 
-    @staticmethod
-    def get_dataset(inst, data_set_number, files_info):
+    def get_dataset(self, inst, data_set_number, files_info):
         d = Dataset()
         my_data_set = d.dataset
         print(inst.abbreviation)
@@ -101,7 +100,7 @@ class GenerateMetadata:
         my_data_set["endTime"] = files_info.experiment_date_time
         my_data_set["createdAt"] = files_info.experiment_date_time
         my_data_set["updatedAt"] = files_info.experiment_date_time
-        my_data_set["doi"] = str(my_data_set["pid"])
+        my_data_set["doi"] = str(my_data_set["pid"]) + inst.abbreviation + str(data_set_number).zfill(4)
         my_data_set["sourceFolder"] = files_info.source_folder
         my_data_set["scientificMetadata"] = inst.scientificMetadata
         my_data_set["proposalId"] = inst.proposal

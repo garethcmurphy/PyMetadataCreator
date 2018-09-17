@@ -168,7 +168,7 @@ class Multiblade(Instrument):
                         Framework Programme for Research and Innovation Horizon 2020, under grant \
                         agreement 676548. It consists of test data for the detector."""
         self.resourceType = 'lst1 files'
-        self.sizeOfArchive = 33.1
+        self.sizeOfArchive = 33
         self.numberOfFiles = 11
         self.pidArray = ['string']
         self.authors = ['string']

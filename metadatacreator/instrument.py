@@ -29,11 +29,11 @@ class Instrument:
 
 
 class DefaultInst():
+    doi_prefix = "10.17199/BRIGHTNESS/"
+    handle_prefix = "20.500.12269"
+    url_fragment = 'https://scicat.esss.se/datasets/' + handle_prefix + "%2FBRIGHTNESS%2F"
 
     def __init__(self):
-        self.doi_prefix = "10.17199/BRIGHTNESS/"
-        self.handle_prefix = "20.500.12269"
-        self.url_fragment = 'https://scicat.esss.se/datasets/' + handle_prefix + "%2FBRIGHTNESS%2F"
         self.abbreviation = 'SONDE'
         self.doi = self.doi_prefix + self.abbreviation
         self.affiliation = 'ESS'

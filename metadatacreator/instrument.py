@@ -32,49 +32,70 @@ class DefaultInst:
     doi_prefix = "10.17199/BRIGHTNESS/"
     handle_prefix = "20.500.12269"
     url_fragment = 'https://scicat.esss.se/datasets/' + handle_prefix + "%2FBRIGHTNESS%2F"
+    abbreviation = 'SONDE'
 
-    def __init__(self):
-        self.abbreviation = 'SONDE'
-        self.doi = self.doi_prefix + self.abbreviation
-        self.affiliation = 'ESS'
-        self.creator = 'ESS'
-        self.publisher = 'ESS'
-        self.publicationYear = 2018
-        self.title = 'Sample Data from SONDE'
-        self.url = self.url_fragment + self.abbreviation
-        self.dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/SONDE'
-        self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \
-                        Framework Programme for Research and Innovation Horizon 2020, under grant \
-                        agreement 676548. It consists of test data for the detector."""
-        self.resourceType = 'NeXus HDF5 files'
-        self.sizeOfArchive = 33.1
-        self.numberOfFiles = 11
-        self.pidArray = ['string']
-        self.authors = ['string']
-        self.doiRegisteredSuccessfullyTime = "2018"
+    owner = 'Ramsey Al Jebali'
+    ownerEmail = 'ramsey.aljebali@esss.se'
+    orcidOfOwner = '0000-0000-0000-0000'
+    contactEmail = ownerEmail
+    principalInvestigator = owner
+    userTargetLocation = abbreviation
+    sourceFolder = 'sonde/IFE_june_2018/data/S13'
+    creationLocation = abbreviation
+    keywords = [abbreviation, 'IFE']
+    doi = doi_prefix + abbreviation
+    affiliation = 'ESS'
+    creator = owner
+    publisher = 'ESS'
+    publicationYear = 2018
+    title = 'Sample Data from ' + abbreviation
+    url = url_fragment + abbreviation
+    dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/SONDE'
+    abstract = """This data was collected as part of BrightnESS, funded by the European Union \
+                            Framework Programme for Research and Innovation Horizon 2020, under grant \
+                            agreement 676548. It consists of test data for the detector."""
+    resourceType = 'Comma Separated Variable (csv) files'
+    sizeOfArchive = 33.1
+    numberOfFiles = 11
+    pidArray = ['string']
+    authors = [owner]
+    doiRegisteredSuccessfullyTime = "2018"
+    scientificMetadata = {
+        'id': 3
+    }
+    proposal = '2018ESS2'
 
-        self.source_folder_array = {'0010': 'subfolder'}
-        self.scientificMetadata = {
-            'id': 3
-        }
-
-        self.proposal = '2018ESS1'
-
-        self.inst = {'owner': 'ESS',
-                     'ownerEmail': 'undefined@esss.se',
-                     'orcidOfOwner': '0000-0000-0000-0000',
-                     'contactEmail': 'undefined@esss.se',
-                     'principalInvestigator': 'ESS',
-                     'userTargetLocation': 'ESS',
-                     'sourceFolder': 'ESS',
-                     'creationLocation': 'ESS',
-                     }
+    isOnDisk = True
+    isOnTape = True
+    archivable = True
+    retrievable = True
+    archiveStatusMessage = "datasetCreated"
+    retrieveStatusMessage = "string"
+    lastUpdateMessage = "string"
+    archiveReturnMessage = "string"
+    dateOfLastMessage = "2018-08-23T07:22:52.768Z"
+    dateOfDiskPurging = "2018-08-23T07:22:52.768Z"
+    archiveRetentionTime = "2018-08-23T07:22:52.768Z"
+    isExported = True
+    exportedTo = "string"
+    dateOfPublishing = "2018-08-23T07:22:52.768Z"
 
 
 class Sonde(DefaultInst):
 
     def __init__(self):
         self.abbreviation = 'SONDE'
+
+        self.owner = 'Ramsey Al Jebali'
+        self.ownerEmail = 'ramsey.aljebali@esss.se'
+        self.sourceFolder = 'sonde/IFE_june_2018/data/S13'
+        self.orcidOfOwner = '0000-0000-0000-0000'
+        self.contactEmail = self.ownerEmail
+        self.principalInvestigator = self.owner
+        self.userTargetLocation = self.abbreviation
+        self.creationLocation = self.abbreviation
+        self.keywords = [self.abbreviation, 'IFE']
+
         self.doi = self.doi_prefix + self.abbreviation
         self.affiliation = 'ESS'
         self.creator = 'Ramsey Al Jebali'
@@ -87,30 +108,13 @@ class Sonde(DefaultInst):
                         Framework Programme for Research and Innovation Horizon 2020, under grant \
                         agreement 676548. It consists of test data for the detector."""
         self.resourceType = 'Comma Separated Variable (csv) files'
-        self.sizeOfArchive = 33.1
-        self.numberOfFiles = 11
         self.pidArray = ['string']
-        self.authors = ['string']
+        self.authors = [self.creator]
         self.doiRegisteredSuccessfullyTime = "2018"
         self.scientificMetadata = {
             'id': 3
         }
         self.proposal = '2018ESS2'
-
-        self.isOnDisk = True
-        self.isOnTape = True
-        self.archivable = True
-        self.retrievable = True
-        self.archiveStatusMessage = "string"
-        self.retrieveStatusMessage = "string"
-        self.lastUpdateMessage = "string"
-        self.archiveReturnMessage = "string"
-        self.dateOfLastMessage = "2018-08-23T07:22:52.768Z"
-        self.dateOfDiskPurging = "2018-08-23T07:22:52.768Z"
-        self.archiveRetentionTime = "2018-08-23T07:22:52.768Z"
-        self.isExported = True
-        self.exportedTo = "string"
-        self.dateOfPublishing = "2018-08-23T07:22:52.768Z"
 
         self.source_folder_array = {
             '0001': 'sonde/IFE_june_2018/data/S1',
@@ -145,25 +149,37 @@ class Sonde(DefaultInst):
             '0030': 'sonde/IFE_oct_2017/from_lenovo_laptop/IDEASTestbench_BETA_V0_24-x86-ALL/logs'
         }
 
-        self.inst = {'owner': 'Ramsey Al Jebali',
-                     'ownerEmail': 'ramsey.aljebali@esss.se',
-                     'orcidOfOwner': '0000-0000-0000-0000',
-                     'contactEmail': 'ramsey.aljebali@esss.se',
-                     'principalInvestigator': 'Ramsey Al Jebali',
-                     'userTargetLocation': 'SONDE',
-                     'sourceFolder': 'sonde/IFE_june_2018/data/S13',
-                     'creationLocation': 'SONDE',
-                     'keywords': ['SONDE', 'IFE'],
-                     }
+        self.inst = {
+            'owner': 'Ramsey Al Jebali',
+            'ownerEmail': 'ramsey.aljebali@esss.se',
+            'orcidOfOwner': '0000-0000-0000-0000',
+            'contactEmail': 'ramsey.aljebali@esss.se',
+            'principalInvestigator': 'Ramsey Al Jebali',
+            'userTargetLocation': 'SONDE',
+            'sourceFolder': 'sonde/IFE_june_2018/data/S13',
+            'creationLocation': 'SONDE',
+            'keywords': ['SONDE', 'IFE'],
+        }
 
 
 class Multiblade(DefaultInst):
 
     def __init__(self):
         self.abbreviation = 'MB'
+
+        self.owner = 'Francesco Piscitelli'
+        self.ownerEmail = 'Francesco.Piscitelli@esss.se'
+        self.sourceFolder = 'multiblade/data/brightness/2017_06_BNC_MB16T_ElectronicsTests/DATA'
+        self.orcidOfOwner = '0000-0002-0325-4407'
+        self.contactEmail = self.ownerEmail
+        self.principalInvestigator = self.owner
+        self.userTargetLocation = self.abbreviation
+        self.creationLocation = self.abbreviation
+        self.keywords = [self.abbreviation]
+
         self.doi = self.doi_prefix + self.abbreviation
         self.affiliation = 'ESS'
-        self.creator = 'Francesco Piscitelli'
+        self.creator = self.owner
         self.publisher = 'ESS'
         self.publicationYear = 2018
         self.title = 'Sample Data from Multiblade'
@@ -173,10 +189,8 @@ class Multiblade(DefaultInst):
                         Framework Programme for Research and Innovation Horizon 2020, under grant \
                         agreement 676548. It consists of test data for the detector."""
         self.resourceType = 'lst1 files'
-        self.sizeOfArchive = 33
-        self.numberOfFiles = 11
         self.pidArray = ['string']
-        self.authors = ['string']
+        self.authors = [self.creator]
         self.doiRegisteredSuccessfullyTime = "2018"
         self.scientificMetadata = {
             'id': 3
@@ -234,9 +248,7 @@ class Multiblade(DefaultInst):
             '0048': 'multiblade/data/brightness/2017_10_ISIS_MB16S_ReflectometryAtCRISP/06_4_R2_Efficiency_25Hz'
         }
         self.inst = {'owner': 'Francesco Piscitelli',
-                     'ownerEmail': 'Francesco.Piscitelli@esss.se',
                      'orcidOfOwner': '0000-0002-0325-4407',
-                     'contactEmail': 'Francesco.Piscitelli@esss.se',
                      'principalInvestigator': 'Francesco Piscitelli',
                      'userTargetLocation': 'multiblade',
                      'sourceFolder': 'multiblade/data/brightness/2017_06_BNC_MB16T_ElectronicsTests/DATA',
@@ -247,6 +259,17 @@ class Multiblade(DefaultInst):
 class Multigrid(DefaultInst):
     def __init__(self):
         self.abbreviation = 'MG'
+
+        self.owner = 'Francesco Piscitelli'
+        self.ownerEmail = 'Francesco.Piscitelli@esss.se'
+        self.sourceFolder = 'multiblade/data/brightness/2017_06_BNC_MB16T_ElectronicsTests/DATA'
+        self.orcidOfOwner = '0000-0002-0325-4407'
+        self.contactEmail = self.ownerEmail
+        self.principalInvestigator = self.owner
+        self.userTargetLocation = self.abbreviation
+        self.creationLocation = self.abbreviation
+        self.keywords = [self.abbreviation]
+
         self.doi = self.doi_prefix + self.abbreviation
         self.affiliation = 'ESS'
         self.creator = 'Anton Khaplanov'
@@ -301,9 +324,20 @@ class Multigrid(DefaultInst):
 class Nmx(DefaultInst):
     def __init__(self):
         self.abbreviation = 'NMX'
+
+        self.owner = 'Dorothea Pfeiffer'
+        self.ownerEmail = 'Dorothea.Pfeiffer@esss.se'
+        self.sourceFolder = 'nmx/data/h5/raw/IFE_2016_Nov'
+        self.orcidOfOwner = '0000-0003-3893-2308'
+        self.contactEmail = self.ownerEmail
+        self.principalInvestigator = self.owner
+        self.userTargetLocation = self.abbreviation
+        self.creationLocation = self.abbreviation
+        self.keywords = [self.abbreviation]
+
         self.doi = self.doi_prefix + self.abbreviation
         self.affiliation = 'ESS'
-        self.creator = 'Dorothea Pfeiffer'
+        self.creator = self.owner
         self.publisher = 'ESS'
         self.publicationYear = 2018
         self.title = 'Sample Data from NMX'
@@ -382,23 +416,26 @@ class Nmx(DefaultInst):
             '0043': 'nmx/data/h5/unclustered/IFE_2016_Nov/Scattering'
         }
 
-        self.inst = {'owner': 'Dorothea Pfeiffer',
-                     'ownerEmail': 'Dorothea.Pfeiffer@esss.se',
-                     'orcidOfOwner': '0000-0003-3893-2308',
-                     'contactEmail': 'Dorothea.Pfeiffer@esss.se',
-                     'principalInvestigator': 'Dorothea Pfeiffer',
-                     'userTargetLocation': 'NMX',
-                     'sourceFolder': 'nmx/data/h5/raw/IFE_2016_Nov',
-                     'creationLocation': 'NMX',
-                     }
 
 
 class V20(DefaultInst):
     def __init__(self):
         self.abbreviation = 'V20'
+
+        self.owner = 'Jonas Nilsson'
+        self.ownerEmail = 'jonas.nilsson@esss.se'
+        self.sourceFolder = 'V20'
+        self.orcidOfOwner = '0000-0003-3893-2308'
+
+        self.contactEmail = self.ownerEmail
+        self.principalInvestigator = self.owner
+        self.userTargetLocation = self.abbreviation
+        self.creationLocation = self.abbreviation
+        self.keywords = [self.abbreviation]
+
         self.doi = self.doi_prefix + self.abbreviation
         self.affiliation = 'ESS'
-        self.creator = 'Jonas Nilsson'
+        self.creator = self.owner
         self.publisher = 'ESS'
         self.publicationYear = 2018
         self.title = 'Sample Data from V20'
@@ -421,15 +458,7 @@ class V20(DefaultInst):
         self.source_folder_array = {
             '0001': 'v20/2018_01_24'
         }
-        self.inst = {'owner': 'Jonas Nilsson',
-                     'ownerEmail': 'jonas.nilsson@esss.se',
-                     'orcidOfOwner': '0000-0003-3893-2308',
-                     'contactEmail': 'jonas.nilsson@esss.se',
-                     'principalInvestigator': 'Jonas Nilsson',
-                     'userTargetLocation': 'V20',
-                     'sourceFolder': 'V20',
-                     'creationLocation': 'V20',
-                     }
+
         self.proposal = '2018ESS1'
 
 

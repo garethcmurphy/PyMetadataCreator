@@ -1,19 +1,7 @@
 #!/usr/bin/env python3
 import datetime
 import glob
-import json
 import os
-import re
-import socket
-
-from sortedcontainers import SortedDict
-
-from Base64Im import Base64Im
-from dataset import Dataset
-from dataset import PublishedData
-from instrument import Instrument
-from lifecycle import LifeCycle
-from orig import Orig
 
 
 class FilesInfo:
@@ -30,9 +18,6 @@ class FilesInfo:
     @staticmethod
     def get_files(my_dir):
         files = glob.glob(my_dir + '/**.*', recursive=True)
-        # print(my_dir)
-        # print(files)
-
         return files
 
     def extract_file_list(self, source_folder):

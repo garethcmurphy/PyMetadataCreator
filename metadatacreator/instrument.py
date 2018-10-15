@@ -28,7 +28,7 @@ class Instrument:
     factory = staticmethod(factory)
 
 
-class DefaultInst():
+class DefaultInst:
     doi_prefix = "10.17199/BRIGHTNESS/"
     handle_prefix = "20.500.12269"
     url_fragment = 'https://scicat.esss.se/datasets/' + handle_prefix + "%2FBRIGHTNESS%2F"

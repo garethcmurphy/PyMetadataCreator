@@ -13,17 +13,8 @@ from dataset import Dataset
 from dataset import PublishedData
 from instrument import Instrument
 from lifecycle import LifeCycle
+from FilesInfo import FilesInfo
 from orig import Orig
-
-
-class FilesInfo:
-    def __init__(self):
-        self.files = []
-        self.file_number = 22
-        self.experiment_date_time = "2017"
-        self.total_file_size = 12345654
-        self.source_folder = 'source_folder'
-        self.base_name = 'base_name'
 
 
 class GenerateMetadata:
@@ -33,8 +24,7 @@ class GenerateMetadata:
         #        self.mydir = "./static"
         self.year_month_regex = '20[0-9]{2}_[0-1][0-9]'
         self.hostname = socket.gethostname()
-        self.file_names = []
-        self.file_list = []
+
         self.handle_prefix = '20.500.12269'
         if self.hostname == 'login.esss.dk':
             # self.mydir = "/users/detector/experiments/multiblade/data/brightness"
@@ -64,15 +54,15 @@ class GenerateMetadata:
                 source_folder = self.my_directory + '/' + source_folder_fragment
                 source_folder = 'demo'
                 data_set_num = data_set_num + 1
-                self.file_list = []
-                file_info = self.extract_file_list(source_folder)
-                self.global_file_number += file_info.file_number
-                my_data_set = self.get_dataset(inst, data_set_num, file_info)
+                files_info = FilesInfo()
+                files_info.extract_file_list(source_folder)
+                self.global_file_number += files_info.file_number
+                my_data_set = self.get_dataset(inst, data_set_num, files_info)
 
-                my_orig = self.get_orig_blocks(my_data_set, file_info)
+                my_orig = self.get_orig_blocks(my_data_set, files_info)
 
-                my_published = self.get_published_data(inst, my_data_set, file_info, key)
-                my_lifecycle = self.get_lifecycle(inst, my_data_set, file_info)
+                my_published = self.get_published_data(inst, my_data_set, files_info, key)
+                my_lifecycle = self.get_lifecycle(inst, my_data_set, files_info)
 
                 scicat_entries = {
                     "dataset": my_data_set,
@@ -81,7 +71,7 @@ class GenerateMetadata:
                     "lifecycle": my_lifecycle
                 }
                 data_sets[
-                    "orig" + file_info.experiment_date_time + str(i).zfill(5) + str(data_set_num).zfill(
+                    "orig" + files_info.experiment_date_time + str(i).zfill(5) + str(data_set_num).zfill(
                         5)] = scicat_entries
         # json.dump(data_sets, sys.stdout, indent=2)
         print("Files processed =", self.global_file_number)
@@ -112,7 +102,7 @@ class GenerateMetadata:
         orig = Orig()
         my_orig = orig.orig
         my_orig["datasetId"] = str(my_data_set["pid"])
-        my_orig["dataFileList"] = self.file_list
+        my_orig["dataFileList"] = file_info.file_list
         my_orig["size"] = file_info.total_file_size
         my_orig["createdAt"] = file_info.experiment_date_time
         my_orig["updatedAt"] = file_info.experiment_date_time
@@ -171,48 +161,6 @@ class GenerateMetadata:
         print(lifecycle_dict)
         return lifecycle_dict
 
-    def extract_file_list(self, source_folder):
-        files_info = FilesInfo()
-        file_number = 0
-        total_file_size = 0
-        self.file_names = self.get_files(source_folder)
-        print(self.file_names[0])
-        print('Fetching stat.ctime on all files, n=', len(self.file_names))
-        if not self.file_names:
-            print("filename empty")
-        for file in self.file_names:
-            file_number += 1
-            longname = file
-
-            stat_info = os.stat(longname)
-            # rel_path = longname.replace('./data', '/static')
-            rel_path = longname.replace('/users/detector', '/static')
-            file_size = stat_info.st_size
-            experiment_date_time = stat_info.st_ctime
-            # print(experiment_date_time)
-            ts = int(experiment_date_time)
-
-            experiment_date_time = str(datetime.datetime.fromtimestamp(ts))
-            # print(experiment_date_time)
-            total_file_size += file_size
-            file_entry = {
-                "path": rel_path,
-                "size": file_size,
-                "time": experiment_date_time,
-                "chk": "string",
-                "uid": "string",
-                "gid": "string",
-                "perm": "string"
-            }
-            if file_number < 35000:
-                self.file_list.append(file_entry)
-            files_info.experiment_date_time = experiment_date_time
-            files_info.file_number = file_number
-            files_info.total_file_size = total_file_size
-            files_info.source_folder = source_folder
-        print(files_info.file_number)
-        return files_info
-
     def get_date_information(self, basename, directory_path):
         year_month = "2018_01"
         search_result = re.search(self.year_month_regex, directory_path)
@@ -230,15 +178,6 @@ class GenerateMetadata:
         data_date = datetime.datetime(int(year), int(month), int(day))
         experiment_date_time = data_date.isoformat()
         return experiment_date_time
-
-    @staticmethod
-    def get_files(my_dir):
-
-        files = glob.glob(my_dir + '/**.*', recursive=True)
-        # print(my_dir)
-        # print(files)
-
-        return files
 
 
 if __name__ == '__main__':

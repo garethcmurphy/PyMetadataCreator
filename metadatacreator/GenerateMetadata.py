@@ -82,6 +82,13 @@ class GenerateMetadata:
         my_data_set = Dataset()
         print(inst.abbreviation)
         my_data_set.principalInvestigator = inst.principalInvestigator
+        my_data_set.endTime = inst.endTime
+        my_data_set.creationLocation = inst.creationLocation
+        my_data_set.owner = inst.owner
+        my_data_set.ownerEmail = inst.ownerEmail
+        my_data_set.orcidOfOwner = inst.orcidOfOwner
+        my_data_set.contactEmail = inst.contactEmail
+
         my_data_set.pid = self.handle_prefix + '/BRIGHTNESS/' + inst.abbreviation + str(data_set_number).zfill(4)
         print(my_data_set.pid)
         my_data_set.size = files_info.total_file_size
@@ -94,6 +101,14 @@ class GenerateMetadata:
         my_data_set.sourceFolder = files_info.source_folder
         my_data_set.scientificMetadata = inst.scientificMetadata
         my_data_set.proposalId = inst.proposal
+        my_data_set.validationStatus = inst.validationStatus
+        my_data_set.keywords = inst.keywords
+        my_data_set.description = inst.dataDescription
+        my_data_set.userTargetLocation = inst.userTargetLocation
+        my_data_set.classification = inst.classification
+        my_data_set.license = inst.license
+        my_data_set.version = inst.version
+        my_data_set.type = inst.type
 
         return my_data_set
 

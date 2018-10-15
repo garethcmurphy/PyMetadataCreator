@@ -157,7 +157,7 @@ class Sonde(DefaultInst):
                      }
 
 
-class Multiblade(Instrument):
+class Multiblade(DefaultInst):
 
     def __init__(self):
         self.abbreviation = 'MB'
@@ -244,7 +244,7 @@ class Multiblade(Instrument):
                      }
 
 
-class Multigrid(Instrument):
+class Multigrid(DefaultInst):
     def __init__(self):
         self.abbreviation = 'MG'
         self.doi = self.doi_prefix + self.abbreviation
@@ -298,7 +298,7 @@ class Multigrid(Instrument):
                      }
 
 
-class Nmx(Instrument):
+class Nmx(DefaultInst):
     def __init__(self):
         self.abbreviation = 'NMX'
         self.doi = self.doi_prefix + self.abbreviation
@@ -393,7 +393,7 @@ class Nmx(Instrument):
                      }
 
 
-class V20(Instrument):
+class V20(DefaultInst):
     def __init__(self):
         self.abbreviation = 'V20'
         self.doi = self.doi_prefix + self.abbreviation
@@ -433,7 +433,7 @@ class V20(Instrument):
         self.proposal = '2018ESS1'
 
 
-class Hzb(Instrument):
+class Hzb(DefaultInst):
     def __init__(self):
         self.abbreviation = 'HZB'
         self.affiliation = 'ESS'
@@ -449,7 +449,7 @@ class Hzb(Instrument):
                      }
 
 
-class Ife(Instrument):
+class Ife(DefaultInst):
     def __init__(self):
         self.abbreviation = 'IFE'
         self.inst = {'owner': 'Jonas Nilsson',
@@ -463,7 +463,7 @@ class Ife(Instrument):
                      }
 
 
-class Ess(Instrument):
+class Ess(DefaultInst):
     def __init__(self):
         self.abbreviation = 'ESS'
         self.affiliation = 'ESS'

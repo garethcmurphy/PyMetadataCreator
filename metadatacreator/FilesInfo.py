@@ -48,15 +48,12 @@ class FilesInfo:
             longname = file
 
             stat_info = os.stat(longname)
-            # rel_path = longname.replace('./data', '/static')
             rel_path = longname.replace('/users/detector', '/static')
             file_size = stat_info.st_size
             experiment_date_time = stat_info.st_ctime
-            # print(experiment_date_time)
             ts = int(experiment_date_time)
 
             experiment_date_time = str(datetime.datetime.fromtimestamp(ts))
-            # print(experiment_date_time)
             total_file_size += file_size
             file_entry = {
                 "path": rel_path,

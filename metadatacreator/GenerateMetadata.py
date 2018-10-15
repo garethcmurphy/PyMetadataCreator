@@ -1,19 +1,17 @@
 #!/usr/bin/env python3
 import datetime
-import glob
 import json
-import os
 import re
 import socket
 
 from sortedcontainers import SortedDict
 
 from Base64Im import Base64Im
+from FilesInfo import FilesInfo
 from dataset import Dataset
 from dataset import PublishedData
 from instrument import Instrument
 from lifecycle import LifeCycle
-from FilesInfo import FilesInfo
 from orig import Orig
 
 

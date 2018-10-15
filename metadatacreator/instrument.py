@@ -33,6 +33,14 @@ class DefaultInst:
     handle_prefix = "20.500.12269"
     url_fragment = 'https://scicat.esss.se/datasets/' + handle_prefix + "%2FBRIGHTNESS%2F"
     abbreviation = 'SONDE'
+    endTime = "2018-08-23T07:22:52.768Z"
+    validationStatus = "valid"
+    classification = "valid"
+    license = "ESS"
+    version = "v1"
+    type = "raw"
+
+
 
     owner = 'Ramsey Al Jebali'
     ownerEmail = 'ramsey.aljebali@esss.se'
@@ -415,7 +423,6 @@ class Nmx(DefaultInst):
             '0042': 'nmx/data/h5/unclustered/IFE_2016_Nov/Pattern',
             '0043': 'nmx/data/h5/unclustered/IFE_2016_Nov/Scattering'
         }
-
 
 
 class V20(DefaultInst):

@@ -65,7 +65,7 @@ class GenerateMetadata:
                 my_lifecycle = self.get_lifecycle(inst, my_data_set, files_info)
 
                 scicat_entries = {
-                    "dataset": my_data_set,
+                    "dataset": my_data_set.__dict__,
                     "orig": my_orig,
                     "published": my_published,
                     "lifecycle": my_lifecycle
@@ -79,80 +79,79 @@ class GenerateMetadata:
             json.dump(data_sets, f, ensure_ascii=False, indent=2)
 
     def get_dataset(self, inst, data_set_number, files_info):
-        d = Dataset()
-        my_data_set = d.dataset
+        my_data_set = Dataset()
         print(inst.abbreviation)
-        my_data_set.update(inst.inst)
-        my_data_set["pid"] = self.handle_prefix + '/BRIGHTNESS/' + inst.abbreviation + str(data_set_number).zfill(4)
-        print(my_data_set["pid"])
-        my_data_set["size"] = files_info.total_file_size
-        my_data_set["packedSize"] = files_info.total_file_size
-        my_data_set["creationTime"] = files_info.experiment_date_time
-        my_data_set["endTime"] = files_info.experiment_date_time
-        my_data_set["createdAt"] = files_info.experiment_date_time
-        my_data_set["updatedAt"] = files_info.experiment_date_time
-        my_data_set["doi"] = inst.doi + str(data_set_number).zfill(4)
-        my_data_set["sourceFolder"] = files_info.source_folder
-        my_data_set["scientificMetadata"] = inst.scientificMetadata
-        my_data_set["proposalId"] = inst.proposal
+        my_data_set.principalInvestigator = inst.principalInvestigator
+        my_data_set.pid = self.handle_prefix + '/BRIGHTNESS/' + inst.abbreviation + str(data_set_number).zfill(4)
+        print(my_data_set.pid)
+        my_data_set.size = files_info.total_file_size
+        my_data_set.packedSize = files_info.total_file_size
+        my_data_set.creationTime = files_info.experiment_date_time
+        my_data_set.endTime = files_info.experiment_date_time
+        my_data_set.createdAt = files_info.experiment_date_time
+        my_data_set.updatedAt = files_info.experiment_date_time
+        my_data_set.doi = inst.doi + str(data_set_number).zfill(4)
+        my_data_set.sourceFolder = files_info.source_folder
+        my_data_set.scientificMetadata = inst.scientificMetadata
+        my_data_set.proposalId = inst.proposal
 
         return my_data_set
 
-    def get_orig_blocks(self, my_data_set, file_info):
-        orig = Orig()
-        my_orig = orig.orig
-        my_orig["datasetId"] = str(my_data_set["pid"])
-        my_orig["dataFileList"] = file_info.file_list
-        my_orig["size"] = file_info.total_file_size
-        my_orig["createdAt"] = file_info.experiment_date_time
-        my_orig["updatedAt"] = file_info.experiment_date_time
-        return my_orig
+    @staticmethod
+    def get_orig_blocks(my_data_set, file_info):
+        my_orig = Orig()
+        my_orig.datasetId = str(my_data_set.pid)
+        my_orig.dataFileList = file_info.file_list
+        my_orig.size = file_info.total_file_size
+        my_orig.createdAt = file_info.experiment_date_time
+        my_orig.updatedAt = file_info.experiment_date_time
+        return my_orig.__dict__
 
     @staticmethod
     def get_published_data(inst, my_data_set, file_info, key):
-        published = PublishedData()
-        my_published = published.published_data
-        my_published["doi"] = str(my_data_set["doi"])
-        my_published["affiliation"] = inst.affiliation
-        my_published["publisher"] = inst.publisher
-        my_published["creator"] = inst.creator
-        my_published["title"] = inst.title
-        my_published["publicationYear"] = inst.publicationYear
-        my_published["publisher"] = inst.publisher
-        my_published["resourceType"] = inst.resourceType
-        my_published["abstract"] = inst.abstract
+        my_published = PublishedData()
+        my_published.doi = str(my_data_set.doi)
+        my_published.affiliation = inst.affiliation
+        my_published.publisher = inst.publisher
+        my_published.creator = inst.creator
+        my_published.title = inst.title
+        my_published.publicationYear = inst.publicationYear
+        my_published.publisher = inst.publisher
+        my_published.resourceType = inst.resourceType
+        my_published.abstract = inst.abstract
         im = Base64Im()
-        my_published["thumbnail"] = im.im
-        my_published["url"] = inst.url + key
-        my_published["sizeOfArchive"] = file_info.total_file_size
-        my_published["numberOfFiles"] = file_info.file_number
-        my_published["dataDescription"] = inst.dataDescription
-        return my_published
+        my_published.thumbnail = im.im
+        my_published.url = inst.url + key
+        my_published.sizeOfArchive = file_info.total_file_size
+        my_published.numberOfFiles = file_info.file_number
+        my_published.dataDescription = inst.dataDescription
+        my_published_dict = my_published.__dict__
+        return my_published_dict
 
     @staticmethod
     def get_lifecycle(inst, my_data_set, file_info):
         current_date = datetime.datetime.now().isoformat()
         lifecycle = LifeCycle()
-        lifecycle.id = str(my_data_set["pid"])
-        lifecycle.isOnDisk = False
-        lifecycle.isOnTape = False
-        lifecycle.archivable = True
-        lifecycle.retrievable = True
+        lifecycle.id = str(my_data_set.pid)
+        lifecycle.isOnDisk = inst.isOnDisk
+        lifecycle.isOnTape = inst.isOnTape
+        lifecycle.archivable = inst.archivable
+        lifecycle.retrievable = inst.retrievable
         lifecycle.archiveStatusMessage = "datasetCreated"
-        lifecycle.retrieveStatusMessage = "string"
-        lifecycle.lastUpdateMessage = "string"
-        lifecycle.archiveReturnMessage = "string"
-        lifecycle.dateOfLastMessage = "2018-08-23T07:22:52.768Z"
-        lifecycle.dateOfDiskPurging = "2028-08-23T07:22:52.768Z"
-        lifecycle.archiveRetentionTime = "2028-08-23T07:22:52.768Z"
-        lifecycle.isExported = True
-        lifecycle.exportedTo = "string"
-        lifecycle.dateOfPublishing = "2021-08-23T07:22:52.768Z"
+        lifecycle.retrieveStatusMessage = inst.retrieveStatusMessage
+        lifecycle.lastUpdateMessage = inst.lastUpdateMessage
+        lifecycle.archiveReturnMessage = inst.archiveReturnMessage
+        lifecycle.dateOfLastMessage = inst.dateOfLastMessage
+        lifecycle.dateOfDiskPurging = inst.dateOfDiskPurging
+        lifecycle.archiveRetentionTime = inst.archiveRetentionTime
+        lifecycle.isExported = inst.isExported
+        lifecycle.exportedTo = inst.exportedTo
+        lifecycle.dateOfPublishing = inst.dateOfPublishing
         lifecycle.ownerGroup = "string",
         lifecycle.accessGroups = ["string"]
         lifecycle.createdBy = "string"
         lifecycle.updatedBy = "string"
-        lifecycle.datasetId = str(my_data_set["pid"])
+        lifecycle.datasetId = str(my_data_set.pid)
         lifecycle.rawDatasetId = "string"
         lifecycle.derivedDatasetId = "string"
         lifecycle.createdAt = "2018-09-06T09:53:58.370Z"

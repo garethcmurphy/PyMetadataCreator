@@ -28,9 +28,12 @@ class Instrument:
     factory = staticmethod(factory)
 
 
-class DefaultInst(Instrument):
+class DefaultInst():
 
     def __init__(self):
+        self.doi_prefix = "10.17199/BRIGHTNESS/"
+        self.handle_prefix = "20.500.12269"
+        self.url_fragment = 'https://scicat.esss.se/datasets/' + handle_prefix + "%2FBRIGHTNESS%2F"
         self.abbreviation = 'SONDE'
         self.doi = self.doi_prefix + self.abbreviation
         self.affiliation = 'ESS'
@@ -68,7 +71,7 @@ class DefaultInst(Instrument):
                      }
 
 
-class Sonde(Instrument):
+class Sonde(DefaultInst):
 
     def __init__(self):
         self.abbreviation = 'SONDE'

@@ -45,11 +45,11 @@ class FilesInfo:
                 "size": file_size,
                 "time": experiment_date_time,
                 "chk": "string",
-                "uid": "string",
-                "gid": "string",
+                "uid": stat_info.st_uid,
+                "gid": stat_info.st_gen,
                 "perm": "string"
             }
-            if file_number < 35000:
+            if file_number < 1000:
                 self.file_list.append(file_entry)
             self.experiment_date_time = experiment_date_time
             self.file_number = file_number

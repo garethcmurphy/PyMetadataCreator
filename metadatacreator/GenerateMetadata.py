@@ -13,6 +13,7 @@ from dataset import PublishedData
 from datasetlifecycle import DatasetLifecycle
 from instrument import Instrument
 from origdatablocks import OrigDatablocks
+import time
 
 
 class GenerateMetadata:
@@ -22,6 +23,8 @@ class GenerateMetadata:
         #        self.mydir = "./static"
         self.year_month_regex = '20[0-9]{2}_[0-1][0-9]'
         self.hostname = socket.gethostname()
+        image = Base64Im()
+        self.image = image.im
 
         self.handle_prefix = '20.500.12269'
         if self.hostname == 'login.esss.dk':
@@ -121,8 +124,7 @@ class GenerateMetadata:
         my_orig.updatedAt = file_info.experiment_date_time
         return my_orig
 
-    @staticmethod
-    def get_published_data(inst, my_data_set, file_info, key):
+    def get_published_data(self,inst, my_data_set, file_info, key):
         my_published = PublishedData()
         my_published.doi = str(my_data_set.doi)
         my_published.affiliation = inst.affiliation
@@ -134,7 +136,7 @@ class GenerateMetadata:
         my_published.resourceType = inst.resourceType
         my_published.abstract = inst.abstract
         im = Base64Im()
-        my_published.thumbnail = im.im
+        my_published.thumbnail = self.image
         my_published.url = inst.url + key
         my_published.sizeOfArchive = file_info.total_file_size
         my_published.numberOfFiles = file_info.file_number
@@ -190,5 +192,8 @@ class GenerateMetadata:
 
 
 if __name__ == '__main__':
+    start_time = time.time()
     g = GenerateMetadata()
     g.generate()
+    print("--- %s seconds ---" % (time.time() - start_time))
+

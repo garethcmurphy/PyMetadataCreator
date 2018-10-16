@@ -2,6 +2,7 @@
 import datetime
 import glob
 import os
+import hashlib
 
 
 class FilesInfo:
@@ -38,16 +39,24 @@ class FilesInfo:
             experiment_date_time = stat_info.st_ctime
             ts = int(experiment_date_time)
 
+            permissions = oct(stat_info.st_mode & 0o777)
+            print(permissions)
+
             experiment_date_time = str(datetime.datetime.fromtimestamp(ts).isoformat())
             total_file_size += file_size
+            checksum = 0
+
+            if file_size < 1000000:
+                checksum = hashlib.md5(open(longname, 'rb').read() )
+            print(checksum.hexdigest() )
             file_entry = {
                 "path": rel_path,
                 "size": file_size,
                 "time": experiment_date_time,
-                "chk": "string",
+                "chk": checksum.hexdigest(),
                 "uid": stat_info.st_uid,
                 "gid": stat_info.st_gid,
-                "perm": "string"
+                "perm": permissions
             }
             if file_number < 1000:
                 self.file_list.append(file_entry)

@@ -44,7 +44,7 @@ class FilesInfo:
 
             experiment_date_time = str(datetime.datetime.fromtimestamp(ts).isoformat())
             total_file_size += file_size
-            checksum = 0
+            checksum = "string"
 
             if file_size < 1000000:
                 checksum = hashlib.sha256(open(longname, 'rb').read())

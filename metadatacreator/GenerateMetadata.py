@@ -140,6 +140,8 @@ class GenerateMetadata:
         my_published.sizeOfArchive = file_info.total_file_size
         my_published.numberOfFiles = file_info.file_number
         my_published.dataDescription = inst.dataDescription
+        my_published.authors = inst.authors
+        my_published.pidArray = inst.pidArray
         my_published_dict = my_published.__dict__
         return my_published_dict
 

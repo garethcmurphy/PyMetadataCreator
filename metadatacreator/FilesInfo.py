@@ -64,6 +64,6 @@ class FilesInfo:
             self.file_number = file_number
             self.total_file_size = total_file_size
             self.source_folder = source_folder
-            if file_number > 10:
+            if file_number > 30:
                 break
         # print(self.file_number)

@@ -124,6 +124,8 @@ class GenerateMetadata:
     def get_orig_blocks(met_data_set,inst, file_info):
         met_orig = OrigDatablock()
         met_orig.datasetId = str(met_data_set.pid)
+        met_orig.rawDatasetId = met_orig.datasetId
+        met_orig.derivedDatasetId = met_orig.datasetId
         met_orig.dataFileList = file_info.file_list
         met_orig.size = file_info.total_file_size
         met_orig.createdAt = file_info.experiment_date_time
@@ -152,6 +154,7 @@ class GenerateMetadata:
         met_published.dataDescription = inst.dataDescription
         met_published.authors = inst.authors
         met_published.pidArray = inst.pidArray
+        met_published.doiRegisteredSuccessfullyTime = inst.doiRegisteredSuccessfullyTime
         return met_published
 
     @staticmethod
@@ -161,12 +164,14 @@ class GenerateMetadata:
         lifecycle.id = str(met_data_set.pid)
         lifecycle.isOnDisk = inst.isOnDisk
         lifecycle.isOnTape = inst.isOnTape
+        lifecycle.isOnCentralDisk = inst.isOnTape
         lifecycle.archivable = inst.archivable
         lifecycle.retrievable = inst.retrievable
         lifecycle.archiveStatusMessage = "datasetCreated"
         lifecycle.retrieveStatusMessage = inst.retrieveStatusMessage
         lifecycle.lastUpdateMessage = inst.lastUpdateMessage
         lifecycle.archiveReturnMessage = inst.archiveReturnMessage
+        lifecycle.MessageHistory = inst.MessageHistory
         lifecycle.dateOfLastMessage = inst.dateOfLastMessage
         lifecycle.dateOfDiskPurging = inst.dateOfDiskPurging
         lifecycle.archiveRetentionTime = inst.archiveRetentionTime
@@ -178,6 +183,8 @@ class GenerateMetadata:
         lifecycle.createdBy = inst.createdBy
         lifecycle.updatedBy = inst.updatedBy
         lifecycle.datasetId = str(met_data_set.pid)
+        lifecycle.rawDatasetId = lifecycle.datasetId
+        lifecycle.derivedDatasetId = lifecycle.datasetId
         lifecycle.createdAt = current_date
         lifecycle.updatedAt = current_date
         return lifecycle

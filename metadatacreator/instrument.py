@@ -93,12 +93,14 @@ class DefaultInst:
 
     isOnDisk = True
     isOnTape = True
+    isOnCentralDisk = True
     archivable = True
     retrievable = True
     archiveStatusMessage = "datasetCreated"
     retrieveStatusMessage = "string"
     lastUpdateMessage = "string"
     archiveReturnMessage = "string"
+    MessageHistory = "string"
     dateOfLastMessage = endTime
     dateOfDiskPurging = endTime
     archiveRetentionTime = endTime

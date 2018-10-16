@@ -38,7 +38,7 @@ class FilesInfo:
             experiment_date_time = stat_info.st_ctime
             ts = int(experiment_date_time)
 
-            experiment_date_time = str(datetime.datetime.fromtimestamp(ts))
+            experiment_date_time = str(datetime.datetime.fromtimestamp(ts).isoformat())
             total_file_size += file_size
             file_entry = {
                 "path": rel_path,

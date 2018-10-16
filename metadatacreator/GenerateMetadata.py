@@ -19,7 +19,7 @@ from origdatablocks import OrigDatablocks
 class GenerateMetadata:
     def __init__(self):
         self.global_file_number = 0
-        self.my_directory = "./data/experiments"
+        self.met_directory = "./data/experiments"
         self.year_month_regex = '20[0-9]{2}_[0-1][0-9]'
         self.hostname = socket.gethostname()
         image = Base64Im()
@@ -27,7 +27,7 @@ class GenerateMetadata:
 
         self.handle_prefix = '20.500.12269'
         if self.hostname == 'login.esss.dk':
-            self.my_directory = "/users/detector/experiments"
+            self.met_directory = "/users/detector/experiments"
 
     def generate(self):
 
@@ -50,7 +50,7 @@ class GenerateMetadata:
 
             data_set_num = 0
             for key, source_folder_fragment in inst.source_folder_array.items():
-                source_folder = self.my_directory + '/' + source_folder_fragment
+                source_folder = self.met_directory + '/' + source_folder_fragment
                 if self.hostname == "CI0020036":
                     source_folder = "demo"
                 data_set_num = data_set_num + 1
@@ -58,16 +58,16 @@ class GenerateMetadata:
                 files_info.extract_file_list(source_folder)
                 self.global_file_number += files_info.file_number
 
-                my_data_set = self.get_dataset(key, inst, data_set_num, files_info)
-                my_orig = self.get_orig_blocks(my_data_set, files_info)
-                my_published = self.get_published_data(inst, my_data_set, files_info, key)
-                my_lifecycle = self.get_lifecycle(inst, my_data_set, files_info)
+                met_data_set = self.get_dataset(key, inst, data_set_num, files_info)
+                met_orig = self.get_orig_blocks(met_data_set, files_info)
+                met_published = self.get_published_data(inst, met_data_set, files_info, key)
+                met_lifecycle = self.get_lifecycle(inst, met_data_set, files_info)
 
                 scicat_entries = {
-                    "dataset": my_data_set.__dict__,
-                    "orig": my_orig.__dict__,
-                    "published": my_published.__dict__,
-                    "lifecycle": my_lifecycle.__dict__
+                    "dataset": met_data_set.__dict__,
+                    "orig": met_orig.__dict__,
+                    "published": met_published.__dict__,
+                    "lifecycle": met_lifecycle.__dict__
                 }
                 data_sets[
                     "orig" + files_info.experiment_date_time + str(i).zfill(5) + str(data_set_num).zfill(
@@ -77,80 +77,80 @@ class GenerateMetadata:
             json.dump(data_sets, f, ensure_ascii=False, indent=2)
 
     def get_dataset(self, key, inst, data_set_number, files_info):
-        my_data_set = Dataset()
+        met_data_set = Dataset()
         print(inst.abbreviation)
-        my_data_set.principalInvestigator = inst.principalInvestigator
-        my_data_set.endTime = inst.endTime
-        my_data_set.creationLocation = inst.creationLocation
-        my_data_set.owner = inst.owner
-        my_data_set.ownerEmail = inst.ownerEmail
-        my_data_set.orcidOfOwner = inst.orcidOfOwner
-        my_data_set.contactEmail = inst.contactEmail
+        met_data_set.principalInvestigator = inst.principalInvestigator
+        met_data_set.endTime = inst.endTime
+        met_data_set.creationLocation = inst.creationLocation
+        met_data_set.owner = inst.owner
+        met_data_set.ownerEmail = inst.ownerEmail
+        met_data_set.orcidOfOwner = inst.orcidOfOwner
+        met_data_set.contactEmail = inst.contactEmail
 
-        my_data_set.pid = self.handle_prefix + '/BRIGHTNESS/' + inst.abbreviation + str(data_set_number).zfill(4)
-        print(my_data_set.pid)
-        my_data_set.size = files_info.total_file_size
-        my_data_set.packedSize = files_info.total_file_size
-        my_data_set.creationTime = files_info.experiment_date_time
-        my_data_set.endTime = files_info.experiment_date_time
-        my_data_set.createdAt = files_info.experiment_date_time
-        my_data_set.updatedAt = files_info.experiment_date_time
-        my_data_set.doi = inst.doi + str(data_set_number).zfill(4)
-        my_data_set.sourceFolder = files_info.source_folder
+        met_data_set.pid = self.handle_prefix + '/BRIGHTNESS/' + inst.abbreviation + str(data_set_number).zfill(4)
+        print(met_data_set.pid)
+        met_data_set.size = files_info.total_file_size
+        met_data_set.packedSize = files_info.total_file_size
+        met_data_set.creationTime = files_info.experiment_date_time
+        met_data_set.endTime = files_info.experiment_date_time
+        met_data_set.createdAt = files_info.experiment_date_time
+        met_data_set.updatedAt = files_info.experiment_date_time
+        met_data_set.doi = inst.doi + str(data_set_number).zfill(4)
+        met_data_set.sourceFolder = files_info.source_folder
         print(key)
         if key in inst.metadata_object:
-            my_data_set.scientificMetadata = inst.metadata_object[key]
+            met_data_set.scientificMetadata = inst.metadata_object[key]
         else:
-            my_data_set.scientificMetadata = inst.scientificMetadata
-        my_data_set.proposalId = inst.proposal
-        my_data_set.validationStatus = inst.validationStatus
-        my_data_set.keywords = inst.keywords
-        my_data_set.description = inst.dataDescription
-        my_data_set.userTargetLocation = inst.userTargetLocation
-        my_data_set.classification = inst.classification
-        my_data_set.license = inst.license
-        my_data_set.version = inst.version
-        my_data_set.type = inst.type
-        my_data_set.ownerGroup = inst.ownerGroup
-        my_data_set.accessGroups = inst.accessGroups
+            met_data_set.scientificMetadata = inst.scientificMetadata
+        met_data_set.proposalId = inst.proposal
+        met_data_set.validationStatus = inst.validationStatus
+        met_data_set.keywords = inst.keywords
+        met_data_set.description = inst.dataDescription
+        met_data_set.userTargetLocation = inst.userTargetLocation
+        met_data_set.classification = inst.classification
+        met_data_set.license = inst.license
+        met_data_set.version = inst.version
+        met_data_set.type = inst.type
+        met_data_set.ownerGroup = inst.ownerGroup
+        met_data_set.accessGroups = inst.accessGroups
 
-        return my_data_set
-
-    @staticmethod
-    def get_orig_blocks(my_data_set, file_info):
-        my_orig = OrigDatablocks()
-        my_orig.datasetId = str(my_data_set.pid)
-        my_orig.dataFileList = file_info.file_list
-        my_orig.size = file_info.total_file_size
-        my_orig.createdAt = file_info.experiment_date_time
-        my_orig.updatedAt = file_info.experiment_date_time
-        return my_orig
-
-    def get_published_data(self, inst, my_data_set, file_info, key):
-        my_published = PublishedData()
-        my_published.doi = str(my_data_set.doi)
-        my_published.affiliation = inst.affiliation
-        my_published.publisher = inst.publisher
-        my_published.creator = inst.creator
-        my_published.title = inst.title
-        my_published.publicationYear = inst.publicationYear
-        my_published.publisher = inst.publisher
-        my_published.resourceType = inst.resourceType
-        my_published.abstract = inst.abstract
-        my_published.thumbnail = self.image
-        my_published.url = inst.url + key
-        my_published.sizeOfArchive = file_info.total_file_size
-        my_published.numberOfFiles = file_info.file_number
-        my_published.dataDescription = inst.dataDescription
-        my_published.authors = inst.authors
-        my_published.pidArray = inst.pidArray
-        return my_published
+        return met_data_set
 
     @staticmethod
-    def get_lifecycle(inst, my_data_set, file_info):
+    def get_orig_blocks(met_data_set, file_info):
+        met_orig = OrigDatablocks()
+        met_orig.datasetId = str(met_data_set.pid)
+        met_orig.dataFileList = file_info.file_list
+        met_orig.size = file_info.total_file_size
+        met_orig.createdAt = file_info.experiment_date_time
+        met_orig.updatedAt = file_info.experiment_date_time
+        return met_orig
+
+    def get_published_data(self, inst, met_data_set, file_info, key):
+        met_published = PublishedData()
+        met_published.doi = str(met_data_set.doi)
+        met_published.affiliation = inst.affiliation
+        met_published.publisher = inst.publisher
+        met_published.creator = inst.creator
+        met_published.title = inst.title
+        met_published.publicationYear = inst.publicationYear
+        met_published.publisher = inst.publisher
+        met_published.resourceType = inst.resourceType
+        met_published.abstract = inst.abstract
+        met_published.thumbnail = self.image
+        met_published.url = inst.url + key
+        met_published.sizeOfArchive = file_info.total_file_size
+        met_published.numberOfFiles = file_info.file_number
+        met_published.dataDescription = inst.dataDescription
+        met_published.authors = inst.authors
+        met_published.pidArray = inst.pidArray
+        return met_published
+
+    @staticmethod
+    def get_lifecycle(inst, met_data_set, file_info):
         current_date = datetime.datetime.now().isoformat()
         lifecycle = DatasetLifecycle()
-        lifecycle.id = str(my_data_set.pid)
+        lifecycle.id = str(met_data_set.pid)
         lifecycle.isOnDisk = inst.isOnDisk
         lifecycle.isOnTape = inst.isOnTape
         lifecycle.archivable = inst.archivable
@@ -169,7 +169,7 @@ class GenerateMetadata:
         lifecycle.accessGroups = inst.accessGroups
         lifecycle.createdBy = inst.createdBy
         lifecycle.updatedBy = inst.updatedBy
-        lifecycle.datasetId = str(my_data_set.pid)
+        lifecycle.datasetId = str(met_data_set.pid)
         lifecycle.createdAt = current_date
         lifecycle.updatedAt = current_date
         return lifecycle

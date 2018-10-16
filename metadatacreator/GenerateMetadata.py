@@ -10,8 +10,8 @@ from Base64Im import Base64Im
 from FilesInfo import FilesInfo
 from dataset import Dataset
 from dataset import PublishedData
-from instrument import Instrument
 from datasetlifecycle import DatasetLifecycle
+from instrument import Instrument
 from origdatablocks import OrigDatablocks
 
 
@@ -107,6 +107,7 @@ class GenerateMetadata:
         my_data_set.license = inst.license
         my_data_set.version = inst.version
         my_data_set.type = inst.type
+        my_data_set.ownerGroup = inst.ownerGroups
 
         return my_data_set
 

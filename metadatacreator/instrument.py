@@ -100,7 +100,15 @@ class DefaultInst:
     retrieveStatusMessage = "string"
     lastUpdateMessage = "string"
     archiveReturnMessage = "string"
-    MessageHistory = "string"
+    MessageHistory = [
+        {
+            "id": "string",
+            "shortMessage": "string",
+            "sender": "string",
+            "when": "now",
+            "payload": {}
+        }
+    ]
     dateOfLastMessage = endTime
     dateOfDiskPurging = endTime
     archiveRetentionTime = endTime

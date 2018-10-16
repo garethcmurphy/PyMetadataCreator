@@ -120,10 +120,7 @@ class Sonde(DefaultInst):
         self.keywords = [self.abbreviation, 'IFE']
 
         self.doi = self.doi_prefix + self.abbreviation
-        self.affiliation = 'ESS'
         self.creator = self.owner
-        self.publisher = 'ESS'
-        self.publicationYear = 2018
         self.title = 'Sample Data from SONDE'
         self.url = self.url_fragment + self.abbreviation
         self.dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/SONDE'
@@ -189,10 +186,7 @@ class Multiblade(DefaultInst):
         self.keywords = [self.abbreviation]
 
         self.doi = self.doi_prefix + self.abbreviation
-        self.affiliation = 'ESS'
         self.creator = self.owner
-        self.publisher = 'ESS'
-        self.publicationYear = 2018
         self.title = 'Sample Data from Multiblade'
         self.url = self.url_fragment + self.abbreviation
         self.dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/Zaba'
@@ -202,7 +196,6 @@ class Multiblade(DefaultInst):
         self.resourceType = 'lst1 files'
         self.pidArray = ['string']
         self.authors = [self.creator]
-        self.doiRegisteredSuccessfullyTime = "2018"
         self.scientificMetadata = {
             'id': 3
         }
@@ -259,6 +252,12 @@ class Multiblade(DefaultInst):
             '0048': 'multiblade/data/brightness/2017_10_ISIS_MB16S_ReflectometryAtCRISP/06_4_R2_Efficiency_25Hz'
         }
 
+        self.metadata_object = {
+            '0048': {
+                
+            }
+        }
+
 
 class Multigrid(DefaultInst):
     def __init__(self):
@@ -277,7 +276,6 @@ class Multigrid(DefaultInst):
 
         self.doi = self.doi_prefix + self.abbreviation
         self.creator = self.owner
-        self.publicationYear = 2018
         self.title = 'Sample Data from Multigrid'
         self.url = self.url_fragment + self.abbreviation
         self.dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/Multigrid-Data-Format-I'
@@ -328,7 +326,6 @@ class Nmx(DefaultInst):
 
         self.doi = self.doi_prefix + self.abbreviation
         self.creator = self.owner
-        self.publicationYear = 2018
         self.title = 'Sample Data from NMX'
         self.url = self.url_fragment + self.abbreviation
         self.dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/NMX'
@@ -338,16 +335,15 @@ class Nmx(DefaultInst):
         self.resourceType = 'NeXus HDF5 files'
         self.pidArray = ['string']
         self.authors = [self.owner]
-        self.doiRegisteredSuccessfullyTime = "2018"
         self.scientificMetadata = {
             'instrument': 'Sisi',
             'purpose': 'calibration',
             'F+GEM V': '33330',
             'D field kV/cm': '1',
-            'F+D V': '1',
-            'Config': '1',
-            'Wavelength': '1',
-            'Beam': '1',
+            'F+D V': '3948',
+            'Config': 'back',
+            'Wavelength': '2',
+            'Beam': 'unfocused',
             'Collimator (Material (w x h) AlBO3': '10x20',
             'Collimator (Material (w x h) B4C': '20x30',
             'Collimator (Material (w x h) AlBO3 2': '10x10',

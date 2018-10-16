@@ -164,10 +164,10 @@ class GenerateMetadata:
         lifecycle.isExported = inst.isExported
         lifecycle.exportedTo = inst.exportedTo
         lifecycle.dateOfPublishing = inst.dateOfPublishing
-        lifecycle.ownerGroup = "string",
-        lifecycle.accessGroups = ["string"]
-        lifecycle.createdBy = "string"
-        lifecycle.updatedBy = "string"
+        lifecycle.ownerGroup = inst.ownerGroup
+        lifecycle.accessGroups = inst.accessGroups
+        lifecycle.createdBy = inst.createdBy
+        lifecycle.updatedBy = inst.updatedBy
         lifecycle.datasetId = str(my_data_set.pid)
         lifecycle.rawDatasetId = "string"
         lifecycle.derivedDatasetId = "string"

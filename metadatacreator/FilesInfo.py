@@ -47,7 +47,7 @@ class FilesInfo:
             checksum = 0
 
             if file_size < 1000000:
-                checksum = hashlib.md5(open(longname, 'rb').read())
+                checksum = hashlib.sha256(open(longname, 'rb').read())
             print(checksum.hexdigest())
             if isinstance(checksum, str):
                 pass

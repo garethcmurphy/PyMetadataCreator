@@ -47,13 +47,18 @@ class FilesInfo:
             checksum = 0
 
             if file_size < 1000000:
-                checksum = hashlib.md5(open(longname, 'rb').read() )
-            print(checksum.hexdigest() )
+                checksum = hashlib.md5(open(longname, 'rb').read())
+            print(checksum.hexdigest())
+            if isinstance(checksum, str):
+                pass
+            else:
+                checksum = checksum.hexdigest()
+
             file_entry = {
                 "path": rel_path,
                 "size": file_size,
                 "time": experiment_date_time,
-                "chk": checksum.hexdigest(),
+                "chk": checksum,
                 "uid": stat_info.st_uid,
                 "gid": stat_info.st_gid,
                 "perm": permissions

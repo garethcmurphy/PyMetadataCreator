@@ -132,8 +132,8 @@ class Multigrid(DefaultInst):
         self.title = 'Sample Data from Multigrid'
         self.url = self.url_fragment + self.abbreviation
         self.dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/Multigrid-Data-Format-I'
-        self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \
-                        Framework Programme for Research and Innovation Horizon 2020, under grant \
+        self.abstract = """This data was collected as part of BrightnESS, funded by the European Union 
+                        Framework Programme for Research and Innovation Horizon 2020, under grant 
                         agreement 676548. It consists of test data for the detector."""
         self.resourceType = 'raw binary files'
         self.pidArray = ['string']
@@ -182,8 +182,8 @@ class Nmx(DefaultInst):
         self.title = 'Sample Data from NMX'
         self.url = self.url_fragment + self.abbreviation
         self.dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/NMX'
-        self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \ 
-                        Framework Programme for Research and Innovation Horizon 2020, under grant \
+        self.abstract = """This data was collected as part of BrightnESS, funded by the European Union  
+                        Framework Programme for Research and Innovation Horizon 2020, under grant 
                         agreement 676548. It consists of test data for the detector."""
         self.resourceType = 'NeXus HDF5 files'
         self.pidArray = ['string']
@@ -279,8 +279,8 @@ class V20(DefaultInst):
         self.title = 'Sample Data from V20'
         self.url = self.url_fragment + self.abbreviation
         self.dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/V20'
-        self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \ 
-                        Framework Programme for Research and Innovation Horizon 2020, under grant \
+        self.abstract = """This data was collected as part of BrightnESS, funded by the European Union  
+                        Framework Programme for Research and Innovation Horizon 2020, under grant 
                         agreement 676548. It consists of test data for the detector."""
         self.resourceType = 'NeXus HDF5 files'
         self.sizeOfArchive = 33.1
@@ -340,8 +340,8 @@ class Multiblade(DefaultInst):
         self.title = 'Sample Data from Multiblade'
         self.url = self.url_fragment + self.abbreviation
         self.dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/Zaba'
-        self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \
-                        Framework Programme for Research and Innovation Horizon 2020, under grant \
+        self.abstract = """This data was collected as part of BrightnESS, funded by the European Union 
+                        Framework Programme for Research and Innovation Horizon 2020, under grant 
                         agreement 676548. It consists of test data for the detector."""
         self.resourceType = 'lst1 files'
         self.pidArray = ['string']
@@ -426,8 +426,8 @@ class Sonde(DefaultInst):
         self.title = 'Sample Data from SONDE'
         self.url = self.url_fragment + self.abbreviation
         self.dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/SONDE'
-        self.abstract = """This data was collected as part of BrightnESS, funded by the European Union \
-                        Framework Programme for Research and Innovation Horizon 2020, under grant \
+        self.abstract = """This data was collected as part of BrightnESS, funded by the European Union 
+                        Framework Programme for Research and Innovation Horizon 2020, under grant 
                         agreement 676548. It consists of test data for the detector."""
         self.resourceType = 'Comma Separated Variable (csv) files'
         self.pidArray = ['string']

@@ -11,8 +11,8 @@ from FilesInfo import FilesInfo
 from dataset import Dataset
 from dataset import PublishedData
 from instrument import Instrument
-from lifecycle import LifeCycle
-from orig import Orig
+from datasetlifecycle import DatasetLifecycle
+from origdatablocks import OrigDatablocks
 
 
 class GenerateMetadata:
@@ -112,7 +112,7 @@ class GenerateMetadata:
 
     @staticmethod
     def get_orig_blocks(my_data_set, file_info):
-        my_orig = Orig()
+        my_orig = OrigDatablocks()
         my_orig.datasetId = str(my_data_set.pid)
         my_orig.dataFileList = file_info.file_list
         my_orig.size = file_info.total_file_size
@@ -144,7 +144,7 @@ class GenerateMetadata:
     @staticmethod
     def get_lifecycle(inst, my_data_set, file_info):
         current_date = datetime.datetime.now().isoformat()
-        lifecycle = LifeCycle()
+        lifecycle = DatasetLifecycle()
         lifecycle.id = str(my_data_set.pid)
         lifecycle.isOnDisk = inst.isOnDisk
         lifecycle.isOnTape = inst.isOnTape

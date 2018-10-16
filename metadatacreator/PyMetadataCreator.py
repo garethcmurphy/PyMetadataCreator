@@ -9,7 +9,7 @@ import sys
 from sortedcontainers import SortedDict
 
 import instrument.Instrument
-import orig.Orig
+import origdatablocks.Orig
 import dataset.Dataset
 
 

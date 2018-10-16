@@ -3,6 +3,7 @@ import datetime
 import json
 import re
 import socket
+import time
 
 from sortedcontainers import SortedDict
 
@@ -11,16 +12,14 @@ from FilesInfo import FilesInfo
 from dataset import Dataset
 from dataset import PublishedData
 from datasetlifecycle import DatasetLifecycle
-from instrument import Instrument, Multiblade, Sonde
+from instrument import Instrument
 from origdatablocks import OrigDatablocks
-import time
 
 
 class GenerateMetadata:
     def __init__(self):
         self.global_file_number = 0
         self.my_directory = "./data/experiments"
-        #        self.mydir = "./static"
         self.year_month_regex = '20[0-9]{2}_[0-1][0-9]'
         self.hostname = socket.gethostname()
         image = Base64Im()
@@ -28,7 +27,6 @@ class GenerateMetadata:
 
         self.handle_prefix = '20.500.12269'
         if self.hostname == 'login.esss.dk':
-            # self.mydir = "/users/detector/experiments/multiblade/data/brightness"
             self.my_directory = "/users/detector/experiments"
 
     def generate(self):
@@ -60,7 +58,7 @@ class GenerateMetadata:
                 files_info.extract_file_list(source_folder)
                 self.global_file_number += files_info.file_number
 
-                my_data_set = self.get_dataset(key, inst,  data_set_num, files_info)
+                my_data_set = self.get_dataset(key, inst, data_set_num, files_info)
                 my_orig = self.get_orig_blocks(my_data_set, files_info)
                 my_published = self.get_published_data(inst, my_data_set, files_info, key)
                 my_lifecycle = self.get_lifecycle(inst, my_data_set, files_info)
@@ -99,7 +97,7 @@ class GenerateMetadata:
         my_data_set.updatedAt = files_info.experiment_date_time
         my_data_set.doi = inst.doi + str(data_set_number).zfill(4)
         my_data_set.sourceFolder = files_info.source_folder
-        print (key)
+        print(key)
         if key in inst.metadata_object:
             my_data_set.scientificMetadata = inst.metadata_object[key]
         else:

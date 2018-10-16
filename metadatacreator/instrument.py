@@ -3,6 +3,7 @@ import datetime
 
 import pytz
 
+from multiblade_metadata import MultibladeMetadata
 
 
 class Instrument:
@@ -397,10 +398,8 @@ class Multiblade(DefaultInst):
             '0048': 'multiblade/data/brightness/2017_10_ISIS_MB16S_ReflectometryAtCRISP/06_4_R2_Efficiency_25Hz'
         }
 
-        self.metadata_object = {
-            '0001': {"wavelength": 2},
-            '0048': {"wavelength": 2}
-        }
+        fetch_metadata = MultibladeMetadata()
+        self.metadata_object = fetch_metadata.metadata_object
 
 
 class Sonde(DefaultInst):

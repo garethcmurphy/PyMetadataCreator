@@ -107,7 +107,8 @@ class GenerateMetadata:
         my_data_set.license = inst.license
         my_data_set.version = inst.version
         my_data_set.type = inst.type
-        my_data_set.ownerGroup = inst.ownerGroups
+        my_data_set.ownerGroup = inst.ownerGroup
+        my_data_set.accessGroups = inst.accessGroups
 
         return my_data_set
 

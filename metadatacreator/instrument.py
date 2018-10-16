@@ -63,7 +63,7 @@ class DefaultInst:
     version = "v1"
     doi = doi_prefix + abbreviation
     isPublished = True
-    ownerGroups = 'ess'
+    ownerGroup = 'ess'
     accessGroups = ['brightness', 'ess', 'loki']
     isPublished = True
     createdBy = "ingestor"

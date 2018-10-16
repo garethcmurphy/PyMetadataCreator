@@ -40,8 +40,6 @@ class DefaultInst:
     version = "v1"
     type = "raw"
 
-
-
     owner = 'Ramsey Al Jebali'
     ownerEmail = 'ramsey.aljebali@esss.se'
     orcidOfOwner = '0000-0000-0000-0000'
@@ -59,9 +57,9 @@ class DefaultInst:
     title = 'Sample Data from ' + abbreviation
     url = url_fragment + abbreviation
     dataDescription = 'https://github.com/ess-dmsc/ess_file_formats/wiki/SONDE'
-    abstract = """This data was collected as part of BrightnESS, funded by the European Union \
-                            Framework Programme for Research and Innovation Horizon 2020, under grant \
-                            agreement 676548. It consists of test data for the detector."""
+    abstract = """This data was collected as part of BrightnESS, funded by the European Union 
+      Framework Programme for Research and Innovation Horizon 2020, under grant 
+      agreement 676548. It consists of test data for the detector."""
     resourceType = 'Comma Separated Variable (csv) files'
     sizeOfArchive = 33.1
     numberOfFiles = 11

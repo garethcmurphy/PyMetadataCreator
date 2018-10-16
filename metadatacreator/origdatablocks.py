@@ -1,4 +1,4 @@
-class Orig:
+class OrigDatablocks:
     size = 20
     dataFileList = "test"
     ownerGroup = "ess"

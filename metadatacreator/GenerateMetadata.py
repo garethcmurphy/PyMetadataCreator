@@ -10,11 +10,14 @@ from sortedcontainers import SortedDict
 from Base64Im import Base64Im
 from FilesInfo import FilesInfo
 from dataset import Dataset
-from dataset import PublishedData
+# from dataset import PublishedData
 # from datasetlifecycle import DatasetLifecycle
 from sdk.swagger_client.models.dataset_lifecycle import DatasetLifecycle
+from sdk.swagger_client.models.published_data import PublishedData
+from sdk.swagger_client.models.dataset_lifecycle import DatasetLifecycle
+from sdk.swagger_client.models.orig_datablock import OrigDatablock
 from instrument import Instrument
-from origdatablocks import OrigDatablocks
+#from origdatablocks import OrigDatablocks
 
 
 class GenerateMetadata:
@@ -52,7 +55,7 @@ class GenerateMetadata:
             data_set_num = 0
             for key, source_folder_fragment in inst.source_folder_array.items():
                 source_folder = self.met_directory + '/' + source_folder_fragment
-                if self.hostname == "CI0020036":
+                if self.hostname == "macmurphy.local":
                     source_folder = "demo"
                 data_set_num = data_set_num + 1
                 files_info = FilesInfo()
@@ -60,14 +63,14 @@ class GenerateMetadata:
                 self.global_file_number += files_info.file_number
 
                 met_data_set = self.get_dataset(key, inst, data_set_num, files_info)
-                met_orig = self.get_orig_blocks(met_data_set, files_info)
+                met_orig = self.get_orig_blocks(met_data_set, inst, files_info)
                 met_published = self.get_published_data(inst, met_data_set, files_info, key)
                 met_lifecycle = self.get_lifecycle(inst, met_data_set, files_info)
 
                 scicat_entries = {
                     "dataset": met_data_set.__dict__,
-                    "orig": met_orig.__dict__,
-                    "published": met_published.__dict__,
+                    "orig": met_orig.to_dict(),
+                    "published": met_published.to_dict(),
                     "lifecycle": met_lifecycle.to_dict()
                 }
                 data_sets[
@@ -118,13 +121,17 @@ class GenerateMetadata:
         return met_data_set
 
     @staticmethod
-    def get_orig_blocks(met_data_set, file_info):
-        met_orig = OrigDatablocks()
+    def get_orig_blocks(met_data_set,inst, file_info):
+        met_orig = OrigDatablock()
         met_orig.datasetId = str(met_data_set.pid)
         met_orig.dataFileList = file_info.file_list
         met_orig.size = file_info.total_file_size
         met_orig.createdAt = file_info.experiment_date_time
         met_orig.updatedAt = file_info.experiment_date_time
+        met_orig.ownerGroup = inst.ownerGroup
+        met_orig.accessGroups = inst.accessGroups
+        met_orig.createdBy = inst.createdBy
+        met_orig.updatedBy = inst.updatedBy
         return met_orig
 
     def get_published_data(self, inst, met_data_set, file_info, key):

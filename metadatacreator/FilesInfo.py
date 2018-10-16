@@ -46,7 +46,7 @@ class FilesInfo:
                 "time": experiment_date_time,
                 "chk": "string",
                 "uid": stat_info.st_uid,
-                "gid": stat_info.st_gen,
+                "gid": stat_info.st_gid,
                 "perm": "string"
             }
             if file_number < 1000:

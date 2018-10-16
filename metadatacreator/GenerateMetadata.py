@@ -50,7 +50,8 @@ class GenerateMetadata:
             data_set_num = 0
             for key, source_folder_fragment in inst.source_folder_array.items():
                 source_folder = self.my_directory + '/' + source_folder_fragment
-                source_folder = 'demo'
+                if self.hostname == "CI0020036":
+                    source_folder = "demo"
                 data_set_num = data_set_num + 1
                 files_info = FilesInfo()
                 files_info.extract_file_list(source_folder)
@@ -71,7 +72,6 @@ class GenerateMetadata:
                 data_sets[
                     "orig" + files_info.experiment_date_time + str(i).zfill(5) + str(data_set_num).zfill(
                         5)] = scicat_entries
-        # json.dump(data_sets, sys.stdout, indent=2)
         print("Files processed =", self.global_file_number)
         with open('test_new_metadata.json', 'w') as f:
             json.dump(data_sets, f, ensure_ascii=False, indent=2)
@@ -182,7 +182,6 @@ class GenerateMetadata:
         search_result = re.search(self.year_month_regex, directory_path)
         if search_result:
             year_month = search_result.group(0)
-        # print('gm',year_month)
         year = year_month[0:4]
         month = year_month[5:7]
         day = 1

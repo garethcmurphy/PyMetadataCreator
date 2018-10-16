@@ -25,8 +25,8 @@ class FilesInfo:
         file_number = 0
         total_file_size = 0
         self.file_names = self.get_files(source_folder)
-        print(self.file_names[0])
-        print('Fetching stat.ctime on all files, n=', len(self.file_names))
+        # print(self.file_names[0])
+        print('Fetching info on all files, n=', len(self.file_names))
         if not self.file_names:
             print("filename empty")
         for file in self.file_names:
@@ -66,4 +66,4 @@ class FilesInfo:
             self.source_folder = source_folder
             if file_number > 10:
                 break
-        print(self.file_number)
+        # print(self.file_number)

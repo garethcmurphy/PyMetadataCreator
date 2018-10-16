@@ -4,6 +4,7 @@ import datetime
 import pytz
 
 from multiblade_metadata import MultibladeMetadata
+from nmx_metadata import NmxMetadata
 
 
 class Instrument:
@@ -250,6 +251,9 @@ class Nmx(DefaultInst):
             '0042': 'nmx/data/h5/unclustered/IFE_2016_Nov/Pattern',
             '0043': 'nmx/data/h5/unclustered/IFE_2016_Nov/Scattering'
         }
+
+        fetch_metadata = NmxMetadata()
+        self.metadata_object = fetch_metadata.metadata_object
 
 
 class V20(DefaultInst):

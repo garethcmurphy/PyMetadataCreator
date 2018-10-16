@@ -5,6 +5,8 @@ import pytz
 
 from multiblade_metadata import MultibladeMetadata
 from nmx_metadata import NmxMetadata
+from sonde_metadata import SondeMetadata
+from multigrid_metadata import MultigridMetadata
 
 
 class Instrument:
@@ -171,7 +173,8 @@ class Multigrid(DefaultInst):
             '0014': 'multigrid/data/raw/MG_CNCS/10_13',
             '0015': 'multigrid/data/raw/MG_CNCS/11_29',
         }
-
+        fetch_metadata = MultigridMetadata()
+        self.metadata_object = fetch_metadata.metadata_object
 
 class Nmx(DefaultInst):
     def __init__(self):
@@ -480,3 +483,5 @@ class Sonde(DefaultInst):
             '0029': 'sonde/IFE_oct_2017/from_lenovo_laptop/IDEASTestbench_BETA_V0_24-x86-ALL/conf/XCS-1000',
             '0030': 'sonde/IFE_oct_2017/from_lenovo_laptop/IDEASTestbench_BETA_V0_24-x86-ALL/logs'
         }
+        fetch_metadata = SondeMetadata()
+        self.metadata_object = fetch_metadata.metadata_object

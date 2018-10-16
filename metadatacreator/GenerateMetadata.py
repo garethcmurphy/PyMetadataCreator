@@ -9,15 +9,11 @@ from sortedcontainers import SortedDict
 
 from Base64Im import Base64Im
 from FilesInfo import FilesInfo
-from dataset import Dataset
-# from dataset import PublishedData
-# from datasetlifecycle import DatasetLifecycle
-from sdk.swagger_client.models.dataset_lifecycle import DatasetLifecycle
-from sdk.swagger_client.models.published_data import PublishedData
+from instrument import Instrument
 from sdk.swagger_client.models.dataset_lifecycle import DatasetLifecycle
 from sdk.swagger_client.models.orig_datablock import OrigDatablock
-from instrument import Instrument
-#from origdatablocks import OrigDatablocks
+from sdk.swagger_client.models.published_data import PublishedData
+from sdk.swagger_client.models.raw_dataset import RawDataset
 
 
 class GenerateMetadata:
@@ -65,10 +61,10 @@ class GenerateMetadata:
                 met_data_set = self.get_dataset(key, inst, data_set_num, files_info)
                 met_orig = self.get_orig_blocks(met_data_set, inst, files_info)
                 met_published = self.get_published_data(inst, met_data_set, files_info, key)
-                met_lifecycle = self.get_lifecycle(inst, met_data_set, files_info)
+                met_lifecycle = self.get_lifecycle(inst, met_data_set)
 
                 scicat_entries = {
-                    "dataset": met_data_set.__dict__,
+                    "dataset": met_data_set.to_dict(),
                     "orig": met_orig.to_dict(),
                     "published": met_published.to_dict(),
                     "lifecycle": met_lifecycle.to_dict()
@@ -81,7 +77,7 @@ class GenerateMetadata:
             json.dump(data_sets, f, ensure_ascii=False, indent=2)
 
     def get_dataset(self, key, inst, data_set_number, files_info):
-        met_data_set = Dataset()
+        met_data_set = RawDataset()
         # print(inst.abbreviation)
         met_data_set.principalInvestigator = inst.principalInvestigator
         met_data_set.endTime = inst.endTime
@@ -117,11 +113,16 @@ class GenerateMetadata:
         met_data_set.type = inst.type
         met_data_set.ownerGroup = inst.ownerGroup
         met_data_set.accessGroups = inst.accessGroups
+        met_data_set.createdBy = inst.createdBy
+        met_data_set.updatedBy = inst.updatedBy
+        met_data_set.sampleId = inst.sampleId
+        met_data_set.isPublished = inst.isPublished
+        met_data_set.dataFormat = inst.resourceType
 
         return met_data_set
 
     @staticmethod
-    def get_orig_blocks(met_data_set,inst, file_info):
+    def get_orig_blocks(met_data_set, inst, file_info):
         met_orig = OrigDatablock()
         met_orig.datasetId = str(met_data_set.pid)
         met_orig.rawDatasetId = met_orig.datasetId
@@ -158,7 +159,7 @@ class GenerateMetadata:
         return met_published
 
     @staticmethod
-    def get_lifecycle(inst, met_data_set, file_info):
+    def get_lifecycle(inst, met_data_set):
         current_date = datetime.datetime.now().isoformat()
         lifecycle = DatasetLifecycle()
         lifecycle.id = str(met_data_set.pid)
@@ -201,7 +202,6 @@ class GenerateMetadata:
             day1 = int(basename[0:2])
             if day1 >= 1:
                 day = int(basename[0:2])
-        # print(year, month, day)
         data_date = datetime.datetime(int(year), int(month), int(day))
         experiment_date_time = data_date.isoformat()
         return experiment_date_time

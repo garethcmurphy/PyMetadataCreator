@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 import datetime
 import glob
-import os
 import hashlib
+import os
 
 
 class FilesInfo:
@@ -46,8 +46,8 @@ class FilesInfo:
             checksum = "string"
 
             if file_size < 34000000:
-                hashobject = hashlib.sha256(open(longname, 'rb').read())
-                checksum = hashobject.hexdigest()
+                hash_object = hashlib.sha256(open(longname, 'rb').read())
+                checksum = hash_object.hexdigest()
 
             file_entry = {
                 "path": rel_path,
@@ -64,4 +64,6 @@ class FilesInfo:
             self.file_number = file_number
             self.total_file_size = total_file_size
             self.source_folder = source_folder
+            if file_number > 10:
+                break
         print(self.file_number)

@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+import datetime
+
+import pytz
+
+
 class Instrument:
     doi_prefix = "10.17199/BRIGHTNESS/"
     handle_prefix = "20.500.12269"
@@ -42,7 +47,7 @@ class DefaultInst:
     publicationYear = 2018
 
     principalInvestigator = creator
-    endTime = "2018-08-23T07:22:52.768Z"
+    endTime = datetime.datetime.now(tz=pytz.utc).isoformat()
     creationLocation = abbreviation
     owner = creator
     ownerEmail = 'ramsey.aljebali@esss.se'
@@ -91,12 +96,12 @@ class DefaultInst:
     retrieveStatusMessage = "string"
     lastUpdateMessage = "string"
     archiveReturnMessage = "string"
-    dateOfLastMessage = "2018-08-23T07:22:52.768Z"
-    dateOfDiskPurging = "2018-08-23T07:22:52.768Z"
-    archiveRetentionTime = "2018-08-23T07:22:52.768Z"
+    dateOfLastMessage = endTime
+    dateOfDiskPurging = endTime
+    archiveRetentionTime = endTime
     isExported = True
     exportedTo = "string"
-    dateOfPublishing = "2018-08-23T07:22:52.768Z"
+    dateOfPublishing = endTime
 
 
 class Sonde(DefaultInst):

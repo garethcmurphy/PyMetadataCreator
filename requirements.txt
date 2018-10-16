@@ -4,3 +4,4 @@ sortedcontainers>=2.0.4
 numpy>=1.13.3
 coverage
 pytest
+pytz

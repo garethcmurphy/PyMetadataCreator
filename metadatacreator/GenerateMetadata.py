@@ -56,18 +56,17 @@ class GenerateMetadata:
                 files_info = FilesInfo()
                 files_info.extract_file_list(source_folder)
                 self.global_file_number += files_info.file_number
+
                 my_data_set = self.get_dataset(inst, data_set_num, files_info)
-
                 my_orig = self.get_orig_blocks(my_data_set, files_info)
-
                 my_published = self.get_published_data(inst, my_data_set, files_info, key)
                 my_lifecycle = self.get_lifecycle(inst, my_data_set, files_info)
 
                 scicat_entries = {
                     "dataset": my_data_set.__dict__,
-                    "orig": my_orig,
-                    "published": my_published,
-                    "lifecycle": my_lifecycle
+                    "orig": my_orig.__dict__,
+                    "published": my_published.__dict__,
+                    "lifecycle": my_lifecycle.__dict__
                 }
                 data_sets[
                     "orig" + files_info.experiment_date_time + str(i).zfill(5) + str(data_set_num).zfill(
@@ -120,7 +119,7 @@ class GenerateMetadata:
         my_orig.size = file_info.total_file_size
         my_orig.createdAt = file_info.experiment_date_time
         my_orig.updatedAt = file_info.experiment_date_time
-        return my_orig.__dict__
+        return my_orig
 
     @staticmethod
     def get_published_data(inst, my_data_set, file_info, key):
@@ -142,8 +141,7 @@ class GenerateMetadata:
         my_published.dataDescription = inst.dataDescription
         my_published.authors = inst.authors
         my_published.pidArray = inst.pidArray
-        my_published_dict = my_published.__dict__
-        return my_published_dict
+        return my_published
 
     @staticmethod
     def get_lifecycle(inst, my_data_set, file_info):
@@ -169,13 +167,9 @@ class GenerateMetadata:
         lifecycle.createdBy = inst.createdBy
         lifecycle.updatedBy = inst.updatedBy
         lifecycle.datasetId = str(my_data_set.pid)
-        lifecycle.rawDatasetId = "string"
-        lifecycle.derivedDatasetId = "string"
-        lifecycle.createdAt = "2018-09-06T09:53:58.370Z"
-        lifecycle.updatedAt = "2018-09-06T09:53:58.370Z"
-        lifecycle_dict = lifecycle.__dict__
-        print(lifecycle_dict)
-        return lifecycle_dict
+        lifecycle.createdAt = current_date
+        lifecycle.updatedAt = current_date
+        return lifecycle
 
     def get_date_information(self, basename, directory_path):
         year_month = "2018_01"

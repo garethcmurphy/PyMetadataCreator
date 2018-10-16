@@ -1,4 +1,4 @@
-class LifeCycle:
+class DatasetLifecycle:
     def __init__(self):
         self.id = "string"
         self.isOnDisk = False

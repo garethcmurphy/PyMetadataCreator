@@ -11,7 +11,7 @@ from FilesInfo import FilesInfo
 from dataset import Dataset
 from dataset import PublishedData
 from datasetlifecycle import DatasetLifecycle
-from instrument import Instrument
+from instrument import Instrument, Multiblade, Sonde
 from origdatablocks import OrigDatablocks
 import time
 
@@ -60,7 +60,7 @@ class GenerateMetadata:
                 files_info.extract_file_list(source_folder)
                 self.global_file_number += files_info.file_number
 
-                my_data_set = self.get_dataset(inst, data_set_num, files_info)
+                my_data_set = self.get_dataset(key, inst,  data_set_num, files_info)
                 my_orig = self.get_orig_blocks(my_data_set, files_info)
                 my_published = self.get_published_data(inst, my_data_set, files_info, key)
                 my_lifecycle = self.get_lifecycle(inst, my_data_set, files_info)
@@ -78,7 +78,7 @@ class GenerateMetadata:
         with open('test_new_metadata.json', 'w') as f:
             json.dump(data_sets, f, ensure_ascii=False, indent=2)
 
-    def get_dataset(self, inst, data_set_number, files_info):
+    def get_dataset(self, key, inst, data_set_number, files_info):
         my_data_set = Dataset()
         print(inst.abbreviation)
         my_data_set.principalInvestigator = inst.principalInvestigator
@@ -99,7 +99,11 @@ class GenerateMetadata:
         my_data_set.updatedAt = files_info.experiment_date_time
         my_data_set.doi = inst.doi + str(data_set_number).zfill(4)
         my_data_set.sourceFolder = files_info.source_folder
-        my_data_set.scientificMetadata = inst.scientificMetadata
+        print (key)
+        if key in inst.metadata_object:
+            my_data_set.scientificMetadata = inst.metadata_object[key]
+        else:
+            my_data_set.scientificMetadata = inst.scientificMetadata
         my_data_set.proposalId = inst.proposal
         my_data_set.validationStatus = inst.validationStatus
         my_data_set.keywords = inst.keywords
@@ -124,7 +128,7 @@ class GenerateMetadata:
         my_orig.updatedAt = file_info.experiment_date_time
         return my_orig
 
-    def get_published_data(self,inst, my_data_set, file_info, key):
+    def get_published_data(self, inst, my_data_set, file_info, key):
         my_published = PublishedData()
         my_published.doi = str(my_data_set.doi)
         my_published.affiliation = inst.affiliation
@@ -135,7 +139,6 @@ class GenerateMetadata:
         my_published.publisher = inst.publisher
         my_published.resourceType = inst.resourceType
         my_published.abstract = inst.abstract
-        im = Base64Im()
         my_published.thumbnail = self.image
         my_published.url = inst.url + key
         my_published.sizeOfArchive = file_info.total_file_size
@@ -196,4 +199,3 @@ if __name__ == '__main__':
     g = GenerateMetadata()
     g.generate()
     print("--- %s seconds ---" % (time.time() - start_time))
-

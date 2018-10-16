@@ -41,7 +41,7 @@ class GenerateMetadata:
         ]
 
         for i in range(0, 5):
-            print(i)
+            # print(i)
             experiment = experiments[i]
             print(experiment)
 
@@ -78,7 +78,7 @@ class GenerateMetadata:
 
     def get_dataset(self, key, inst, data_set_number, files_info):
         met_data_set = Dataset()
-        print(inst.abbreviation)
+        # print(inst.abbreviation)
         met_data_set.principalInvestigator = inst.principalInvestigator
         met_data_set.endTime = inst.endTime
         met_data_set.creationLocation = inst.creationLocation
@@ -88,7 +88,7 @@ class GenerateMetadata:
         met_data_set.contactEmail = inst.contactEmail
 
         met_data_set.pid = self.handle_prefix + '/BRIGHTNESS/' + inst.abbreviation + str(data_set_number).zfill(4)
-        print(met_data_set.pid)
+        print(met_data_set.pid, end='\r')
         met_data_set.size = files_info.total_file_size
         met_data_set.packedSize = files_info.total_file_size
         met_data_set.creationTime = files_info.experiment_date_time
@@ -97,7 +97,7 @@ class GenerateMetadata:
         met_data_set.updatedAt = files_info.experiment_date_time
         met_data_set.doi = inst.doi + str(data_set_number).zfill(4)
         met_data_set.sourceFolder = files_info.source_folder
-        print(key)
+        # print(key)
         if key in inst.metadata_object:
             met_data_set.scientificMetadata = inst.metadata_object[key]
         else:
@@ -186,7 +186,7 @@ class GenerateMetadata:
             day1 = int(basename[0:2])
             if day1 >= 1:
                 day = int(basename[0:2])
-        print(year, month, day)
+        # print(year, month, day)
         data_date = datetime.datetime(int(year), int(month), int(day))
         experiment_date_time = data_date.isoformat()
         return experiment_date_time

@@ -3,5 +3,5 @@ git status
 git add .
 git commit -m "update metadata"
 git push
-ssh login "cd ~/test/PyMetadataCreator && ls"
-ssh kubetest01 "cd ~/test/PyMetadataCreator && ls"
+ssh login "cd ~/test/PyMetadataCreator && ./generate_metadata.sh"
+ssh kubetest01 "cd ~/test/PyMetadataCreator && ./cmd2.sh"

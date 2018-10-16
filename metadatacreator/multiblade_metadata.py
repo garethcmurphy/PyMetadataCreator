@@ -76,15 +76,21 @@ class MultibladeMetadata:
                  supermirror with the magnet and divergent beam. We use the ESS mask''',
                  },
         '0043': {
-            'tag': '05N_12_Q_Si_divergent_highQ', 'comment': 'xxx'},
+            'tag': '05N_12_Q_Si_divergent_highQ',
+            'comment': 'xxx'},
         '0044': {
-            'tag': '05N_13_Q_Si_divergent_highQ_BeamOff', 'comment': 'xxx'},
+            'tag': '05N_13_Q_Si_divergent_highQ_BeamOff',
+            'comment': 'xxx'},
         '0045': {
-            'tag': '06_1_R_Efficiency_50Hz_test', 'comment': 'xxx'},
+            'tag': '06_1_R_Efficiency_50Hz_test',
+            'comment': '''Comparison MB vs 3He, we use the direct beam. We want to see the footprint with the MB, 
+            to be sure we have the same in both detectors. Then we can calculate the efficiency from the comparison'''},
         '0046': {
-            'tag': '06_2_R_Efficiency_50Hz', 'comment': 'xxx'},
+            'tag': '06_2_R_Efficiency_50Hz',
+            'comment': 'xxx'},
         '0047': {
-            'tag': '06_3_R12_Efficiency_25Hz_test', 'comment': 'xxx'},
+            'tag': '06_3_R12_Efficiency_25Hz_test',
+            'comment': 'xxx'},
         '0048': {
             'tag': '06_4_R2_Efficiency_25Hz'
         }

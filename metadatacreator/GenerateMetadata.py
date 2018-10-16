@@ -11,7 +11,8 @@ from Base64Im import Base64Im
 from FilesInfo import FilesInfo
 from dataset import Dataset
 from dataset import PublishedData
-from datasetlifecycle import DatasetLifecycle
+# from datasetlifecycle import DatasetLifecycle
+from sdk.swagger_client.models.dataset_lifecycle import DatasetLifecycle
 from instrument import Instrument
 from origdatablocks import OrigDatablocks
 
@@ -67,7 +68,7 @@ class GenerateMetadata:
                     "dataset": met_data_set.__dict__,
                     "orig": met_orig.__dict__,
                     "published": met_published.__dict__,
-                    "lifecycle": met_lifecycle.__dict__
+                    "lifecycle": met_lifecycle.to_dict()
                 }
                 data_sets[
                     "orig" + files_info.experiment_date_time + str(i).zfill(5) + str(data_set_num).zfill(

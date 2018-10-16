@@ -4,4 +4,4 @@ git add .
 git commit -m "update metadata"
 git push
 ssh login "cd ~/test/PyMetadataCreator && ./generate_metadata.sh"
-ssh kubetest01 "cd ~/test/PyMetadataCreator && ./cmd2.sh"
+ssh kubetest01 "cd ~/CatanieDataLoad && ./cmd2.sh"

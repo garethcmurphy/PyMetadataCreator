@@ -89,7 +89,7 @@ class MultibladeMetadata:
             ''',
         },
         '0027': {'tag': '04_6_I_FeSi_test',
-                 'comment': 'xxx'},
+                 'comment': 'first data with this set must be split - deleted'},
         '0028': {
             'tag': '04_7_I_FeSi_divergent',
             'comment': 'sample super mirror divergent'},
@@ -150,7 +150,8 @@ class MultibladeMetadata:
                  'comment': 'xxx'
                  },
         '0037': {'tag': '05_4_N_ResW',
-                 'comment': 'xxx'},
+                 'comment': 'resolution wires',
+                 },
         '0038': {'tag': '05_5_N1_ResW_longRun',
                  'comment': 'pos28 long 2mm - 70 minutes, 10 minutes each file'},
         '0039': {'tag': '05_6_O_PosStrip_test',
@@ -159,7 +160,7 @@ class MultibladeMetadata:
         '0040': {
             'tag': '05_7_O_PosStrip_linkN1',
             'comment': 'strip position right - 40 mm 5 minutes',
-            'comment': 'strip position left - 40 mm 5 minutes',
+            'comment1': 'strip position left - 40 mm 5 minutes',
         },
         '0041': {'tag': '05_8_O1_ResStrip',
                  'comment': 'strip scan from -60 to 40',
@@ -171,20 +172,22 @@ class MultibladeMetadata:
                  },
         '0043': {
             'tag': '05N_12_Q_Si_divergent_highQ',
-            'comment': 'xxx'},
+            'comment': 'sample Silicon Div'},
         '0044': {
             'tag': '05N_13_Q_Si_divergent_highQ_BeamOff',
-            'comment': 'xxx'},
+            'comment': 'smample silicon divergent high Q Beam Off'},
         '0045': {
             'tag': '06_1_R_Efficiency_50Hz_test',
             'comment': '''Comparison MB vs 3He, we use the direct beam. We want to see the footprint with the MB, 
             to be sure we have the same in both detectors. Then we can calculate the efficiency from the comparison'''},
         '0046': {
             'tag': '06_2_R_Efficiency_50Hz',
-            'comment': 'xxx'},
+            'comment': 'change chopper from 50 to 25 Hz'},
         '0047': {
             'tag': '06_3_R12_Efficiency_25Hz_test',
-            'comment': 'xxx'},
+            'comment': '3He 10 minutes 2 files 5 minutes each',
+            'comment1': 'MB 10 minutes 2 files 5 minutes each',
+        },
         '0048': {
             'tag': '06_4_R2_Efficiency_25Hz'
         }

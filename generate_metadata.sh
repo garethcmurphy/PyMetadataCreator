@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
-git stash
-git pull
+if [ "$(hostname)" == "login.esss.dk" ]; then
+	git stash
+	git pull
+fi
 pipenv install
 pipenv run metadatacreator/GenerateMetadata.py
 echo "Copying to ssh0"

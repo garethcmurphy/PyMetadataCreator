@@ -1,5 +1,6 @@
-[
-  {
+{
+  "0001": {
+    "key": "0001",
     "detector": "Sisi",
     "purpose": "calibration",
     "F+GEM V": 3330.0,
@@ -26,7 +27,8 @@
     "threshold": 280.0,
     "filename": "run_132_Sisi_G_3330V_D_3948V_back_2p00A_unf_APZ_280_cal"
   },
-  {
+  "0002": {
+    "key": "0002",
     "detector": "Sisi",
     "purpose": "calibration",
     "F+GEM V": 3330.0,
@@ -53,7 +55,8 @@
     "threshold": 280.0,
     "filename": "run_134_Sisi_G_3330V_D_3648V_back_2p00A_unf_APZ_280_cal"
   },
-  {
+  "0003": {
+    "key": "0003",
     "detector": "Sisi",
     "purpose": "calibration",
     "F+GEM V": 3330.0,
@@ -80,7 +83,8 @@
     "threshold": 280.0,
     "filename": "run_135_Sisi_G_3330V_D_3348V_back_2p00A_unf_APZ_280_cal"
   },
-  {
+  "0004": {
+    "key": "0004",
     "detector": "Sisi",
     "purpose": "calibration",
     "F+GEM V": 3300.0,
@@ -107,7 +111,8 @@
     "threshold": 280.0,
     "filename": "run_147_Sisi_G_3300V_D_3926V_back_2p00A_unf_APZ_280_cal"
   },
-  {
+  "0005": {
+    "key": "0005",
     "detector": "Sisi",
     "purpose": "calibration",
     "F+GEM V": 3300.0,
@@ -134,7 +139,8 @@
     "threshold": 280.0,
     "filename": "run_148_Sisi_G_3300V_D_3626V_back_2p00A_unf_APZ_280_cal"
   },
-  {
+  "0006": {
+    "key": "0006",
     "detector": "Sisi",
     "purpose": "calibration",
     "F+GEM V": 3300.0,
@@ -161,7 +167,8 @@
     "threshold": 280.0,
     "filename": "run_149_Sisi_G_3300V_D_3326V_back_2p00A_unf_APZ_280_cal"
   },
-  {
+  "0007": {
+    "key": "0007",
     "detector": "Sisi",
     "purpose": "calibration",
     "F+GEM V": 3270.0,
@@ -188,7 +195,8 @@
     "threshold": 280.0,
     "filename": "run_140_Sisi_G_3270V_D_3904V_back_2p00A_unf_APZ_280_cal"
   },
-  {
+  "0008": {
+    "key": "0008",
     "detector": "Sisi",
     "purpose": "calibration",
     "F+GEM V": 3270.0,
@@ -215,7 +223,8 @@
     "threshold": 280.0,
     "filename": "run_141_Sisi_G_3270V_D_3604V_back_2p00A_unf_APZ_280_cal"
   },
-  {
+  "0009": {
+    "key": "0009",
     "detector": "Sisi",
     "purpose": "calibration",
     "F+GEM V": 3270.0,
@@ -242,7 +251,8 @@
     "threshold": 280.0,
     "filename": "run_142_Sisi_G_3270V_D_3304V_back_2p00A_unf_APZ_280_cal"
   },
-  {
+  "0010": {
+    "key": "0010",
     "detector": "Sisi",
     "purpose": "calibration",
     "F+GEM V": 3240.0,
@@ -269,7 +279,8 @@
     "threshold": 280.0,
     "filename": "run_143_Sisi_G_3240V_D_3882V_back_2p00A_unf_APZ_280_cal"
   },
-  {
+  "0011": {
+    "key": "0011",
     "detector": "Sisi",
     "purpose": "calibration",
     "F+GEM V": 3240.0,
@@ -296,7 +307,8 @@
     "threshold": 280.0,
     "filename": "run_144_Sisi_G_3240V_D_3582V_back_2p00A_unf_APZ_280_cal"
   },
-  {
+  "0012": {
+    "key": "0012",
     "detector": "Sisi",
     "purpose": "calibration",
     "F+GEM V": 3240.0,
@@ -323,7 +335,8 @@
     "threshold": 280.0,
     "filename": "run_145_Sisi_G_3240V_D_3282V_back_2p00A_unf_APZ_280_cal"
   },
-  {
+  "0013": {
+    "key": "0013",
     "detector": "Sisi",
     "purpose": "efficiency",
     "F+GEM V": 3330.0,
@@ -350,7 +363,8 @@
     "threshold": 280.0,
     "filename": "run_150_Sisi_G_3330V_D_3948V_back_2p00A_unf_APZ_280_eff"
   },
-  {
+  "0014": {
+    "key": "0014",
     "detector": "Sisi",
     "purpose": "efficiency",
     "F+GEM V": 3330.0,
@@ -377,7 +391,8 @@
     "threshold": 280.0,
     "filename": "run_151_Sisi_G_3330V_D_3948V_back_1p54A_unf_APZ_280_eff"
   },
-  {
+  "0015": {
+    "key": "0015",
     "detector": "Sisi",
     "purpose": "efficiency",
     "F+GEM V": 3330.0,
@@ -404,7 +419,8 @@
     "threshold": 280.0,
     "filename": "run_152_Sisi_G_3330V_D_3948V_back_2p41A_unf_APZ_280_eff"
   },
-  {
+  "0016": {
+    "key": "0016",
     "detector": "Sisi",
     "purpose": "scattering",
     "F+GEM V": 3330.0,
@@ -431,7 +447,8 @@
     "threshold": 280.0,
     "filename": "run_153_Sisi_G_3330V_D_3948V_back_2p00A_unf_APZ_280_sca"
   },
-  {
+  "0017": {
+    "key": "0017",
     "detector": "Sisi",
     "purpose": "scattering",
     "F+GEM V": 3330.0,
@@ -458,7 +475,8 @@
     "threshold": 280.0,
     "filename": "run_154_Sisi_G_3330V_D_3948V_front_2p00A_unf_APZ_280_sca"
   },
-  {
+  "0018": {
+    "key": "0018",
     "detector": "Sisi",
     "purpose": "efficiency",
     "F+GEM V": 3330.0,
@@ -485,7 +503,8 @@
     "threshold": 280.0,
     "filename": "run_155_Sisi_G_3330V_D_3948V_front_2p00A_unf_APZ_280_eff"
   },
-  {
+  "0019": {
+    "key": "0019",
     "detector": "Sisi",
     "purpose": "efficiency",
     "F+GEM V": 3330.0,
@@ -512,7 +531,8 @@
     "threshold": 280.0,
     "filename": "run_156_Sisi_G_3330V_D_3948V_front_2p00A_unf_APZ_280_eff"
   },
-  {
+  "0020": {
+    "key": "0020",
     "detector": "Sisi",
     "purpose": "efficiency",
     "F+GEM V": 3330.0,
@@ -539,7 +559,8 @@
     "threshold": 280.0,
     "filename": "run_157_Sisi_G_3330V_D_3948V_front_1p54A_unf_APZ_280_eff"
   },
-  {
+  "0021": {
+    "key": "0021",
     "detector": "Sisi",
     "purpose": "efficiency",
     "F+GEM V": 3330.0,
@@ -566,7 +587,8 @@
     "threshold": 280.0,
     "filename": "run_158_Sisi_G_3330V_D_3948V_front_2p41A_unf_APZ_280_eff"
   },
-  {
+  "0022": {
+    "key": "0022",
     "detector": "Franz",
     "purpose": "efficiency",
     "F+GEM V": 3330.0,
@@ -593,7 +615,8 @@
     "threshold": 280.0,
     "filename": "run_159_Franz_G_3330V_D_3948V_back_2p00A_unf_APZ_280_eff"
   },
-  {
+  "0023": {
+    "key": "0023",
     "detector": "Franz",
     "purpose": "efficiency",
     "F+GEM V": 3330.0,
@@ -620,7 +643,8 @@
     "threshold": 280.0,
     "filename": "run_160_Franz_G_3330V_D_3948V_back_1p54A_unf_APZ_280_eff"
   },
-  {
+  "0024": {
+    "key": "0024",
     "detector": "Franz",
     "purpose": "efficiency",
     "F+GEM V": 3330.0,
@@ -647,7 +671,8 @@
     "threshold": 280.0,
     "filename": "run_161_Franz_G_3330V_D_3948V_back_2p41A_unf_APZ_280_eff"
   },
-  {
+  "0025": {
+    "key": "0025",
     "detector": "Franz",
     "purpose": "redoneEff",
     "F+GEM V": 3330.0,
@@ -674,7 +699,8 @@
     "threshold": 280.0,
     "filename": "run_162_Franz_G_3330V_D_3948V_back_2p41A_unf_APZ_280_red"
   },
-  {
+  "0026": {
+    "key": "0026",
     "detector": "Franz",
     "purpose": "redoneEff",
     "F+GEM V": 3330.0,
@@ -701,7 +727,8 @@
     "threshold": 280.0,
     "filename": "run_163_Franz_G_3330V_D_3948V_back_1p54A_unf_APZ_280_red"
   },
-  {
+  "0027": {
+    "key": "0027",
     "detector": "Franz",
     "purpose": "redoneEff",
     "F+GEM V": 3330.0,
@@ -728,7 +755,8 @@
     "threshold": 280.0,
     "filename": "run_164_Franz_G_3330V_D_3948V_back_2p00A_unf_APZ_280_red"
   },
-  {
+  "0028": {
+    "key": "0028",
     "detector": "Franz",
     "purpose": "calibration",
     "F+GEM V": 3330.0,
@@ -755,7 +783,8 @@
     "threshold": 280.0,
     "filename": "run_165_Franz_G_3330V_D_3948V_back_2p00A_unf_APZ_280_cal"
   },
-  {
+  "0029": {
+    "key": "0029",
     "detector": "Franz",
     "purpose": "scattering",
     "F+GEM V": 3330.0,
@@ -782,7 +811,8 @@
     "threshold": 280.0,
     "filename": "run_166_Franz_G_3330V_D_3948V_back_2p00A_unf_APZ_280_sca"
   },
-  {
+  "0030": {
+    "key": "0030",
     "detector": "Franz",
     "purpose": "pattern",
     "F+GEM V": 3330.0,
@@ -809,7 +839,8 @@
     "threshold": 280.0,
     "filename": "run_168_Franz_G_3330V_D_3948V_back_2p00A_unf_APZ_280_pat"
   },
-  {
+  "0031": {
+    "key": "0031",
     "detector": "Franz",
     "purpose": "pattern",
     "F+GEM V": 3330.0,
@@ -836,7 +867,8 @@
     "threshold": 280.0,
     "filename": "run_169_Franz_G_3330V_D_3948V_back_2p00A_unf_APZ_280_pat"
   },
-  {
+  "0032": {
+    "key": "0032",
     "detector": "Franz",
     "purpose": "pattern",
     "F+GEM V": 3330.0,
@@ -863,7 +895,8 @@
     "threshold": 280.0,
     "filename": "run_170_Franz_G_3330V_D_3648V_back_2p00A_unf_APZ_280_pat"
   },
-  {
+  "0033": {
+    "key": "0033",
     "detector": "Franz",
     "purpose": "pattern",
     "F+GEM V": 3330.0,
@@ -890,7 +923,8 @@
     "threshold": 280.0,
     "filename": "run_171_Franz_G_3330V_D_3348V_back_2p00A_unf_APZ_280_pat"
   },
-  {
+  "0034": {
+    "key": "0034",
     "detector": "Franz",
     "purpose": "pattern",
     "F+GEM V": 3330.0,
@@ -917,7 +951,8 @@
     "threshold": 280.0,
     "filename": "run_172_Franz_G_3330V_D_4698V_back_2p00A_unf_APZ_280_pat"
   },
-  {
+  "0035": {
+    "key": "0035",
     "detector": "Franz",
     "purpose": "pattern",
     "F+GEM V": 3330.0,
@@ -944,7 +979,8 @@
     "threshold": 280.0,
     "filename": "run_173_Franz_G_3330V_D_3948V_back_2p00A_unf_VMM_280_pat"
   },
-  {
+  "0036": {
+    "key": "0036",
     "detector": "",
     "purpose": "",
     "F+GEM V": "",
@@ -971,7 +1007,8 @@
     "threshold": "",
     "filename": ""
   },
-  {
+  "0037": {
+    "key": "0037",
     "detector": "",
     "purpose": "",
     "F+GEM V": "",
@@ -998,7 +1035,8 @@
     "threshold": "",
     "filename": ""
   },
-  {
+  "0038": {
+    "key": "0038",
     "detector": "",
     "purpose": "",
     "F+GEM V": "",
@@ -1025,7 +1063,8 @@
     "threshold": "",
     "filename": ""
   },
-  {
+  "0039": {
+    "key": "0039",
     "detector": "",
     "purpose": "",
     "F+GEM V": "",
@@ -1052,7 +1091,8 @@
     "threshold": "",
     "filename": ""
   },
-  {
+  "0040": {
+    "key": "0040",
     "detector": "",
     "purpose": "",
     "F+GEM V": "",
@@ -1079,7 +1119,8 @@
     "threshold": "",
     "filename": ""
   },
-  {
+  "0041": {
+    "key": "0041",
     "detector": "",
     "purpose": "",
     "F+GEM V": "",
@@ -1106,7 +1147,8 @@
     "threshold": "",
     "filename": ""
   },
-  {
+  "0042": {
+    "key": "0042",
     "detector": "",
     "purpose": "",
     "F+GEM V": "",
@@ -1133,7 +1175,8 @@
     "threshold": "",
     "filename": ""
   },
-  {
+  "0043": {
+    "key": "0043",
     "detector": "",
     "purpose": "",
     "F+GEM V": "",
@@ -1160,7 +1203,8 @@
     "threshold": "",
     "filename": ""
   },
-  {
+  "0044": {
+    "key": "0044",
     "detector": "",
     "purpose": "",
     "F+GEM V": "",
@@ -1187,7 +1231,8 @@
     "threshold": "",
     "filename": ""
   },
-  {
+  "0045": {
+    "key": "0045",
     "detector": "",
     "purpose": "",
     "F+GEM V": "",
@@ -1214,7 +1259,8 @@
     "threshold": "",
     "filename": ""
   },
-  {
+  "0046": {
+    "key": "0046",
     "detector": "",
     "purpose": "",
     "F+GEM V": "",
@@ -1241,7 +1287,8 @@
     "threshold": "",
     "filename": ""
   },
-  {
+  "0047": {
+    "key": "0047",
     "detector": "Sisi",
     "purpose": "calibration",
     "F+GEM V": 3330.0,
@@ -1268,7 +1315,8 @@
     "threshold": 280.0,
     "filename": "run_136_Sisi_G_3330V_D_3926V_back_2p00A_unf_APZ_280_cal"
   },
-  {
+  "0048": {
+    "key": "0048",
     "detector": "Sisi",
     "purpose": "calibration",
     "F+GEM V": 3330.0,
@@ -1295,7 +1343,8 @@
     "threshold": 280.0,
     "filename": "run_138_Sisi_G_3330V_D_3626V_back_2p00A_unf_APZ_280_cal"
   },
-  {
+  "0049": {
+    "key": "0049",
     "detector": "Sisi",
     "purpose": "calibration",
     "F+GEM V": 3330.0,
@@ -1322,4 +1371,4 @@
     "threshold": 280.0,
     "filename": "run_139_Sisi_G_3330V_D_3326V_back_2p00A_unf_APZ_280_cal"
   }
-]
+}

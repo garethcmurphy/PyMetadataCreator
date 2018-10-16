@@ -10,11 +10,14 @@ sh = wb.sheet_by_index(0)
 
 # List to hold dictionaries
 metadata_fields_list = []
+metadata_fields_object = {}
 
 # Iterate through each row in worksheet and fetch values into dict
 for rownum in range(2, sh.nrows):
     metadata_fields = OrderedDict()
     row_values = sh.row_values(rownum)
+    key = str(rownum - 1).zfill(4)
+    metadata_fields['key'] = key
     metadata_fields['detector'] = row_values[0]
     metadata_fields['purpose'] = row_values[1]
     metadata_fields['F+GEM V'] = row_values[2]
@@ -43,9 +46,10 @@ for rownum in range(2, sh.nrows):
     metadata_fields['filename'] = row_values[25]
 
     metadata_fields_list.append(metadata_fields)
+    metadata_fields_object[key] = metadata_fields
 
 # Serialize the list of dicts to JSON
-j = json.dumps(metadata_fields_list, indent=2)
+j = json.dumps(metadata_fields_object, indent=2)
 
 # Write to file
 with open('nmx.json', 'w') as f:

@@ -253,9 +253,7 @@ class Multiblade(DefaultInst):
         }
 
         self.metadata_object = {
-            '0048': {
-                
-            }
+            '0048': {"wavelength": 2}
         }
 
 

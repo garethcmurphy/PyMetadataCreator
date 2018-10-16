@@ -46,7 +46,7 @@ class FilesInfo:
             total_file_size += file_size
             checksum = "string"
 
-            if file_size < 1000000:
+            if file_size < 34000000:
                 hashobject = hashlib.sha256(open(longname, 'rb').read())
                 checksum = hashobject.hexdigest()
 

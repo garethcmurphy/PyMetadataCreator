@@ -40,7 +40,6 @@ class FilesInfo:
             ts = int(experiment_date_time)
 
             permissions = oct(stat_info.st_mode & 0o777)
-            print(permissions)
 
             experiment_date_time = str(datetime.datetime.fromtimestamp(ts).isoformat())
             total_file_size += file_size

@@ -138,6 +138,7 @@ class Multigrid(DefaultInst):
         self.userTargetLocation = 'multigrid'
         self.creationLocation = self.creationLocation
         self.keywords = [self.abbreviation]
+        self.creationLocation = self.abbreviation
 
         self.doi = self.doi_prefix + self.abbreviation
         self.creator = self.owner

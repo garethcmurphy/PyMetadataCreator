@@ -4,6 +4,8 @@ import glob
 import hashlib
 import os
 
+import pytz
+
 
 class FilesInfo:
     def __init__(self):
@@ -41,7 +43,7 @@ class FilesInfo:
 
             permissions = oct(stat_info.st_mode & 0o777)
 
-            experiment_date_time = str(datetime.datetime.fromtimestamp(ts).isoformat())
+            experiment_date_time = str(datetime.datetime.fromtimestamp(ts, tz=pytz.UTC).isoformat())
             total_file_size += file_size
             checksum = "string"
 

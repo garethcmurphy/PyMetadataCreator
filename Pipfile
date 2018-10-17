@@ -28,6 +28,7 @@ six = "==1.11.0"
 virtualenv = "==16.0.0"
 virtualenv-clone = "==0.4.0"
 simplejson = "*"
+lxml = "*"
 
 [dev-packages]
 pytest = "==3.8.2"

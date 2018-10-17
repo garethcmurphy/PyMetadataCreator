@@ -1,0 +1,24 @@
+{
+  "283": {
+    "id": "283",
+    "date": "18/06/08 14:20",
+    "author": "Emil Rofors",
+    "beamline": "IFE R2D2",
+    "type": "Problem Report",
+    "category": "Measurement",
+    "run": "S12",
+    "subject": "TOF mode, no collimation, plain, thrs: 50",
+    "message": "We tested the limit at which the module stops sending data by gradually opening slit 2 from 1*1cm^2 to bigger and bigger.\r\n\r\n> We tried to use thrs. 80 and 150 but the problem remains. We also tested with efu not writing to disk, but again the problem was the same.\r\n> \r\n> While we do not receive any data in TOF mode with the beam wide open we still can ping the detector regardless if beam is open or close.\r\n> \r\n> \r\n> > Once the beam was turned on the detector stopped sending data. Could it be the PMT or the SoNDe module? We do not know.\r\n> > \r\n> > Attached image shows the grafana monitor of the EFU. The peaks corresponds to points in time where the beam was turned on and off. During beam on, the data transfer \r\n> rate \r\n> > drops to zero.\r\n> > \r\n> > \r\n> > > The slits were opened up to maximum, HeBoSint and Mirrobor collimation was removed. Plain scintillator used from now on.\r\n> > > \r\n> > > Beam size: 68x68 mm2 (centered on detector)\r\n> > > \r\n> > > Counting time: 60 s\r\n> > > \r\n> > > ----- Settings and configuration ---------\r\n> > > MAPMT..............ZA0250 @ 900 V\r\n> > > SoNDe module.......7053-1-008\r\n> > > SoNDe acqu. mode...TOF\r\n> > > SoNDe threshold....50\r\n> > > Evts/package.......250\r\n> > > Scintillator.......GS20 (plain, polished)\r\n> > > Optical coupling...Dryfit\r\n> > > ------------------------------------------"
+  },
+  "282": {
+    "id": "282",
+    "date": "18/06/08 14:06",
+    "author": "Nicholai Mauritzson",
+    "beamline": "IFE R2D2",
+    "type": "Start/Stop",
+    "category": "Measurement",
+    "run": "S17",
+    "subject": "ACRO mode, /w mask, thrs: 10",
+    "message": "The slits were opened up to maximum, HeBoSint and Mirrobor collimation was removed and another HeBoSint (with rectangular slits) was added directly onto the front of the \r\ndetector enclosure.\r\n\r\nBeam size: 68x68 mm2 (centered on detector)\r\n\r\nCounting time: 30 s\r\n\r\n----- Settings and configuration ---------\r\nMAPMT..............ZA0250 @ 900 V\r\nSoNDe module.......7053-1-008\r\nSoNDe acqu. mode...ACRO\r\nSoNDe threshold....10\r\nEvts/package.......250\r\nScintillator.......GS20 (plain, polished)\r\nOptical coupling...Dryfit\r\n------------------------------------------"
+  }
+}

@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 
-import xlrd
 from collections import OrderedDict
+
 import simplejson as json
+import xlrd
 
 # Open the workbook and select the first worksheet
 wb = xlrd.open_workbook('20161101_measurements.xlsx')

@@ -4,9 +4,9 @@ import datetime
 import pytz
 
 from multiblade_metadata import MultibladeMetadata
+from multigrid_metadata import MultigridMetadata
 from nmx_metadata import NmxMetadata
 from sonde_metadata import SondeMetadata
-from multigrid_metadata import MultigridMetadata
 
 
 class Instrument:
@@ -176,6 +176,7 @@ class Multigrid(DefaultInst):
         }
         fetch_metadata = MultigridMetadata()
         self.metadata_object = fetch_metadata.metadata_object
+
 
 class Nmx(DefaultInst):
     def __init__(self):

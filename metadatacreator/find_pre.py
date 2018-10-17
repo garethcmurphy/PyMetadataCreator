@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-import json
 import collections
 import itertools
+import json
 import os
 
 root = './'

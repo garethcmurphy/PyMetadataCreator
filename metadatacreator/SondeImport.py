@@ -54,8 +54,6 @@ class SondeImport:
                 my_dict["message"] = sub_page_message
             if my_id != "null":
                 master_dict[my_id] = my_dict
-            if num > 3:
-                break
 
         j=json.dumps(master_dict, indent=2)
         print(j)

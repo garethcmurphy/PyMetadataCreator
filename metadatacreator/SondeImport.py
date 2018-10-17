@@ -3,40 +3,28 @@ import json
 from collections import OrderedDict
 
 from bs4 import BeautifulSoup
+import requests
 
 
 class SondeImport:
-
     def __init__(self):
-        html_data = """
-        <table>
-          <tr>
-            <td>Card balance</td>
-            <td>$18.30</td>
-          </tr>
-          <tr>
-            <td>Card name</td>
-            <td>NAMEn</td>
-          </tr>
-          <tr>
-            <td>Account holder</td>
-            <td>NAME</td>
-          </tr>
-          <tr>
-            <td>Card number</td>
-            <td>1234</td>
-          </tr>
-          <tr>
-            <td>Status</td>
-            <td>Active</td>
-          </tr>
-        </table>
-        """
+        url = "stf02.nuclear.lu.se/SoNDe+Testbeams/"
+        r = requests.get("https://" + url)
+        sonde_page = r.text
 
-        table_data = [[cell.text for cell in row("td")]
-                      for row in BeautifulSoup(html_data, features="html.parser")("tr")]
+        soup = BeautifulSoup(sonde_page)
 
-        print(json.dumps(OrderedDict(table_data, indent=2)))
+        data = []
+        table = soup.findAll("table", {"class": "listframe"})
+        print(table)
+
+        dats = table.findAll(['td'])
+        print(dats)
+
+        # for row in rows:
+        #    cols = row.find_all('td')
+        #    cols = [ele.text.strip() for ele in cols]
+        #    data.append([ele for ele in cols if ele])  # Get rid of empty values
 
 
 if __name__ == '__main__':

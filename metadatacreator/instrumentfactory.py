@@ -71,7 +71,6 @@ class DefaultInst:
     isPublished = True
     ownerGroup = 'ess'
     accessGroups = ['brightness', 'ess', 'loki']
-    isPublished = True
     createdBy = "ingestor"
     updatedBy = "ingestor"
     createdAt = endTime

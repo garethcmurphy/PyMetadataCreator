@@ -27,6 +27,7 @@ class SondeImport:
         for row in rows:
             num = num + 1
             first = row.find('a')
+            sub_page_message = "null"
             print(num, first)
             if num > 2:
                 src = urljoin(url, first["href"])
@@ -55,7 +56,7 @@ class SondeImport:
             if my_id != "null":
                 master_dict[my_id] = my_dict
 
-        j=json.dumps(master_dict, indent=2)
+        j = json.dumps(master_dict, indent=2)
         print(j)
         with open('sonde.json', 'w') as f:
             f.write(j)

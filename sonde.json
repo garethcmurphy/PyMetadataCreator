@@ -1,7 +1,7 @@
 {
   "283": {
     "id": "283",
-    "date": "18/06/08 14:20",
+    "date": "2018-06-08T14:20:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Problem Report",
@@ -12,7 +12,7 @@
   },
   "282": {
     "id": "282",
-    "date": "18/06/08 14:06",
+    "date": "2018-06-08T14:06:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -23,7 +23,7 @@
   },
   "281": {
     "id": "281",
-    "date": "18/06/08 13:59",
+    "date": "2018-06-08T13:59:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -34,7 +34,7 @@
   },
   "280": {
     "id": "280",
-    "date": "18/06/08 13:57",
+    "date": "2018-06-08T13:57:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -45,7 +45,7 @@
   },
   "279": {
     "id": "279",
-    "date": "18/06/08 13:42",
+    "date": "2018-06-08T13:42:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Problem Report",
@@ -56,7 +56,7 @@
   },
   "278": {
     "id": "278",
-    "date": "18/06/08 13:34",
+    "date": "2018-06-08T13:34:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Problem Report",
@@ -67,7 +67,7 @@
   },
   "277": {
     "id": "277",
-    "date": "18/06/08 13:26",
+    "date": "2018-06-08T13:26:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -78,7 +78,7 @@
   },
   "276": {
     "id": "276",
-    "date": "18/06/08 13:14",
+    "date": "2018-06-08T13:14:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Problem Report",
@@ -89,7 +89,7 @@
   },
   "275": {
     "id": "275",
-    "date": "18/06/08 11:13",
+    "date": "2018-06-08T11:13:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -100,7 +100,7 @@
   },
   "274": {
     "id": "274",
-    "date": "18/06/08 11:12",
+    "date": "2018-06-08T11:12:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -111,7 +111,7 @@
   },
   "273": {
     "id": "273",
-    "date": "18/06/08 10:51",
+    "date": "2018-06-08T10:51:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -122,7 +122,7 @@
   },
   "272": {
     "id": "272",
-    "date": "18/06/08 10:44",
+    "date": "2018-06-08T10:44:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -133,7 +133,7 @@
   },
   "271": {
     "id": "271",
-    "date": "18/06/08 08:55",
+    "date": "2018-06-08T08:55:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -144,7 +144,7 @@
   },
   "270": {
     "id": "270",
-    "date": "18/06/07 17:40",
+    "date": "2018-06-07T17:40:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -155,7 +155,7 @@
   },
   "269": {
     "id": "269",
-    "date": "18/06/07 16:50",
+    "date": "2018-06-07T16:50:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -166,7 +166,7 @@
   },
   "268": {
     "id": "268",
-    "date": "18/06/07 16:34",
+    "date": "2018-06-07T16:34:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -177,7 +177,7 @@
   },
   "267": {
     "id": "267",
-    "date": "18/06/07 16:15",
+    "date": "2018-06-07T16:15:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -188,7 +188,7 @@
   },
   "266": {
     "id": "266",
-    "date": "18/06/07 16:14",
+    "date": "2018-06-07T16:14:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -199,7 +199,7 @@
   },
   "265": {
     "id": "265",
-    "date": "18/06/07 16:01",
+    "date": "2018-06-07T16:01:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -210,7 +210,7 @@
   },
   "264": {
     "id": "264",
-    "date": "18/06/07 15:58",
+    "date": "2018-06-07T15:58:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -221,7 +221,7 @@
   },
   "263": {
     "id": "263",
-    "date": "18/06/07 15:56",
+    "date": "2018-06-07T15:56:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -232,7 +232,7 @@
   },
   "262": {
     "id": "262",
-    "date": "18/06/07 15:55",
+    "date": "2018-06-07T15:55:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -243,7 +243,7 @@
   },
   "261": {
     "id": "261",
-    "date": "18/06/07 15:50",
+    "date": "2018-06-07T15:50:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -254,7 +254,7 @@
   },
   "260": {
     "id": "260",
-    "date": "18/06/07 15:37",
+    "date": "2018-06-07T15:37:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -265,7 +265,7 @@
   },
   "259": {
     "id": "259",
-    "date": "18/06/07 15:25",
+    "date": "2018-06-07T15:25:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -276,7 +276,7 @@
   },
   "258": {
     "id": "258",
-    "date": "18/06/07 15:22",
+    "date": "2018-06-07T15:22:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -287,7 +287,7 @@
   },
   "256": {
     "id": "256",
-    "date": "18/06/07 14:49",
+    "date": "2018-06-07T14:49:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -298,7 +298,7 @@
   },
   "255": {
     "id": "255",
-    "date": "18/06/07 14:39",
+    "date": "2018-06-07T14:39:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Modification",
@@ -309,7 +309,7 @@
   },
   "252": {
     "id": "252",
-    "date": "18/06/07 14:12",
+    "date": "2018-06-07T14:12:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Problem Fixed",
@@ -320,7 +320,7 @@
   },
   "251": {
     "id": "251",
-    "date": "18/06/07 11:14",
+    "date": "2018-06-07T11:14:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -331,7 +331,7 @@
   },
   "250": {
     "id": "250",
-    "date": "18/06/07 10:41",
+    "date": "2018-06-07T10:41:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Problem Report",
@@ -342,7 +342,7 @@
   },
   "249": {
     "id": "249",
-    "date": "18/06/06 18:28",
+    "date": "2018-06-06T18:28:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -353,7 +353,7 @@
   },
   "248": {
     "id": "248",
-    "date": "18/06/06 17:39",
+    "date": "2018-06-06T17:39:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -364,7 +364,7 @@
   },
   "247": {
     "id": "247",
-    "date": "18/06/06 16:21",
+    "date": "2018-06-06T16:21:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Problem Report",
@@ -375,7 +375,7 @@
   },
   "246": {
     "id": "246",
-    "date": "18/06/06 16:14",
+    "date": "2018-06-06T16:14:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Status",
@@ -386,7 +386,7 @@
   },
   "245": {
     "id": "245",
-    "date": "18/06/06 16:11",
+    "date": "2018-06-06T16:11:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -397,7 +397,7 @@
   },
   "244": {
     "id": "244",
-    "date": "18/06/06 15:43",
+    "date": "2018-06-06T15:43:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Problem Report",
@@ -408,7 +408,7 @@
   },
   "243": {
     "id": "243",
-    "date": "18/06/06 15:10",
+    "date": "2018-06-06T15:10:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Status",
@@ -419,7 +419,7 @@
   },
   "242": {
     "id": "242",
-    "date": "18/06/06 15:05",
+    "date": "2018-06-06T15:05:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Status",
@@ -430,7 +430,7 @@
   },
   "241": {
     "id": "241",
-    "date": "18/06/06 13:28",
+    "date": "2018-06-06T13:28:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -441,7 +441,7 @@
   },
   "240": {
     "id": "240",
-    "date": "18/06/06 11:02",
+    "date": "2018-06-06T11:02:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Status",
@@ -452,7 +452,7 @@
   },
   "239": {
     "id": "239",
-    "date": "18/06/06 10:03",
+    "date": "2018-06-06T10:03:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -463,7 +463,7 @@
   },
   "238": {
     "id": "238",
-    "date": "18/06/05 18:17",
+    "date": "2018-06-05T18:17:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Status",
@@ -474,7 +474,7 @@
   },
   "237": {
     "id": "237",
-    "date": "18/06/05 17:05",
+    "date": "2018-06-05T17:05:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Documentation",
@@ -485,7 +485,7 @@
   },
   "236": {
     "id": "236",
-    "date": "18/06/05 17:02",
+    "date": "2018-06-05T17:02:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Problem Report",
@@ -496,7 +496,7 @@
   },
   "235": {
     "id": "235",
-    "date": "18/06/05 17:01",
+    "date": "2018-06-05T17:01:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Problem Report",
@@ -507,7 +507,7 @@
   },
   "233": {
     "id": "233",
-    "date": "18/06/05 16:32",
+    "date": "2018-06-05T16:32:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Status",
@@ -518,7 +518,7 @@
   },
   "232": {
     "id": "232",
-    "date": "18/06/05 16:30",
+    "date": "2018-06-05T16:30:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -529,7 +529,7 @@
   },
   "231": {
     "id": "231",
-    "date": "18/06/05 16:26",
+    "date": "2018-06-05T16:26:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Status",
@@ -540,7 +540,7 @@
   },
   "228": {
     "id": "228",
-    "date": "18/06/05 11:43",
+    "date": "2018-06-05T11:43:00+02:00",
     "author": "Nicholai Muritzson",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -551,7 +551,7 @@
   },
   "227": {
     "id": "227",
-    "date": "18/06/05 09:50",
+    "date": "2018-06-05T09:50:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -562,7 +562,7 @@
   },
   "226": {
     "id": "226",
-    "date": "18/06/04 23:15",
+    "date": "2018-06-04T23:15:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -573,7 +573,7 @@
   },
   "225": {
     "id": "225",
-    "date": "18/06/04 16:23",
+    "date": "2018-06-04T16:23:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Status",
@@ -584,7 +584,7 @@
   },
   "224": {
     "id": "224",
-    "date": "18/06/04 15:58",
+    "date": "2018-06-04T15:58:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -595,7 +595,7 @@
   },
   "223": {
     "id": "223",
-    "date": "18/06/04 15:52",
+    "date": "2018-06-04T15:52:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -606,7 +606,7 @@
   },
   "222": {
     "id": "222",
-    "date": "18/06/04 15:02",
+    "date": "2018-06-04T15:02:00+02:00",
     "author": "Kevin Fissum",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -617,7 +617,7 @@
   },
   "221": {
     "id": "221",
-    "date": "18/06/04 14:45",
+    "date": "2018-06-04T14:45:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -628,7 +628,7 @@
   },
   "220": {
     "id": "220",
-    "date": "18/06/04 14:23",
+    "date": "2018-06-04T14:23:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -639,7 +639,7 @@
   },
   "219": {
     "id": "219",
-    "date": "18/06/04 14:11",
+    "date": "2018-06-04T14:11:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -650,7 +650,7 @@
   },
   "218": {
     "id": "218",
-    "date": "18/06/04 14:05",
+    "date": "2018-06-04T14:05:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -661,7 +661,7 @@
   },
   "217": {
     "id": "217",
-    "date": "18/06/04 13:57",
+    "date": "2018-06-04T13:57:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -672,7 +672,7 @@
   },
   "216": {
     "id": "216",
-    "date": "18/06/04 13:51",
+    "date": "2018-06-04T13:51:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Documentation",
@@ -683,7 +683,7 @@
   },
   "215": {
     "id": "215",
-    "date": "18/06/04 13:46",
+    "date": "2018-06-04T13:46:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -694,7 +694,7 @@
   },
   "214": {
     "id": "214",
-    "date": "18/06/04 13:28",
+    "date": "2018-06-04T13:28:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -705,7 +705,7 @@
   },
   "213": {
     "id": "213",
-    "date": "18/06/04 13:13",
+    "date": "2018-06-04T13:13:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -716,7 +716,7 @@
   },
   "212": {
     "id": "212",
-    "date": "18/06/04 11:39",
+    "date": "2018-06-04T11:39:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Documentation",
@@ -727,7 +727,7 @@
   },
   "211": {
     "id": "211",
-    "date": "18/06/04 11:19",
+    "date": "2018-06-04T11:19:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -738,7 +738,7 @@
   },
   "210": {
     "id": "210",
-    "date": "18/06/04 10:58",
+    "date": "2018-06-04T10:58:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -749,7 +749,7 @@
   },
   "209": {
     "id": "209",
-    "date": "18/06/04 10:46",
+    "date": "2018-06-04T10:46:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Documentation",
@@ -760,7 +760,7 @@
   },
   "208": {
     "id": "208",
-    "date": "18/06/04 10:22",
+    "date": "2018-06-04T10:22:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -771,7 +771,7 @@
   },
   "207": {
     "id": "207",
-    "date": "18/06/04 10:15",
+    "date": "2018-06-04T10:15:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Status",
@@ -782,7 +782,7 @@
   },
   "206": {
     "id": "206",
-    "date": "18/02/07 21:34",
+    "date": "2018-02-07T21:34:00+01:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -793,7 +793,7 @@
   },
   "205": {
     "id": "205",
-    "date": "18/01/31 14:46",
+    "date": "2018-01-31T14:46:00+01:00",
     "author": "Hanno Perrey",
     "beamline": "IFE R2D2",
     "type": "Status",
@@ -804,7 +804,7 @@
   },
   "204": {
     "id": "204",
-    "date": "18/01/31 11:11",
+    "date": "2018-01-31T11:11:00+01:00",
     "author": "Hanno Perrey",
     "beamline": "IFE R2D2",
     "type": "Status",
@@ -815,7 +815,7 @@
   },
   "203": {
     "id": "203",
-    "date": "18/01/05 18:20",
+    "date": "2018-01-05T18:20:00+01:00",
     "author": "Hanno Perrey",
     "beamline": "IFE R2D2",
     "type": "Status",
@@ -826,7 +826,7 @@
   },
   "202": {
     "id": "202",
-    "date": "17/11/02 12:19",
+    "date": "2017-11-02T12:19:00+01:00",
     "author": "SAJ",
     "beamline": "IFE R2D2",
     "type": "Status",
@@ -837,7 +837,7 @@
   },
   "201": {
     "id": "201",
-    "date": "17/11/02 11:44",
+    "date": "2017-11-02T11:44:00+01:00",
     "author": "SAJ",
     "beamline": "IFE R2D2",
     "type": "Status",
@@ -848,7 +848,7 @@
   },
   "200": {
     "id": "200",
-    "date": "17/10/20 16:04",
+    "date": "2017-10-20T16:04:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -859,7 +859,7 @@
   },
   "198": {
     "id": "198",
-    "date": "17/10/20 16:02",
+    "date": "2017-10-20T16:02:00+02:00",
     "author": "Hanno Perrey",
     "beamline": "IFE R2D2",
     "type": "Status",
@@ -870,7 +870,7 @@
   },
   "197": {
     "id": "197",
-    "date": "17/10/20 16:01",
+    "date": "2017-10-20T16:01:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -881,7 +881,7 @@
   },
   "196": {
     "id": "196",
-    "date": "17/10/20 16:00",
+    "date": "2017-10-20T16:00:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -892,7 +892,7 @@
   },
   "195": {
     "id": "195",
-    "date": "17/10/20 15:38",
+    "date": "2017-10-20T15:38:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -903,7 +903,7 @@
   },
   "194": {
     "id": "194",
-    "date": "17/10/20 15:24",
+    "date": "2017-10-20T15:24:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -914,7 +914,7 @@
   },
   "193": {
     "id": "193",
-    "date": "17/10/20 15:17",
+    "date": "2017-10-20T15:17:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -925,7 +925,7 @@
   },
   "192": {
     "id": "192",
-    "date": "17/10/20 14:53",
+    "date": "2017-10-20T14:53:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -936,7 +936,7 @@
   },
   "191": {
     "id": "191",
-    "date": "17/10/20 14:51",
+    "date": "2017-10-20T14:51:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -947,7 +947,7 @@
   },
   "190": {
     "id": "190",
-    "date": "17/10/20 14:27",
+    "date": "2017-10-20T14:27:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -958,7 +958,7 @@
   },
   "189": {
     "id": "189",
-    "date": "17/10/20 14:24",
+    "date": "2017-10-20T14:24:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -969,7 +969,7 @@
   },
   "188": {
     "id": "188",
-    "date": "17/10/20 14:10",
+    "date": "2017-10-20T14:10:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -980,7 +980,7 @@
   },
   "187": {
     "id": "187",
-    "date": "17/10/20 14:01",
+    "date": "2017-10-20T14:01:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -991,7 +991,7 @@
   },
   "186": {
     "id": "186",
-    "date": "17/10/20 13:28",
+    "date": "2017-10-20T13:28:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -1002,7 +1002,7 @@
   },
   "185": {
     "id": "185",
-    "date": "17/10/20 13:24",
+    "date": "2017-10-20T13:24:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -1013,7 +1013,7 @@
   },
   "184": {
     "id": "184",
-    "date": "17/10/20 12:13",
+    "date": "2017-10-20T12:13:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",
@@ -1024,7 +1024,7 @@
   },
   "183": {
     "id": "183",
-    "date": "17/10/20 11:42",
+    "date": "2017-10-20T11:42:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
     "type": "Start/Stop",

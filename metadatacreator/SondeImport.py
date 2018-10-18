@@ -2,6 +2,8 @@
 import json
 from urllib.parse import urljoin
 
+import dateutil.parser as parser
+from dateutil import tz
 import requests
 from bs4 import BeautifulSoup
 
@@ -31,7 +33,7 @@ class SondeImport:
                 src = urljoin(url, first["href"])
                 sub_page_soup = self.scrape_url(src)
                 sub_page_message = sub_page_soup.find("pre").find(text=True)
-                print(sub_page_message)
+                # print(sub_page_message)
             cols = row.find_all('td')
             cols = [ele.text.strip() for ele in cols]
             data.append([ele for ele in cols if ele])  # Get rid of empty values
@@ -40,7 +42,8 @@ class SondeImport:
             my_id = "null"
             if cols:
                 my_dict["id"] = cols[0]
-                my_dict["date"] = cols[1]
+                date = parser.parse(cols[1], yearfirst=True)
+                my_dict["date"] = date.replace(tzinfo=tz.tzlocal()).isoformat()
                 my_dict["author"] = cols[2]
                 my_dict["beamline"] = cols[3]
                 my_dict["type"] = cols[4]

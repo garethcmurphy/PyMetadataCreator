@@ -10,7 +10,7 @@ class MultibladeMetadata:
                  'start': '167/185',
                  'stop': '166',
                  },
-        '0012': {
+        '0013': {
             'tag': '03_4_B_DirectBeamTests',
             'comment': 'reflected Beam Ni: Measurements of Ni -> magnetic (double fringe)'
         },

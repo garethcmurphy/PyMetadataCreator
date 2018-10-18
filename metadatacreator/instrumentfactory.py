@@ -14,6 +14,7 @@ class InstrumentFactory:
     def __init__(self):
         self.info = "test"
 
+    @staticmethod
     def factory(instrument_type=None):
         if instrument_type == 'sonde':
             return Sonde()
@@ -31,8 +32,6 @@ class InstrumentFactory:
             return Ife()
         if instrument_type == 'ess':
             return Ess()
-
-    factory = staticmethod(factory)
 
 
 class DefaultInst:

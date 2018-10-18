@@ -51,7 +51,7 @@ class GenerateMetadata:
             data_set_num = 0
             for key, source_folder_fragment in inst.source_folder_array.items():
                 source_folder = self.met_directory + '/' + source_folder_fragment
-                if self.hostname == "macmurphy.local" || "CI0020036" :
+                if self.hostname in ("macmurphy.local", "CI0020036"):
                     source_folder = "demo"
                 data_set_num = data_set_num + 1
                 files_info = FilesInfo()

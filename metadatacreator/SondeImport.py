@@ -9,10 +9,8 @@ from bs4 import BeautifulSoup
 class SondeImport:
     def __init__(self):
         url = "https://stf02.nuclear.lu.se/SoNDe+Testbeams/"
-        r = requests.get(url)
-        sonde_page = r.text
 
-        soup = BeautifulSoup(sonde_page, "lxml")
+        soup = self.scrape_url(url)
 
         data = []
         table = soup.find("table", {"class": "listframe"})
@@ -31,9 +29,7 @@ class SondeImport:
             print(num, first)
             if num > 2:
                 src = urljoin(url, first["href"])
-                print(src)
-                sub_page = requests.get(src)
-                sub_page_soup = BeautifulSoup(sub_page.text, "lxml")
+                sub_page_soup = self.scrape_url(src)
                 sub_page_message = sub_page_soup.find("pre").find(text=True)
                 print(sub_page_message)
             cols = row.find_all('td')
@@ -60,6 +56,12 @@ class SondeImport:
         print(j)
         with open('sonde.json', 'w') as f:
             f.write(j)
+
+    def scrape_url(self, url):
+        r = requests.get(url)
+        sonde_page = r.text
+        soup = BeautifulSoup(sonde_page, "lxml")
+        return soup
 
 
 if __name__ == '__main__':

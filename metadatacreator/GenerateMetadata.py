@@ -9,7 +9,7 @@ from sortedcontainers import SortedDict
 
 from Base64Im import Base64Im
 from FilesInfo import FilesInfo
-from instrument import Instrument
+from instrumentfactory import InstrumentFactory
 from sdk.swagger_client.models.dataset_lifecycle import DatasetLifecycle
 from sdk.swagger_client.models.orig_datablock import OrigDatablock
 from sdk.swagger_client.models.published_data import PublishedData
@@ -25,9 +25,12 @@ class GenerateMetadata:
         image = Base64Im()
         self.image = image.im
 
+        self.location = 'local'
         self.handle_prefix = '20.500.12269'
         if self.hostname == 'login.esss.dk':
-            self.met_directory = "/users/detector/experiments"
+            self.location = 'remote'
+        if self.hostname in ("macmurphy.local", "CI0020036"):
+            self.location = 'local'
 
     def generate(self):
 
@@ -45,13 +48,13 @@ class GenerateMetadata:
             experiment = experiments[i]
             print(experiment)
 
-            new_inst = Instrument()
+            new_inst = InstrumentFactory()
             inst = new_inst.factory(experiment)
 
             data_set_num = 0
             for key, source_folder_fragment in inst.source_folder_array.items():
                 source_folder = self.met_directory + '/' + source_folder_fragment
-                if self.hostname in ("macmurphy.local", "CI0020036"):
+                if self.location is 'local':
                     source_folder = "demo"
                 data_set_num = data_set_num + 1
                 files_info = FilesInfo()

@@ -9,13 +9,10 @@ from nmx_metadata import NmxMetadata
 from sonde_metadata import SondeMetadata
 
 
-class Instrument:
-    doi_prefix = "10.17199/BRIGHTNESS/"
-    handle_prefix = "20.500.12269"
-    url_fragment = 'https://scicat.esss.se/datasets/' + handle_prefix + "%2FBRIGHTNESS%2F"
+class InstrumentFactory:
 
     def __init__(self):
-        pass
+        self.info = "test"
 
     def factory(instrument_type=None):
         if instrument_type == 'sonde':
@@ -331,7 +328,7 @@ class Ess(DefaultInst):
 
 
 if __name__ == '__main__':
-    sonde = Instrument.factory('sonde')
+    sonde = InstrumentFactory.factory('sonde')
     print(sonde.inst)
 
 

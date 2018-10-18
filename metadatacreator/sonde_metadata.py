@@ -38,8 +38,19 @@ class SondeMetadata:
             '0030': 'sonde/IFE_oct_2017/from_lenovo_laptop/IDEASTestbench_BETA_V0_24-x86-ALL/logs'
         }
         with open('sonde.json') as json_data:
-            self.metadata_object = json.load(json_data)
-            # self.json_stuff = json.load(json_data)
+            self.json_stuff = json.load(json_data)
+            self.metadata_object = {}
+            for key, val in self.source_folder_array.items():
+                tag = val.split('/')[-1]
+                print(tag)
+                for met_key, met_val in self.json_stuff.items():
+                    if met_val["run"] == tag:
+                        good_val = met_val
+                        print(met_val)
+
+                self.metadata_object[key] = good_val
+
+            # print self.metadata_object
             # TODO get the actual keys with property value and correct key
 
 

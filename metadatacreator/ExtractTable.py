@@ -18,7 +18,7 @@ class ExtractTable:
             # print(nl)
             p = re.compile('(?:> )*((?:(?!\.\.).)+)\.{2,}(.+)\s*\n')
             result = p.search(nl)
-            print(result)
+            # print(result)
             if result:
                 match = result.group()
                 begin_position = match.find('..')
@@ -27,7 +27,7 @@ class ExtractTable:
                 val = match[end_position + 2:]
                 val = val.strip()
                 key_for_mongo = key.replace('.', '_')
-                print (key, key_for_mongo)
+                # print (key, key_for_mongo)
                 my_table[key_for_mongo] = val
             else:
                 comments = comments + (nl.strip())

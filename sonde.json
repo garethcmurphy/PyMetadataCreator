@@ -10,13 +10,13 @@
     "run": "S12",
     "subject": "TOF mode, no collimation, plain, thrs: 50",
     "comments": "We tested the limit at which the module stops sending data by gradually opening slit 2 from 1*1cm^2 to bigger and bigger.> We tried to use thrs. 80 and 150 but the problem remains. We also tested with efu not writing to disk, but again the problem was the same.>> While we do not receive any data in TOF mode with the beam wide open we still can ping the detector regardless if beam is open or close.>>> > Once the beam was turned on the detector stopped sending data. Could it be the PMT or the SoNDe module? We do not know.> >> > Attached image shows the grafana monitor of the EFU. The peaks corresponds to points in time where the beam was turned on and off. During beam on, the data transfer> rate> > drops to zero.> >> >> > > The slits were opened up to maximum, HeBoSint and Mirrobor collimation was removed. Plain scintillator used from now on.> > >> > > Beam size: 68x68 mm2 (centered on detector)> > >> > > Counting time: 60 s> > >> > > ----- Settings and configuration ---------> > > ------------------------------------------",
-    "> > > MAPMT": "ZA0250 @ 900 V",
-    "> > > SoNDe module": "7053-1-008",
-    "> > > SoNDe acqu_ mode": "TOF",
-    "> > > SoNDe threshold": "50",
-    "> > > Evts/package": "250",
-    "> > > Scintillator": "GS20 (plain, polished)",
-    "> > > Optical coupling": "Dryfit"
+    "MAPMT": "ZA0250 @ 900 V",
+    "SoNDe module": "7053-1-008",
+    "SoNDe acqu_ mode": "TOF",
+    "SoNDe threshold": "50",
+    "Evts/package": "250",
+    "Scintillator": "GS20 (plain, polished)",
+    "Optical coupling": "Dryfit"
   },
   "282": {
     "elog_id": "282",
@@ -86,13 +86,13 @@
     "run": "S12",
     "subject": "TOF mode, no collimation, plain, thrs: 50",
     "comments": "We tried to use thrs. 80 and 150 but the problem remains. We also tested with efu not writing to disk, but again the problem was the same.While we do not receive any data in TOF mode with the beam wide open we still can ping the detector regardless if beam is open or close.> Once the beam was turned on the detector stopped sending data. Could it be the PMT or the SoNDe module? We do not know.>> Attached image shows the grafana monitor of the EFU. The peaks corresponds to points in time where the beam was turned on and off. During beam on, the data transferrate> drops to zero.>>> > The slits were opened up to maximum, HeBoSint and Mirrobor collimation was removed. Plain scintillator used from now on.> >> > Beam size: 68x68 mm2 (centered on detector)> >> > Counting time: 60 s> >> > ----- Settings and configuration ---------> > ------------------------------------------",
-    "> > MAPMT": "ZA0250 @ 900 V",
-    "> > SoNDe module": "7053-1-008",
-    "> > SoNDe acqu_ mode": "TOF",
-    "> > SoNDe threshold": "50",
-    "> > Evts/package": "250",
-    "> > Scintillator": "GS20 (plain, polished)",
-    "> > Optical coupling": "Dryfit"
+    "MAPMT": "ZA0250 @ 900 V",
+    "SoNDe module": "7053-1-008",
+    "SoNDe acqu_ mode": "TOF",
+    "SoNDe threshold": "50",
+    "Evts/package": "250",
+    "Scintillator": "GS20 (plain, polished)",
+    "Optical coupling": "Dryfit"
   },
   "278": {
     "elog_id": "278",
@@ -105,13 +105,13 @@
     "run": "S13",
     "subject": "ACRO mode, no collimation, plain, thrs: 10",
     "comments": "Same as S12:Once the beam was turned on the detector stopped sending data. Could it be the PMT or the SoNDe module? We do not know.Attached image shows the grafana monitor of the EFU. The peaks corresponds to points in time where the beam was turned on and off. During beam on, the data transfer ratedrops to zero.> The slits were opened up to maximum, HeBoSint and Mirrobor collimation was removed. Plain scintillator used.>> Beam size: 68x68 mm2 (centered on detector)>> Counting time: 60 s>> ----- Settings and configuration ---------> ------------------------------------------",
-    "> MAPMT": "ZA0250 @ 900 V",
-    "> SoNDe module": "7053-1-008",
-    "> SoNDe acqu_ mode": "ACRO",
-    "> SoNDe threshold": "10",
-    "> Evts/package": "250",
-    "> Scintillator": "GS20 (plain, polished)",
-    "> Optical coupling": "Dryfit"
+    "MAPMT": "ZA0250 @ 900 V",
+    "SoNDe module": "7053-1-008",
+    "SoNDe acqu_ mode": "ACRO",
+    "SoNDe threshold": "10",
+    "Evts/package": "250",
+    "Scintillator": "GS20 (plain, polished)",
+    "Optical coupling": "Dryfit"
   },
   "277": {
     "elog_id": "277",
@@ -143,13 +143,13 @@
     "run": "S12",
     "subject": "TOF mode, no collimation, plain, thrs: 50",
     "comments": "Once the beam was turned on the detector stopped sending data. Could it be the PMT or the SoNDe module? We do not know.Attached image shows the grafana monitor of the EFU. The peaks corresponds to points in time where the beam was turned on and off. During beam on, the data transfer ratedrops to zero.> The slits were opened up to maximum, HeBoSint and Mirrobor collimation was removed. Plain scintillator used from now on.>> Beam size: 68x68 mm2 (centered on detector)>> Counting time: 60 s>> ----- Settings and configuration ---------> ------------------------------------------",
-    "> MAPMT": "ZA0250 @ 900 V",
-    "> SoNDe module": "7053-1-008",
-    "> SoNDe acqu_ mode": "TOF",
-    "> SoNDe threshold": "50",
-    "> Evts/package": "250",
-    "> Scintillator": "GS20 (plain, polished)",
-    "> Optical coupling": "Dryfit"
+    "MAPMT": "ZA0250 @ 900 V",
+    "SoNDe module": "7053-1-008",
+    "SoNDe acqu_ mode": "TOF",
+    "SoNDe threshold": "50",
+    "Evts/package": "250",
+    "Scintillator": "GS20 (plain, polished)",
+    "Optical coupling": "Dryfit"
   },
   "275": {
     "elog_id": "275",
@@ -459,12 +459,12 @@
     "run": "S3",
     "subject": "Automatic scan: all pixels, 1 mm step",
     "comments": "We have added a safety feature of the scan so the data taking laptop has to say \"ok\" before the scan progresses.We have investigated more what could have caused the issue. It could have been EFUs not being properly closed but it seems more likely now that the module overheated.Restarting themodule after the night scan got things working again.We have added a fan that blows air onto the blackbox that can hopefully lower the temperature of the module some degrees (see images).> The scan ran fine until 3am last night. From that time all datafiles were empty. We think we have identified the issue and are working on an \"OK\" signal going from ourlaptop to the> LabView PC so that the scan doesn't progress until our laptop says it's ready.>> > A millimeter scan across the entire surface of the detector.> > The scan includes a 2 mm border outside of the detector. Scan area 52x52 mm2.> >> > The following parameters are used:> > X_pos = 17.65 mm to 70.65 mm> > Y_pos = 27.65 mm to 81.65 mm> > Stepsize = 1 mm> > Counting time = 15 s> >> > Total number of points to scan: 2704> > Total time: ca 15 h> >> >> > ----- Settings and configuration ---------> > ------------------------------------------",
-    "> > MAPMT": "ZA0250 @ 900 V",
-    "> > SoNDe module": "7053-1-008",
-    "> > SoNDe acqu_ mode": "ACRO",
-    "> > SoNDe threshold": "10",
-    "> > Scintillator": "GS20 (plain, polished)",
-    "> > Optical coupling": "Dryfit"
+    "MAPMT": "ZA0250 @ 900 V",
+    "SoNDe module": "7053-1-008",
+    "SoNDe acqu_ mode": "ACRO",
+    "SoNDe threshold": "10",
+    "Scintillator": "GS20 (plain, polished)",
+    "Optical coupling": "Dryfit"
   },
   "251": {
     "elog_id": "251",
@@ -495,12 +495,12 @@
     "run": "S3",
     "subject": "Automatic scan: all pixels, 1 mm step",
     "comments": "The scan ran fine until 3am last night. From that time all datafiles were empty. We think we have identified the issue and are working on an \"OK\" signal going from our laptop to theLabView PC so that the scan doesn't progress until our laptop says it's ready.> A millimeter scan across the entire surface of the detector.> The scan includes a 2 mm border outside of the detector. Scan area 52x52 mm2.>> The following parameters are used:> X_pos = 17.65 mm to 70.65 mm> Y_pos = 27.65 mm to 81.65 mm> Stepsize = 1 mm> Counting time = 15 s>> Total number of points to scan: 2704> Total time: ca 15 h>>> ----- Settings and configuration ---------> ------------------------------------------",
-    "> MAPMT": "ZA0250 @ 900 V",
-    "> SoNDe module": "7053-1-008",
-    "> SoNDe acqu_ mode": "ACRO",
-    "> SoNDe threshold": "10",
-    "> Scintillator": "GS20 (plain, polished)",
-    "> Optical coupling": "Dryfit"
+    "MAPMT": "ZA0250 @ 900 V",
+    "SoNDe module": "7053-1-008",
+    "SoNDe acqu_ mode": "ACRO",
+    "SoNDe threshold": "10",
+    "Scintillator": "GS20 (plain, polished)",
+    "Optical coupling": "Dryfit"
   },
   "249": {
     "elog_id": "249",
@@ -1116,7 +1116,7 @@
     "category": "Analysis",
     "run": "24",
     "subject": "all channel spectroscopy mode, first results",
-    "> FILE ": "",
+    "FILE ": "",
     "comments": ">> Threshold 10Attached are first results for a run on all-channel spectroscopy mode (ACSM): pixel map (1) and ADC spectrum (2).The pixel map shows the beam spot location. The ADC spectra are dominated by the pedestal originating from theread-out of all channels on every trigger.Shown are data for run 24, limited to the first 100.000 data entries.ASCM data files can be read and plotted with the plot scripts starting from commit 59aad20."
   },
   "197": {

@@ -26,7 +26,8 @@ class ExtractTable:
                 end_position = match.rfind('..')
                 val = match[end_position + 2:]
                 val = val.strip()
-                my_table[key] = val
+                key_for_mongo = key.replace('.', '_')
+                my_table[key_for_mongo] = val
             else:
                 comments = comments + (nl.strip())
             my_table["comments"] = comments

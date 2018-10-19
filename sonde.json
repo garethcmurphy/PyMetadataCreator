@@ -1,6 +1,7 @@
 {
   "283": {
-    "id": "283",
+    "elog+id": "283",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-08T14:20:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -18,7 +19,8 @@
     "> > > Optical coupling": "Dryfit"
   },
   "282": {
-    "id": "282",
+    "elog+id": "282",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-08T14:06:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -36,7 +38,8 @@
     "Optical coupling": "Dryfit"
   },
   "281": {
-    "id": "281",
+    "elog+id": "281",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-08T13:59:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -54,7 +57,8 @@
     "Optical coupling": "Dryfit"
   },
   "280": {
-    "id": "280",
+    "elog+id": "280",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-08T13:57:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -72,7 +76,8 @@
     "Optical coupling": "Dryfit"
   },
   "279": {
-    "id": "279",
+    "elog+id": "279",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-08T13:42:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -90,7 +95,8 @@
     "> > Optical coupling": "Dryfit"
   },
   "278": {
-    "id": "278",
+    "elog+id": "278",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-08T13:34:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -108,7 +114,8 @@
     "> Optical coupling": "Dryfit"
   },
   "277": {
-    "id": "277",
+    "elog+id": "277",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-08T13:26:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -126,7 +133,8 @@
     "Optical coupling": "Dryfit"
   },
   "276": {
-    "id": "276",
+    "elog+id": "276",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-08T13:14:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -144,7 +152,8 @@
     "> Optical coupling": "Dryfit"
   },
   "275": {
-    "id": "275",
+    "elog+id": "275",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-08T11:13:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -162,7 +171,8 @@
     "Optical coupling": "Dryfit"
   },
   "274": {
-    "id": "274",
+    "elog+id": "274",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-08T11:12:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -180,7 +190,8 @@
     "Optical coupling": "Dryfit"
   },
   "273": {
-    "id": "273",
+    "elog+id": "273",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-08T10:51:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -198,7 +209,8 @@
     "Optical coupling": "Dryfit"
   },
   "272": {
-    "id": "272",
+    "elog+id": "272",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-08T10:44:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -215,7 +227,8 @@
     "Optical coupling": "Dryfit"
   },
   "271": {
-    "id": "271",
+    "elog+id": "271",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-08T08:55:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -232,7 +245,8 @@
     "Optical coupling": "Dryfit"
   },
   "270": {
-    "id": "270",
+    "elog+id": "270",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-07T17:40:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -249,7 +263,8 @@
     "Optical coupling": "Dryfit"
   },
   "269": {
-    "id": "269",
+    "elog+id": "269",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-07T16:50:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -260,7 +275,8 @@
     "comments": "Neutron energy: 2.0\u00c5HoBoSint and Mirrobor have been modified to produce a 1mm collimator.Here we scan across the He-3 tube to find the maximum rate.Maximum intensity found at X=51.25Rate was then measured at this point.Counting time: 120 sBeam monitor: 368'787 counts in 120 sHe-3: 180'037 counts in 120 s"
   },
   "268": {
-    "id": "268",
+    "elog+id": "268",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-07T16:34:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -271,7 +287,8 @@
     "comments": "Using NaI detector.Neutorn wavelength: 2.4\u00c5HV: +800VDistance, beam to NaI: 380 mmMeasurement time: 60s"
   },
   "267": {
-    "id": "267",
+    "elog+id": "267",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-07T16:15:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -282,7 +299,8 @@
     "comments": "Using NaI detector.Beam was turned off for this measurement.HV: +800VDistance, beam to NaI: 380 mmMeasurement time: 60s"
   },
   "266": {
-    "id": "266",
+    "elog+id": "266",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-07T16:14:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -293,7 +311,8 @@
     "comments": "Using the NaI detectorHV: +800VNeutron energy: 2.0\u00c5Distance, beam to NaI: 380 mmMeasurement time: 60s"
   },
   "265": {
-    "id": "265",
+    "elog+id": "265",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-07T16:01:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -304,7 +323,8 @@
     "comments": "The 3-He detector was placed in the beam (/w 3mm HeBoSint+Mirrobor collimator) in the position of maximum intensity (X=52.5 mm) and a measurement was taken.An MCA spectrum was also taken at this position.Using 3mm mask collimator.Counting time: 120 sBeam monitor: 362'721 counts in 120 sHe-3: 1'211'531 counts in 120 s"
   },
   "264": {
-    "id": "264",
+    "elog+id": "264",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-07T15:58:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -315,7 +335,8 @@
     "comments": "The 3-He detector was placed in the beam (/w 3mm HeBoSint+Mirrobor collimator) and scanned in X to find the maximum intensity position of the neutron beam @ 2.0\u00c5.Using 3mm mask collimator.Step size: 0.5 mmCounting time: 2 sMaximum rate was found at X=52.5 mmFile: He_scan12.tdms"
   },
   "263": {
-    "id": "263",
+    "elog+id": "263",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-07T15:56:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -326,7 +347,8 @@
     "comments": "Using the NaI detectorHV: +800VNeutron energy: 2.0\u00c5Distance, beam to NaI: 380 mmMeasurement time: 60s"
   },
   "262": {
-    "id": "262",
+    "elog+id": "262",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-07T15:55:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -337,7 +359,8 @@
     "comments": "Using NaI detector.HV: +800VNeutron energy: 2.0\u00c5Distance, beam to NaI: 380 mmMeasurement time: 60s"
   },
   "261": {
-    "id": "261",
+    "elog+id": "261",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-07T15:50:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -348,7 +371,8 @@
     "comments": "A calibration run for the NaI detector using Cs-137.HV: +800V"
   },
   "260": {
-    "id": "260",
+    "elog+id": "260",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-07T15:37:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -359,7 +383,8 @@
     "comments": "With the beam running, a NaI detector was placed perpendicular to the beam, 380 mm from it. The NaI detector was placed with a direct line of sight to the HeBoSint andMirrobor mask we have used for the neutron measurements.The idea is the characterize the total gamma background from both the masks and any other potential sources in the hall.For run G3, we will remove the HeBoSint and Mirrobor mask.See attached photos of setup (the paper on the NaI detector is a calibration source we were using the the time of the photo).HV: +800VMeasurement time: 60s"
   },
   "259": {
-    "id": "259",
+    "elog+id": "259",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-07T15:25:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -376,7 +401,8 @@
     "Optical coupling": "Dryfit"
   },
   "258": {
-    "id": "258",
+    "elog+id": "258",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-07T15:22:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -393,7 +419,8 @@
     "Optical coupling": "Dryfit"
   },
   "256": {
-    "id": "256",
+    "elog+id": "256",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-07T14:49:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -410,7 +437,8 @@
     "Optical coupling": "Dryfit"
   },
   "255": {
-    "id": "255",
+    "elog+id": "255",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-07T14:39:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -421,7 +449,8 @@
     "comments": "We have changed the monochromator so that it now produces a beam of 2.0\u00c5 neutrons.We will then proceed to measure the intensity with a 3-He detector and then perform a central measurement of P19.With these two measurements when then have 3-He and central pixel measurements of both 2.0 and 2.4 \u00c5 neutron energies."
   },
   "252": {
-    "id": "252",
+    "elog+id": "252",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-07T14:12:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -438,7 +467,8 @@
     "> > Optical coupling": "Dryfit"
   },
   "251": {
-    "id": "251",
+    "elog+id": "251",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-07T11:14:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -455,7 +485,8 @@
     "Optical coupling": "Dryfit"
   },
   "250": {
-    "id": "250",
+    "elog+id": "250",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-07T10:41:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -472,7 +503,8 @@
     "> Optical coupling": "Dryfit"
   },
   "249": {
-    "id": "249",
+    "elog+id": "249",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-06T18:28:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -483,7 +515,8 @@
     "comments": "Today was a good day. We got the automatedscans working and a mm scan of the fulldetector is running overnight. Data issaved on an external harddrive and on theDMSC server."
   },
   "248": {
-    "id": "248",
+    "elog+id": "248",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-06T17:39:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -500,7 +533,8 @@
     "Optical coupling": "Dryfit"
   },
   "247": {
-    "id": "247",
+    "elog+id": "247",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-06T16:21:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -511,7 +545,8 @@
     "comments": "Trying the python script ideasctrl.py that has worked before, now gives this:emil@emil-XPS:~/essdaq/event-formation-unit/utils/sondectrl$ python ideasctrl.py -i 10.10.0.50 -p 50011 -c start_all_ch -t 10Traceback (most recent call last):File \"ideasctrl.py\", line 267, in <module>ctrl = IdeasCtrl(svr_ip_addr, svr_tcp_port, args.v)File \"ideasctrl.py\", line 69, in __init__self.s.connect((ip, port))ConnectionRefusedError: [Errno 111] Connection refusedWe can configure from Windows so it's not a problem, but should be sorted sometime."
   },
   "246": {
-    "id": "246",
+    "elog+id": "246",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-06T16:14:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -522,7 +557,8 @@
     "comments": "We updated the SimpleServer.py, which listens for the LabVIEW outputs, to reformat the motor positions to relative format.We put (x,y)=(0,0) at bottom left corner of MAPMT (P57). This will greatly reduce the back-and-forth needed to double check motor positions during analysis.Range (mm): X={0;48}, Y={0;48}"
   },
   "245": {
-    "id": "245",
+    "elog+id": "245",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-06T16:11:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -539,7 +575,8 @@
     "Optical coupling": "Dryfit"
   },
   "244": {
-    "id": "244",
+    "elog+id": "244",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-06T15:43:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -550,7 +587,8 @@
     "comments": "We noticed that yesterday's alignment was not 1 mm off in the Y direction. The reason is that the black box didn't have any internal support at the back and was squshed alittle by the weight of the lead block we put on top for stability (see attached images).We have moved the lead more to the front, where there is support from the inside of the black box and the new alignment should be stable."
   },
   "243": {
-    "id": "243",
+    "elog+id": "243",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-06T15:10:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -561,7 +599,8 @@
     "comments": "The automated scan is working! Scan parameters for measuring time, starting position and step size for X and Y are set in LabView. When motors are in position, a signal is sent to ourUbuntu laptop, telling it to start measuring and where the motors are. When the scan time is done for that position, a stop signal is sent, the motors move to the next position and theprocess is repeated.Data produced with threshold 10 is about 30GB/h.Video coming :)Attachment 1 shows the scan pattern of a center scan."
   },
   "242": {
-    "id": "242",
+    "elog+id": "242",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-06T15:05:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -580,7 +619,8 @@
     "Optical coupling": "Dryfit"
   },
   "241": {
-    "id": "241",
+    "elog+id": "241",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-06T13:28:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -597,7 +637,8 @@
     "Optical coupling": "Dryfit"
   },
   "240": {
-    "id": "240",
+    "elog+id": "240",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-06T11:02:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -608,7 +649,8 @@
     "comments": "No beam in the morning. Now there should be beam non-stop day and night until Friday afternoon."
   },
   "239": {
-    "id": "239",
+    "elog+id": "239",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-06T10:03:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -625,7 +667,8 @@
     "Optical coupling": "Dryfit"
   },
   "238": {
-    "id": "238",
+    "elog+id": "238",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-05T18:17:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -636,7 +679,8 @@
     "comments": "Heading home from the second day. The beamis now scanned with He-3 tube. The Sondedetector is mounted in the black box andaligned relative to the beam. We can movethe beam with 0.5 mm certainty around thedetector.We talked with Hanno and Mikolai, who ismaintaining the LabVIEW program, andhelped with getting an automated scanworking. We have good hope to get itworking tomorrow so we changed in the runplan - if we haven't scanned automaticallyby Thursday morning we will take themeasurements manually."
   },
   "237": {
-    "id": "237",
+    "elog+id": "237",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-05T17:05:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -647,7 +691,8 @@
     "comments": "Attachment 1: The sonde detector sits at the same distance from the masks as the He-3-tube wasAttachment 2-3: The HeBoSint mask and Mirrobor fixed onto slit 2.Attachment 4-7: Light tightening of the detector.Attachment 8: The masks attached on the He-3 tube."
   },
   "236": {
-    "id": "236",
+    "elog+id": "236",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-05T17:02:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -658,7 +703,8 @@
     "comments": "There was some errors building Daquri on the Ubuntu 16.04 laptop we have here. Upgrading to 18.04"
   },
   "235": {
-    "id": "235",
+    "elog+id": "235",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-05T17:01:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -669,7 +715,8 @@
     "comments": "The GS20 that we used for the alpha-scans has a scratch on it. We chose to use one of the new pieces instead."
   },
   "233": {
-    "id": "233",
+    "elog+id": "233",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-05T16:32:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -686,7 +733,8 @@
     "Optical coupling": "Dryfit"
   },
   "232": {
-    "id": "232",
+    "elog+id": "232",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-05T16:30:00+02:00",
     "author": "Nicholai Mauritzson",
     "beamline": "IFE R2D2",
@@ -697,7 +745,8 @@
     "comments": "While looking at the highest gain pixel (P33) withMAPMT: ZA0250 with SoNDe module: 7053-1-008,the module put events in the overflow while running at 940 V.See 1st image.We decided to keep the voltage at 900 V, and the position of the neutron peak (P33) is now OK. See 2nd image.Threshold set at 50."
   },
   "231": {
-    "id": "231",
+    "elog+id": "231",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-05T16:26:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -708,7 +757,8 @@
     "comments": "Hanno found and edited this Labview-python communication over a TCP/IP socketconnection:"
   },
   "228": {
-    "id": "228",
+    "elog+id": "228",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-05T11:43:00+02:00",
     "author": "Nicholai Muritzson",
     "beamline": "IFE R2D2",
@@ -719,7 +769,8 @@
     "comments": "We are aligning the neutron beam on the MAPMT GS20, using \"all channel readout\" mode.First the beam was aligned vertically by picking three groups of o neighboring pixels, with similar gain (Hamamatsu data sheet) and finding thepositions where the neutron signal is divided 50/50 between the two pixels. Same was done for the horizontal alignment.Vertical positions:-Between pixels 16 and 24: X=23.50, Y=43.50-Between pixels 11 and 19: X=53.50, Y=43.90-Between pixels 51 and 59: X=53.50, Y=73.50Average in Y is: 43.65 +- N x 6.00 mm-----------------------------------Horizontal positions:-Between pixels 6 and 7:   X=32.80, Y=34.65-Between pixels 38 and 39: X=32.70, Y=59.65-Between pixels 51 and 52: X=50.40, Y=71.65Average in X is: 32.65 +- N x 6.00 mmThe calibrate central position of our \"test pixel\" (P19) is at X=53.65 Y=47.65."
   },
   "227": {
-    "id": "227",
+    "elog+id": "227",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-05T09:50:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -730,7 +781,8 @@
     "comments": "Counting through the 3 mm diameter HeBoSint+Mirrobor mask.Beam monitor: 164610 counts in 120 sHe-3: 391861 counts in 120 sFile: He_scan11.tdms"
   },
   "226": {
-    "id": "226",
+    "elog+id": "226",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-04T23:15:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -741,7 +793,8 @@
     "comments": "New masks = ~0.5 cm thick HeBoScint + three layers MirroBor. That is thinner than last year's B4C mask that we put together from four ~0.5 cm thickmasks to get 2*2mm2 and 5*5mm2 openings.Going from 3 mm diameter opening to 1 mm diameter opening is going to 1/9 of the area. ~330kcounts @ 3mm with 30kcounts background means we should havemeasured more like 63kcounts with the 1 mm diameter opening. If the angle that the neutrons came into this 1 mm diameter opening was off by just alittle, a lot of neutrons would be blocked. Maybe that's what happened?The useful-neutrons-to-backgorund ratio will be better at 2.0 \u00c5 so if we want to use the smallest collimator, we should use 2.0 \u00c5 neutrons.> This is interesting.  Are the new masks thicker?  Maybe we should think about this.>> > Moved the 1 mm diameter opening of the HeBoSint mask in front of the beam. Measured 120 sec with the He-3 detector.> > There is more than twice as much background/epithermal neutrons registered through the mask than neutrons going> > through the small 1 mm diameter hole. We have to use the 3 mm diameter hole. With 3 mm diameter hole, only 10%> > of the counts are background/epithermal.> >> > He-3 counts for 120 s: 43766> > Monitor 120 s: 162111> >> >> > Slit 1:20*20mm2> > Slit 2:10*10mm2> > He-3 in JCPE5 shield block.> > HeBoScint 1 mm diameter mask + 3 layers of Mirrobor."
   },
   "225": {
-    "id": "225",
+    "elog+id": "225",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-04T16:23:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -752,7 +805,8 @@
     "comments": "Leaving for today as the reactor is going down."
   },
   "224": {
-    "id": "224",
+    "elog+id": "224",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-04T15:58:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -763,7 +817,8 @@
     "comments": "Whoops. We forgot we need to rotate the He3-tube 90 degrees to do a Y-scan now that we don't have our mask on it.Beam down. Will perform Y-scan tomorrow in mm steps.Rotating the He-3 tube means our old Y=87 peak position is now Y=115. Scan around 100-130 in Y.Update Tuesday 5/6:Scanned in Y. Beam looks good. Data in He_scan10.tdms"
   },
   "223": {
-    "id": "223",
+    "elog+id": "223",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-04T15:52:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -774,7 +829,8 @@
     "comments": "We mounted the HeBoSint+Mirrobor mask on the slits and let the He-3 tube scan in X.The scan was repeated with 1 mm steps around the peak. It is now more around X=19 than X=18 (1mm difference).The scan was repeated with 0.5 mm steps around the peak. Motor positions are in180604_transmission_scan_1mm.tdms from row 49."
   },
   "222": {
-    "id": "222",
+    "elog+id": "222",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-04T15:02:00+02:00",
     "author": "Kevin Fissum",
     "beamline": "IFE R2D2",
@@ -785,7 +841,8 @@
     "comments": "This is interesting.  Are the new masks thicker?  Maybe we should think about this.> Moved the 1 mm diameter opening of the HeBoSint mask in front of the beam. Measured 120 sec with the He-3 detector.> There is more than twice as much background/epithermal neutrons registered through the mask than neutrons going> through the small 1 mm diameter hole. We have to use the 3 mm diameter hole. With 3 mm diameter hole, only 10%> of the counts are background/epithermal.>> He-3 counts for 120 s: 43766> Monitor 120 s: 162111>>> Slit 1:20*20mm2> Slit 2:10*10mm2> He-3 in JCPE5 shield block.> HeBoScint 1 mm diameter mask + 3 layers of Mirrobor."
   },
   "221": {
-    "id": "221",
+    "elog+id": "221",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-04T14:45:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -796,7 +853,8 @@
     "comments": "Moved the 1 mm diameter opening of the HeBoSint mask in front of the beam. Measured 120 sec with the He-3 detector.There is more than twice as much background/epithermal neutrons registered through the mask than neutrons goingthrough the small 1 mm diameter hole. We have to use the 3 mm diameter hole. With 3 mm diameter hole, only 10%of the counts are background/epithermal.He-3 counts for 120 s: 43766Monitor 120 s: 162111Slit 1:20*20mm2Slit 2:10*10mm2He-3 in JCPE5 shield block.HeBoScint 1 mm diameter mask + 3 layers of Mirrobor."
   },
   "220": {
-    "id": "220",
+    "elog+id": "220",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-04T14:23:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -807,7 +865,8 @@
     "comments": "Moved so there is no opening in the mask. Measured 120 sec with the He-3 detector.He-3 counts for 120 s: 29766Monitor 120 s: 161548Slit 1:20*20mm2Slit 2:10*10mm2He-3 in JCPE5 shield block.HeBoScint mask with 3 mm diameter hole + 3 layers of Mirrobor. No open hole in the mask."
   },
   "219": {
-    "id": "219",
+    "elog+id": "219",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-04T14:11:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -818,7 +877,8 @@
     "comments": "Measured 120 sec with the beam through 3mm diameter HeBoSint into the He-3 detector.He-3 counts for 120 s: 332157Monitor 120 s: 161804Slit 1:20*20mm2Slit 2:10*10mm2He-3 in JCPE5 shield block.HeBoScint mask, 3mm diameter hole open and 3 layers mirrobor covering the rest of the mask. The hole in themirrobor is 10*10mm2."
   },
   "218": {
-    "id": "218",
+    "elog+id": "218",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-04T14:05:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -828,7 +888,8 @@
     "subject": "Scanning X with He-3, Y=95, closed slits"
   },
   "217": {
-    "id": "217",
+    "elog+id": "217",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-04T13:57:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -839,7 +900,8 @@
     "comments": "We closed the slits a bit and scanned Y at the peak of the previous X scan (X=20). The peak moved in Y to around95 instead of previous 100.Slit 1: 20*20mm2Slit 2: 10*10mm2He-3 in JCPE5 shield block.HeBoScint mask, 3mm diameter hole open and 3 layers mirrobor covering the rest of the mask. The hole in themirrobor is 10*10mm2."
   },
   "216": {
-    "id": "216",
+    "elog+id": "216",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-04T13:51:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -850,7 +912,8 @@
     "comments": "It's version 15.0\"TCP server inactive\""
   },
   "215": {
-    "id": "215",
+    "elog+id": "215",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-04T13:46:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -861,7 +924,8 @@
     "comments": "We scan Y at the peak of the previous X scan (X=20). The peak has the same shape as at X=0.Slit 1 and 2 open 7 cm.He-3 in JCPE5 shield block.HeBoScint mask, 3mm diameter hole open and 3 layers mirrobor covering the rest of the mask. The hole in themirrobor is 10*10mm2."
   },
   "214": {
-    "id": "214",
+    "elog+id": "214",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-04T13:28:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -872,7 +936,8 @@
     "comments": "We scan X at the peak of the previous Y scan.Slit 1 and 2 open 7 cm.He-3 in JCPE5 shield block.HeBoScint mask, 3mm diameter hole open and 3 layers mirrobor covering the rest of the mask. The hole in the mirrobor is 10*10mm2."
   },
   "213": {
-    "id": "213",
+    "elog+id": "213",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-04T13:13:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -883,7 +948,8 @@
     "comments": "Slit 1 and 2 open 7 cm.He-3 in JCPE5 shield block.HeBoScint mask, 3mm diameter hole open and 3 layers mirrobor covering the rest of the mask. The hole in the mirrobor is 10*10mm2."
   },
   "212": {
-    "id": "212",
+    "elog+id": "212",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-04T11:39:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -894,7 +960,8 @@
     "comments": "H.V Power supply Model 3106D @+1.30 kVThe count rate is fed into Labview that has a scanning function in Y or X.The He/3 tube sits in a shild of JCPE5. It is a 5% boron loaded polyethylene neutron shield."
   },
   "211": {
-    "id": "211",
+    "elog+id": "211",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-04T11:19:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -905,7 +972,8 @@
     "comments": "Using the mask we found that the neutron camera image was flipped vertically."
   },
   "210": {
-    "id": "210",
+    "elog+id": "210",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-04T10:58:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -916,7 +984,8 @@
     "comments": "Monochromator set to 2.4\u00c5.Intensity is lower here.First image is taken with same settings as run camera1. Second image is adjusted to \"slow/high\" setting 9 andslightly lower gain to compensate for the lower intensity."
   },
   "209": {
-    "id": "209",
+    "elog+id": "209",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-04T10:46:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -927,7 +996,8 @@
     "comments": "Details of this week's settings will be posted here:"
   },
   "208": {
-    "id": "208",
+    "elog+id": "208",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-04T10:22:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -938,7 +1008,8 @@
     "comments": "The neutron camera is 67 mm from last collimator surface.It is a \"Version 4 Neutron Camera\" from Grenoble.Info: neutronoptics.comSelected neutron wavelength: 2.0 \u00c5\"slow/high\" setting 8 and highest gain on the neutron camera controller."
   },
   "207": {
-    "id": "207",
+    "elog+id": "207",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-06-04T10:15:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -949,7 +1020,8 @@
     "comments": "Arrived at IFE, all good. Were allowed to bring the MaPMT and Sonde module inside, as well as notebooks.Starting with measuring the fully opened beam"
   },
   "206": {
-    "id": "206",
+    "elog+id": "206",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-02-07T21:34:00+01:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -960,7 +1032,8 @@
     "comments": "> We booted testbench in All Ch Spec mode but forgot to power cycle the module so it was still sending data in> single spec mode. We saved the data anyways, maybe it's good as single ch spec mode comparison.>> file: 15_38_07>>> S1L\t@\t8.000\tmm> S1R\t@\t8.000\tmm> S1T\t@\t8.000\tmm> S1B\t@\t8.000\tmm> S2L\t@\t15.000\tmm> S2R\t@\t-0.000\tmm> S2T\t@\t5.000\tmm> S2B\t@\t5.000\tmm> MRO\tOk\t238000.000\tsteps> MTR\tOk\t10000.000\tsteps> MFO\tOk\t50000.000\tsteps> MTI\tOk\t104000.000\tsteps> TTH\tOk\t-0.000\tdeg> TH\tOk\t-0.000\tdeg> THX\tOk\t51.996\tmm> THY\tOk\t157.000\tmmSomething happened here that actually made the data look like a good All Ch Spectroscopy run! Probably because we booted Testbench in Single Channel mode it didn't use the .ini file that tried to fix the GUI but messed up thedata.To recap: This run and run 24 are good all channel spectroscopy runs since they didn't use the modified .ini. The GUI looked crazy when we took the data so we thought the data was bad too."
   },
   "205": {
-    "id": "205",
+    "elog+id": "205",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-01-31T14:46:00+01:00",
     "author": "Hanno Perrey",
     "beamline": "IFE R2D2",
@@ -972,7 +1045,8 @@
     "python3 plot_MaPMT_py -ds ": "/datasheets/ZA0250_Hamamatsu_data_sheet.csv"
   },
   "204": {
-    "id": "204",
+    "elog+id": "204",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-01-31T11:11:00+01:00",
     "author": "Hanno Perrey",
     "beamline": "IFE R2D2",
@@ -983,7 +1057,8 @@
     "comments": "Attached: updated plots with fixed binning and transparent filling.Difference in normalization (normalized to runtime) most obvious for run 10 and exact cause unclear. Likely due tothe module dead time in spectroscopy mode resulting in relatively fewer events with high ADC when set to lowthresholds -- however, there are some inconsistencies (compare run 7 and 8 in P37).Analysis version used: c874f43d"
   },
   "203": {
-    "id": "203",
+    "elog+id": "203",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2018-01-05T18:20:00+01:00",
     "author": "Hanno Perrey",
     "beamline": "IFE R2D2",
@@ -996,7 +1071,8 @@
     "array([ 5536_36363636,  6261_11111111,  6597_43589744, ": ",  4350.66666667,"
   },
   "202": {
-    "id": "202",
+    "elog+id": "202",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2017-11-02T12:19:00+01:00",
     "author": "SAJ",
     "beamline": "IFE R2D2",
@@ -1007,7 +1083,8 @@
     "comments": "The spectra are time normalised. In the MCA-8000D output file there is two entries:Real Time: XXLive Time: XXI believe that \"Live Time\" should be the Dead Time in percentage (please double check/reinvestigate with theMCA-8000D) but in any case, in the normalisation i corrected for what i assumed to be the dead-time.The results here is consistant with the data taken with the NaI detector (see previous elog entry). It is clearthat the float glass is almost transparent to the neutrons. That is not the case with the N-BK7 or the Borofloatglass samples as can be seen in the two other plots."
   },
   "201": {
-    "id": "201",
+    "elog+id": "201",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2017-11-02T11:44:00+01:00",
     "author": "SAJ",
     "beamline": "IFE R2D2",
@@ -1018,7 +1095,8 @@
     "comments": "Spectra are calibrated using R2D2 previous calibration measurements so please deal with caution. Calibration fitparameters are included within the output data file:$ENER_FIT:-3.263808 1.548031The spectra are time normalised using the first value in the output file entry:$MEAS_TIM:xxx yyyyI believe the first number is the live-time in sec and the second one is the real-time also in sec.For the Float glass Full Beam Vs Full Beam No Glass spectra comparison, I had to subtract 150 seconds from themeasurement time of the Full-Beam-No-Glass so the two spectra overlaid perfectly. I believe this is somethingsystemic rather than something physical. It is clear that the float glass is almost transparent to the neutronbeam. That isnot the case with the N-BK7 and the Borofloat glass samples as can be seen in the two other plots. No timeoffset/subtraction was needed for the other two."
   },
   "200": {
-    "id": "200",
+    "elog+id": "200",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2017-10-20T16:04:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -1029,7 +1107,8 @@
     "comments": "We booted testbench in All Ch Spec mode but forgot to power cycle the module so it was still sending data insingle spec mode. We saved the data anyways, maybe it's good as single ch spec mode comparison.file: 15_38_07S1L\t@\t8.000\tmmS1R\t@\t8.000\tmmS1T\t@\t8.000\tmmS1B\t@\t8.000\tmmS2L\t@\t15.000\tmmS2R\t@\t-0.000\tmmS2T\t@\t5.000\tmmS2B\t@\t5.000\tmmMRO\tOk\t238000.000\tstepsMTR\tOk\t10000.000\tstepsMFO\tOk\t50000.000\tstepsMTI\tOk\t104000.000\tstepsTTH\tOk\t-0.000\tdegTH\tOk\t-0.000\tdegTHX\tOk\t51.996\tmmTHY\tOk\t157.000\tmm"
   },
   "198": {
-    "id": "198",
+    "elog+id": "198",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2017-10-20T16:02:00+02:00",
     "author": "Hanno Perrey",
     "beamline": "IFE R2D2",
@@ -1041,7 +1120,8 @@
     "comments": ">> Threshold 10Attached are first results for a run on all-channel spectroscopy mode (ACSM): pixel map (1) and ADC spectrum (2).The pixel map shows the beam spot location. The ADC spectra are dominated by the pedestal originating from theread-out of all channels on every trigger.Shown are data for run 24, limited to the first 100.000 data entries.ASCM data files can be read and plotted with the plot scripts starting from commit 59aad20."
   },
   "197": {
-    "id": "197",
+    "elog+id": "197",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2017-10-20T16:01:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -1052,7 +1132,8 @@
     "comments": "File: 15_46_53S1L\t@\t8.000\tmmS1R\t@\t8.000\tmmS1T\t@\t8.000\tmmS1B\t@\t8.000\tmmS2L\t@\t15.000\tmmS2R\t@\t-0.000\tmmS2T\t@\t5.000\tmmS2B\t@\t5.000\tmmMRO\tOk\t238000.000\tstepsMTR\tOk\t10000.000\tstepsMFO\tOk\t50000.000\tstepsMTI\tOk\t104000.000\tstepsTTH\tOk\t-0.000\tdegTH\tOk\t-0.000\tdegTHX\tOk\t76.000\tmmTHY\tOk\t181.000\tmm"
   },
   "196": {
-    "id": "196",
+    "elog+id": "196",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2017-10-20T16:00:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -1063,7 +1144,8 @@
     "comments": "File: 15_51_04S1L\t@\t8.000\tmmS1R\t@\t8.000\tmmS1T\t@\t8.000\tmmS1B\t@\t8.000\tmmS2L\t@\t15.000\tmmS2R\t@\t-0.000\tmmS2T\t@\t5.000\tmmS2B\t@\t5.000\tmmMRO\tOk\t238000.000\tstepsMTR\tOk\t10000.000\tstepsMFO\tOk\t50000.000\tstepsMTI\tOk\t104000.000\tstepsTTH\tOk\t-0.000\tdegTH\tOk\t-0.000\tdegTHX\tOk\t70.004\tmmTHY\tOk\t181.000\tmm"
   },
   "195": {
-    "id": "195",
+    "elog+id": "195",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2017-10-20T15:38:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -1074,7 +1156,8 @@
     "comments": "file: 15_41_32S1L\t@\t8.000\tmmS1R\t@\t8.000\tmmS1T\t@\t8.000\tmmS1B\t@\t8.000\tmmS2L\t@\t15.000\tmmS2R\t@\t-0.000\tmmS2T\t@\t5.000\tmmS2B\t@\t5.000\tmmMRO\tOk\t238000.000\tstepsMTR\tOk\t10000.000\tstepsMFO\tOk\t50000.000\tstepsMTI\tOk\t104000.000\tstepsTTH\tOk\t-0.000\tdegTH\tOk\t-0.000\tdegTHX\tOk\t51.996\tmmTHY\tOk\t157.000\tmm"
   },
   "194": {
-    "id": "194",
+    "elog+id": "194",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2017-10-20T15:24:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -1085,7 +1168,8 @@
     "comments": "gamma detectors swapped back to locations of run G1"
   },
   "193": {
-    "id": "193",
+    "elog+id": "193",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2017-10-20T15:17:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -1096,7 +1180,8 @@
     "comments": "Using the He3 tube with the IFE system.177299 counts registeredLength: 3 minHV: +1.3 kV"
   },
   "192": {
-    "id": "192",
+    "elog+id": "192",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2017-10-20T14:53:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -1107,7 +1192,8 @@
     "comments": "Short 30 s measurement with gamma detector positions swapped compared to G1-G7 runs. Full neutron beam and noglass sample in place."
   },
   "191": {
-    "id": "191",
+    "elog+id": "191",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2017-10-20T14:51:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -1118,7 +1204,8 @@
     "comments": "Beam switched off and data gathering started within 5 s. Looking at the Float glass. Two gamma detectors placedaccording to photo. Slits are completely open.CrBr3 HV: -850 VCeBr3 data collected with MCA8000D PocketMCA and Amptek DppMCA softwareNaI HV: 800 VNaI data collected with PC4454 Digibase and Ortec Maestro software.Run length: ~10 min"
   },
   "190": {
-    "id": "190",
+    "elog+id": "190",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2017-10-20T14:27:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -1129,7 +1216,8 @@
     "comments": "Full beam on Float glass. Two gamma detectors placed according to photo. Slits are completely open.Neutron wavelength: 2.4 ACrBr3 HV: -850 VCeBr3 data collected with MCA8000D PocketMCA and Amptek DppMCA softwareNaI HV: 800 VNaI data collected with PC4454 Digibase and Ortec Maestro software.Run length: ~10 min"
   },
   "189": {
-    "id": "189",
+    "elog+id": "189",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2017-10-20T14:24:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -1140,7 +1228,8 @@
     "comments": "Beam switched off and measuring on N-Bk7 \"Borkson\" 1459077. Two gamma detectors placed according to photo. Slitsare completely open.Neutron wavelength: 2.4ACrBr3 HV: -850 VCeBr3 data collected with MCA8000D PocketMCA and Amptek DppMCA softwareNaI HV: 800 VNaI data collected with PC4454 Digibase and Ortec Maestro software.Run length: ~10 min"
   },
   "188": {
-    "id": "188",
+    "elog+id": "188",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2017-10-20T14:10:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -1151,7 +1240,8 @@
     "comments": "Full beam on N-Bk7 \"Borkson\" 1459077. Two gamma detectors placed according to photo. Slits are completely open.CrBr3 HV: -850 VCeBr3 data collected with MCA8000D PocketMCA and Amptek DppMCA softwareNaI HV: 800 VNaI data collected with PC4454 Digibase and Ortec Maestro software.Run length: ~10 min"
   },
   "187": {
-    "id": "187",
+    "elog+id": "187",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2017-10-20T14:01:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -1162,7 +1252,8 @@
     "comments": "Full beam and no sample or detector in the beam. Slits are completely openCrBr3 HV: -850 VCeBr3 data collected with MCA8000D PocketMCA and Amptek DppMCA softwareNaI HV: 800 VNaI data collected with PC4454 Digibase and Ortec Maestro software.Run length: ~25 min"
   },
   "186": {
-    "id": "186",
+    "elog+id": "186",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2017-10-20T13:28:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -1173,7 +1264,8 @@
     "comments": "Beam was switched off after 45 min irradiating the Borofloat glass and right after the measurements were started.CrBr3 HV: -850 VCeBr3 data collected with MCA8000D PocketMCA and Amptek DppMCA softwareNaI HV: 800 VNaI data collected with PC4454 Digibase and Ortec Maestro software.Run length: ~15 min"
   },
   "185": {
-    "id": "185",
+    "elog+id": "185",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2017-10-20T13:24:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -1184,7 +1276,8 @@
     "comments": "CrBr3 HV: -850 VCeBr3 data collected with MCA8000D PocketMCA and Amptek DppMCA softwareNaI HV: 800 VNaI data collected with PC4454 Digibase and Ortec Maestro software.Length: ~45 min"
   },
   "184": {
-    "id": "184",
+    "elog+id": "184",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2017-10-20T12:13:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",
@@ -1196,7 +1289,8 @@
     "comments": "Neutron wavelength: 2.4AEvents/packet: 150Mask: slit 1 80*80mm2, slit 2 80*80mm2Thresh: 10MaPMT HV: -1000VMaPMT: ZA0250 (H12700)Sonde module: #8rough count rate: 76k events/srun time roughly 5 min"
   },
   "183": {
-    "id": "183",
+    "elog+id": "183",
+    "elog_url": "https://stf02.nuclear.lu.se/SoNDe+Testbeams/",
     "date": "2017-10-20T11:42:00+02:00",
     "author": "Emil Rofors",
     "beamline": "IFE R2D2",

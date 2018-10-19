@@ -44,7 +44,8 @@ class SondeImport:
             my_dict = {}
             my_id = "null"
             if cols:
-                my_dict["id"] = cols[0]
+                my_dict["elog+id"] = cols[0]
+                my_dict["elog_url"] = url
                 date = parser.parse(cols[1], yearfirst=True)
                 my_dict["date"] = date.replace(tzinfo=tz.tzlocal()).isoformat()
                 my_dict["author"] = cols[2]

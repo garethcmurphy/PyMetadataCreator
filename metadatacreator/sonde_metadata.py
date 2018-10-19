@@ -41,6 +41,7 @@ class SondeMetadata:
             self.scraped_from_elog = json.load(json_data)
             self.metadata_object = {}
             for key, val in self.source_folder_array.items():
+                good_val = {}
                 tag = val.split('/')[-1]
                 print(tag)
                 for met_key, met_val in self.scraped_from_elog.items():
@@ -50,7 +51,8 @@ class SondeMetadata:
 
                 self.metadata_object[key] = good_val
 
-            # print self.metadata_object
+        with open('sonde_tagged_data.json','w') as sonde_tagged_data:
+            json.dump(self.metadata_object, sonde_tagged_data, indent=2)
             # TODO get the actual keys with property value and correct key
 
 

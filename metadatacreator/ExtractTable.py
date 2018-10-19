@@ -27,6 +27,7 @@ class ExtractTable:
                 val = match[end_position + 2:]
                 val = val.strip()
                 key_for_mongo = key.replace('.', '_')
+                print (key, key_for_mongo)
                 my_table[key_for_mongo] = val
             else:
                 comments = comments + (nl.strip())

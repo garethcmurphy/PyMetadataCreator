@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-pipenv run /metadatacreator/SondeImport.py
+pipenv run ./metadatacreator/SondeImport.py
 git status
 git add .
 git commit -m "update metadata"

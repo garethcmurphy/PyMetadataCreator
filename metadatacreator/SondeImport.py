@@ -7,6 +7,8 @@ from dateutil import tz
 import requests
 from bs4 import BeautifulSoup
 
+import ExtractTable
+
 
 class SondeImport:
     def __init__(self):
@@ -23,6 +25,7 @@ class SondeImport:
         # print(rows[3])
 
         master_dict = {}
+        extract_table = ExtractTable.ExtractTable()
         num = 1
         for row in rows:
             num = num + 1
@@ -51,7 +54,9 @@ class SondeImport:
                 my_id = cols[0]
                 my_dict["run"] = cols[6]
                 my_dict["subject"] = cols[7]
-                my_dict["message"] = sub_page_message
+
+                extracted_table = extract_table.get_table(sub_page_message)
+                my_dict.update(extracted_table)
             if my_id != "null":
                 master_dict[my_id] = my_dict
 

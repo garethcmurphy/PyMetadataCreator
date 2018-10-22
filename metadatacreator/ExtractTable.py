@@ -42,5 +42,5 @@ if __name__ == '__main__':
         "freuieafghuiregfhrei"
     ]
     for example in example_strings:
-        my_table = extract.get_table(example)
-        print(json.dumps(my_table, indent=2))
+        converted_table = extract.get_table(example)
+        print(json.dumps(converted_table, indent=2))

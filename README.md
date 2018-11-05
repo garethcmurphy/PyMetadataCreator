@@ -29,7 +29,14 @@ pipenv install
 ```
 
 ```
-pipenv run 
+pipenv run ./metadatacreator/GenerateMetadata.py
+```
+
+or 
+
+```
+pipenv shell
+./metadatacreator/GenerateMetadata.py
 ```
 
 

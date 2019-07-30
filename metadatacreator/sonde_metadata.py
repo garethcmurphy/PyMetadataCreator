@@ -57,5 +57,5 @@ class SondeMetadata:
 
 
 if __name__ == '__main__':
-    nmx = SondeMetadata()
+    NMX = SondeMetadata()
     # print(nmx.metadata_object)

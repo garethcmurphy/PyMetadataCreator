@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
+"""generate base64 image"""
 import base64
 
 
 class Base64Im:
+    """generate base64 image"""
     def __init__(self):
         self.header = "data:image/png;base64,"
         with open("raw_data_3D_detectors.png", "rb") as image_file:
@@ -13,5 +15,5 @@ class Base64Im:
 
 
 if __name__ == '__main__':
-    b = Base64Im()
-    print(b.im)
+    BASE = Base64Im()
+    print(BASE.im)

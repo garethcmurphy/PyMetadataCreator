@@ -8,7 +8,7 @@ import time
 
 from sortedcontainers import SortedDict
 
-from Base64Im import Base64Im
+from base64_im import Base64Im
 from files_info import FilesInfo
 from instrumentfactory import InstrumentFactory
 from sdk.swagger_client.models.dataset_lifecycle import DatasetLifecycle
@@ -86,6 +86,7 @@ class GenerateMetadata:
             json.dump(data_sets, f, ensure_ascii=False, indent=2)
 
     def get_dataset(self, key, inst, data_set_number, files_info):
+        """get dataset"""
         met_data_set = RawDataset()
         # print(inst.abbreviation)
         met_data_set.principalInvestigator = inst.principalInvestigator
@@ -204,6 +205,7 @@ class GenerateMetadata:
         return lifecycle
 
     def get_date_information(self, basename, directory_path):
+        """get date information"""
         year_month = "2018_01"
         search_result = re.search(self.year_month_regex, directory_path)
         if search_result:

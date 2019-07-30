@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""get files info"""
 import datetime
 import glob
 import hashlib
@@ -8,6 +9,8 @@ import pytz
 
 
 class FilesInfo:
+    """get files info"""
+
     def __init__(self):
         self.files = []
         self.file_number = 22
@@ -20,10 +23,12 @@ class FilesInfo:
 
     @staticmethod
     def get_files(my_dir):
+        """get files """
         files = glob.glob(my_dir + '/**.*', recursive=True)
         return files
 
     def extract_file_list(self, source_folder):
+        """extract file list"""
         file_number = 0
         total_file_size = 0
         self.file_names = self.get_files(source_folder)
@@ -39,11 +44,12 @@ class FilesInfo:
             rel_path = longname.replace('/users/detector', '/static')
             file_size = stat_info.st_size
             experiment_date_time = stat_info.st_ctime
-            ts = int(experiment_date_time)
+            timestamp = int(experiment_date_time)
 
             permissions = oct(stat_info.st_mode & 0o777)
 
-            experiment_date_time = str(datetime.datetime.fromtimestamp(ts, tz=pytz.UTC).isoformat())
+            experiment_date_time = str(
+                datetime.datetime.fromtimestamp(timestamp, tz=pytz.UTC).isoformat())
             total_file_size += file_size
             checksum = "string"
 
@@ -69,3 +75,8 @@ class FilesInfo:
             if file_number > 30:
                 break
         # print(self.file_number)
+
+
+if __name__ == "__main__":
+    FILE = FilesInfo()
+    FILE.get_files("./demo")

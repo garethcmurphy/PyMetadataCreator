@@ -12,6 +12,7 @@ class ExtractTable:
 
     @staticmethod
     def get_table(example):
+        """extract table from text"""
         stri = io.StringIO(example)
         my_table = {}
         comments = ""

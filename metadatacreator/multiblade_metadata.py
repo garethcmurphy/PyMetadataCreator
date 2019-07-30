@@ -1,4 +1,5 @@
 class MultibladeMetadata:
+    """ MultibladeMetadata:"""
     metadata_object = {
         '0001': {"wavelength": 2, 'comment': 'xxx'},
         '0011': {'tag': '03_2_A_Ni',

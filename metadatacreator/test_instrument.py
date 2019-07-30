@@ -1,3 +1,4 @@
+"""instrument unit tests"""
 from metadatacreator.instrumentfactory import InstrumentFactory
 
 

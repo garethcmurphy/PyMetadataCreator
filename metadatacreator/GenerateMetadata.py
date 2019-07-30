@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""generate metadata"""
 import datetime
 import json
 import re
@@ -17,6 +18,7 @@ from sdk.swagger_client.models.raw_dataset import RawDataset
 
 
 class GenerateMetadata:
+    """generate metadata"""
     def __init__(self):
         self.global_file_number = 0
         self.met_directory = "./data/experiments"
@@ -211,7 +213,7 @@ class GenerateMetadata:
 
 
 if __name__ == '__main__':
-    start_time = time.time()
-    g = GenerateMetadata()
-    g.generate()
-    print("--- %s seconds ---" % (time.time() - start_time))
+    START_TIME = time.time()
+    GEN = GenerateMetadata()
+    GEN.generate()
+    print("--- %s seconds ---" % (time.time() - START_TIME))

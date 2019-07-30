@@ -3,6 +3,7 @@ import json
 
 
 class NmxMetadata:
+    """nmx metadata"""
 
     def __init__(self):
         with open('nmx.json') as json_data:

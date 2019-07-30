@@ -6,27 +6,29 @@ def test_instrument():
     """test instrument"""
     fac = InstrumentFactory()
     sonde = fac.factory("sonde")
-    d = sonde.abbreviation
-    assert d == "SONDE"
+    abbrev = sonde.abbreviation
+    assert abbrev == "SONDE"
 
 
 def test_nmx():
     """test nmx"""
     fac = InstrumentFactory()
     inst = fac.factory("nmx")
-    d = inst.abbreviation
-    assert d == "NMX"
+    abbreviation = inst.abbreviation
+    assert abbreviation == "NMX"
 
 
 def test_mg():
+    """test mg"""
     fac = InstrumentFactory()
     inst = fac.factory("multigrid")
-    d = inst.abbreviation
-    assert d == "MG"
+    abbreviation = inst.abbreviation
+    assert abbreviation == "MG"
 
 
 def test_mb():
+    """test mb"""
     fac = InstrumentFactory()
     inst = fac.factory("multiblade")
-    d = inst.abbreviation
-    assert d == "MB"
+    abbreviation = inst.abbreviation
+    assert abbreviation == "MB"

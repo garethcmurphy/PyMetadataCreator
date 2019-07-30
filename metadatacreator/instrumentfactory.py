@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""factory for instruments"""
 import datetime
 
 import pytz
@@ -10,6 +11,7 @@ from sonde_metadata import SondeMetadata
 
 
 class InstrumentFactory:
+    """factory for instruments"""
 
     def __init__(self):
         self.info = "test"
@@ -35,6 +37,7 @@ class InstrumentFactory:
 
 
 class DefaultInst:
+    """default instrument"""
     doi_prefix = "10.17199/BRIGHTNESS/"
     handle_prefix = "20.500.12269"
     url_fragment = 'https://scicat.esss.se/datasets/' + handle_prefix + "%2FBRIGHTNESS%2F"

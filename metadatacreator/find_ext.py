@@ -21,6 +21,6 @@ def find_extensions():
     #  print w, counter[w]
 
 
-    sc = OrderedDict(sorted(counter.items(), key=lambda t: t[1], reverse=True))
+    sorted_count = OrderedDict(sorted(counter.items(), key=lambda t: t[1], reverse=True))
 
-    print(json.dumps(sc, indent=2))
+    print(json.dumps(sorted_count, indent=2))

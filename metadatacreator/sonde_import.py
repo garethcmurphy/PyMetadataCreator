@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""import metadata from elog for sonde"""
 import json
 from urllib.parse import urljoin
 
@@ -7,10 +8,11 @@ from dateutil import tz
 import requests
 from bs4 import BeautifulSoup
 
-import ExtractTable
+from extract_table import ExtractTable
 
 
 class SondeImport:
+    """import metadata from elog for sonde"""
     def __init__(self):
         url = "https://stf02.nuclear.lu.se/SoNDe+Testbeams/"
 
@@ -67,6 +69,7 @@ class SondeImport:
             f.write(j)
 
     def scrape_url(self, url):
+        """scrape from URL"""
         r = requests.get(url)
         sonde_page = r.text
         soup = BeautifulSoup(sonde_page, "lxml")

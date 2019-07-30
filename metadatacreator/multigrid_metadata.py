@@ -1,3 +1,4 @@
+"""multigrid metadata"""
 class MultigridMetadata:
     """multigrid metadata"""
     metadata_object = {

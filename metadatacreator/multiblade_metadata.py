@@ -1,3 +1,4 @@
+""" MultibladeMetadata:"""
 class MultibladeMetadata:
     """ MultibladeMetadata:"""
     metadata_object = {

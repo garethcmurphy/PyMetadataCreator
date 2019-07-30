@@ -1,2 +1,2 @@
 [Master]
-init-hook='sys.path.append("./src/")'
+init-hook='sys.path.append("./metadatacreator/")'

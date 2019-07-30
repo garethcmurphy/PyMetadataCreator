@@ -57,8 +57,8 @@ def excel_stuff():
     j = json.dumps(metadata_fields_object, indent=2)
 
     # Write to file
-    with open('nmx.json', 'w') as f:
-        f.write(j)
+    with open('nmx.json', 'w') as file:
+        file.write(j)
 
 
 if __name__ == "__main__":

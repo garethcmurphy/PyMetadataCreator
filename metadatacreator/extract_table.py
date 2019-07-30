@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
+"""exrtact table from text"""
 import json
 import re
 import io
 
 
 class ExtractTable:
+    """extract table from text"""
     def __init__(self):
         self.x = 'begin search'
 

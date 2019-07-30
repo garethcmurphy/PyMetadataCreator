@@ -9,7 +9,7 @@ import time
 from sortedcontainers import SortedDict
 
 from Base64Im import Base64Im
-from FilesInfo import FilesInfo
+from files_info import FilesInfo
 from instrumentfactory import InstrumentFactory
 from sdk.swagger_client.models.dataset_lifecycle import DatasetLifecycle
 from sdk.swagger_client.models.orig_datablock import OrigDatablock
@@ -19,6 +19,7 @@ from sdk.swagger_client.models.raw_dataset import RawDataset
 
 class GenerateMetadata:
     """generate metadata"""
+
     def __init__(self):
         self.global_file_number = 0
         self.met_directory = "./data/experiments"
@@ -35,6 +36,7 @@ class GenerateMetadata:
             self.location = 'local'
 
     def generate(self):
+        """generate metadata"""
 
         data_sets = SortedDict()
         experiments = [
@@ -63,9 +65,11 @@ class GenerateMetadata:
                 files_info.extract_file_list(source_folder)
                 self.global_file_number += files_info.file_number
 
-                met_data_set = self.get_dataset(key, inst, data_set_num, files_info)
+                met_data_set = self.get_dataset(
+                    key, inst, data_set_num, files_info)
                 met_orig = self.get_orig_blocks(met_data_set, inst, files_info)
-                met_published = self.get_published_data(inst, met_data_set, files_info, key)
+                met_published = self.get_published_data(
+                    inst, met_data_set, files_info, key)
                 met_lifecycle = self.get_lifecycle(inst, met_data_set)
 
                 scicat_entries = {
@@ -92,7 +96,8 @@ class GenerateMetadata:
         met_data_set.orcidOfOwner = inst.orcidOfOwner
         met_data_set.contactEmail = inst.contactEmail
 
-        met_data_set.pid = self.handle_prefix + '/BRIGHTNESS/' + inst.abbreviation + str(data_set_number).zfill(4)
+        met_data_set.pid = self.handle_prefix + '/BRIGHTNESS/' + \
+            inst.abbreviation + str(data_set_number).zfill(4)
         print(met_data_set.pid, end='\r')
         met_data_set.size = files_info.total_file_size
         met_data_set.packedSize = files_info.total_file_size
@@ -128,6 +133,7 @@ class GenerateMetadata:
 
     @staticmethod
     def get_orig_blocks(met_data_set, inst, file_info):
+        """get orig blocks"""
         met_orig = OrigDatablock()
         met_orig.datasetId = str(met_data_set.pid)
         met_orig.rawDatasetId = met_orig.datasetId
@@ -143,6 +149,7 @@ class GenerateMetadata:
         return met_orig
 
     def get_published_data(self, inst, met_data_set, file_info, key):
+        """get published data """
         met_published = PublishedData()
         met_published.doi = str(met_data_set.doi)
         met_published.affiliation = inst.affiliation
@@ -165,6 +172,7 @@ class GenerateMetadata:
 
     @staticmethod
     def get_lifecycle(inst, met_data_set):
+        """get dataset lifecycle """
         current_date = datetime.datetime.now().isoformat()
         lifecycle = DatasetLifecycle()
         lifecycle.id = str(met_data_set.pid)

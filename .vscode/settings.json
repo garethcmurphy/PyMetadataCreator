@@ -1,0 +1,14 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*.pyc": true,
+    "**/__pycache__": true
+  },
+  "python.pythonPath": "/Users/garethmurphy/.local/share/virtualenvs/PyMetadataCreator-IRPo91up/bin/python",
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true
+}

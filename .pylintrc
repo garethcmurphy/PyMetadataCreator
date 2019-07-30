@@ -1,0 +1,2 @@
+[Master]
+init-hook='sys.path.append("./src/")'

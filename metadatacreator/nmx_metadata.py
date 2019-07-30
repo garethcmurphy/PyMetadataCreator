@@ -10,5 +10,5 @@ class NmxMetadata:
 
 
 if __name__ == '__main__':
-    nmx = NmxMetadata()
-    print(nmx.metadata_object)
+    NMX = NmxMetadata()
+    print(NMX.metadata_object)

@@ -11,7 +11,7 @@ class Base64Im:
             data = image_file.read()
             image_bytes = base64.b64encode(data)
             image_str = image_bytes.decode('UTF-8')
-            self.im = self.header + image_str
+            self.image = self.header + image_str
 
 
 if __name__ == '__main__':

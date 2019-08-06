@@ -25,8 +25,8 @@ class GenerateMetadata:
         self.met_directory = "./data/experiments"
         self.year_month_regex = '20[0-9]{2}_[0-1][0-9]'
         self.hostname = socket.gethostname()
-        image = Base64Im()
-        self.image = image.im
+        base64image = Base64Im()
+        self.image = base64image.image
 
         self.location = 'local'
         self.handle_prefix = '20.500.12269'

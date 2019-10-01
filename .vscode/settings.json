@@ -10,5 +10,10 @@
   },
   "python.pythonPath": "/Users/garethmurphy/.local/share/virtualenvs/PyMetadataCreator-IRPo91up/bin/python",
   "python.linting.pylintEnabled": true,
-  "python.linting.enabled": true
+  "python.linting.enabled": true,
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#3C2A0E",
+    "titleBar.activeBackground": "#543B14",
+    "titleBar.activeForeground": "#FDFBF7"
+  }
 }

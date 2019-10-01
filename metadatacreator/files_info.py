@@ -42,6 +42,7 @@ class FilesInfo:
 
             stat_info = os.stat(longname)
             rel_path = longname.replace('/users/detector', '/static')
+            rel_path = os.path.basename(longname)
             file_size = stat_info.st_size
             experiment_date_time = stat_info.st_ctime
             timestamp = int(experiment_date_time)
@@ -72,11 +73,19 @@ class FilesInfo:
             self.file_number = file_number
             self.total_file_size = total_file_size
             self.source_folder = source_folder
-            if file_number > 30:
+            if file_number > 250:
                 break
         # print(self.file_number)
 
+def main():
+    file = FilesInfo()
+    directory = "./demo"
+    directory = "/users/detector/experiments/beamMonitors/CDT-IBM-V20-July2019"
+    file.get_files(directory)
+    file.extract_file_list(directory)
+    print(file.file_list, ",")
+    print("size: ", file.total_file_size)
+
 
 if __name__ == "__main__":
-    FILE = FilesInfo()
-    FILE.get_files("./demo")
+    main()

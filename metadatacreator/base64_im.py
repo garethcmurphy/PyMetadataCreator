@@ -16,4 +16,4 @@ class Base64Im:
 
 if __name__ == '__main__':
     BASE = Base64Im()
-    print(BASE.im)
+    print(BASE.image)

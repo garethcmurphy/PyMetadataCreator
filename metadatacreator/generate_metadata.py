@@ -79,11 +79,11 @@ class GenerateMetadata:
                     "lifecycle": met_lifecycle.to_dict()
                 }
                 data_sets[
-                    "orig" + files_info.experiment_date_time + str(i).zfill(5) + str(data_set_num).zfill(
-                        5)] = scicat_entries
+                    "orig" + files_info.experiment_date_time +
+                    str(i).zfill(5) + str(data_set_num).zfill(5)] = scicat_entries
         print("Files processed =", self.global_file_number)
-        with open('test_new_metadata.json', 'w') as f:
-            json.dump(data_sets, f, ensure_ascii=False, indent=2)
+        with open('test_new_metadata.json', 'w') as file:
+            json.dump(data_sets, file, ensure_ascii=False, indent=2)
 
     def get_dataset(self, key, inst, data_set_number, files_info):
         """get dataset"""

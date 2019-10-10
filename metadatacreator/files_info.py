@@ -24,7 +24,7 @@ class FilesInfo:
     @staticmethod
     def get_files(my_dir):
         """get files """
-        files = glob.glob(my_dir + '/**.*', recursive=True)
+        files = glob.glob(my_dir + '/**/**.*', recursive=True)
         return files
 
     def extract_file_list(self, source_folder):
@@ -41,8 +41,9 @@ class FilesInfo:
             longname = file
 
             stat_info = os.stat(longname)
-            rel_path = longname.replace('/users/detector', '/static')
-            rel_path = os.path.basename(longname)
+            rel_path = longname
+            rel_path = longname.replace('/Users/garethmurphy/Downloads/Mar25930/', '')
+            # rel_path = os.path.basename(longname)
             file_size = stat_info.st_size
             experiment_date_time = stat_info.st_ctime
             timestamp = int(experiment_date_time)
@@ -81,6 +82,8 @@ def main():
     file = FilesInfo()
     directory = "./demo"
     directory = "/users/detector/experiments/beamMonitors/CDT-IBM-V20-July2019"
+    directory = "/Users/garethmurphy/Downloads/Mar25930"
+
     file.get_files(directory)
     file.extract_file_list(directory)
     print(file.file_list, ",")

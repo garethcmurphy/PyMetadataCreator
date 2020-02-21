@@ -42,7 +42,8 @@ class FilesInfo:
 
             stat_info = os.stat(longname)
             rel_path = longname
-            rel_path = longname.replace('/Users/garethmurphy/Downloads/Mar25930/', '')
+            rel_path = longname.replace(
+                '/Users/garethmurphy/Downloads/Mar25930/', '')
             # rel_path = os.path.basename(longname)
             file_size = stat_info.st_size
             experiment_date_time = stat_info.st_ctime
@@ -78,6 +79,7 @@ class FilesInfo:
                 break
         # print(self.file_number)
 
+
 def main():
     file = FilesInfo()
     directory = "./demo"
@@ -91,10 +93,10 @@ def main():
     orig_dict = {
         "ownerGroup": "ess",
         "accessGroups": ["ess"],
-        "size": self.total_file_size ,
+        "size": self.total_file_size,
         "dataFileList": file.file_list,
         "datasetId": datasetId
-        }
+    }
     print(json.dumps(orig_dict))
 
 

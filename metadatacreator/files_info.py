@@ -26,7 +26,7 @@ class FilesInfo:
     def get_files(my_dir):
         """get files """
         files = glob.glob(my_dir + '/**/**.*', recursive=True)
-        files = os.listdir(my_dir)
+        #files = os.listdir(my_dir)
         return files
 
     def extract_file_list(self, source_folder):
@@ -46,7 +46,7 @@ class FilesInfo:
             rel_path = longname
             rel_path = longname.replace(
                 '/Users/garethmurphy/Downloads/Mar25930/', '')
-            # rel_path = os.path.basename(longname)
+            rel_path = os.path.basename(longname)
             file_size = stat_info.st_size
             experiment_date_time = stat_info.st_ctime
             timestamp = int(experiment_date_time)

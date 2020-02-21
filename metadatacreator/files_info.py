@@ -88,13 +88,14 @@ def main():
 
     file.get_files(directory)
     file.extract_file_list(directory)
-    print("{")
-    print('"dataFileList":', file.file_list, ",")
-    print('"ownerGroup": "ess"')
-    print(f'"accessGroups": ["ess"],')
-    print(f'"size": "{file.total_file_size}",')
-    print(f'"datasetId":"{datasetId}"')
-    print("}")
+    orig_dict = {
+        "ownerGroup": "ess",
+        "accessGroups": ["ess"],
+        "size": size,
+        "dataFileList": file.file_list,
+        "datasetId": datasetId
+        }
+    print(json.dumps(orig_dict))
 
 
 if __name__ == "__main__":

@@ -83,6 +83,7 @@ def main():
     directory = "./demo"
     directory = "/users/detector/experiments/beamMonitors/CDT-IBM-V20-July2019"
     directory = "/Users/garethmurphy/Downloads/Mar25930"
+    directory = "/nfs/groups/beamlines/ldpc/data"
 
     file.get_files(directory)
     file.extract_file_list(directory)

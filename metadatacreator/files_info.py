@@ -92,7 +92,7 @@ def main():
     print('"dataFileList"', file.file_list, ",")
     print('"ownerGroup": "ess"')
     print(f'"accessGroups": ["ess"],')
-    print(f'"size": "{file.total_file_size}",")
+    print(f'"size": "{file.total_file_size}",')
     print(f'"datasetId":"{datasetId}"')
     print("}")
 

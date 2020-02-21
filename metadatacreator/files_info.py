@@ -89,7 +89,7 @@ def main():
     file.get_files(directory)
     file.extract_file_list(directory)
     print("{")
-    print('"dataFileList"', file.file_list, ",")
+    print('"dataFileList":', file.file_list, ",")
     print('"ownerGroup": "ess"')
     print(f'"accessGroups": ["ess"],')
     print(f'"size": "{file.total_file_size}",')

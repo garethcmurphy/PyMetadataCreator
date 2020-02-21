@@ -87,8 +87,13 @@ def main():
 
     file.get_files(directory)
     file.extract_file_list(directory)
+    print("{")
     print(file.file_list, ",")
+    print("ownerGroup: 'ess'")
+    print("accessGroups: ['ess']")
     print("size: ", file.total_file_size)
+    print("datasetId: ", file.total_file_size)
+    print("}")
 
 
 if __name__ == "__main__":

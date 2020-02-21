@@ -84,6 +84,7 @@ def main():
     directory = "/users/detector/experiments/beamMonitors/CDT-IBM-V20-July2019"
     directory = "/Users/garethmurphy/Downloads/Mar25930"
     directory = "/nfs/groups/beamlines/ldpc/data"
+    datasetId = "20.500.12269/4f8c991e-a879-4e00-9095-5bb13fb02ac4"
 
     file.get_files(directory)
     file.extract_file_list(directory)
@@ -92,7 +93,7 @@ def main():
     print("ownerGroup: 'ess'")
     print("accessGroups: ['ess']")
     print("size: ", file.total_file_size)
-    print("datasetId: ", file.total_file_size)
+    print(f'"datasetId":"{datasetId}"')
     print("}")
 
 

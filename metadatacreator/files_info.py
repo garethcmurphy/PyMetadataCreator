@@ -91,7 +91,7 @@ def main():
     orig_dict = {
         "ownerGroup": "ess",
         "accessGroups": ["ess"],
-        "size": size,
+        "size": self.total_file_size ,
         "dataFileList": file.file_list,
         "datasetId": datasetId
         }

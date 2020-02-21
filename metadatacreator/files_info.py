@@ -26,6 +26,7 @@ class FilesInfo:
     def get_files(my_dir):
         """get files """
         files = glob.glob(my_dir + '/**/**.*', recursive=True)
+        files = os.listdir(my_dir)
         return files
 
     def extract_file_list(self, source_folder):
